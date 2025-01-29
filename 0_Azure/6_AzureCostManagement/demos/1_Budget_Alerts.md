@@ -11,11 +11,6 @@ Last updated: 2024-11-15
 
 ----------
 
-<div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
-</div>
-
 **Accessing Cost Management**:
  - `Sign in` to the Azure portal.
  - `Navigate` to `Cost Management + Billing` from the left-hand menu.
@@ -49,3 +44,9 @@ Last updated: 2024-11-15
 
  - Review cost-saving recommendations provided by Azure.
  - Implement suggested optimizations to reduce unnecessary spending.
+
+
+<div align="center">
+  <h3 style="color: #4CAF50;">Total Visitors</h3>
+  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
