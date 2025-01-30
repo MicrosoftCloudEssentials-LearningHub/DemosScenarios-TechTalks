@@ -14,7 +14,7 @@ Last updated: 2025-01-17
 ## Wiki 
 
 <details>
-<summary><b>Table of Wiki </b> (Click to expand)</summary>
+<summary><b>List of References </b> (Click to expand)</summary>
 
 - [XML format in Data Factory in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-factory/format-xml)
 - [Best practices when working with Power Query](https://github.com/MicrosoftDocs/powerquery-docs/blob/main/powerquery-docs/best-practices.md#best-practices-when-working-with-power-query)
@@ -27,6 +27,16 @@ Last updated: 2025-01-17
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
 
+- [Wiki](#wiki)
+- [Content](#content)
+- [Overview](#overview)
+- [Demo](#demo)
+  - [Step 1: Set Up Your Data Pipeline](#step-1-set-up-your-data-pipeline)
+  - [Step 2: Configure the Source Dataset Copy Data Activity](#step-2-configure-the-source-dataset-copy-data-activity)
+  - [Step 3: Configure the Destination sink Dataset Lakehouse](#step-3-configure-the-destination-sink-dataset-lakehouse)
+  - [Step 4: Configure the Destination sink settings Copy Data Activity](#step-4-configure-the-destination-sink-settings-copy-data-activity)
+  - [Step 5: Run the Pipeline](#step-5-run-the-pipeline)
+  - [Example Configuration](#example-configuration)
 
 </details>
 
