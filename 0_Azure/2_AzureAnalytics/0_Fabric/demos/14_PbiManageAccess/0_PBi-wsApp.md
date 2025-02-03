@@ -5,7 +5,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2024-11-19
+Last updated: 2025-02-03
 
 ------------------------------------------
 
@@ -17,11 +17,13 @@ Last updated: 2024-11-19
 
 2. Go to [Fabric](https://app.fabric.microsoft.com/), and assign the capacity created to the workspace desired.
 
-   <img width="248" alt="image" src="https://github.com/user-attachments/assets/f9847839-9827-4ba4-8ca8-0f71a6229acc"> <br/>
+    <img width="248" alt="image" src="https://github.com/user-attachments/assets/f9847839-9827-4ba4-8ca8-0f71a6229acc"> <br/>
+    
+    <img width="550" alt="image" src="https://github.com/user-attachments/assets/a93b9b06-e887-45f2-a621-29ebab58f845"> <br/>
 
-   <img width="550" alt="image" src="https://github.com/user-attachments/assets/a93b9b06-e887-45f2-a621-29ebab58f845"> <br/>
+    > Select the `large semantic model only if your model exceeds 10 GB`. If not, use the small model. The large setup is for models up to 10 GB.
 
-   <img width="550" alt="image" src="https://github.com/user-attachments/assets/0b540105-e554-4056-b06c-cd3babc873e9">
+    <img width="550" alt="image" src="https://github.com/user-attachments/assets/0b540105-e554-4056-b06c-cd3babc873e9">
 
 3. Create a lakehouse to store your data:
 
