@@ -155,7 +155,7 @@ To use Power BI Premium Per User features, upgrade your license.
 
        <img width="550" alt="image" src="https://github.com/user-attachments/assets/bb7e86c7-a8b5-4486-97fb-c89b87ed6f00" />
 
-3. `Monitor the New Capacity`: Please click here to see more information about [Fabric Capacity Metrics + Monitoring Overview](https://github.com/MicrosoftCloudEssentials-LearningHub/Demos-ScenariosHub/blob/known-errors-fabric/0_Azure/2_AzureAnalytics/0_Fabric/demos/20_FabricCapacityMetrics.md)
+3. `Monitor the New Capacity`: Please click here to see more information about [Fabric Capacity Metrics + Monitoring Overview](https://github.com/MicrosoftCloudEssentials-LearningHub/Demos-ScenariosHub/blob/main/0_Azure/2_AzureAnalytics/0_Fabric/demos/20_FabricCapacityMetrics.md)
    - Install the Microsoft Fabric Capacity Metrics app from AppSource.
    - Go to the Power BI service, select `Apps`, and search for `Microsoft Fabric Capacity Metrics`.
    - Install and configure the app to monitor your capacity consumption and performance.
