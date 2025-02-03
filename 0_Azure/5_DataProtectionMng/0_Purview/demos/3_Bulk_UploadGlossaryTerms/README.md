@@ -23,6 +23,8 @@ Last updated: 2025-01-17
 - [Microsoft Purview (formerly Azure Purview) deployment checklist](https://learn.microsoft.com/en-us/purview/legacy/tutorial-azure-purview-checklist)
 - [Import and export glossary terms](https://learn.microsoft.com/en-us/purview/legacy/how-to-import-export-glossary)
 - [Get ready for the next enhancement in Microsoft Purview governance](https://learn.microsoft.com/en-us/purview/new-governance-experience)
+- If you're a `new Microsoft Purview customer`, [read about the new governance experience here](https://learn.microsoft.com/en-us/purview/purview-portal#new-experience-for-new-customers).
+- If you're an `existing Microsoft Purview customer`, [read about the new governance experience here](https://learn.microsoft.com/en-us/purview/purview-portal#new-experience-for-existing-data-governance-customers).
 - [Purview Roadmap](https://learn.microsoft.com/en-us/purview/whats-new)
   
 </details>
