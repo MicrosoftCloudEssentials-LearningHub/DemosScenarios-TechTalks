@@ -28,7 +28,9 @@ Last updated: 2025-02-03
   
 - [Don't have access](#dont-have-access)
 - [Cannot load model](#cannot-load-model)
-- [Could not connect to the data source - App](#could-not-connect-to-the-data-source)
+- [Could not connect to the data source](#could-not-connect-to-the-data-source)
+- [Upgrade your Power BI license](#upgrade-your-power-bi-license)
+- [Sporadic Access Error in Premium Workspace with Free Users](#sporadic-access-error-in-premium-workspace-with-free-users)
 
 </details>
 
