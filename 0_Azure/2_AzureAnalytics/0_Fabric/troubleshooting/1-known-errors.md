@@ -12,6 +12,16 @@ Last updated: 2025-02-03
 > [!IMPORTANT]
 > Here is a brief overview of error messages and their solutions.
 
+<details>
+<summary><b>List of Errors </b> (Click to expand)</summary>
+  
+- [Don't have access](#dont-have-access)
+- [Cannot load model](#cannot-load-model)
+- [Could not connect to the data source - App](#could-not-connect-to-the-data-source)
+
+</details>
+
+
 ## Don't have access 
 
 ```
