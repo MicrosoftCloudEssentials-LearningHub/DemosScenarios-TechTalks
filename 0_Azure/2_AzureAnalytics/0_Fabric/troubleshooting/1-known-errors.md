@@ -20,6 +20,7 @@ Last updated: 2025-02-03
 - [Manage your Fabric capacity](https://learn.microsoft.com/en-us/fabric/admin/capacity-settings?tabs=power-bi-premium)
 - [Install the Microsoft Fabric capacity metrics app](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app-install?tabs=1st)
 - [Ways to collaborate and share in Power BI](https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports)
+- [Interact with the Power BI service as a Free user](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-features)
 
 </details>
 
