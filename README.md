@@ -1,4 +1,4 @@
-# Microsoft Cloud Demos Scenarios - Learning Hub
+# Microsoft Cloud: Demos Scenarios and Tech Talks 
 
 Costa Rica
 
