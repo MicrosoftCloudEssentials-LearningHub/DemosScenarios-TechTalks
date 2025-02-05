@@ -13,10 +13,11 @@ Last updated: 2024-11-19
 > Azure Language Service is part of Azure AI, is cloud-based service that provides a suite of Natural Language Processing (NLP) features for understanding and analyzing text. It helps build intelligent applications using the web-based Language Studio, REST APIs, and client libraries, offering a comprehensive suite of AI services and tools for developers to build intelligent natural language solutions. <br/> 
 > It leverages state-of-the-art language models, including Z-Code++ and fine-tuned GPT models.
 
-## Wiki 
+## References 
 
 - [What’s new in Azure AI Language | BUILD 2024](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/what-s-new-in-azure-ai-language-build-2024/ba-p/4147399)
 - [What's new in Azure AI Language?](https://learn.microsoft.com/en-us/azure/ai-services/language-service/whats-new?tabs=csharp)
+- [azurerm_cognitive_account - terraform doc](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/cognitive_account)
 
 ## Overview
 
@@ -66,6 +67,46 @@ Last updated: 2024-11-19
 | **E-commerce** | Enhance product search and recommendation systems by understanding customer queries and reviews. |
 | **Human Resources** | Analyze employee feedback and survey responses to improve workplace culture and policies. |
 | **Financial Services** | Extract and analyze financial data from reports and documents to support decision-making. |
+
+## Services
+
+| **Service**                          | **Description**                                                                                       |
+|--------------------------------------|-------------------------------------------------------------------------------------------------------|
+| `Academic`                           | Provides academic knowledge and research data, enabling access to scholarly articles and academic resources. |
+| `AnomalyDetector`                    | Detects anomalies in time-series data using machine learning algorithms, helping to identify unusual patterns and trends. |
+| `Bing.Autosuggest`                   | Provides autocomplete suggestions for search queries, enhancing user experience by predicting search terms. |
+| `Bing.Autosuggest.v7`                | Updated version of Bing Autosuggest with improved algorithms and features for better search term predictions. |
+| `Bing.CustomSearch`                  | Customizable search engine that allows developers to tailor search results to specific needs and preferences. |
+| `Bing.Search`                        | General web search capabilities, providing comprehensive search results from the web. |
+| `Bing.Search.v7`                     | Updated version of Bing Search with enhanced search algorithms and features for more accurate search results. |
+| `Bing.Speech`                        | Converts speech to text and vice versa, enabling voice recognition and text-to-speech functionalities. |
+| `Bing.SpellCheck`                    | Checks and corrects spelling in text, improving the accuracy of written content. |
+| `Bing.SpellCheck.v7`                 | Updated version of Bing SpellCheck with enhanced spelling correction algorithms. |
+| `CognitiveServices`                  | A suite of AI services for vision, speech, language, and decision-making, providing pre-built and customizable models. |
+| `ComputerVision`                     | Analyzes visual content to extract information, such as object detection, image classification, and OCR. |
+| `ContentModerator`                   | Moderates text, image, and video content to detect and filter inappropriate or harmful content. |
+| `ContentSafety`                      | Ensures content safety by detecting harmful content in text, images, and videos, helping to maintain a safe environment. |
+| `CustomSpeech`                       | Customizable speech recognition models that can be tailored to specific vocabularies and environments. |
+| `CustomVision.Prediction`            | Customizable image classification models for prediction, allowing developers to create and deploy custom vision models. |
+| `CustomVision.Training`              | Customizable image classification models for training, enabling the creation of custom vision models with specific datasets. |
+| `Emotion`                            | Detects emotions in images, providing insights into the emotional state of individuals based on facial expressions. |
+| `Face`                               | Detects and recognizes faces in images, offering features like face verification, identification, and analysis. |
+| `FormRecognizer`                     | Extracts information from forms and documents using AI, automating data entry and document processing tasks. |
+| `ImmersiveReader`                    | Helps users read and comprehend text by providing tools for text-to-speech, translation, and text highlighting. |
+| `LUIS`                               | Language Understanding Intelligent Service for natural language processing, enabling the creation of conversational AI applications. |
+| `LUIS.Authoring`                     | Tools for authoring LUIS models, allowing developers to create and manage language understanding models. |
+| `MetricsAdvisor`                     | Monitors metrics and diagnoses issues using AI, helping to identify and resolve performance problems. |
+| `OpenAI`                             | Provides access to OpenAI's language models for various tasks, such as content generation, summarization, and natural language understanding. |
+| `Personalizer`                       | Delivers personalized experiences for users by using reinforcement learning to make real-time decisions. |
+| `QnAMaker`                           | Creates a question-and-answer layer over your data, enabling the creation of conversational bots and knowledge bases. |
+| `Recommendations`                    | Provides product recommendations based on user behavior and preferences, enhancing the user experience. |
+| `SpeakerRecognition`                 | Identifies and verifies speakers based on their voice, offering features like speaker identification and verification. |
+| `Speech`                             | Converts speech to text and vice versa, enabling voice recognition and text-to-speech functionalities. |
+| `SpeechServices`                     | Comprehensive suite of speech services including recognition, synthesis, and translation, providing end-to-end speech solutions. |
+| `SpeechTranslation`                  | Translates spoken language in real-time, enabling cross-language communication through speech translation. |
+| `TextAnalytics`                      | Analyzes text for sentiment, key phrases, entities, and language, providing insights into textual data. |
+| `TextTranslation`                    | Translates text between languages, enabling multilingual communication and content localization. |
+| `WebLM`                              | Provides language models for web-based applications, enhancing natural language processing capabilities for web services. |
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
