@@ -349,7 +349,7 @@ DBCC SHRINKFILE (1);
 
 ## Shrinking the Database
 
-> Reclaim unused space with. Shrink the entire database to leave 10% free space.
+> Reclaim unused space with. Shrink the entire database to leave `target_percent_free_space`% free space.
 
 | **Command**                      | **Description**                                                                 | **Syntax**                                                                                   | **Example**                                                                                   |
 |----------------------------------|---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
