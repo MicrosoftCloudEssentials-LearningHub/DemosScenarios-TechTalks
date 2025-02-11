@@ -256,6 +256,9 @@ For Azure SQL Managed Instance, consider these strategies:
 
 ## Shrink the Database File
 
+> [!TIP]
+> Shrink files in parallel by opening multiple database sessions and running the `DBCC SHRINKFILE` command on each session with a different `file_id` value.
+
 > Shrink the database file to reclaim unused space
 
 | **Command**                      | **Description**                                                                 | **Syntax**                                                                                   | **Example**                                                                                   |
