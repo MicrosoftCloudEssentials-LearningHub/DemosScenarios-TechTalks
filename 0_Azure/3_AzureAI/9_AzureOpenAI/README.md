@@ -7,7 +7,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2024-11-19
+Last updated: 2025-02-13
 
 ----------
 
@@ -17,21 +17,28 @@ Key Features:
 - **Models Available**: The models available through Azure OpenAI Service include GPT-4, GPT-3.5-Turbo, and Embeddings.
 -  **Security and Compliance**: Azure OpenAI Service offers the security and enterprise promise of Azure.
 
-## Content 
 
-<!-- TOC -->
+<details>
+<summary><b>List of References </b> (Click to expand)</summary>
 
-- [Azure OpenAI](#azure-openai)
-    - [Content](#content)
-    - [Example of Use Cases](#example-of-use-cases)
-        - [Text Generation - Azure OpenAI:](#text-generation---azure-openai)
-        - [Sentiment Analysis - Azure OpenAI:](#sentiment-analysis---azure-openai)
-        - [Language Translation - Azure OpenAI:](#language-translation---azure-openai)
-        - [Content Moderation - Azure OpenAI:](#content-moderation---azure-openai)
-        - [Speech Recognition - Azure OpenAI:](#speech-recognition---azure-openai)
-    - [Demos & Tech Talks](./demos/)
-        - [Optimizing Chatbot Efficiency](./demos/1_OptimizingChatbotEfficiency.md)
-<!-- /TOC -->
+- [Azure Open AI resource - Change log](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/openai/Azure.AI.OpenAI/CHANGELOG.md)
+
+</details>
+
+<details>
+<summary><b>Table of Content </b> (Click to expand)</summary>
+
+- [Example of Use Cases](#example-of-use-cases)
+    - [Text Generation - Azure OpenAI:](#text-generation---azure-openai)
+    - [Sentiment Analysis - Azure OpenAI:](#sentiment-analysis---azure-openai)
+    - [Language Translation - Azure OpenAI:](#language-translation---azure-openai)
+    - [Content Moderation - Azure OpenAI:](#content-moderation---azure-openai)
+    - [Speech Recognition - Azure OpenAI:](#speech-recognition---azure-openai)
+- [Demos & Tech Talks](./demos/)
+    - [Optimizing Chatbot Efficiency](./demos/1_OptimizingChatbotEfficiency.md)
+      
+</details>
+
 
 ## Example of Use Cases
 
