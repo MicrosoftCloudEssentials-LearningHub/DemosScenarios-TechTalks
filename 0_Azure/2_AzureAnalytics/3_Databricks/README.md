@@ -9,8 +9,8 @@ Last updated: 2025-02-13
 
 ----------
 
+## References 
 
-## Wiki 
 - [What is Azure Databricks?](https://learn.microsoft.com/en-us/azure/databricks/introduction/)
 - [Tutorial: Implement Azure Databricks with an Azure Cosmos DB endpoint](https://learn.microsoft.com/en-us/azure/databricks/scenarios/service-endpoint-cosmosdb)
 - [Query databases using JDBC](https://learn.microsoft.com/en-us/azure/databricks/connect/external-systems/jdbc)
