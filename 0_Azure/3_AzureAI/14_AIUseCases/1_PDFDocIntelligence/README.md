@@ -516,19 +516,19 @@ Within the Storage Account, create a Blob Container to store your PDFs.
 
    > 1. **PDF Upload**: A PDF is uploaded to the Azure Blob Storage container named `pdfinvoices`.
    > 2. **Trigger Azure Function**: The upload triggers the Azure Function `BlobTriggerContosoPDFInvoicesDocIntelligence`.
-   > 3. **Initialize Clients**: Sets up connections to Document Intelligence and Cosmos DB.
-      - The function initializes the `DocumentAnalysisClient` to interact with Azure Document Intelligence.
-      - It also initializes the `CosmosClient` to interact with Cosmos DB.
+   > 3. **Initialize Clients**: Sets up connections to Document Intelligence and Cosmos DB. <br/>
+   >       - The function initializes the `DocumentAnalysisClient` to interact with Azure Document Intelligence. <br/>
+   >       - It also initializes the `CosmosClient` to interact with Cosmos DB. <br/>
    > 4. **Read PDF from Blob Storage**: The function reads the PDF content from the Blob Storage into a byte stream.
-   > 5. **Analyze PDF**: Uses Document Intelligence to extract data.
-      - The function calls the `begin_analyze_document` method of the `DocumentAnalysisClient` using the prebuilt invoice model to analyze the PDF.
-      - It waits for the analysis to complete and retrieves the results.
-   > 6. **Extract Data**: Structures the extracted data.
-      - The function extracts relevant fields from the analysis result, such as customer name, email, address, company name, phone, address, and rental details.
-      - It structures this extracted data into a dictionary (`invoice_data`).
-   > 7. **Save Data to Cosmos DB**: Inserts the data into Cosmos DB.
-      - The function calls `save_invoice_data_to_cosmos` to save the structured data into Cosmos DB.
-      - It ensures the database and container exist, then inserts the extracted data.
+   > 5. **Analyze PDF**: Uses Document Intelligence to extract data. <br/>
+   >      - The function calls the `begin_analyze_document` method of the `DocumentAnalysisClient` using the prebuilt invoice model to analyze the PDF. <br/>
+   >      - It waits for the analysis to complete and retrieves the results. <br/>
+   > 6. **Extract Data**: Structures the extracted data. <br/>
+   >       - The function extracts relevant fields from the analysis result, such as customer name, email, address, company name, phone, address, and rental details. <br/>
+   >       - It structures this extracted data into a dictionary (`invoice_data`). <br/>
+   > 7. **Save Data to Cosmos DB**: Inserts the data into Cosmos DB. <br/>
+   >       - The function calls `save_invoice_data_to_cosmos` to save the structured data into Cosmos DB. <br/>
+   >       - It ensures the database and container exist, then inserts the extracted data. <br/>
    > 8. **Logging (process and errors)**: Throughout the process, the function logs various steps and any errors encountered for debugging and monitoring purposes.
 
    - Update the function_app.py:
