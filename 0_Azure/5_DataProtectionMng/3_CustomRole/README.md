@@ -76,71 +76,74 @@ Custom roles can be created using various methods:
 
 2. Create a file. E.g., named `custom_role.json` with the required structure. Below is an example of a custom role for subscription access. Click [here to see the example file](./src/custom_role.json)
 
-     ```json
-        {
-          "Name": "{YOUR_CUSTOM_ROLE}",
-          "Description": "",
-          "AssignableScopes": [
-              "/subscriptions/{your-subscription-id}"
-          ],
-          "Actions": [
-              "*",
-              "Microsoft.Authorization/roleAssignments/write",
-              "Microsoft.Resources/deployments/read",
-              "Microsoft.Resources/deployments/write",
-              "Microsoft.Resources/deployments/delete",
-              "Microsoft.Resources/deployments/cancel/action",
-              "Microsoft.Resources/deployments/validate/action",
-              "Microsoft.Resources/deployments/whatIf/action",
-              "Microsoft.Resources/deployments/exportTemplate/action"
-          ],
-          "NotActions": [
-              "Microsoft.Authorization/*/Delete",
-              "Microsoft.Authorization/elevateAccess/Action",
-              "Microsoft.Blueprint/blueprintAssignments/write",
-              "Microsoft.Blueprint/blueprintAssignments/delete",
-              "Microsoft.Compute/galleries/share/action",
-              "Microsoft.Purview/consents/write",
-              "Microsoft.Purview/consents/delete",
-              "Microsoft.Authorization/classicAdministrators/write",
-              "Microsoft.Authorization/classicAdministrators/delete",
-              "Microsoft.Authorization/denyAssignments/write",
-              "Microsoft.Authorization/denyAssignments/delete",
-              "Microsoft.Authorization/diagnosticSettings/write",
-              "Microsoft.Authorization/diagnosticSettings/delete",
-              "Microsoft.Authorization/locks/write",
-              "Microsoft.Authorization/locks/delete",
-              "Microsoft.Authorization/policyAssignments/delete",
-              "Microsoft.Authorization/policyAssignments/write",
-              "Microsoft.Authorization/policyAssignments/exempt/action",
-              "Microsoft.Authorization/policyAssignments/privateLinkAssociations/write",
-              "Microsoft.Authorization/policyAssignments/privateLinkAssociations/delete",
-              "Microsoft.Authorization/policyAssignments/resourceManagementPrivateLinks/write",
-              "Microsoft.Authorization/policyAssignments/resourceManagementPrivateLinks/delete",
-              "Microsoft.Authorization/policyAssignments/resourceManagementPrivateLinks/privateEndpointConnections/write",
-              "Microsoft.Authorization/policyAssignments/resourceManagementPrivateLinks/privateEndpointConnections/delete",
-              "Microsoft.Authorization/policyAssignments/resourceManagementPrivateLinks/privateEndpointConnectionProxies/write",
-              "Microsoft.Authorization/policyAssignments/resourceManagementPrivateLinks/privateEndpointConnectionProxies/delete",
-              "Microsoft.Authorization/policyAssignments/resourceManagementPrivateLinks/privateEndpointConnectionProxies/validate/action",
-              "Microsoft.Authorization/policyDefinitions/write",
-              "Microsoft.Authorization/policyDefinitions/delete",
-              "Microsoft.Authorization/policyExemptions/write",
-              "Microsoft.Authorization/policyExemptions/delete",
-              "Microsoft.Authorization/policySetDefinitions/write",
-              "Microsoft.Authorization/policySetDefinitions/delete",
-              "Microsoft.Authorization/roleAssignments/delete",
-              "Microsoft.Authorization/roleAssignmentScheduleRequests/write",
-              "Microsoft.Authorization/roleAssignmentScheduleRequests/cancel/action",
-              "Microsoft.Authorization/roleDefinitions/write",
-              "Microsoft.Authorization/roleDefinitions/delete",
-              "Microsoft.Authorization/roleEligibilityScheduleRequests/write",
-              "Microsoft.Authorization/roleEligibilityScheduleRequests/cancel/action",
-              "Microsoft.Authorization/roleManagementPolicies/write"
-          ],
-          "DataActions": []
-      }
-  
-     ```
+> [!IMPORTANT]
+> This custom role example provides extensive permissions for managing resources and deployments within the subscription, including full access to all actions and specific permissions for role assignments and resource deployments. However, it explicitly denies permissions for critical authorization, policy, and administrative actions to ensure security and compliance, preventing unauthorized changes to key configurations and settings.
+
+ ```json
+    {
+      "Name": "{YOUR_CUSTOM_ROLE}",
+      "Description": "",
+      "AssignableScopes": [
+          "/subscriptions/{your-subscription-id}"
+      ],
+      "Actions": [
+          "*",
+          "Microsoft.Authorization/roleAssignments/write",
+          "Microsoft.Resources/deployments/read",
+          "Microsoft.Resources/deployments/write",
+          "Microsoft.Resources/deployments/delete",
+          "Microsoft.Resources/deployments/cancel/action",
+          "Microsoft.Resources/deployments/validate/action",
+          "Microsoft.Resources/deployments/whatIf/action",
+          "Microsoft.Resources/deployments/exportTemplate/action"
+      ],
+      "NotActions": [
+          "Microsoft.Authorization/*/Delete",
+          "Microsoft.Authorization/elevateAccess/Action",
+          "Microsoft.Blueprint/blueprintAssignments/write",
+          "Microsoft.Blueprint/blueprintAssignments/delete",
+          "Microsoft.Compute/galleries/share/action",
+          "Microsoft.Purview/consents/write",
+          "Microsoft.Purview/consents/delete",
+          "Microsoft.Authorization/classicAdministrators/write",
+          "Microsoft.Authorization/classicAdministrators/delete",
+          "Microsoft.Authorization/denyAssignments/write",
+          "Microsoft.Authorization/denyAssignments/delete",
+          "Microsoft.Authorization/diagnosticSettings/write",
+          "Microsoft.Authorization/diagnosticSettings/delete",
+          "Microsoft.Authorization/locks/write",
+          "Microsoft.Authorization/locks/delete",
+          "Microsoft.Authorization/policyAssignments/delete",
+          "Microsoft.Authorization/policyAssignments/write",
+          "Microsoft.Authorization/policyAssignments/exempt/action",
+          "Microsoft.Authorization/policyAssignments/privateLinkAssociations/write",
+          "Microsoft.Authorization/policyAssignments/privateLinkAssociations/delete",
+          "Microsoft.Authorization/policyAssignments/resourceManagementPrivateLinks/write",
+          "Microsoft.Authorization/policyAssignments/resourceManagementPrivateLinks/delete",
+          "Microsoft.Authorization/policyAssignments/resourceManagementPrivateLinks/privateEndpointConnections/write",
+          "Microsoft.Authorization/policyAssignments/resourceManagementPrivateLinks/privateEndpointConnections/delete",
+          "Microsoft.Authorization/policyAssignments/resourceManagementPrivateLinks/privateEndpointConnectionProxies/write",
+          "Microsoft.Authorization/policyAssignments/resourceManagementPrivateLinks/privateEndpointConnectionProxies/delete",
+          "Microsoft.Authorization/policyAssignments/resourceManagementPrivateLinks/privateEndpointConnectionProxies/validate/action",
+          "Microsoft.Authorization/policyDefinitions/write",
+          "Microsoft.Authorization/policyDefinitions/delete",
+          "Microsoft.Authorization/policyExemptions/write",
+          "Microsoft.Authorization/policyExemptions/delete",
+          "Microsoft.Authorization/policySetDefinitions/write",
+          "Microsoft.Authorization/policySetDefinitions/delete",
+          "Microsoft.Authorization/roleAssignments/delete",
+          "Microsoft.Authorization/roleAssignmentScheduleRequests/write",
+          "Microsoft.Authorization/roleAssignmentScheduleRequests/cancel/action",
+          "Microsoft.Authorization/roleDefinitions/write",
+          "Microsoft.Authorization/roleDefinitions/delete",
+          "Microsoft.Authorization/roleEligibilityScheduleRequests/write",
+          "Microsoft.Authorization/roleEligibilityScheduleRequests/cancel/action",
+          "Microsoft.Authorization/roleManagementPolicies/write"
+      ],
+      "DataActions": []
+  }
+
+ ```
 
 3. Create the custom role: Use the following command to create the role using the JSON file.
 
