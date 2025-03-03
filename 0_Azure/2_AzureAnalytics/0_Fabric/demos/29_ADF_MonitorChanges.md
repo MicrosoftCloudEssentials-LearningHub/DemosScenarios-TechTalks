@@ -35,6 +35,11 @@ Last updated: 2025-03-03
      - **Name**: Enter a unique name for your Data Factory.
      - **Version**: Select V2 (the latest version).
 4. **Configure Git (Optional)**: If you want to configure Git for source control, you can do so in the `Git configuration` tab. This step is optional and can be skipped if not needed.
+
+> [!NOTE]
+> Or later (crucial for source control or auditing):
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/e5dfe437-6d76-4b51-9b87-5fb82d455f15">
+
 5. **Review and Create**:
    - Click on the `Review + create` button.
    - Review your settings and click `Create` once the validation passes.
