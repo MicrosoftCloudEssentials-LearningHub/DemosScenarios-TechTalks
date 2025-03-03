@@ -7,7 +7,6 @@ Last updated: 2025-03-03
 
 ------------------------------------------
 
-
 <details>
 <summary><b>List of References </b> (Click to expand)</summary>
 
@@ -17,6 +16,16 @@ Last updated: 2025-03-03
 - [Provisioned throughput units onboarding](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/provisioned-throughput-onboarding)
 
 </details>
+
+## Content
+
+- [Deployment Options](#deployment-options)
+- [When Azure OpenAI Model Availability PTU is Not Available](#when-azure-openai-model-availability-ptu-is-not-available)
+    - [Complete a Capacity Request](#complete-a-capacity-request)
+    - [Use a Different Model](#use-a-different-model)
+    - [Use a Different Region/Zones or Global](#use-a-different-regionzones-or-global)
+    - [Attempt Deployment at a Different Time](#attempt-deployment-at-a-different-time)
+    - [Azure Reserved Instances](#azure-reserved-instances)
 
 ## Deployment Options
 
