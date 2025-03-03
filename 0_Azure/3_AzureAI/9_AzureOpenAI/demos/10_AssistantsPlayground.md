@@ -66,3 +66,9 @@ Example:
     
     > - Using the Azure OpenAI Assistants API to build custom solutions using Azure’s GPT-4 model integrated with other Azure services (e.g., Azure Logic Apps, Azure Functions) for enhanced functionality. This approach enables you to build assistants with custom workflows, tool integration, code execution capabilities, custom instructions, code interpreters, and custom functions.  
 - **Storage Limits**: The current limit for uploaded files is 100GB, but you can request an increase through Azure support if needed through Azure support channels.
+
+
+<div align="center">
+  <h3 style="color: #4CAF50;">Total Visitors</h3>
+  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
