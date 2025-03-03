@@ -39,6 +39,16 @@ Last updated: 2025-03-03
 
 ## Pricing models
 
+> [!NOTE]
+> How Provisioned Throughput Units (PTUs) are charged in Azure OpenAI Service:
+1. **Hourly Rate**: PTUs are charged based on the number of PTUs deployed and the duration of the deployment. For example, if you deploy 100 PTUs, you will be charged the hourly rate for 100 PTUs.
+2. **Partial Hour Deployment**: If a deployment exists for only part of an hour, the charge is prorated based on the number of minutes the deployment was active. For instance, if a 100 PTU deployment exists for 15 minutes, it will be charged as a 25 PTU deployment for that hour.
+3. **Predictable Costs**: PTUs provide predictable costs for applications with consistent usage patterns. This is beneficial for budgeting and cost management, especially for production environments with stable traffic.
+
+> Example: This prorated charging ensures you only pay for the actual usage, making it cost-effective for varying workloads.
+- **Full Hour Deployment**: Deploying 50 PTUs for a full hour will incur a charge for 50 PTUs for that hour.
+- **Mid-Hour Deployment**: Deploying 50 PTUs for 30 minutes will incur a charge for 25 PTUs for that hour.
+
 | **Pricing Model**                | **Description**                                                                 | **Ideal For**                          | **Billing**|
 |----------------------------------|---------------------------------------------------------------------------------|----------------------------------------|-----------------------------------------------------------------------------|
 | **Standard (On-Demand)**         | Charges based on the number of input and output tokens used.                     | Applications with variable or unpredictable usage. | Pay-as-you-go.|
