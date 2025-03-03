@@ -45,7 +45,7 @@ Last updated: 2025-03-03
 2. **Partial Hour Deployment**: If a deployment exists for only part of an hour, the charge is prorated based on the number of minutes the deployment was active. For instance, if a 100 PTU deployment exists for 15 minutes, it will be charged as a 25 PTU deployment for that hour.
 3. **Predictable Costs**: PTUs provide predictable costs for applications with consistent usage patterns. This is beneficial for budgeting and cost management, especially for production environments with stable traffic.
 
-> Example: This prorated charging ensures you only pay for the actual usage, making it cost-effective for varying workloads.
+> This prorated charging ensures you only pay for the actual usage, making it cost-effective for varying workloads. For example:
 - **Full Hour Deployment**: Deploying 50 PTUs for a full hour will incur a charge for 50 PTUs for that hour.
 - **Mid-Hour Deployment**: Deploying 50 PTUs for 30 minutes will incur a charge for 25 PTUs for that hour.
 
