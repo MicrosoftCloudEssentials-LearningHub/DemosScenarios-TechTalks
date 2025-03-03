@@ -14,6 +14,7 @@ Last updated: 2025-03-03
 - [What is provisioned throughput?](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/provisioned-throughput?tabs=global-ptum)
 - [Azure OpenAI provisioned Managed offering updates](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/provisioned-migration)
 - [Provisioned throughput units onboarding](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/provisioned-throughput-onboarding)
+- [Azure OpenAI Service pricing](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/)
 
 </details>
 
