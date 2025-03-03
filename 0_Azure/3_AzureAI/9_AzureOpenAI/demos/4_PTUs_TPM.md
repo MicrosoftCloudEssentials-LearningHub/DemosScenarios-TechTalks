@@ -66,7 +66,7 @@ This means with 50 PTUs, you can process 75,000 tokens per minute.
 
 <img width="750" alt="image" src="https://github.com/user-attachments/assets/540a1fd2-cae1-445c-8ca8-a0123cc63d7e" />
 
-https://github.com/user-attachments/assets/22f2c86b-2294-4a6d-acb6-31697ae6646c
+https://github.com/user-attachments/assets/27beba15-57d6-4a2b-943e-496829644dbe
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
