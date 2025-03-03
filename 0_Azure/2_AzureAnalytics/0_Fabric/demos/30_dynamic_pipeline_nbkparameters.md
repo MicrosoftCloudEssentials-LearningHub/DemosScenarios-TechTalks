@@ -66,7 +66,7 @@ Last updated: 2025-03-03
 
         ```python
         # Parameters
-        file_path = "abfss://<your-container-name>@<your-storage-account-name>.dfs.core.windows.net/<your-bronze-lakehousename>.Lakehouse/Tables/<table name>"
+        file_path = "" # expected value format: abfss://<your-container-name>@<your-storage-account-name>.dfs.core.windows.net/<your-bronze-lakehousename>.Lakehouse/Tables/<table name>
         token = ""
         ```
 5. **Mark as Parameter Cell**: Select the `Toggle Parameter Cell` option to mark the cell as a parameter cell
