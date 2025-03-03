@@ -18,6 +18,12 @@ Last updated: 2025-03-03
 
 </details>
 
+## Content
+
+- [Create a Microsoft Fabric Workspace](#create-a-microsoft-fabric-workspace)
+- [Create a Notebook with Parameters](#create-a-notebook-with-parameters)
+- [Using the Notebook in a Pipeline](#using-the-notebook-in-a-pipeline)
+
 ## Create a Microsoft Fabric Workspace
 
 1. **Sign in to Power BI**: Go to the Power BI Service and log in.
@@ -63,6 +69,43 @@ Last updated: 2025-03-03
         file_path = "abfss://<your-container-name>@<your-storage-account-name>.dfs.core.windows.net/<your-bronze-lakehousename>.Lakehouse/Tables/<table name>"
         token = ""
         ```
+5. **Mark as Parameter Cell**: Select the `Toggle Parameter Cell` option to mark the cell as a parameter cell
+
+      <img width="550" alt="image" src="https://github.com/user-attachments/assets/540fa3cc-a896-41b5-a144-81955e130a67" />
+
+6. Save and Use the Notebook
+      1. **Save the Notebook**: Save your notebook to ensure all changes are applied.
+      2. **Use the Notebook in a Pipeline**: You can now use this notebook in a pipeline and pass parameters to it as needed.
+
+            <img width="550" alt="image" src="https://github.com/user-attachments/assets/1cf3afe3-8f74-4e1a-a1fe-e9d30418737e" />
+
+## Using the Notebook in a Pipeline
+
+1. **Open the Notebook**: Navigate to the notebook you created in your Microsoft Fabric workspace.
+2. **Go to the Run Tab**: In the notebook view, click on the `Run` tab at the top of the page.
+3. **Add to Pipeline**: Under the `Run*` tab, select the `Add to pipeline` option. This will allow you to add the notebook to a new or existing pipeline.
+      1. **Create a New Pipeline**: If you don't have an existing pipeline, you can create a new one by providing a name and selecting **Create**.
+      2. **Select an Existing Pipeline**: If you already have a pipeline, select it from the list of available pipelines.
+
+            <img width="550" alt="image" src="https://github.com/user-attachments/assets/10037c04-2608-418c-9d26-cf1dafa5835c" />
+      
+            <img width="550" alt="image" src="https://github.com/user-attachments/assets/f99bdef2-25ac-474b-b164-90366696694a" />
+
+4. Configure the Notebook Activity
+      1. **Open Pipeline Editor**: Once the notebook is added to the pipeline, the pipeline editor will open.
+
+            <img width="550" alt="image" src="https://github.com/user-attachments/assets/6b8dc57f-a228-417b-a2b6-ecb2410443cb" />
+
+      2. **Select the Notebook Activity**: Click on the `Notebook activity` that was added to the pipeline.
+      3. **Configure Parameters**: In the `Settings` tab of the `Notebook activity`, find the `Parameters` section. Add the parameters you want to pass to the notebook. Ensure the parameter names match the names defined in the notebook. For example:
+          ```json
+          {
+              "file_path": "/path/to/your/file",
+              "token": "your_token_here"
+          }
+          ```
+
+https://github.com/user-attachments/assets/67c12ca6-0392-4313-9836-63ae6300154d
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
