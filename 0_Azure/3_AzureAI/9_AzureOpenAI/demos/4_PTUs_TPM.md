@@ -5,7 +5,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2024-11-19
+Last updated: 2025-03-03
 
 ----------
 
@@ -62,7 +62,12 @@ This means with 50 PTUs, you can process 75,000 tokens per minute.
 
 > Improve accuracy of your estimate by adding multiple workloads to your PTU calculation. Each workload will be calculated and displayed as well as the aggregate total if both are running at the same time to your deployment.
 
-<img width="705" alt="image" src="https://github.com/user-attachments/assets/e59c7e24-6d9b-4ea3-855c-d4f284b53e59">
+<img width="750" alt="image" src="https://github.com/user-attachments/assets/d7599273-b4e3-478a-b2b0-b72f8647bb0e" />
+
+<img width="750" alt="image" src="https://github.com/user-attachments/assets/540a1fd2-cae1-445c-8ca8-a0123cc63d7e" />
+
+
+
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
