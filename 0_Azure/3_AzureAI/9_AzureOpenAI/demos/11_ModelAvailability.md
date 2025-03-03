@@ -21,6 +21,7 @@ Last updated: 2025-03-03
 ## Content
 
 - [Deployment Options](#deployment-options)
+- [Pricing models](#pricing-models)
 - [When Azure OpenAI Model Availability PTU is Not Available](#when-azure-openai-model-availability-ptu-is-not-available)
     - [Complete a Capacity Request](#complete-a-capacity-request)
     - [Use a Different Model](#use-a-different-model)
@@ -35,6 +36,13 @@ Last updated: 2025-03-03
 | **Data Zones**        | Data Zones allow customers to process and store their data within specific geographic boundaries, ensuring compliance with regional data residency requirements while maintaining optimal performance. | Ensures data residency compliance, optimized for regional performance. | Limited availability compared to global options. | Suitable for applications with strict data residency requirements. May require configuration of virtual networks and subnets. |
 | **Global Standard**   | Global Standard deployments leverage Azure's global infrastructure to dynamically route customer traffic to the data center with the best availability for the customer’s inference requests. | Highest initial throughput limits, best model availability, low latency. | Potential latency variation for high volume workloads. | Ideal for applications needing high availability and low latency. Uses Azure's global load balancing and routing capabilities. |
 | **Provisioned Throughput Units (PTUs)** | PTUs provide guaranteed throughput by allocating specific processing capacity for your deployment. This ensures stable performance and predictable latency. | Predictable performance, allocated processing capacity, potential cost savings for high throughput workloads. | Requires accurate forecasting of capacity needs, may involve higher upfront costs. | Best for applications with consistent and high throughput requirements. Requires careful planning and capacity management. |
+
+## Pricing models
+
+| **Pricing Model**                | **Description**                                                                 | **Ideal For**                          | **Billing**|
+|----------------------------------|---------------------------------------------------------------------------------|----------------------------------------|-----------------------------------------------------------------------------|
+| **Standard (On-Demand)**         | Charges based on the number of input and output tokens used.                     | Applications with variable or unpredictable usage. | Pay-as-you-go.|
+| **Provisioned Throughput Units (PTUs)** | Allocates specific throughput capacity for predictable costs.                   | Applications with predictable and consistent usage. | Monthly or annual basis, often at a discounted rate compared to on-demand. |
 
 ## When Azure OpenAI Model Availability PTU is Not Available
 
