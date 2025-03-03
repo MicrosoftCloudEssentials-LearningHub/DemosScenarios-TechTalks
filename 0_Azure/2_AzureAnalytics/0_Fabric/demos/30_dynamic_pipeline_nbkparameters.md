@@ -60,7 +60,7 @@ Last updated: 2025-03-03
 
         ```python
         # Parameters
-        file_path = ""
+        file_path = "abfss://<your-container-name>@<your-storage-account-name>.dfs.core.windows.net/<your-bronze-lakehousename>.Lakehouse/Tables/<table name>"
         token = ""
         ```
 
