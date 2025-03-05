@@ -5,7 +5,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-03-05
+Last updated: 2025-03-03
 
 ----------
 
@@ -41,27 +41,44 @@ https://github.com/user-attachments/assets/798a3b12-c944-459d-9e77-0112b5d82831
 > [!TIP]
 > Event options:
 
-https://github.com/user-attachments/assets/022c195f-5af0-4382-8f57-c2efe6728e54
+https://github.com/user-attachments/assets/282fae9b-e1c6-490d-bd23-9ed9bdf6105d
 
 1. **Set Up an Event**:
-   - Create a new event to monitor the location where the trigger file is created (e.g., ADLS or OneLake). In your workspace, click on `+ New Item` and create an `Activator`.
+   - Create a new event to monitor the location where the trigger file is created (e.g., ADLS or OneLake). Click on `Real-Time`:
 
-        <img width="550" alt="image" src="https://github.com/user-attachments/assets/076d6cde-2579-4f17-a426-27f7dbabbfb8" />
+        <img width="550" alt="image" src="https://github.com/user-attachments/assets/e1ce1f83-a8f6-4a3c-94dc-749e370d8079" />
 
    - Choose the appropriate event type, such as `File Created`.
+
+        <img width="550" alt="image" src="https://github.com/user-attachments/assets/3a21abd7-0ff4-428f-a3a1-5e387314c1f5" />
+
+        <img width="550" alt="image" src="https://github.com/user-attachments/assets/94e5556b-5d56-4a42-9edd-83b514e7c953" />
+
+   - Add a source:
+        
+        <img width="550" alt="image" src="https://github.com/user-attachments/assets/9709a690-f3b5-453b-b3d9-c67d4b1a9465" />
+
+        <img width="550" alt="image" src="https://github.com/user-attachments/assets/8dcadd23-4abb-47ee-82ca-f3868cb818e1" />
+
+https://github.com/user-attachments/assets/43a9654b-e8d0-44da-80b9-9f528483fa3b
 
 2. **Test Event Detection**:
    - Save the event and test it by manually running the first pipeline to ensure Activator detects the file creation.
    - Check the **Event Details** screen in Activator to confirm the event is logged.
 
----
+https://github.com/user-attachments/assets/6b21194c-54b4-49de-9294-1bf78b1e5acd
 
-### **Step 3: Define the Rule in Activator**
-1. **Create a New Rule**:
-   - In Activator, create a rule that responds to the event you just configured.
+## Define the Rule in Activator
+
+1. **Setup the Activator**:
+
+https://github.com/user-attachments/assets/7c88e080-d5aa-4920-acd6-94c2e4ae0568
+
+
+2. **Create a New Rule**:
+   - In `Activator`, create a rule that responds to the event you just configured.
    - Set the condition to match the event details (e.g., file name, path, or metadata).
-
-2. **Set the Action**:
+3. **Set the Action**:
    - Configure the rule to trigger the second pipeline.
    - Specify the pipeline name and pass any required parameters.
 
@@ -69,7 +86,8 @@ https://github.com/user-attachments/assets/022c195f-5af0-4382-8f57-c2efe6728e54
    - Save the rule and activate it.
    - Ensure the rule is enabled and ready to respond to the event.
 
----
+
+
 
 ### **Step 4: Set Up the Second Pipeline**
 1. **Create the Pipeline**:
@@ -93,15 +111,10 @@ https://github.com/user-attachments/assets/022c195f-5af0-4382-8f57-c2efe6728e54
 
 ---
 
-### **Step 6: Troubleshooting (If Needed)**
+## Troubleshooting (If Needed)
 - If the second pipeline does not trigger:
   1. Double-check the rule configuration in Activator.
-  2. Verify that the second pipeline is set to accept external triggers.
-  3. Review the logs in Activator for any errors or warnings.
-
----
-
-Would you like me to assist with any specific step, such as configuring the event or rule in Activator?
+  2. Review the logs in Activator for any errors or warnings.
 
 
 <div align="center">
