@@ -241,6 +241,10 @@ Benefits of Using Admin Monitoring Workspace:
 
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/0891e96c-d0c7-4e71-84e7-d1f91a4b6afc">
 
+> For example:
+
+https://github.com/user-attachments/assets/0f7fecfb-0b04-422b-abca-fcbe8827e2a2
+
 3. **Search and Filter**:
    - Use the keyword search box to find specific activities.
    - Apply filters to narrow down the results based on status, time period, item type, owner, and workspace location.
