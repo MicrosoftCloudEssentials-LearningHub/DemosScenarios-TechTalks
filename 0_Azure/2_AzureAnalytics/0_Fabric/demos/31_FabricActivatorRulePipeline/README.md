@@ -12,7 +12,14 @@ Last updated: 2025-03-05
 > This process shows how to set up Microsoft Fabric Activator to automate workflows by detecting file creation events in a storage system and triggering another pipeline to run.
 
 <details>
-<summary><b>List of References </b> (Click to expand)</summary>
+<summary><b>List of Content </b> (Click to expand)</summary>
+
+ - [Set Up the First Pipeline](#set-up-the-first-pipeline)
+ - [Configure Activator to Detect the Event](#configure-activator-to-detect-the-event)
+ - [Set Up the Second Pipeline](#set-up-the-second-pipeline)
+ - [Define the Rule in Activator](#define-the-rule-in-activator)
+ - [Test the Entire Workflow](#test-the-entire-workflow)
+ - [Troubleshooting If Needed](#troubleshooting-if-needed)
 
 </details>
 
@@ -34,7 +41,7 @@ https://github.com/user-attachments/assets/95206bf3-83a7-42c1-b501-4879df22ef7d
    - Ensure the file name and path are consistent and predictable (e.g., `trigger_file.json` in a specific folder).
 3. **Publish and Test**: Publish the pipeline and test it to ensure the trigger file is created successfully.
 
-https://github.com/user-attachments/assets/798a3b12-c944-459d-9e77-0112b5d82831
+   https://github.com/user-attachments/assets/798a3b12-c944-459d-9e77-0112b5d82831
 
 ## Configure Activator to Detect the Event
 
@@ -60,20 +67,28 @@ https://github.com/user-attachments/assets/282fae9b-e1c6-490d-bd23-9ed9bdf6105d
 
         <img width="550" alt="image" src="https://github.com/user-attachments/assets/8dcadd23-4abb-47ee-82ca-f3868cb818e1" />
 
-https://github.com/user-attachments/assets/43a9654b-e8d0-44da-80b9-9f528483fa3b
+   https://github.com/user-attachments/assets/43a9654b-e8d0-44da-80b9-9f528483fa3b
 
 2. **Test Event Detection**:
    - Save the event and test it by manually running the first pipeline to ensure Activator detects the file creation.
    - Check the **Event Details** screen in Activator to confirm the event is logged.
 
-https://github.com/user-attachments/assets/6b21194c-54b4-49de-9294-1bf78b1e5acd
+   https://github.com/user-attachments/assets/6b21194c-54b4-49de-9294-1bf78b1e5acd
+
+## Set Up the Second Pipeline
+
+1. **Create the Pipeline**:
+   - In Microsoft Fabric, create the second pipeline that performs the next set of tasks.
+   - Ensure it is configured to accept external triggers.
+2. **Publish the Pipeline**: Publish the second pipeline and ensure it is ready to be triggered.
+
+   https://github.com/user-attachments/assets/5b630579-a0ec-4d5b-b973-d9b4fdd8254c
 
 ## Define the Rule in Activator
 
 1. **Setup the Activator**:
 
-https://github.com/user-attachments/assets/7c88e080-d5aa-4920-acd6-94c2e4ae0568
-
+   https://github.com/user-attachments/assets/7c88e080-d5aa-4920-acd6-94c2e4ae0568
 
 2. **Create a New Rule**:
    - In `Activator`, create a rule that responds to the event you just configured.
@@ -81,35 +96,20 @@ https://github.com/user-attachments/assets/7c88e080-d5aa-4920-acd6-94c2e4ae0568
 3. **Set the Action**:
    - Configure the rule to trigger the second pipeline.
    - Specify the pipeline name and pass any required parameters.
-
 3. **Save and Activate**:
    - Save the rule and activate it.
    - Ensure the rule is enabled and ready to respond to the event.
 
+   https://github.com/user-attachments/assets/5f139eeb-bab0-4d43-9f22-bbe44503ed75
 
+## Test the Entire Workflow
 
+1. **Run the First Pipeline**: Execute the first pipeline and verify that the trigger file is created.
+2. **Monitor Activator**: Check the `Event Details` and `Rule Activation Details` in Activator to ensure the event is detected and the rule is activated.
+3. **Verify the Second Pipeline**: Confirm that the second pipeline is triggered and runs successfully.
 
-### **Step 4: Set Up the Second Pipeline**
-1. **Create the Pipeline**:
-   - In Microsoft Fabric, create the second pipeline that performs the next set of tasks.
-   - Ensure it is configured to accept external triggers.
+   https://github.com/user-attachments/assets/0a1dab70-2317-4636-b0be-aa0cb301b496
 
-2. **Publish the Pipeline**:
-   - Publish the second pipeline and ensure it is ready to be triggered.
-
----
-
-### **Step 5: Test the Entire Workflow**
-1. **Run the First Pipeline**:
-   - Execute the first pipeline and verify that the trigger file is created.
-
-2. **Monitor Activator**:
-   - Check the **Event Details** and **Rule Activation Details** in Activator to ensure the event is detected and the rule is activated.
-
-3. **Verify the Second Pipeline**:
-   - Confirm that the second pipeline is triggered and runs successfully.
-
----
 
 ## Troubleshooting (If Needed)
 - If the second pipeline does not trigger:
