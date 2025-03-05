@@ -9,7 +9,18 @@ Last updated: 2025-03-05
 
 ----------
 
-> This process shows how to set up Microsoft Fabric Activator to automate workflows by detecting file creation events in a storage system and triggering another pipeline to run.
+> This process shows how to set up Microsoft Fabric Activator to automate workflows by detecting file creation events in a storage system and triggering another pipeline to run. <br/>
+> 1. **First Pipeline**: The process starts with a pipeline that ends with a `Copy Data` activity. This activity uploads data into the `Lakehouse`. <br/>
+> 2. **Event Stream Setup**: An `Event Stream` is configured in Activator to monitor the Lakehouse for file creation or data upload events. <br/>
+> 3. **Triggering the Second Pipeline**: Once the event is detected (e.g., a file is uploaded), the Event Stream triggers the second pipeline to continue the workflow.
+
+<details>
+<summary><b>List of References </b> (Click to expand)</summary>
+
+- [Activate Fabric items](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/data-activator/activator-trigger-fabric-items)
+- [Create a rule in Fabric Activator](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/data-activator/activator-create-activators)
+
+</details>
 
 <details>
 <summary><b>List of Content </b> (Click to expand)</summary>
@@ -108,12 +119,10 @@ https://github.com/user-attachments/assets/282fae9b-e1c6-490d-bd23-9ed9bdf6105d
 
    https://github.com/user-attachments/assets/0a1dab70-2317-4636-b0be-aa0cb301b496
 
-
 ## Troubleshooting (If Needed)
 - If the second pipeline does not trigger:
   1. Double-check the rule configuration in Activator.
   2. Review the logs in Activator for any errors or warnings.
-
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
