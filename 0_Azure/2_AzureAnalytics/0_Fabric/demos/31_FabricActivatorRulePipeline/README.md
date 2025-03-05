@@ -23,7 +23,7 @@ Last updated: 2025-03-05
    - In [Microsoft Fabric](https://app.fabric.microsoft.com/), create the first pipeline that performs the required tasks.
 
 > [!NOTE]
-> This code generates random data with fields such as id, name, age, email, and created_at, organizes it into a PySpark DataFrame, and saves it to a specified Lakehouse path using the Delta format. 
+> This code generates random data with fields such as id, name, age, email, and created_at, organizes it into a PySpark DataFrame, and saves it to a specified Lakehouse path using the Delta format. Click here to see the [example script](./GeneratesRandomData.ipynb)
 
 https://github.com/user-attachments/assets/95206bf3-83a7-42c1-b501-4879df22ef7d
 
