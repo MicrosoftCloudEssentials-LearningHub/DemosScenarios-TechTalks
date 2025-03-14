@@ -323,9 +323,6 @@ Last updated: 2024-11-19
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/b52028a9-6be5-477e-8722-554dd579d76d">
 
 
-<img width="191" alt="image" src="https://github.com/user-attachments/assets/985c5186-3346-4d5d-8a98-51dd328759e4">
-
-
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
   <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
