@@ -62,6 +62,7 @@ https://github.com/user-attachments/assets/1c6efd8a-987a-46ac-a81d-6d4ae74b07fd
 
     https://github.com/user-attachments/assets/ea53958a-ca3e-4100-a527-d0e46cdb992e
 
+#### Point-in-Time Restore (PITR)
 
 ### Manual Backups
 
@@ -85,7 +86,28 @@ https://github.com/user-attachments/assets/1c6efd8a-987a-46ac-a81d-6d4ae74b07fd
 
      https://github.com/user-attachments/assets/0f3743ca-9098-45a4-82c9-e67593e4ffcc
 
+#### Exporting Data
+
 ### Backup Storage
+
+> [!IMPORTANT]
+> By default Azure Database for MySQL Flexible Server backup storage is: <br/>
+> - Locally redundant for servers with same-zone high availability (HA) or no high availability configuration.
+> - Zone redundant for servers with zone-redundant HA configuration.
+
+> [!NOTE]
+> - `Zone-redundant High Availability` to support zone redundancy is current surfaced as a `create time operation only`.
+> - `Zone-redundant High Availability server geo-redundancy` can only be `enabled/disabled at server create time`.
+
+<img width="550" alt="image" src="https://github.com/user-attachments/assets/56387aee-7f18-4ffa-984d-ecd1c959304c" />
+
+#### Backup Redundancy Option
+
+| **Backup Redundancy Option** | **Description**| **Characteristics**| **When to Use**|
+|------------------------------|------------|------------------------|----------------------------|
+| **Locally Redundant Storage (LRS)** | - Multiple copies of backups are stored in the same datacenter.<br/>- Protects against server rack and drive failures.<br/>- Provides at least `99.999999999%` (11 9's) durability of backup objects over a given year.<br/>- Default for servers with same-zone HA or no HA configuration. | - Data replication within a single data center.<br/>- High durability within the same region.<br/>- Cost-effective.<br/>- Suitable for non-critical applications. | - When cost savings are a priority.<br/>- When the risk of regional outages is acceptable.<br/>- For servers with same-zone HA or no HA configuration. |
+| **Geo-Redundant Storage (GRS)** | - Multiple copies of backups are stored within the region and replicated to its geo-paired region.<br/>- Provides at least `99.99999999999999%` (16 9's) durability of backup objects over a given year.<br/>- Enabled at server create time for geo-redundant backup storage.<br/>- Can be moved from LRS to GRS post-creation.<br/>- Supported for servers in any Azure paired regions. | - Data replication across geo-paired regions.<br/>- Highest durability and availability.<br/>- Protection against regional disasters.<br/>- Ability to restore in a different region. | - For applications requiring the highest level of durability and availability.<br/>- When protection against regional disasters is critical.<br/>- When the ability to restore in a different region is needed. |
+| **Zone-Redundant Storage (ZRS)** | - Multiple copies of backups are stored within the availability zone and replicated to another availability zone in the same region.<br/>- Provides at least `99.9999999999%` (12 9's) durability of backup objects over a given year.<br/>- Selected at server create time for zone-redundant HA.<br/>- Backup storage remains zone-redundant even if HA is disabled post-creation. | - Data replication across multiple availability zones.<br/>- Higher availability and resilience against zone-level failures.<br/>- Meets data residency requirements within a country/region. | - For mission-critical applications requiring high availability.<br/>- When protection against zone-level failures is needed.<br/>- When data residency requirements must be met. |
 
 
 ## Disaster Recovery (DR) for MySQL on Azure
