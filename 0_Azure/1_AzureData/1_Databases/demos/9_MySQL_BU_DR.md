@@ -102,6 +102,16 @@ https://github.com/user-attachments/assets/1c6efd8a-987a-46ac-a81d-6d4ae74b07fd
 
 #### Exporting Data
 
+> You can export your MySQL database using the `mysqldump` utility, which generates a logical backup of the database. This backup can be stored in Azure Blob Storage or downloaded locally for additional safety.
+
+1. **Use `mysqldump` Command**: Open a terminal and run the following command. Click [here](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-migrate-dump-restore#dump-and-restore-using-mysqldump-utility) to get more information.
+
+   ```bash
+   mysqldump -u [username] -p[password] [database_name] > [dump_file.sql]
+   ```
+
+2. **Upload to Azure Blob Storage**: Use Azure CLI or Azure Portal to upload the dump file to Azure Blob Storage.
+
 ### Backup Storage
 
 > [!IMPORTANT]
