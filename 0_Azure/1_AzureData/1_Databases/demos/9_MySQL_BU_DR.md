@@ -17,6 +17,7 @@ Last updated: 2025-03-17
 - [Back up an Azure Database for MySQL flexible server by using Azure Backup (preview)](https://learn.microsoft.com/en-us/azure/backup/backup-azure-mysql-flexible-server)
 - [Migrate your MySQL database to Azure Database for MySQL - Flexible Server using dump and restore](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-migrate-dump-restore)
 - [Trigger on-demand backup of an Azure Database for MySQL - Flexible Server instance by using the Azure portal](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/how-to-trigger-on-demand-backup)
+- [Same-zone HA architecture](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability#same-zone-ha-architecture)
 
 </details>
 
@@ -162,6 +163,18 @@ https://github.com/user-attachments/assets/1c6efd8a-987a-46ac-a81d-6d4ae74b07fd
 | **Geo-Replication**   | - **Read Replicas**: Azure Database for MySQL supports read replicas, which can be created in the same or different regions. These replicas can be promoted to standalone servers in case of a primary server failure.<br/>- **Cross-Region Replication**: This feature allows you to replicate your MySQL instance to a different Azure region, providing a robust DR solution. | - **Replication Method**: Uses MySQL's native binary log (binlog) file position-based replication.<br/>- **Creation**: Up to 10 replicas can be created.<br/>- **Promotion**: Replicas can be promoted to standalone servers.<br/>- **Cross-Region Replication Setup**: Requires primary and secondary servers in different regions. |
 | **Failover Strategies** | - **Automatic Failover**: In the event of a failure, Azure Database for MySQL can automatically failover to a read replica or a secondary instance, minimizing downtime.<br/>- **Manual Failover**: You can manually initiate a failover to a read replica or a secondary instance if needed. | - **Automatic Failover Configuration**: Enabled during server creation.<br/>- **Process**: Standby replica is activated to become the primary server.<br/>- **Manual Failover Steps**: Initiate failover via Azure Portal.<br/>- **DNS Update**: DNS record is updated to point to the new primary server. |
 | **High Availability (HA)** | - **Zone-Redundant HA**: Azure offers zone-redundant high availability, which ensures that your MySQL instance is replicated across multiple availability zones within a region. This setup provides resilience against zone-level failures.<br/>- **Regional HA**: For even greater resilience, you can configure your MySQL instance to be replicated across different regions. | - **Zone-Redundant HA Architecture**: Primary server in one availability zone, standby replica in another.`Uses zone-redundant storage (ZRS)`.<br/>- **Regional HA Architecture**: Primary server in one region, standby replica in another region. `Uses geo-redundant storage (GRS).` |
+
+## High Available (HA) Servers
+
+> Servers enabled with HA have a primary and secondary replica. The secondary replica can be in the same zone or zone redundant. You are billed for the provisioned compute and storage for both the primary and secondary replica. E.g, if you have a primary with 8 vCores of compute and 1,024 GB of provisioned storage, your secondary replica will also have 8 vCores and 1,024 GB of provisioned storage. Your zone redundant HA server will be billed for 16 vCores and 2,048 GB of storage. An extra 36 IOPS per node in addition to the configured IOPS on your servers will be added and reserved, so additional charges for the 72 IOPS per month would apply based on your Azure region for HA enabled servers. Depending on your backup storage volume, you may also be billed for backup storage. For instance, if your backup storage volume is 500 GB, you will be billed for the backup storage based on the configured redundancy option (LRS or GRS).
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d3627965-8d76-4c2a-a242-2934f02aa157" alt="image" width="750">
+</p>
+
+[From Microsoft Official documentation](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability#same-zone-ha-architecture)
+
+
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
