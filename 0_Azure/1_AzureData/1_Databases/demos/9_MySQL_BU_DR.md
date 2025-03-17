@@ -20,6 +20,19 @@ Last updated: 2025-03-17
 
 </details>
 
+## Content 
+
+- [Backup BU for MySQL on Azure](#backup-bu-for-mysql-on-azure)
+  - [Automated Backups](#automated-backups)
+      - [Change Backups Retention Policy and Redundancy](#change-backups-retention-policy-and-redundancy)
+      - [Point-in-Time Restore PITR](#point-in-time-restore-pitr)
+  - [Manual Backups](#manual-backups)
+      - [On-Demand Backups](#on-demand-backups)
+      - [Exporting Data](#exporting-data)
+  - [Backup Storage](#backup-storage)
+      - [Backup Redundancy Option](#backup-redundancy-option)
+- [Disaster Recovery DR for MySQL on Azure](#disaster-recovery-dr-for-mysql-on-azure)
+
 > [!NOTE]
 > Quick reference on how to create an Azure Database for MySQL Flexible Server:
 
