@@ -41,13 +41,43 @@ https://github.com/user-attachments/assets/1c6efd8a-987a-46ac-a81d-6d4ae74b07fd
 
 > Azure Database for MySQL automatically performs daily snapshot backups of the data files and transaction logs. These backups are stored in geo-redundant storage (GRS) to ensure high availability and durability.
 
-1. **Access the Azure Portal**: Navigate to your Azure Database for MySQL instance.
-2. **Backup Settings**: Under the `Settings` section, select `Backup and Restore`.
-3. **Configure Retention Period**: Set the retention period for automated backups, which can range from 7 to 35 days.
-4. **Encryption**: Ensure that backups are encrypted using AES 256-bit encryption for data at rest.
+1. **Access the Azure Portal**: Navigate to the Azure Portal and sign in with your credentials.
+2. **Navigate to Your MySQL Flexible Server**: In the Azure Portal, go to `All resources` and select your Azure Database for MySQL Flexible Server instance.
+3. **Compute + Storage Settings**: In the left-hand menu, under `Settings`, select `Compute + storage`.
+4. **Backup Retention**:
+   - In the `Backups` section, you will find the slider labeled `Backup retention period in days`.
+   - Use the slider to set the retention period for automated backups, which can range from 7 to 35 days.
+
+   https://github.com/user-attachments/assets/769fa81a-450f-4cd9-a4d9-8f4f227c01c9
+
+5. **Backup Redundancy**:
+   - Below the retention slider, you will see options for backup redundancy:
+     - **Locally-redundant**: Keeps multiple copies of your data within a single region.
+     - **Geo-redundant**: Replicates data to a secondary region to ensure durability and availability.
+     - **Read-access geo-redundant**: Provides read access to the replicated data in the secondary region.
+   - Select the desired redundancy option based on your requirements.
+
+    https://github.com/user-attachments/assets/ea53958a-ca3e-4100-a527-d0e46cdb992e
 
 
 ### Manual Backups
+
+> `Manual Backups` provide additional control over backup operations, allowing you to create backups on demand.
+
+#### On-Demand Backups
+
+> You can create manual backups at any time. These backups are stored in geo-redundant storage (GRS) and can be used to restore your database to the state at the time of the backup.
+
+1. **Access the Azure Portal**: Navigate to your Azure Database for MySQL instance.
+2. **Backup Settings**: Under the `Settings` section, select `Backup and Restore`.
+
+     <img width="550" alt="image" src="https://github.com/user-attachments/assets/e4aab7b9-4d16-4a5c-8817-6ccab7ec555e" />
+
+3. **Backup Now**: Click on `Backup` and provide a custom name for the backup.
+
+     <img width="550" alt="image" src="https://github.com/user-attachments/assets/756a6512-267e-47a4-a2c5-4b182f4f28bd" />
+
+     https://github.com/user-attachments/assets/0f3743ca-9098-45a4-82c9-e67593e4ffcc
 
 ### Backup Storage
 
