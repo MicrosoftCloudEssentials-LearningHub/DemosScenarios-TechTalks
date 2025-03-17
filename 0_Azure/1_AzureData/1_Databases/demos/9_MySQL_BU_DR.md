@@ -169,13 +169,11 @@ https://github.com/user-attachments/assets/1c6efd8a-987a-46ac-a81d-6d4ae74b07fd
 
 > Servers enabled with HA have a primary and secondary replica. The secondary replica can be in the same zone or zone redundant. You are billed for the provisioned compute and storage for both the primary and secondary replica. E.g, if you have a primary with 8 vCores of compute and 1,024 GB of provisioned storage, your secondary replica will also have 8 vCores and 1,024 GB of provisioned storage. Your zone redundant HA server will be billed for 16 vCores and 2,048 GB of storage. An extra 36 IOPS per node in addition to the configured IOPS on your servers will be added and reserved, so additional charges for the 72 IOPS per month would apply based on your Azure region for HA enabled servers. Depending on your backup storage volume, you may also be billed for backup storage. For instance, if your backup storage volume is 500 GB, you will be billed for the backup storage based on the configured redundancy option (LRS or GRS).
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/d3627965-8d76-4c2a-a242-2934f02aa157" alt="image" width="750">
-</p>
+| Zone-redundant HA architecture | Same-zone HA architecture |
+| ---- | ---- | 
+| ![image](https://github.com/user-attachments/assets/9ae8fa67-be98-4b27-a835-288eae4096f4) | ![image](https://github.com/user-attachments/assets/f037651c-b29a-4fad-942a-ecf95f8ec3d5) |
 
-[From Microsoft Official documentation](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability#same-zone-ha-architecture)
-
-
+[From Microsoft Official documentation](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-high-availability)
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
