@@ -27,6 +27,9 @@ https://github.com/user-attachments/assets/1c6efd8a-987a-46ac-a81d-6d4ae74b07fd
 
 ## Backup (BU) for MySQL on Azure
 
+> [!IMPORTANT]
+> The backup process includes `automated daily snapshot backups and frequent transaction log backups`. The `first snapshot backup is scheduled immediately after the server is created`, and `subsequent snapshots are taken daily. Transaction log backups occur every five minutes, capturing all changes made to the database since the last transaction log backup`. If a scheduled backup fails, the backup service retries every 20 minutes until a successful backup is taken. These backup failures might occur due to heavy transactional production loads on the server instance. In cases of high transaction loads, the backup service may perform multiple backups per day to ensure reliable and quicker restoration using these backups. For MySQL 5.7 servers, long-running or large transactions can prevent global instance-level lock acquisition, which is required for successful daily backups.
+
 | **Category**          | **Description**                                                                                                                                                                                                                       |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Automated Backups** | - **Daily Backups**: Azure Database for MySQL automatically performs daily backups of your databases. These backups are stored in geo-redundant storage (GRS) to ensure high availability.<br/>- **Retention Period**: Configure the retention period for automated backups, typically ranging from 7 to 35 days.<br/>- **Point-in-Time Restore (PITR)**: Restore your database to any point within the retention period, providing flexibility in case of accidental data loss or corruption. |
@@ -37,7 +40,7 @@ https://github.com/user-attachments/assets/1c6efd8a-987a-46ac-a81d-6d4ae74b07fd
 
 > `Automated Backups` for Azure Database for MySQL ensure that your data is regularly backed up without manual intervention.
 
-#### Daily Backups
+#### Change Backups Retention Policy and Redundancy
 
 > Azure Database for MySQL automatically performs daily snapshot backups of the data files and transaction logs. These backups are stored in geo-redundant storage (GRS) to ensure high availability and durability.
 
@@ -63,6 +66,9 @@ https://github.com/user-attachments/assets/1c6efd8a-987a-46ac-a81d-6d4ae74b07fd
 ### Manual Backups
 
 > `Manual Backups` provide additional control over backup operations, allowing you to create backups on demand.
+
+> [!IMPORTANT]
+> These backup files cannot be exported. The backups can only be used for restore operations in Azure Database for MySQL Flexible Server. You can also use [mysqldump](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-migrate-dump-restore#dump-and-restore-using-mysqldump-utility) from a MySQL client to copy a database.
 
 #### On-Demand Backups
 
