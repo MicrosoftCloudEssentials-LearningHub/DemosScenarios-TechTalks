@@ -36,15 +36,15 @@ Last updated: 2025-03-17
 
 ## Overview
 
-> [!NOTE]
-> Quick reference on how to create an Azure Database for MySQL Flexible Server:
-
-https://github.com/user-attachments/assets/1c6efd8a-987a-46ac-a81d-6d4ae74b07fd
-
 | **Feature** | **Description**| **Limit**| **Use Cases**|
 |---------|---------------|--------| -------|
 | **Read Replicas**    | Read replicas are copies of the primary MySQL server that are used to offload read operations and improve read scalability. They can be created in the same or different regions and can be promoted to standalone servers in case of a primary server failure. | Up to **10** read replicas can be created per primary server.| - **Scaling Read-Intensive Workloads**: Offload read operations to replicas to improve performance.<br/>- **Disaster Recovery**: Promote replicas to standalone servers in case of primary server failure.<br/>- **Global Distribution**: Improve data access speed by placing replicas closer to users in different regions. |
 | **Manual Backups**   | Manual backups are on-demand backups that you can create at any time. These backups capture the current state of the database and are stored in geo-redundant storage (GRS) or locally redundant storage (LRS). | Up to **50** on-demand manual backups can be created per server.| - **Data Protection**: Ensure data protection by creating backups before major changes or updates.<br/>- **Quick Recovery**: Use manual backups as restore points to quickly recover from data corruption or accidental deletions.<br/>- **Compliance**: Maintain backups for compliance and auditing purposes. |
+
+> [!NOTE]
+> Quick reference on how to create an Azure Database for MySQL Flexible Server:
+
+https://github.com/user-attachments/assets/1c6efd8a-987a-46ac-a81d-6d4ae74b07fd
 
 ## Backup (BU) for MySQL on Azure
 
