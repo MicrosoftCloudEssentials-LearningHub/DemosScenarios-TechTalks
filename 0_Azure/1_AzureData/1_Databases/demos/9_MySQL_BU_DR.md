@@ -34,6 +34,7 @@ Last updated: 2025-03-17
   - [Backup Storage](#backup-storage)
       - [Backup Redundancy Option](#backup-redundancy-option)
 - [Disaster Recovery DR for MySQL on Azure](#disaster-recovery-dr-for-mysql-on-azure)
+- [High Available HA Servers](#high-available-ha-servers)
 
 ## Overview
 
