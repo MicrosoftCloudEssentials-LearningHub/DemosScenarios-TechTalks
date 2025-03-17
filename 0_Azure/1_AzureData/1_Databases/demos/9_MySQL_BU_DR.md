@@ -54,11 +54,9 @@ https://github.com/user-attachments/assets/1c6efd8a-987a-46ac-a81d-6d4ae74b07fd
    https://github.com/user-attachments/assets/769fa81a-450f-4cd9-a4d9-8f4f227c01c9
 
 5. **Backup Redundancy**:
-   - Below the retention slider, you will see options for backup redundancy:
+   - Below the retention slider, you will see options for backup redundancy, select the desired redundancy option based on your requirements:
      - **Locally-redundant**: Keeps multiple copies of your data within a single region.
      - **Geo-redundant**: Replicates data to a secondary region to ensure durability and availability.
-     - **Read-access geo-redundant**: Provides read access to the replicated data in the secondary region.
-   - Select the desired redundancy option based on your requirements.
 
     https://github.com/user-attachments/assets/ea53958a-ca3e-4100-a527-d0e46cdb992e
 
