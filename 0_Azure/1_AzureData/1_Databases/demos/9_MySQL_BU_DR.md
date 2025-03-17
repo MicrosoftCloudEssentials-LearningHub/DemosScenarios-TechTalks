@@ -64,6 +64,20 @@ https://github.com/user-attachments/assets/1c6efd8a-987a-46ac-a81d-6d4ae74b07fd
 
 #### Point-in-Time Restore (PITR)
 
+> This feature allows you to restore your database to any point within the retention period, providing flexibility in case of accidental data loss or corruption.
+
+> [!NOTE]
+> When you initiate a PITR, you specify the exact point in time to which you want to restore the database. <br/> 
+> - The restore process uses the daily snapshots and transaction log backups to reconstruct the database state at the specified point in time.
+> - The restore operation `creates a new MySQL Flexible Server instance with the restored data`. You need to provide a new server name for the restored instance during the restore process
+
+1. **Access the Azure Portal**: Navigate to your Azure Database for MySQL instance.
+2. **Restore**: Under the `Overview` section. Choose the `Restore` option and specify the point-in-time to which you want to restore your database.
+
+      <img width="550" alt="image" src="https://github.com/user-attachments/assets/d3ddc0e7-331d-44ec-b9e1-a3a38e54c325" />
+
+      https://github.com/user-attachments/assets/0eeb96cf-07c6-40f1-9921-64f2c775d228
+
 ### Manual Backups
 
 > `Manual Backups` provide additional control over backup operations, allowing you to create backups on demand.
