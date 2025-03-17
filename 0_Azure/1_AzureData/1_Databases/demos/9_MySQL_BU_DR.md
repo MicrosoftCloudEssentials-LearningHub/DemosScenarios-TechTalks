@@ -48,6 +48,9 @@ https://github.com/user-attachments/assets/1c6efd8a-987a-46ac-a81d-6d4ae74b07fd
 
 ## Backup (BU) for MySQL on Azure
 
+- `Automated Daily Snapshot Backups` -> Geo-Redundant Storage (GRS)
+- `Manual Backups` ->  Locally Redundant Storage (LRS) or Geo-Redundant Storage (GRS)
+
 > [!IMPORTANT]
 > The backup process includes `automated daily snapshot backups and frequent transaction log backups`. The `first snapshot backup is scheduled immediately after the server is created`, and `subsequent snapshots are taken daily. Transaction log backups occur every five minutes, capturing all changes made to the database since the last transaction log backup`. If a scheduled backup fails, the backup service retries every 20 minutes until a successful backup is taken. These backup failures might occur due to heavy transactional production loads on the server instance. In cases of high transaction loads, the backup service may perform multiple backups per day to ensure reliable and quicker restoration using these backups. For MySQL 5.7 servers, long-running or large transactions can prevent global instance-level lock acquisition, which is required for successful daily backups.
 
