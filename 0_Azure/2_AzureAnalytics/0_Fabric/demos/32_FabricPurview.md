@@ -19,6 +19,13 @@ Last updated: 2025-03-21
 
 </details>
 
+## Content
+
+- [Purview + Fabric](#purview--fabric)
+- [Microsoft Purview Pricing: Fabric focused](#microsoft-purview-pricing-fabric-focused)
+- [Cost Optimization Strategies](#cost-optimization-strategies)
+
+
 ## Purview + Fabric 
 
 > Microsoft Purview and Microsoft Fabric are integrated to provide a comprehensive `data governance and analytics platform`.
