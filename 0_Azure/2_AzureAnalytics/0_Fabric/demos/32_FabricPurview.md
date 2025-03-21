@@ -10,6 +10,15 @@ Last updated: 2025-03-21
 
 ----------
 
+<details>
+<summary><b>List of References </b> (Click to expand)</summary>
+
+- [Use Microsoft Purview to govern Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/governance/microsoft-purview-fabric)
+- [The Microsoft Purview hub for data owners (preview)](https://learn.microsoft.com/en-us/fabric/governance/use-microsoft-purview-hub-data-owners)
+- [Govern data in Microsoft Fabric with Purview](https://learn.microsoft.com/en-us/training/modules/fabric-data-governance-purview/)
+
+</details>
+
 ## Purview + Fabric 
 
 > Microsoft Purview and Microsoft Fabric are integrated to provide a comprehensive `data governance and analytics platform`.
