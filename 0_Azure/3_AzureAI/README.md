@@ -10,10 +10,8 @@ Last updated: 2024-11-19
 
 ----------
 
-## Wiki 
-
 <details>
-<summary><b>Table of Contents</b> (Click to expand)</summary>
+<summary><b>List of References</b> (Click to expand)</summary>
   
 - [Build Powerful RAG Apps Without Code Using LangFlow and Azure OpenAI](https://techcommunity.microsoft.com/t5/educator-developer-blog/build-powerful-rag-apps-without-code-using-langflow-and-azure/ba-p/4193542)
  
