@@ -10,7 +10,9 @@ Last updated: 2024-11-19
 
 ----------
 
-## Wiki 
+
+<details>
+<summary><b>List of References </b> (Click to expand)</summary>
 
 - [What's new in Microsoft Purview](https://learn.microsoft.com/en-us/purview/whats-new)
 - [Pricing - Microsoft Purview](https://azure.microsoft.com/en-us/pricing/details/purview/)
@@ -21,6 +23,22 @@ Last updated: 2024-11-19
 - [Set up authentication using service principal](https://learn.microsoft.com/en-us/purview/tutorial-using-rest-apis#set-up-authentication-using-service-principal)
 - [How to get lineage from Airflow into Microsoft Purview (Preview)](https://learn.microsoft.com/en-us/purview/how-to-lineage-airflow)
 - [Microsoft Purview Data Catalog lineage user guide](https://learn.microsoft.com/en-us/purview/catalog-lineage-user-guide)
+
+</details>
+
+## Content 
+
+- [Free vs Enterprise](#free-vs-enterprise)
+- [Overview](#overview)
+- [Microsoft Purview Pricing Model](#microsoft-purview-pricing-model)
+    - [Key Differences](#key-differences)
+- [How Microsoft Purview can be used](#how-microsoft-purview-can-be-used)
+    - [Scenario 1: Data Governance for a Financial Institution](#scenario-1-data-governance-for-a-financial-institution)
+    - [Scenario 2: Data Protection for a Healthcare Provider](#scenario-2-data-protection-for-a-healthcare-provider)
+    - [Scenario 3: Data Analytics for an E-commerce Company](#scenario-3-data-analytics-for-an-e-commerce-company)
+    - [Scenario 4: Compliance Management for a Global Enterprise](#scenario-4-compliance-management-for-a-global-enterprise)
+- [Examples of use cases](#examples-of-use-cases)
+- [Collect metadata information from Apache Airflow](#collect-metadata-information-from-apache-airflow)
 
 ## Free vs Enterprise
 
