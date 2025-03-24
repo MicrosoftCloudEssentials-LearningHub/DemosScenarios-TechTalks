@@ -29,6 +29,22 @@ Last updated: 2024-11-19
 
 </details> 
 
+
+## Content
+
+- [Overview](#overview)
+  - [Benefits of Microsoft Purview](#benefits-of-microsoft-purview)
+  - [Key Features of Microsoft Purview](#key-features-of-microsoft-purview)
+- [Azure Cloud Services related with Microsoft Purview](#azure-cloud-services-related-with-microsoft-purview)
+- [Demo Ideas](#demo-ideas)
+- [Setting Up Foundational Elements in Azure Purview](#setting-up-foundational-elements-in-azure-purview)
+  - [Data Cataloging](#data-cataloging)
+  - [Handling Data Subject Requests](#handling-data-subject-requests)
+  - [Additional Best Practices](#additional-best-practices)
+- [Query an SQL database with Azure Purview](#query-an-sql-database-with-azure-purview)
+- [How to remove data from Azure Purview](#how-to-remove-data-from-azure-purview)
+- [Restoring deleted information in Azure Purview](#restoring-deleted-information-in-azure-purview)
+
 ## Overview 
 
 > Microsoft Purview is a comprehensive set of solutions designed to help organizations govern, protect, and manage their data across their entire data estate.
