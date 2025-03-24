@@ -81,6 +81,7 @@ https://github.com/user-attachments/assets/eb3d57d3-5bef-43f2-b069-1d25c3ef047b
 
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/944945f0-ad0c-49ea-b157-47613c48590b" />
 
+    https://github.com/user-attachments/assets/0a38b331-33e8-4e15-96be-3edbe79119f6
 
 ## Monitor and Manage Policies
 
