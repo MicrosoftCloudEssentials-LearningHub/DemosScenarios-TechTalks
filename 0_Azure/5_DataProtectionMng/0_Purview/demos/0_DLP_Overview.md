@@ -1,4 +1,4 @@
-# Data Loss Prevention (DLP) in Azure Purview
+# Data Loss Prevention (DLP) in Azure Purview - Overview
 
 Costa Rica
 
