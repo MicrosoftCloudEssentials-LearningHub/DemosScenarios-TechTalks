@@ -14,7 +14,9 @@ Last updated: 2024-11-19
 > `Microsoft Purview` offers a broader range of `data governance and protection capabilities`, focusing on securing and managing data across the entire organization, including compliance and risk management.
 > `Microsoft Priva integrates seamlessly with Microsoft Purview`, enhancing the overall data governance and compliance capabilities. `Together, they provide a comprehensive solution for managing data privacy and compliance` across your organization.
 
-## Wiki 
+
+<details>
+<summary><b>List of References </b> (Click to expand)</summary>
 
 - [What's new in Microsoft Purview](https://learn.microsoft.com/en-us/purview/whats-new)
 - [What is the Microsoft Purview Data Catalog?](https://learn.microsoft.com/en-us/purview/what-is-data-catalog)
@@ -24,7 +26,9 @@ Last updated: 2024-11-19
 - [Discover and govern Azure SQL Database](https://learn.microsoft.com/en-us/purview/register-scan-azure-sql-database)
 - [Disaster recovery for Microsoft Purview](https://learn.microsoft.com/en-us/purview/disaster-recovery)
 - [Query SQL Database with query editor in the Azure portal](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-portal?view=azuresql)
-  
+
+</details> 
+
 ## Overview 
 
 > Microsoft Purview is a comprehensive set of solutions designed to help organizations govern, protect, and manage their data across their entire data estate.
@@ -57,17 +61,10 @@ Last updated: 2024-11-19
 
 | **Category**           | **Feature**                        | **Description**                                                                 |
 |------------------------|------------------------------------|---------------------------------------------------------------------------------|
-| **Data Security**      | Data Loss Prevention               | Protects sensitive information from risky and unauthorized access.              |
-|                        | Information Protection             | Identifies, classifies, and protects sensitive data.                            |
-|                        | Insider Risk Management            | Detects and acts on critical risks like data theft and leaks.                   |
-|                        | Privileged Access Management       | Manages and secures privileged access to sensitive data.                        |
-| **Data Governance**    | Data Map                           | Registers and scans data sources to map the data estate and identify sensitive data. |
-|                        | Data Catalog                       | Curates data sources, manages data integrity, and secures sensitive data.       |
-|                        | Unified Data Governance            | Manages data services across on-premises, multicloud, and SaaS environments.    |
-| **Risk and Compliance**| Audit                              | Supports forensic investigations and meets regulatory requirements.             |
-|                        | Communication Compliance           | Detects sensitive or inappropriate content in communication channels.           |
-|                        | Compliance Manager                 | Translates regulatory requirements into specific improvement actions.           |
-|                        | eDiscovery                         | Manages data for internal or legal investigations.                              |
+| **Data Security**      | - Data Loss Prevention <br/> - Information Protection <br/> - Insider Risk Management <br/> - Privileged Access Management | - Protects sensitive information from risky and unauthorized access.<br/>- Identifies, classifies, and protects sensitive data.<br/>- Detects and acts on critical risks like data theft and leaks.<br/>- Manages and secures privileged access to sensitive data. |
+| **Data Governance**    | - Data Map <br/> - Data Catalog <br/> - Unified Data Governance | - Registers and scans data sources to map the data estate and identify sensitive data.<br/>- Curates data sources, manages data integrity, and secures sensitive data.<br/>- Manages data services across on-premises, multicloud, and SaaS environments. |
+| **Risk and Compliance**| - Audit <br/> - Communication Compliance <br/> - Compliance Manager <br/> - eDiscovery | - Supports forensic investigations and meets regulatory requirements.<br/>- Detects sensitive or inappropriate content in communication channels.<br/>- Translates regulatory requirements into specific improvement actions.<br/>- Manages data for internal or legal investigations. |
+
 
 ## Azure Cloud Services related with Microsoft Purview 
 
