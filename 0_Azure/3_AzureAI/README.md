@@ -21,7 +21,6 @@ Last updated: 2024-11-19
 
 - [Azure Artifitial Intelligence + ML Overview](#azure-artifitial-intelligence--ml-overview)
     - [Content](#content)
-    - [Wiki](#wiki)
     - [Azure AI Studio](./AIStudio/)
     - [Azure Machine Learning](./AMachineLearning/)
     - [AI Use Cases examples](./14_AIUseCases/)
