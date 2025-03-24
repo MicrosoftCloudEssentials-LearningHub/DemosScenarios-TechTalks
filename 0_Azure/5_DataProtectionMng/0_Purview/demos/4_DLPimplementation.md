@@ -10,6 +10,14 @@ Last updated: 2025-03-24
 
 ----------
 
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
+  
+- [Learn about the new Microsoft Purview portal](https://learn.microsoft.com/en-us/purview/purview-portal)
+- [Microsoft Purview compliance portal](https://learn.microsoft.com/en-us/purview/purview-compliance-portal)
+
+</details>
+
 ## Access the Microsoft Purview Compliance Portal
 
 - Go to the [Microsoft Purview portal](https://purview.microsoft.com/).
@@ -30,10 +38,15 @@ Last updated: 2025-03-24
 
 - Choose a template or create a custom policy based on your organization's needs.
 
+    <img width="550" alt="image" src="https://github.com/user-attachments/assets/b4128763-851e-46ee-8a74-fdf189fa8762">
+
+
 ## Define Policy Scope
 
 - Select the locations where the policy will apply (e.g., Exchange email, SharePoint sites, OneDrive accounts, Teams chat).
 - Specify the users or groups the policy will target.
+
+    <img width="550" alt="image" src="https://github.com/user-attachments/assets/bdc69781-9f9b-464b-b8dd-b15198c11a25" />
 
 ## Configure Policy Settings
 
@@ -41,16 +54,34 @@ Last updated: 2025-03-24
 - **Conditions**: Set conditions for when the policy should trigger (e.g., when sensitive information is shared externally).
 - **Actions**: Define actions to take when a policy violation occurs (e.g., block sharing, send alerts, notify users).
 
+    <img width="550" alt="image" src="https://github.com/user-attachments/assets/bab1c3cf-2bc0-4646-aa8f-92805d68e30f" />
+
+        
+  https://github.com/user-attachments/assets/a9165b97-f197-4f37-877e-9776015a3297
+
+
 ## Set Up Alerts and Notifications
 
 - Configure alerts to notify administrators and users when a policy violation occurs.
 - Customize notification messages to inform users about the policy and the actions taken.
+
+    <img width="550" alt="image" src="https://github.com/user-attachments/assets/a827175b-8520-4b01-8d26-e95e599850db">
+    
+    <img width="550" alt="image" src="https://github.com/user-attachments/assets/5b44727d-013a-45f6-9e57-91bd4294cf0e" />
+
+## Customize access and override settings
+
+https://github.com/user-attachments/assets/eb3d57d3-5bef-43f2-b069-1d25c3ef047b
 
 ## Test and Deploy the Policy
 
 - **Test Mode**: Initially deploy the policy in test mode to monitor its impact without enforcing actions.
 - **Review Results**: Analyze the test results and adjust the policy settings as needed.
 - **Enforce Policy**: Once satisfied with the configuration, switch the policy to enforce mode.
+
+    <img width="550" alt="image" src="https://github.com/user-attachments/assets/944945f0-ad0c-49ea-b157-47613c48590b" />
+
+     https://github.com/user-attachments/assets/4c3e0ecd-dc35-4fd8-84ce-8d5be9116192
 
 ## Monitor and Manage Policies
 
