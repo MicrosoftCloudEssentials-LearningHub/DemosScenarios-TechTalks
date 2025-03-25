@@ -21,7 +21,8 @@ Last updated: 2025-03-25
 - [Compare Azure Event Hubs tiers](https://learn.microsoft.com/en-us/azure/event-hubs/compare-tiers)
 - [Microsoft Defender Advanced Hunting Add-on for Splunk](https://splunkbase.splunk.com/app/5518)
 - [Monitor Azure Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/monitor-event-hubs?tabs=AzureDiagnostics%2CAzureDiagnosticsforRuntimeAudit%2CAzureDiagnosticsforAppMetrics)
-
+- [Pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?msockid=38ec3806873362243e122ce086486339)
+  
 </details>
 
 > [!TIP]
