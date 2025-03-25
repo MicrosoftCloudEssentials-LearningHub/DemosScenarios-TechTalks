@@ -11,7 +11,7 @@ Last updated: 2024-11-19
 ----------
 
 <details>
-<summary><b>Table of Contents</b> (Click to expand)</summary>
+<summary><b>List of References</b> (Click to expand)</summary>
 
 - [What Is MDR? Managed Detection and Response](https://www.microsoft.com/en-us/security/business/security-101/what-is-mdr-managed-detection-response)
 - [What is Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-about)
