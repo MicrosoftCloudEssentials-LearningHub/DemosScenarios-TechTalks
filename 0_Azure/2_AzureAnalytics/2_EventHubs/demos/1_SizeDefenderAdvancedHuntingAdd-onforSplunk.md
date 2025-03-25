@@ -104,7 +104,7 @@ Last updated: 2025-03-25
   </tr>
   <tr>
     <td><strong>Standard</strong></td>
-    <td>Provides higher throughput and additional features such as Capture, which allows you to automatically capture streaming data. Option available for `Auto-Inflate: automatically scales the number of Throughput Units assigned to your Standard Tier Event Hubs Namespace when your traffic exceeds the capacity of the Throughput Units assigned to it. You can specify a limit to which the Namespace will automatically scale.`</td>
+    <td>Provides higher throughput and additional features such as Capture, which allows you to automatically capture streaming data. Option available for Auto-Inflate: automatically scales the number of Throughput Units assigned to your Standard Tier Event Hubs Namespace when your traffic exceeds the capacity of the Throughput Units assigned to it. You can specify a limit to which the Namespace will automatically scale.</td>
   </tr>
   <tr>
     <td><strong>Premium</strong></td>
