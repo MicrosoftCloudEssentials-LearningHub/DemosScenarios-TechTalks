@@ -288,7 +288,9 @@ index=* sourcetype="defender:advancedhunting:email"
 
 ## Example Calculation
 
-> Assume we have 200 endpoints and 50 servers. Each endpoint sends 0.25 MB of data per second and generates 2 events per second. Each server sends 1 MB of data per second and generates 5 events per second.
+> Assume we have 200 endpoints and 50 servers. <br/>
+> - Each endpoint sends 0.25 MB of data per second and generates 2 events per second.
+> - Each server sends 1 MB of data per second and generates 5 events per second.
 
 1. **Total Ingress Data Rate**:
 
