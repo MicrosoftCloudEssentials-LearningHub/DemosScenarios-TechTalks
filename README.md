@@ -12,11 +12,6 @@ Last updated: 2025-01-16
 > [!IMPORTANT]
 > This repository showcases demonstrations and scenarios using Microsoft Cloud technologies. Please note that `these demos are intended as a guide and are based on my personal experiences. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly`: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
 
-<div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
-</div>
-
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
 
@@ -37,10 +32,11 @@ Last updated: 2025-01-16
     - [Power Bi](./3_PowerPlatform/1_PowerBI/) <br/>
 </details>
 
+<div align="center">
+  <img width="200" alt="image" src="https://github.com/brown9804/MSCloudEssentials_LPath/assets/24630902/9bb7da30-96d0-4bf2-aa58-d53c46b20c90" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
 
-<img width="200" alt="image" src="https://github.com/brown9804/MSCloudEssentials_LPath/assets/24630902/9bb7da30-96d0-4bf2-aa58-d53c46b20c90">
-
-This repository contains the basic knowledge that I believe is required to work within Microsoft Cloud Technologies. The Microsoft Cloud ecosystem encompasses a range of products and solutions designed to work together to provide comprehensive cloud services. Here are the key components:
+> This repository contains the basic knowledge that I believe is required to work within Microsoft Cloud Technologies. The Microsoft Cloud ecosystem encompasses a range of products and solutions designed to work together to provide comprehensive cloud services. Here are the key components:
 
 | Service Category | Services |
 | ------- | ------- | 
@@ -50,3 +46,8 @@ This repository contains the basic knowledge that I believe is required to work 
 | **Power Platform**: A group of applications, including Power BI, Power Apps, Power Automate, and Power Virtual Agents, that provide analytics, app development, and automation capabilities. | - Power BI: Business analytics tool <br/> - Power Apps: Suite for custom app development <br/> - Power Automate: Service for automating workflow across apps and services <br/> - Power Virtual Agents: Tool for creating conversational agents. |
 | **Microsoft Security**: A comprehensive set of security solutions integrated across the Microsoft Cloud to protect data, devices, identities, and applications. | - Microsoft Defender: Advanced threat protection <br/> - Azure Security Center: Unified security management system <br/> - Azure Information Protection: Cloud-based solution that helps protect documents and emails <br/> - Microsoft Cloud App Security: Multimode Cloud Access Security Broker (CASB). |
 | **Industry Solutions**: Tailored cloud services designed to meet the specific needs of various industries. | - Microsoft Cloud for Healthcare: Enhances patient engagement, empowers health team collaboration, and improves clinical and operational insights <br/> - Microsoft Cloud for Retail: Delivers a personalized, seamless, and differentiated customer experience <br/> - Microsoft Cloud for Financial Services: Accelerates innovation in banking, capital markets, and insurance <br/> - Microsoft Cloud for Manufacturing: Delivers capabilities that support the core processes and requirements of the industry. |
+
+<div align="center">
+  <h3 style="color: #4CAF50;">Total Visitors</h3>
+  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
