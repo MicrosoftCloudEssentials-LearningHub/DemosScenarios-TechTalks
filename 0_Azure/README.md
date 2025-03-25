@@ -12,7 +12,7 @@ Last updated: 2025-01-02
 ## Wiki 
 
 <details>
-<summary><b>Table of Contents</b> (Click to expand)</summary>
+<summary><b>List of References</b> (Click to expand)</summary>
 
 - [Choose an Azure compute service](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree)
 - Postman - [How to Install and use for API Testing](https://www.guru99.com/postman-tutorial.html)
