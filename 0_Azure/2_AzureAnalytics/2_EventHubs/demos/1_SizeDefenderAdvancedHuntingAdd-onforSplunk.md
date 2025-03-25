@@ -169,7 +169,7 @@ $$
 
 3. **Calculate Required TUs**:
 
-   - Required TUs for MB/s:
+> Required TUs for MB/s (Ingress Data):
 
 $$
 \text{Required TUs for MB/s} = \frac{\text{Total Ingress MB/s}}{1 \text{ MB/s per TU}}
@@ -179,7 +179,7 @@ $$
 \text{Required TUs for MB/s} = \frac{50 \text{ MB/s}}{1 \text{ MB/s per TU}} = 50 \text{ TUs}
 $$
 
-   - Required TUs for Events/second:
+> Required TUs for Events/second:
 
 $$
 \text{Required TUs for Events/second} = \frac{\text{Total Events/second}}{1000 \text{ events/second per TU}}
@@ -209,7 +209,7 @@ $$
 ## Installation Steps
 
 | **Step** | **Action** | **Details** | **Example/Command** |
-|----------|-------------|-------------|---------------------|
+|------------------------------------------------|-------------|-------------|---------------------|
 | **1. Configure Microsoft Defender for Endpoint** | Stream Advanced Hunting events to an Azure Event Hub | - Create an Azure Event Hub namespace and Event Hub. <br> - Configure Microsoft Defender for Endpoint to stream events to the Event Hub. <br> - Ensure necessary permissions are granted. | - Azure Portal: Create Event Hub <br> - Defender Security Center: Enable Streaming API |
 | **2. Install the Add-on** | Install the Add-on on your Search Heads, Indexers, and Heavy Forwarders | - Download the Microsoft Defender Advanced Hunting Add-on for Splunk from Splunkbase. <br> - Install the add-on on all relevant Splunk components (Search Heads, Indexers, Heavy Forwarders). <br> - Configure the add-on as per your environment requirements. | - Splunkbase: Download Add-on <br> - Splunk UI: Apps > Manage Apps > Install app from file |
 | **3. Set up the Input** | Set up the Input in the Splunk Add-on for Microsoft Cloud Services | - Navigate to the Splunk Add-on for Microsoft Cloud Services configuration page. <br> - Add a new input for Azure Event Hub. <br> - Set the Sourcetype to `mscs:azure:eventhub:defender:advancedhunting`. <br> - Provide the connection string for the Azure Event Hub. <br> - Configure other parameters such as index, interval, and format. | - Splunk UI: Settings > Data Inputs > Azure Event Hub <br> - Sourcetype: `mscs:azure:eventhub:defender:advancedhunting` |
