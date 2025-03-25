@@ -35,8 +35,8 @@ Last updated: 2025-03-25
     - [Step 1: Determine Ingress Data Rate](#step-1-determine-ingress-data-rate)
     - [Step 2: Calculate Throughput Units TUs](#step-2-calculate-throughput-units-tus)
     - [Step 3: Monitor and Adjust](#step-3-monitor-and-adjust)
-    - [Example Calculation](#example-calculation)
 - [Installation Steps](#installation-steps)
+- [Example Calculation](#example-calculation)
 
 ## Overview 
 
@@ -143,7 +143,147 @@ $$
 3. **Adjust TUs** as needed based on real-time data.
 4. **Auto-Inflate Feature**: Start with a lower number of TUs and set an upper threshold for automatic scaling.
 
-### Example Calculation
+## Installation Steps
+
+<details>
+<summary><b>Step 1: Configure Microsoft Defender for Endpoint</b></summary>
+
+**Action:** Stream Advanced Hunting events to an Azure Event Hub
+
+**Details:**
+- **Create an Azure Event Hub namespace and Event Hub:**
+  - Navigate to the Azure Portal.
+  - Select `Create a resource` and search for `Event Hubs`.
+  - Create a new Event Hub namespace and within it, create an Event Hub.
+  - Note down the connection string for the Event Hub.
+
+- **Configure Microsoft Defender for Endpoint to stream events to the Event Hub:**
+  - Access the Microsoft Defender Security Center.
+  - Go to `Settings` > `Advanced features`.
+  - Enable the `Streaming API` and configure it to stream events to the Azure Event Hub using the connection string.
+
+- **Ensure necessary permissions are granted:**
+  - Ensure that the Azure Event Hub has the necessary permissions to receive data from Microsoft Defender for Endpoint.
+  - Assign the appropriate roles (e.g., `Event Hub Data Sender`) to the Defender for Endpoint service principal.
+
+**Example/Command:**
+- **Azure Portal:** Create Event Hub
+- **Defender Security Center:** Enable Streaming API
+
+</details>
+
+<details>
+<summary><b>Step 2: Install the Add-on</b></summary>
+
+**Action:** Install the Add-on on your Search Heads, Indexers, and Heavy Forwarders
+
+**Details:**
+- **Download the Microsoft Defender Advanced Hunting Add-on for Splunk:**
+  - Visit Splunkbase and search for `Microsoft Defender Advanced Hunting Add-on`.
+  - Download the add-on package.
+
+- **Install the add-on on all relevant Splunk components:**
+  - Log in to your Splunk instance.
+  - Navigate to `Apps` > `Manage Apps`.
+  - Click `Install app from file` and upload the downloaded add-on package.
+  - Repeat the installation process for Search Heads, Indexers, and Heavy Forwarders.
+
+- **Configure the add-on as per your environment requirements:**
+  - Access the add-on configuration page.
+  - Set parameters such as the index, sourcetype, and any other environment-specific settings.
+
+**Example/Command:**
+- **Splunkbase:** Download Add-on
+- **Splunk UI:** Apps > Manage Apps > Install app from file
+
+</details>
+
+<details>
+<summary><b>Step 3: Set up the Input</b></summary>
+
+**Action:** Set up the Input in the Splunk Add-on for Microsoft Cloud Services
+
+**Details:**
+- **Navigate to the Splunk Add-on for Microsoft Cloud Services configuration page:**
+  - Open Splunk and go to `Settings` > `Data Inputs`.
+
+- **Add a new input for Azure Event Hub:**
+  - Select `Azure Event Hub` as the input type.
+  - Provide the connection string for the Azure Event Hub.
+
+- **Set the Sourcetype to `mscs:azure:eventhub:defender:advancedhunting`:**
+  - In the input configuration, set the sourcetype to `mscs:azure:eventhub:defender:advancedhunting`.
+
+- **Configure other parameters such as index, interval, and format:**
+  - Specify the index where the data should be stored.
+  - Set the interval for data collection.
+  - Configure the format and any other relevant parameters.
+
+**Example/Command:**
+- **Splunk UI:** Settings > Data Inputs > Azure Event Hub
+- **Sourcetype:** `mscs:azure:eventhub:defender:advancedhunting`
+
+</details>
+
+<details>
+<summary><b>Step 4: Verify Data Arrival</b></summary>
+
+**Action:** Run a search to verify data arrival
+
+**Details:**
+- **Open the Splunk Search & Reporting app:**
+  - Navigate to the `Search & Reporting` app in Splunk.
+
+- **Run the search query to verify that data is being ingested correctly:**
+  - Use the following search query to check for incoming data:
+  ```spl
+  index=* eventtype="ms_defender_advanced_hunting_sourcetypes"
+  ```
+
+**Example/Command:**
+```spl
+index=* eventtype="ms_defender_advanced_hunting_sourcetypes"
+```
+
+</details>
+
+<details>
+<summary><b>Step 5: Enable Scheduled Saved Searches</b></summary>
+
+**Action:** Enable Scheduled Saved Searches for Malware and Email data models
+
+**Details:**
+- **Navigate to Saved Searches in Splunk:**
+  - Go to `Settings` > `Searches, Reports, and Alerts`.
+
+- **Create new saved searches for malware and email data models:**
+  - Click `New Search` and define search queries for malware and email data models.
+  - Example search queries:
+  ```spl
+  index=* sourcetype="defender:advancedhunting:malware"
+  index=* sourcetype="defender:advancedhunting:email"
+  ```
+
+- **Schedule the searches to run at regular intervals (e.g., every hour):**
+  - Set the schedule for the saved searches to run at desired intervals.
+
+- **Configure alert actions if needed:**
+  - Define alert actions such as email notifications or script execution.
+
+- **Verify data generation by running the saved searches manually:**
+  - Execute the saved searches manually to ensure they generate the expected results.
+
+**Example/Command:**
+- **Splunk UI:** Settings > Searches, Reports, and Alerts
+- **Example search queries:**
+```spl
+index=* sourcetype="defender:advancedhunting:malware"
+index=* sourcetype="defender:advancedhunting:email"
+```
+
+</details>
+
+## Example Calculation
 
 > Assume we have 200 endpoints, each sending 0.25 MB of data per second and generating 2 events per second.
 
@@ -206,15 +346,6 @@ $$
 | **Event Rate**    | Determine the frequency of events generated by each source per second.                        | Endpoint generates 2 events/s, server generates 5 events/s.                 | **Total Event Rate (events/s)** | Endpoints: 400, Servers: 250 | Number of Sources * Event Rate per Source |
 | **Required TUs**  | Calculate the required Throughput Units based on data volume and event rate.                  | Total Ingress MB/s = 50, Total Events/second = 400                          | **Required TUs** | 50 | Max value between the two: 50/1 = (50) or 400/1000 = (0.4) |
 
-## Installation Steps
-
-| **Step** | **Action** | **Details** | **Example/Command** |
-|------------------------------------------------|-------------|-------------|---------------------|
-| **1. Configure Microsoft Defender for Endpoint** | Stream Advanced Hunting events to an Azure Event Hub | - Create an Azure Event Hub namespace and Event Hub. <br> - Configure Microsoft Defender for Endpoint to stream events to the Event Hub. <br> - Ensure necessary permissions are granted. | - Azure Portal: Create Event Hub <br> - Defender Security Center: Enable Streaming API |
-| **2. Install the Add-on** | Install the Add-on on your Search Heads, Indexers, and Heavy Forwarders | - Download the Microsoft Defender Advanced Hunting Add-on for Splunk from Splunkbase. <br> - Install the add-on on all relevant Splunk components (Search Heads, Indexers, Heavy Forwarders). <br> - Configure the add-on as per your environment requirements. | - Splunkbase: Download Add-on <br> - Splunk UI: Apps > Manage Apps > Install app from file |
-| **3. Set up the Input** | Set up the Input in the Splunk Add-on for Microsoft Cloud Services | - Navigate to the Splunk Add-on for Microsoft Cloud Services configuration page. <br> - Add a new input for Azure Event Hub. <br> - Set the Sourcetype to `mscs:azure:eventhub:defender:advancedhunting`. <br> - Provide the connection string for the Azure Event Hub. <br> - Configure other parameters such as index, interval, and format. | - Splunk UI: Settings > Data Inputs > Azure Event Hub <br> - Sourcetype: `mscs:azure:eventhub:defender:advancedhunting` |
-| **4. Verify Data Arrival** | Run a search to verify data arrival | - Open the Splunk Search & Reporting app. <br> - Run the search query to verify that data is being ingested correctly. | `index=* eventtype="ms_defender_advanced_hunting_sourcetypes"` |
-| **5. Enable Scheduled Saved Searches** | Enable Scheduled Saved Searches for Malware and Email data models | - Navigate to Saved Searches in Splunk. <br> - Create new saved searches for malware and email data models. <br> - Schedule the searches to run at regular intervals (e.g., every hour). <br> - Configure alert actions if needed. <br> - Verify data generation by running the saved searches manually. | - Splunk UI: Settings > Searches, Reports, and Alerts <br> - Example search queries: <br> `index=* sourcetype="defender:advancedhunting:malware"` <br> `index=* sourcetype="defender:advancedhunting:email"` |
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
