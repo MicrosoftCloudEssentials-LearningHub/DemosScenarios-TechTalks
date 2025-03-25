@@ -116,6 +116,7 @@ Last updated: 2025-03-25
   </tr>
 </table>
 
+https://github.com/user-attachments/assets/b8302c11-f668-4ea8-850a-980e4733523f
 
 ### Step 1: Determine Ingress Data Rate
 
