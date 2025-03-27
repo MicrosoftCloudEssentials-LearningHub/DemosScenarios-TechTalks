@@ -85,7 +85,7 @@ From [OCR official documentation](https://learn.microsoft.com/en-us/azure/ai-ser
 
 | Generate image captions	| Tag visual features	| Background removal (v4.0 preview only) | 
 | ----- | ----- | ---- | 
-| <img width="550" alt="img" src="https://github.com/user-attachments/assets/9150c064-9392-451a-9398-2b5a8428a0be"> | <img width="550" alt="img" src="https://github.com/user-attachments/assets/3530b5a8-b42d-47b7-87d6-3659271124e5"> | <img width="550" alt="img" src="https://github.com/user-attachments/assets/69c2c7f8-f959-443d-b950-a994aa91eaaa"> |
+| <img width="550" alt="img" src="https://github.com/user-attachments/assets/9150c064-9392-451a-9398-2b5a8428a0be"> | <img width="550" alt="img" src="https://github.com/user-attachments/assets/3530b5a8-b42d-47b7-87d6-3659271124e5"> | <img width="550" alt="img" src="https://github.com/user-attachments/assets/5f1ae7e5-1f7b-4bcc-9341-2ef8a781c7b1"> |
 
 From [official documentation](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-image-analysis?tabs=4-0)
 
