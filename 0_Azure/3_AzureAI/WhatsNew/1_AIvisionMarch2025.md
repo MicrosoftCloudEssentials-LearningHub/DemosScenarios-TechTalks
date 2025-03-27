@@ -17,6 +17,8 @@ Last updated: 2025-03-27
 - [What is Image Analysis?](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-image-analysis?tabs=4-0)
 - [What is the Azure AI Face service?](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-identity)
 - [What is Video Analysis?](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/intro-to-spatial-analysis-public-preview?tabs=sa)
+- [What is Custom Vision?](https://learn.microsoft.com/en-us/azure/ai-services/Custom-Vision-Service/overview)
+- [What's new in Azure AI Vision](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/whats-new)
 
 </details>
 
@@ -73,6 +75,14 @@ From [OCR official documentation](https://learn.microsoft.com/en-us/azure/ai-ser
 
 </details>
 
+| **Feature**                    | **Description**                                                                 | **Use Case**                                                                 |
+|-------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| **Analyze Image (minus 4.0 Captions)** | Extracts multiple information including: <ul><li>Tagging</li><li>Object detection</li><li>OCR (Optical Character Recognition)</li><li>Face detection</li><li>Categorization</li><li>Color analysis</li><li>Image type detection</li></ul> | Useful for applications requiring comprehensive image analysis without the need for detailed captions. |
+| **Analyze Image (including 4.0 Captions)** | Includes all Analyze Image features plus enhanced image captioning for detailed descriptions. | Ideal for applications needing both comprehensive image analysis and detailed descriptive captions. |
+| **Product Recognition**        | Recognizes and provides detailed information about products within images.   | Beneficial for e-commerce platforms to identify and catalog products from images. |
+| **Multimodal embeddings**      | Combines visual and textual data to improve search, retrieval, and support complex queries. | Enhances search engines by integrating visual content with text-based queries to provide more accurate results. |
+| **Background removal**         | Removes backgrounds from images to isolate the main subject for enhanced focus and editing.  | Useful in graphic design and photo editing to create cleaner images by isolating subjects from their backgrounds. |
+
 | Generate image captions	| Tag visual features	| Background removal (v4.0 preview only) | 
 | ----- | ----- | ---- | 
 | <img width="550" alt="img" src="https://github.com/user-attachments/assets/9150c064-9392-451a-9398-2b5a8428a0be"> | <img width="550" alt="img" src="https://github.com/user-attachments/assets/3530b5a8-b42d-47b7-87d6-3659271124e5"> | <img width="550" alt="img" src="https://github.com/user-attachments/assets/69c2c7f8-f959-443d-b950-a994aa91eaaa"> |
@@ -126,6 +136,14 @@ From [official documentation](https://learn.microsoft.com/en-us/azure/ai-service
 
 From [official documentation](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-identity)
 
+| **Feature**                    | **Description**                                                                 | **Use Case**                                                                 |
+|-------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| **Face Detection and Recognition** | Detects and identifies faces in images. Provides attributes like age, gender, and emotion. Supports face verification and identification for security purposes. <ul><li>**Face Detection**: Locates faces within an image.</li><li>**Face Recognition**: Matches detected faces against a database of known faces.</li><li>**Attributes**: Age, gender, emotion, head pose, facial hair, and accessories.</li></ul> | <ul><li>Security systems</li><li>Social media applications</li><li>Customer insights</li></ul> |
+| **Person Identification**        | Identifies individuals in images based on a pre-enrolled database. <ul><li>**Enrollment**: Register faces in a database.</li><li>**Identification**: Match faces in images to enrolled faces.</li></ul> | <ul><li>Access control</li><li>Personalized experiences</li><li>Surveillance systems</li></ul> |
+| **Face Verification**      | Compares two faces to determine if they belong to the same person. <ul><li>**One-to-One Matching**: Verify if two faces are the same.</li></ul> | <ul><li>Authentication systems</li><li>Login verification</li><li>Fraud prevention</li></ul> |
+| **Face Grouping**         | Groups similar faces together in a collection of images. <ul><li>**Clustering**: Automatically group similar faces.</li></ul> | <ul><li>Organizing photo libraries</li><li>Social media platforms</li></ul> |
+| **Face Attributes**         | Analyzes facial features to provide detailed attributes, including head pose, facial hair, and accessories. <ul><li>**Attributes**: Age, gender, emotion, head pose, facial hair, and accessories.</li></ul> | <ul><li>Demographic analysis</li><li>Marketing insights</li><li>User profiling</li></ul> |
+
 <details>
 <summary>Video Analysis</summary>
 
@@ -165,6 +183,14 @@ From [official documentation](https://learn.microsoft.com/en-us/azure/ai-service
 
 </details>
 
+| **Feature**                    | **Description**                                                                 | **Use Case**                                                                 |
+|-------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| **People Counting**            | Counts the number of people in a specified area. <ul><li>**Real-time Counting**: Provides live updates on the number of people.</li><li>**Historical Data**: Tracks changes over time.</li></ul> | <ul><li>Retail analytics</li><li>Event management</li><li>Public safety</li></ul> |
+| **People Movement Tracking**   | Tracks the movement of individuals within a specified area. <ul><li>**Path Tracking**: Monitors the paths taken by individuals.</li><li>**Heatmaps**: Visualizes areas of high activity.</li></ul> | <ul><li>Customer behavior analysis</li><li>Facility management</li><li>Security monitoring</li></ul> |
+| **Zone Monitoring**            | Monitors specific zones for activity. <ul><li>**Zone Entry/Exit**: Detects when individuals enter or exit predefined zones.</li><li>**Activity Monitoring**: Tracks activities within zones.</li></ul> | <ul><li>Restricted area monitoring</li><li>Workplace safety</li><li>Compliance enforcement</li></ul> |
+| **Line Crossing Detection**    | Detects when individuals cross a predefined line. <ul><li>**Boundary Monitoring**: Alerts when boundaries are crossed.</li><li>**Security Applications**: Enhances perimeter security.</li></ul> | <ul><li>Perimeter security</li><li>Access control</li><li>Intrusion detection</li></ul> |
+| **Custom Events**              | Allows the creation of custom events based on specific criteria. <ul><li>**Event Definition**: Define custom events based on movement, count, or zone activity.</li><li>**Alerting**: Set up alerts for custom events.</li></ul> | <ul><li>Tailored security solutions</li><li>Custom analytics</li><li>Event-driven applications</li></ul> |
+
 > E.g People counting: 
 
 https://github.com/user-attachments/assets/eb7be305-b61e-45b7-8a3c-4d9378b7d99f 
@@ -174,6 +200,14 @@ https://github.com/user-attachments/assets/eb7be305-b61e-45b7-8a3c-4d9378b7d99f
 https://github.com/user-attachments/assets/cd8f4f18-5cfe-43c6-865e-0480021d699e 
 
 From [official documentation](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/intro-to-spatial-analysis-public-preview?tabs=sa)
+
+## ​What's new in Azure AI Vision?​
+
+| **Update**                                      | **Description**                                                                 | **Details**                                                                 |
+|-------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| **Face Liveness Detection GA**                  | The Face liveness detection feature is now generally available (GA).            | - **Release Date**: January 2025 <br> - **Server-side API**: Face API v1.2 <br> - **Client-side SDK**: Azure AI Vision SDK 1.0.0 <br> - **Capabilities**: Allows developers to utilize face liveness checks on both native-mobile applications and web-browser applications for identity-verification scenarios. <br> - **Modes**: Supports both Passive and Passive-Active modes. The hybrid Passive-Active mode requires Active motion only in poor lighting conditions, while using the speed and efficiency of Passive liveness checks in optimal lighting. <br> - **More Information**: [See the SDK release notes](https://github.com/Azure-Samples/azure-ai-vision-sdk/releases/tag/1.1.0). |
+| **Face Liveness Client-Side SDK 1.1.0 Release** | Release of the new version of the Face Liveness Client-Side SDK.                | - **Release Date**: February 2025 <br> - **Improvements**: <ul><li>Increased timeout for the head-turn scenario to provide end-users more time to complete the flow.</li><li>Fixes to iOS and Android SDKs to resolve compatibility issues with Microsoft Intune Mobile Application Management SDKs.</li><li>Security related fixes/improvements.</li></ul> <br> - **More Information**: [See the SDK release notes](https://github.com/Azure-Samples/azure-ai-vision-sdk/releases/tag/1.0.0). |
+| **Image Analysis 4.0 Preview API Deprecation**  | Deprecation of the Image Analysis 4.0 Preview API.                              | - **Deprecation Date**: March 31, 2025 <br> - **Migration**: Users need to migrate their Azure Image Analysis workloads to the Image Analysis 4.0 GA API before the deprecation date. <br> - **Improvements**: Access to features such as multimodal embedding, synchronous OCR, people detection, image tagging, smart cropping, caption, dense caption, and image object detection. <br> - **Retired Preview APIs**: <ul><li>2022-07-31-preview</li><li>2022-10-12-preview</li><li>2023-02-01-preview</li><li>2023-04-01-preview</li><li>2023-07-01-preview</li><li>v4.0-preview.1</li></ul> <br> - **Removed Features**: Model customization, background removal, product recognition (removed from Studio experience as of January 10, 2025). <br> - **Alternative**: Transition to [Azure AI Custom Vision](https://learn.microsoft.com/en-us/azure/ai-services/Custom-Vision-Service/overview) for similar functionality. |
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
