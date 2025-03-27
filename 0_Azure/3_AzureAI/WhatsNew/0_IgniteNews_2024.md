@@ -12,10 +12,8 @@ Last updated: 2024-12-24
 
 > The 2024 Microsoft Ignite conference announced a series of groundbreaking updates and features across data and AI products. This document provides an overview of the key announcements
 
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki</b> (Click to expand)</summary>
+<summary><b>List of References</b> (Click to expand)</summary>
 
 - [Book of news Nov19-21,2024](https://news.microsoft.com/ignite-2024-book-of-news/)
 - [Introducing Copilot Actions, new agents, and tools to empower IT teams](https://www.microsoft.com/en-us/microsoft-365/blog/2024/11/19/introducing-copilot-actions-new-agents-and-tools-to-empower-it-teams/#empowering-every-employee)
@@ -188,3 +186,8 @@ graph TD
 |---------|--------------|--------------|---------------------|
 | **Governance, Risk, and Compliance** | Assist in governance, risk, and compliance workflows | - `AI Reports`: Create impact assessments and AI reports for governance<br/>- `Risk Evaluations`: Perform risk and safety evaluations for AI-generated content | 1. `Create AI Reports`: Use the Azure AI Foundry portal to assemble key project details into AI reports<br/>2. `Perform Evaluations`: Use the risk and safety evaluation tools to assess AI-generated content |
 | **Azure Essentials** | Resources to help customers adopt AI at scale | - `Comprehensive Guidance`: Detailed guidance for AI adoption and architectural design<br/>- `Resource Kit`: Includes tools, skilling, and reference architectures | 1. `Access Azure Essentials`: Navigate to Azure Essentials in the Azure portal<br/>2. `Utilize Resources`: Use the provided tools and guidance to adopt AI at scale<br/>3. `Implement Best Practices`: Follow the best practices and reference architectures for AI workloads |
+
+<div align="center">
+  <h3 style="color: #4CAF50;">Total Visitors</h3>
+  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
