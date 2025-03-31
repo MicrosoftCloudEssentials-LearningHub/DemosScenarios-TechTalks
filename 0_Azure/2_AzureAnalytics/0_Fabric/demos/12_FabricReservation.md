@@ -19,10 +19,8 @@ Last updated: 2025-01-13
 
 > Example: By choosing an F128 reservation in Microsoft Fabric, if the pay-as-you-go rate is $23.04 per hour, with the reservation, you might pay $13.706 per hour, saving ~41%.
 
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki</b> (Click to expand)</summary>
+<summary><b>Lis of References</b> (Click to expand)</summary>
   
 - [Microsoft Fabric trial capacity](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)
 - [Buy a Microsoft Fabric subscription](https://learn.microsoft.com/en-us/fabric/enterprise/buy-subscription)
