@@ -10,9 +10,12 @@ Last updated: 2024-11-19
 
 ----------
 
-## Wiki 
-
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
+  
 - [Microsoft Purview pricing](https://azure.microsoft.com/en-us/pricing/details/purview/)
+
+</details>
 
 ## Overview
 
