@@ -12,10 +12,8 @@ Last updated: 2024-11-29
 > [!IMPORTANT]
 > Each standard trial of a Microsoft Fabric capacity includes `64 capacity units`. `The person who initiates the trial becomes the Capacity administrator for that trial capacity`. Other users within the same tenant can also start their own Fabric trial and become Capacity administrators for their respective trial capacities. However, `there is a limit on the number of trial capacities that can be created per tenant`. If your tenant has reached this limit, you need to purchase a Fabric capacity, consider reservations for discounts.
 
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki</b> (Click to expand)</summary>
+<summary><b>List of References</b> (Click to expand)</summary>
 
 - [Microsoft Fabric trial capacity](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)
 - [Are you ready? -> Buy a Microsoft Fabric subscription](https://learn.microsoft.com/en-us/fabric/enterprise/buy-subscription)
@@ -33,7 +31,6 @@ Last updated: 2024-11-29
 
 ## Content 
 
-- [Wiki](#wiki)
 - [Content](#content)
 - [Overview](#overview)
 - [Roles in Workspaces in Microsoft Fabric](#roles-in-workspaces-in-microsoft-fabric)
