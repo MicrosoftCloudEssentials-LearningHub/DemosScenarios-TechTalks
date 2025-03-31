@@ -39,8 +39,7 @@ Last updated: 2025-01-13
 
 <details>
 <summary><b>Table of Content</b> (Click to expand)</summary>
-  
-- [Wiki](#wiki)
+
 - [Content](#content)
 - [Overview](#overview)
 - [Reservations & Capacity](#reservations--capacity)
