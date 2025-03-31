@@ -65,7 +65,8 @@ The general formula to keep in mind for estimating the cost of Microsoft Purview
   \text{Total Cost for Resource Set} = \text{Total Hours of Processing in a Month} \times \text{Price per vCore per Hour}
   $$
 
-> Example Calculation: <br/>
+## Average Example Calculation
+
 > - The total duration of all scans in a month is 600 minutes. <br/>
 > - The total duration of processing Advanced Resource Set data assets in a month is 50 hours.
 
