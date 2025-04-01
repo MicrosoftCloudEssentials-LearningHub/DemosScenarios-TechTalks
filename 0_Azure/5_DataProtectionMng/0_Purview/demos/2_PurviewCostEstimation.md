@@ -117,7 +117,7 @@ $$
 ## Cost Estimation for Different Metadata Volumes
 
 > [!IMPORTANT]
->  Microsoft Purview `scans metadata to classify, label, and protect data asset`s. It does `not scan the actual data content but rather the information about the data`. <br/>
+>  Microsoft Purview `scans metadata to classify, label, and protect data assets`. It does `not scan the actual data content but rather the information about the data`. <br/>
 >  `The size of the data itself does not directly` impact the cost of `metadata scanning unless it affects the amount of metadata generated`. The `number of metadata assets and their complexity` are the primary factors influencing costs.
 
 Assumptions: 
