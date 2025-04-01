@@ -34,7 +34,6 @@ Estimating the cost for Azure Purview requires consideration of the following co
 > - **Cost of Scanning**: Calculated based on the total duration (in minutes) of all scans in a month, divided by 60 minutes per hour, multiplied by the number of vCores per scan, and the price per vCore per hour. <br/>
 > - **Cost of Resource Set**: Calculated based on the total duration (in hours) of processing resource set data assets in a month, multiplied by the price per vCore per hour.
 
-
  $$ \text{Total Cost per Month} = \text{Cost of Data Map} + \text{Cost of Scanning} + \text{Cost of Resource Set} 
  $$ 
 
