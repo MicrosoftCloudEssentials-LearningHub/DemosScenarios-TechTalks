@@ -23,6 +23,8 @@ Last updated: 2025-04-01
 - [Fabic -Features parity list](https://learn.microsoft.com/en-us/fabric/enterprise/fabric-features#features-parity-list)
 - [Embedded - prerequisites](https://learn.microsoft.com/en-us/power-bi/developer/embedded/embed-organization-app#prerequisites)
 - [Embedded - Which SKU should I use?](https://learn.microsoft.com/en-us/power-bi/developer/embedded/embedded-capacity#which-sku-should-i-use)
+- [Distribute Power BI content to external guest users with Microsoft Entra B2B](https://learn.microsoft.com/en-us/power-bi/enterprise/service-admin-azure-ad-b2b#guest-users-who-can-edit-and-manage-content)
+- [External data sharing in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/governance/external-data-sharing-overview)
 
 </details>
 
