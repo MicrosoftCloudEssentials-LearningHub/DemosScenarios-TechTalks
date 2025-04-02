@@ -5,7 +5,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2024-11-29
+Last updated: 2025-04-02
 
 ----------
 
@@ -26,12 +26,10 @@ Last updated: 2024-11-29
 - [Workspace roles in Lakehouse](https://learn.microsoft.com/en-us/fabric/data-engineering/workspace-roles-lakehouse)
 - [Workspace roles in Fabric data warehousing](https://learn.microsoft.com/en-us/fabric/data-warehouse/workspace-roles)
 
-
 </details>
 
 ## Content 
 
-- [Content](#content)
 - [Overview](#overview)
 - [Roles in Workspaces in Microsoft Fabric](#roles-in-workspaces-in-microsoft-fabric)
 - [How to extend trial period](#how-to-extend-trial-period)
@@ -127,6 +125,10 @@ Click here to follow the [steps to start the fabric capacity trial](https://lear
 - Within `Workspaces`, select the desired workspaces and click on `Reassign workspace`. Then, choose your license and click `Save`:
 
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/74a2e65e-7c23-479b-9a83-656e1a429b68">
+
+
+https://github.com/user-attachments/assets/f9356fb8-c824-45ad-bd8e-010cd152ddfc
+
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
