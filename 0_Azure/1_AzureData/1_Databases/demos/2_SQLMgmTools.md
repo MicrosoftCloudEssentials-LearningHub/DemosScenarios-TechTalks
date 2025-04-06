@@ -10,7 +10,8 @@ Last updated: 2024-11-19
 
 ----------
 
-## Wiki 
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
 
 - [Try Azure SQL Managed Instance for free (preview)](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/free-offer?view=azuresql)
 - [Try the Next-gen GP Azure SQL Managed Instance for free](https://techcommunity.microsoft.com/t5/azure-sql-blog/try-the-next-gen-gp-azure-sql-managed-instance-for-free/ba-p/4136933)
@@ -18,15 +19,14 @@ Last updated: 2024-11-19
 - [How to Download and Install DBeaver on Windows](https://www.youtube.com/watch?v=BMGdkmWOvNY)
 - [HeidiSQL with MariaDB and MySQL](https://www.youtube.com/watch?v=11vhRYEfHNE)
 - [How to install Adminer (Database Administration Tool) on Ubuntu 22.04](https://www.youtube.com/watch?v=r4keak825B4)
-  
-| **Category**           | **Tool**                         | **Company**        | **Description**                                                                                   | **Key Features**                                                                                     | **When to Use**                                                                                      |
-|------------------------|----------------------------------|--------------------|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| **On-Premises**        | SQL Server Management Studio (SSMS) | Microsoft          | Comprehensive tool for managing Microsoft SQL Server components.                                  | Full GUI support, rich script editors for T-SQL, integration with Azure, performance monitoring tools | Ideal for managing SQL Server environments on-premises.                                              |
-|                        | DBeaver                          | DBeaver Corp       | Universal database management tool supporting various databases with a user-friendly interface.   | Supports multiple databases, advanced SQL editor, data visualization tools                           | Suitable for managing multiple types of databases with a consistent interface.                       |
-| **Third-Party Clouds** | Adminer                          | Adminer            | Lightweight, full-featured database management tool deployable as a single PHP file.              | Simple deployment, supports multiple databases, user-friendly interface                              | Best for quick, lightweight database management tasks.                                               |
-|                        | HeidiSQL                         | HeidiSQL Project   | Open-source tool for managing MySQL, MariaDB, and SQL Server databases.                           | Easy-to-use interface, advanced query editor, data export/import capabilities                        | Ideal for managing MySQL, MariaDB, and SQL Server databases with a free, open-source tool.           |
-| **Azure**              | Azure Data Studio                | Microsoft          | Cross-platform database tool with modern editor experience and integrated terminal.               | Supports SQL Server and Azure SQL Database, integrated terminal, extensions, built-in charting       | Perfect for cross-platform environments needing a modern, extensible tool.                           |
-|                        | Azure SQL Managed Instance       | Microsoft          | Fully managed PaaS database offering with a free trial for 12 months.                             | Automated backups, high compatibility with SQL Server, high availability, scalable performance       | Best for migrating SQL Server workloads to the cloud with minimal changes and benefiting from PaaS.  |
+
+</details>
+
+| **Category**           | **Tool**                         | **Company**        | **Description**| **Key Features**| **When to Use**|
+|----------|-----------|----------------------------------|--------------------------------------|-------------------------|-------------------------|
+| **On-Premises**        | - SQL Server Management Studio (SSMS) <br/> - DBeaver | - MS <br/> - DBeaver Corp | - Comprehensive tool for managing Microsoft SQL Server components. <br/> - Universal database management tool supporting various databases with a user-friendly interface. | - Full GUI support, rich script editors for T-SQL, integration with Azure, performance monitoring tools <br/> - Supports multiple databases, advanced SQL editor, data visualization tools | - Ideal for managing SQL Server environments on-premises. <br/> - Suitable for managing multiple types of databases with a consistent interface. |
+| **Third-Party Clouds** | - Adminer <br/> - HeidiSQL       | - Adminer <br/> - HeidiSQL Project | - Lightweight, full-featured database management tool deployable as a single PHP file. <br/> - Open-source tool for managing MySQL, MariaDB, and SQL Server databases. | - Simple deployment, supports multiple databases, user-friendly interface <br/> - Easy-to-use interface, advanced query editor, data export/import capabilities | - Best for quick, lightweight database management tasks. <br/> - Ideal for managing MySQL, MariaDB, and SQL Server databases with a free, open-source tool. |
+| **Azure**              | - Azure Data Studio <br/> - Azure SQL Managed Instance | Microsoft | - Cross-platform database tool with modern editor experience and integrated terminal. <br/> - Fully managed PaaS database offering with a free trial for 12 months. | - Supports SQL Server and Azure SQL Database, integrated terminal, extensions, built-in charting <br/> - Automated backups, high compatibility with SQL Server, high availability, scalable performance | - Perfect for cross-platform environments needing a modern, extensible tool. <br/> - Best for migrating SQL Server workloads to the cloud with minimal changes and benefiting from PaaS. |
 
 > [!NOTE]
 > Make sure you have configured the network access, adding your IP as part of the whitelist.
@@ -132,7 +132,7 @@ Last updated: 2024-11-19
    - Go to the Azure portal and navigate to `SQL Managed Instances.`
    - Click on `Create` and follow the prompts to set up your instance.
      
-      <img width="700" height="370" alt="image" src="https://github.com/user-attachments/assets/c7e60ee0-b0e4-4f23-9aa7-c10349071474">
+      <img width="550"  alt="image" src="https://github.com/user-attachments/assets/c7e60ee0-b0e4-4f23-9aa7-c10349071474">
 
 3. **Connect and Manage:**
    - Use Azure Data Studio or SSMS to connect to your managed instance.
