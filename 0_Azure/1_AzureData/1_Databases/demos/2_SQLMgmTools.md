@@ -47,7 +47,7 @@ Last updated: 2024-11-19
    <img width="700" height="370" alt="image" src="https://github.com/user-attachments/assets/c5908fc0-30d7-4146-ae20-ab62d8694d1f">
   
 2. **Connect to a Server:**   
-   - Open SSMS and click on`Connect" in the Object Explorer.
+   - Open SSMS and click on`Connect` in the Object Explorer.
    - Enter your server name and authentication details.
 
       <img width="700" height="370" alt="image" src="https://github.com/user-attachments/assets/f39b6c01-40e6-4fa5-92c6-70e4ae41d914">
