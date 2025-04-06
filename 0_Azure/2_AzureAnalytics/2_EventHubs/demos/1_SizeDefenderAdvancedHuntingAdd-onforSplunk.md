@@ -23,6 +23,7 @@ Last updated: 2025-03-25
 - [Monitor Azure Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/monitor-event-hubs?tabs=AzureDiagnostics%2CAzureDiagnosticsforRuntimeAudit%2CAzureDiagnosticsforAppMetrics)
 - [Pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?msockid=38ec3806873362243e122ce086486339)
 - [Quickstart: Create a Dedicated Azure Event Hubs cluster using Azure portal](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-dedicated-cluster-create-portal)
+- [Capture events through Azure Event Hubs in Azure Blob Storage or Azure Data Lake Storage](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-capture-overview)
 
 </details>
 
