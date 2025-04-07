@@ -88,7 +88,7 @@ Last updated: 2025-04-07
 |-----------------------------------|--------------------|----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Azure SQL Database**            | Current Support    | On-Premises Data Gateway or VNET Data Gateway for secure and efficient data movement | - **Mirroring Mechanism**: Utilizes SQL’s Change Data Capture (CDC) stack optimized for lake-centric architecture. CDC stores changes locally in the database, while mirroring reads data from the transaction log and publishes it to OneLake.<br>- **Data Format**: Converts data to Parquet format for analytics.<br>- **Features**: Supports DDL (Data Definition Language) operations like Alter/Drop/Rename tables/columns, and Truncate tables while mirroring is active.<br>- **APIs**: Programmatic APIs available for setup and management. |
 | **Snowflake**                     | Current Support    | On-Premises Data Gateway or VNET Data Gateway for secure and efficient data movement | - **Mirroring Mechanism**: Similar to Azure SQL Database, leveraging secure gateways for data replication.<br>- **Data Format**: Ensures data is analytics-ready in OneLake. |
-| **Azure SQL Managed Instance (MI)**| Coming Soon        | Will utilize On-Premises Data Gateway or VNET Data Gateway for secure connectivity | - **Mirroring Mechanism**: Expected to follow the same CDC-based approach as Azure SQL Database.<br>- **Data Format**: Will convert data to Parquet format for seamless integration. |
+| **Azure SQL Managed Instance (MI)**| Coming Soon        | Will use On-Premises Data Gateway or VNET Data Gateway for secure connectivity | - **Mirroring Mechanism**: Expected to follow the same CDC-based approach as Azure SQL Database.<br>- **Data Format**: Will convert data to Parquet format for seamless integration. |
 | **On-Premises SQL Server, Oracle, and Dataverse** | Future Support     | Will follow secure connectivity protocols using On-Premises Data Gateway          | - **Mirroring Mechanism**: Anticipated to use similar CDC-based replication.<br>- **Data Format**: Data will be converted to Parquet format for analytics. |
 
 > Installation Steps: 
@@ -96,19 +96,31 @@ Last updated: 2025-04-07
 <summary>Azure SQL Database</summary>
 
 1. **Enable System Assigned Managed Identity (SAMI)**:
-   - In the Azure portal, navigate to your Azure SQL logical server.
+   - In the [Azure portal](https://portal.azure.com/), navigate to your Azure SQL logical server.
    - Enable System Assigned Managed Identity (SAMI) with a single step.
 
+        <img width="550" alt="image" src="https://github.com/user-attachments/assets/7a4b8a0e-73eb-442f-9b4f-4e41bec59ce3" />
+
 2. **Configure Mirroring**:
-   - Go to the Fabric workspace and select the ⚙️.
+   - Go to the [Fabric workspace](https://app.fabric.microsoft.com) and select the ⚙️.
    - Choose `Manage connection and gateways` to configure the connection to your Azure SQL Database.
+
+     <img width="550" alt="image" src="https://github.com/user-attachments/assets/c55024b9-1841-4a12-b0c8-81515d925553" />
 
 3. **Set Up Gateway**:
    - Deploy either the On-Premises Data Gateway or VNET Data Gateway depending on your network setup.
+
+        <img width="550" alt="image" src="https://github.com/user-attachments/assets/51c81b6e-7888-4681-a32d-5008cbc21a22" />
+
    - Configure the gateway to securely connect to your Azure SQL Database.
 
+        <img width="550" alt="image" src="https://github.com/user-attachments/assets/3668f188-935c-4287-ac76-8098ea61b3d4" />
+
 4. **Initial Replication**:
-   - Start the mirroring process. The initial replication time depends on the size of the data being brought in.
+   - Start the mirroring process. The initial replication time depends on the size of the data being brought in. Click on `New item`, search for `Mirrored`:
+
+        <img width="550" alt="image" src="https://github.com/user-attachments/assets/cfc169a7-6caa-4232-ba83-e69e2cf934a4" />
+
    - Data is stored in a landing zone in OneLake, improving performance when converting files into delta verti-parquet.
 
 5. **Monitor Replication**:
