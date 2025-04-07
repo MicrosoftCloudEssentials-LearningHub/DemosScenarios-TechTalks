@@ -16,7 +16,7 @@ Last updated: 2024-11-28
 ## Wiki 
 
 <details>
-<summary><b>Table of Wiki</b> (Click to expand)</summary>
+<summary><b>Lis of References</b> (Click to expand)</summary>
 
 - [Install the Microsoft Fabric capacity metrics app](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app-install?tabs=1st)
 - [What is the Microsoft Fabric Capacity Metrics app?](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app)
@@ -31,8 +31,6 @@ Last updated: 2024-11-28
 
 ## Content 
 
-- [Wiki](#wiki)
-- [Content](#content)
 - [Microsoft Fabric Capacity Metrics app](#microsoft-fabric-capacity-metrics-app)
     - [Installation Steps](#installation-steps)
     - [Configuration Steps](#configuration-steps)
