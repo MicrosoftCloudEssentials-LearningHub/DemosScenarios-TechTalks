@@ -24,19 +24,14 @@ Last updated: 2025-04-07
 
 </details>
 
-## Overview
+## Content 
+
+
+## Platform Enhancements
 
 | **Category**                | **Details**                                                                                                                                                                                                                                                                                                                                 |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Platform Enhancements**   | - **OneLake Security (Private Preview)**: Seamless security integration across Spark, SQL Endpoint, and Power BI in Direct Lake mode.<br/> - **Command Line Interface (CLI)**: Execute commands across Fabric using terminal prompts or pre-written scripts.<br/> - **Variable Library**: Efficiently manage variables at a workspace level. |
-| **Data Integration**        | **Database Mirroring**: Supports sources behind firewalls such as Azure SQL Database and Snowflake, with Azure SQL MI coming soon. On-prem SQL Server, Oracle, and Dataverse support is also on the way.|
-| **Data Engineering & Data Science** | - **Fabric Data Agents (Former AI Skills)**: Integrate Data Agents with Azure AI Foundry.<br/> - **Copilot & AI Features**: Available with all paid-SKU, starting with F2.<br/> - **Autoscale Billing for Spark**: Serverless, pay-as-you-go billing, no longer consuming your Fabric capacity when enabled.<br/> - **Copilot Improvements**: Copilot is now pre-installed, supports data-specific queries, and tracks historic interactions.<br/> - **AI Functions**: Apply LLM models for summarization, text generation, classification, sentiment analysis, and translation.<br/> - **Row-Level & Column-Level Security in Spark**. |
-| **Data Warehouse**          | - **AI Functions**: Bring AI features to Data Warehouse, similar to Data Engineering & Data Science.<br/> - **User-Defined Functions (UDFs)**: Write custom Python functions and execute them directly through T-SQL.<br/> - **Migration Tool**: Public preview for migrating Azure Synapse Analytics warehouses to Fabric.                  |
-| **Real-Time Intelligence**  | **Streaming & Event Connectors**: New integrations for MQTT, Solace, ADX, Real-Time Weather, and Azure Event Grid.|
-| **Power BI**                | - **Direct Lake Semantic Models**: Create models directly in Power BI Desktop, and use data from multiple OneLake sources.<br/> - **Datapoint Annotations**: Add descriptive text to specific data points directly in PowerPoint presentations.<br/> - **Copilot Improvements**: Ask data questions from your model.<br/> - **Notebook Tools**: Quickly analyze semantic models with pre-built notebooks for best practices and memory optimization. |
-| **Additional Highlights**   | - **Workshops and Sessions**: Over 200 expert-led sessions covering AI, databases, analytics, business intelligence, and more.<br/> - **Hands-On Workshops**: Pre- and post-conference workshops offering immersive, practical learning experiences. |
-
-## Platform Enhancements
 
 > Setting Up OneLake Security:
 
@@ -80,7 +75,13 @@ Last updated: 2025-04-07
 - **Enhanced Data Pipelines**: The Variable Library is `already available for use in data pipelines, allowing for more streamlined and efficient data processing`.
 - **Future Integrations**: Plans are in place to `expand the use of the Variable Library to other areas within the Fabric platform, further enhancing its utility`.
 
+  https://github.com/user-attachments/assets/3ee8eee2-cd0b-4575-aacc-5601c0ab49e2
+
 ## Data Integration 
+
+| **Category**                | **Details**                                                                                                                                                                                                                                                                                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Data Integration**        | **Database Mirroring**: Supports sources behind firewalls such as Azure SQL Database and Snowflake, with Azure SQL MI coming soon. On-prem SQL Server, Oracle, and Dataverse support is also on the way.|
 
 > Database mirroring -> enables seamless data replication and high availability for critical workloads.
 
@@ -146,7 +147,7 @@ Last updated: 2025-04-07
 
 3. **Configure Mirroring**:
    - Go to the Fabric workspace and select the ⚙️.
-   - Choose "Manage connection and gateways" to configure the connection to your Snowflake account.
+   - Choose `Manage connection and gateways` to configure the connection to your Snowflake account.
 
 4. **Initial Replication**:
    - Start the mirroring process. The initial replication time depends on the size of the data being brought in.
@@ -171,7 +172,7 @@ Last updated: 2025-04-07
 
 2. **Configure Mirroring**:
    - Go to the Fabric workspace and select the ⚙️.
-   - Choose "Manage connection and gateways" to configure the connection to your Azure SQL Managed Instance.
+   - Choose `Manage connection and gateways` to configure the connection to your Azure SQL Managed Instance.
 
 3. **Set Up Gateway**:
    - Deploy either the On-Premises Data Gateway or VNET Data Gateway depending on your network setup.
@@ -201,6 +202,30 @@ Last updated: 2025-04-07
 | **VNET Data Gateway**        | Enables Fabric services like Data Factory and Power BI to securely access cloud databases without requiring on-premises infrastructure. | Maintains network isolation while ensuring low-latency and high-throughput connections. | Suitable for databases residing behind virtual network (VNET) firewalls. |
 
 ## Data Engineering & Data Science
+
+| **Category**                | **Details**                                                                                                                                                                                                                                                                                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Data Engineering & Data Science** | - **Fabric Data Agents (Former AI Skills)**: Integrate Data Agents with Azure AI Foundry.<br/> - **Copilot & AI Features**: Available with all paid-SKU, starting with F2.<br/> - **Autoscale Billing for Spark**: Serverless, pay-as-you-go billing, no longer consuming your Fabric capacity when enabled.<br/> - **Copilot Improvements**: Copilot is now pre-installed, supports data-specific queries, and tracks historic interactions.<br/> - **AI Functions**: Apply LLM models for summarization, text generation, classification, sentiment analysis, and translation.<br/> - **Row-Level & Column-Level Security in Spark**. |
+
+## Data Warehouse
+
+| **Category**                | **Details**                                                                                                                                                                                                                                                                                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Data Warehouse**          | - **AI Functions**: Bring AI features to Data Warehouse, similar to Data Engineering & Data Science.<br/> - **User-Defined Functions (UDFs)**: Write custom Python functions and execute them directly through T-SQL.<br/> - **Migration Tool**: Public preview for migrating Azure Synapse Analytics warehouses to Fabric.                  |
+
+## Real-Time Intelligence
+
+| **Category**                | **Details**                                                                                                                                                                                                                                                                                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Real-Time Intelligence**  | **Streaming & Event Connectors**: New integrations for MQTT, Solace, ADX, Real-Time Weather, and Azure Event Grid.|
+
+## Power BI
+
+| **Category**                | **Details**                                                                                                                                                                                                                                                                                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Power BI**                | - **Direct Lake Semantic Models**: Create models directly in Power BI Desktop, and use data from multiple OneLake sources.<br/> - **Datapoint Annotations**: Add descriptive text to specific data points directly in PowerPoint presentations.<br/> - **Copilot Improvements**: Ask data questions from your model.<br/> - **Notebook Tools**: Quickly analyze semantic models with pre-built notebooks for best practices and memory optimization. |
+
+
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
