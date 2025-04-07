@@ -1,4 +1,4 @@
-#  Microsoft Fabric Community Conference - Overview 
+#  Microsoft Fabric Community Conference (Las Vegas 2025) - Overview 
 
 Costa Rica
 
