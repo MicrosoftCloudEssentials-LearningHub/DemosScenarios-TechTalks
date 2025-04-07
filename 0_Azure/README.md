@@ -5,7 +5,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-01-02
+Last updated: 2025-04-07
 
 ------------------------------------------
 
@@ -59,16 +59,18 @@ Last updated: 2025-01-02
 </details>
 
 ## Content 
-- [Azure](https://github.com/brown9804/MSCloudEssentials_LPath/blob/main/0_Azure/README.md)  
-    - [Azure Fundamentals](./0_AzureFundamentals/README.md)
-    - [Azure Data](./1_AzureData/README.md)
-    - [Azure Analytics](./2_AzureAnalytics/README.md)
-    - [Azure AI](./3_AzureAI/README.md)
-    - [Azure DevOps](./4_AzureDevOps/README.md)
-    - [Data Protection and Management](./5_DataProtectionMng)
-    - [Cost Management](./6_AzureCostManagement)
 
-Microsoft Azure is a cloud computing platform that provides a wide range of services for building, deploying, and managing applications and infrastructure. It offers scalability, flexibility, and global reach.
+- [Azure Fundamentals](./0_AzureFundamentals/README.md)
+- [Azure Data](./1_AzureData/README.md)
+- [Azure Analytics](./2_AzureAnalytics/README.md)
+- [Azure AI](./3_AzureAI/README.md)
+- [Azure DevOps](./4_AzureDevOps/README.md)
+- [Data Protection and Management](./5_DataProtectionMng)
+- [Cost Management](./6_AzureCostManagement)
+- [Azure Support](./7_AzureSupport)
+- [What's New on Azure?](./WhatsNew)
+
+> Microsoft Azure is a cloud computing platform that provides a wide range of services for building, deploying, and managing applications and infrastructure. It offers scalability, flexibility, and global reach.
 
 <img width="800" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/03e4b996-82bc-40c9-8374-d4267b59e8c3">
 
@@ -93,7 +95,7 @@ Microsoft Azure is a cloud computing platform that provides a wide range of serv
 
 ## Key Azure Products
 
-Here are some important Azure products within each category:
+> Here are some important Azure products within each category:
 
 ### IaaS Products
 
