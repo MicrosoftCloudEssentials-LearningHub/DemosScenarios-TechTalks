@@ -21,6 +21,13 @@ Last updated: 2025-04-07
 - [OneLake security overview](https://learn.microsoft.com/en-us/fabric/onelake/security/get-started-security)
 - [Best practices for OneLake security](https://learn.microsoft.com/en-us/fabric/onelake/security/best-practices-secure-data-in-onelake)
 - [What is Mirroring in Fabric?](https://learn.microsoft.com/en-us/fabric/database/mirrored-database/overview)
+- [Introducing Autoscale Billing for Spark in Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/introducing-autoscale-billing-for-data-engineering-in-microsoft-fabric/)
+- [Understand the metrics app Autoscale compute for Spark page](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app-feature-autoscale-page)
+- [Billing and utilization reporting for Apache Spark in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-engineering/billing-capacity-management-for-spark)
+- [Overview of Copilot for Data Science and Data Engineering (preview)](https://learn.microsoft.com/en-us/fabric/data-engineering/copilot-notebooks-overview)
+- [Transform and enrich data seamlessly with AI functions (Preview)](https://learn.microsoft.com/en-us/fabric/data-science/ai-functions/overview?tabs=pandas)
+- [Summarize text with the ai.summarize function](https://learn.microsoft.com/en-us/fabric/data-science/ai-functions/summarize?tabs=column-summary)
+
 
 </details>
 
@@ -149,6 +156,8 @@ Last updated: 2025-04-07
    - Go to the Fabric workspace and select the ⚙️.
    - Choose `Manage connection and gateways` to configure the connection to your Snowflake account.
 
+       <img width="550" alt="image" src="https://github.com/user-attachments/assets/c55024b9-1841-4a12-b0c8-81515d925553" />
+
 4. **Initial Replication**:
    - Start the mirroring process. The initial replication time depends on the size of the data being brought in.
    - Data is stored in a landing zone in OneLake, improving performance when converting files into delta verti-parquet.
@@ -173,6 +182,8 @@ Last updated: 2025-04-07
 2. **Configure Mirroring**:
    - Go to the Fabric workspace and select the ⚙️.
    - Choose `Manage connection and gateways` to configure the connection to your Azure SQL Managed Instance.
+
+       <img width="550" alt="image" src="https://github.com/user-attachments/assets/c55024b9-1841-4a12-b0c8-81515d925553" />
 
 3. **Set Up Gateway**:
    - Deploy either the On-Premises Data Gateway or VNET Data Gateway depending on your network setup.
@@ -205,7 +216,105 @@ Last updated: 2025-04-07
 
 | **Category**                | **Details**                                                                                                                                                                                                                                                                                                                                 |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Data Engineering & Data Science** | - **Fabric Data Agents (Former AI Skills)**: Integrate Data Agents with Azure AI Foundry.<br/> - **Copilot & AI Features**: Available with all paid-SKU, starting with F2.<br/> - **Autoscale Billing for Spark**: Serverless, pay-as-you-go billing, no longer consuming your Fabric capacity when enabled.<br/> - **Copilot Improvements**: Copilot is now pre-installed, supports data-specific queries, and tracks historic interactions.<br/> - **AI Functions**: Apply LLM models for summarization, text generation, classification, sentiment analysis, and translation.<br/> - **Row-Level & Column-Level Security in Spark**. |
+| **Data Engineering & Data Science** | - **Fabric Data Agents (Former AI Skills)**: Integrate Data Agents with Azure AI Foundry. Click [here to see a quick demo about it](https://github.com/MicrosoftCloudEssentials-LearningHub/DemosScenarios-TechTalks/blob/main/0_Azure/2_AzureAnalytics/0_Fabric/demos/2_FabricAISkills.md) <br/> - **Copilot & AI Features**: Available with all paid-SKU, starting with F2.<br/> - **Autoscale Billing for Spark**: Serverless, pay-as-you-go billing, no longer consuming your Fabric capacity when enabled.<br/> - **Copilot Improvements**: Copilot is now pre-installed, supports data-specific queries, and tracks historic interactions.<br/> - **AI Functions**: Apply LLM models for summarization, text generation, classification, sentiment analysis, and translation.<br/> - **Row-Level & Column-Level Security in Spark**. |
+
+### Fabric Data Agents (Former AI Skills)
+
+> Fabric Data Agents, previously known as AI Skills, are integrated with Azure AI Foundry to enhance AI capabilities. These agents are designed to retrieve, process, and present data from various sources effectively, leveraging specialized query languages.
+
+<details>
+<summary><b>Data Sources</b></summary>
+
+> Fabric Data Agents can access and integrate data from a wide range of sources, ensuring comprehensive data retrieval and analysis. Here are the specific data sources they can interact with:
+
+- **Lakehouse Data**:
+  - **Description**: A unified data platform that combines the best features of data lakes and data warehouses.
+  - **Usage**: Ideal for storing large volumes of raw data and structured data, enabling advanced analytics and machine learning.
+
+- **Warehouse Data**:
+  - **Description**: Traditional data warehouses store structured data optimized for query performance and reporting.
+  - **Usage**: Suitable for business intelligence, reporting, and data analysis tasks.
+
+- **Power BI Semantic Models**:
+  - **Description**: Semantic models in Power BI provide a structured and meaningful representation of data.
+  - **Usage**: Used for creating interactive reports and dashboards, enabling users to explore data visually.
+
+- **KQL Databases**:
+  - **Description**: Databases that use Kusto Query Language (KQL) for querying large datasets.
+  - **Usage**: Commonly used in log analytics, monitoring, and telemetry data analysis.
+</details>
+
+<details>
+<summary><b>Query Languages</b></summary>
+
+> Fabric Data Agents utilize specialized query languages to handle complex queries and data manipulations efficiently:
+
+- **SQL (Structured Query Language)**:
+  - **Usage**: Widely used for managing and querying relational databases.
+  - **Capabilities**: Supports data retrieval, insertion, updating, and deletion operations.
+
+- **KQL (Kusto Query Language)**:
+  - **Usage**: Designed for querying large datasets, particularly in log analytics and telemetry data.
+  - **Capabilities**: Provides powerful data exploration and analysis features.
+
+- **DAX (Data Analysis Expressions)**:
+  - **Usage**: Used in Power BI, Excel, and SQL Server Analysis Services for data modeling and analysis.
+  - **Capabilities**: Enables the creation of calculated columns, measures, and custom aggregations.
+</details>
+
+<details>
+<summary><b>Custom Conversational AI Agents</b></summary>
+
+> Organizations can create custom conversational AI agents leveraging domain expertise. These agents provide real-time insights and enhance data-driven decision-making processes. Key features include:
+
+- **Domain Expertise Integration**: Custom agents can be tailored to specific industry needs, incorporating domain-specific knowledge.
+- **Real-Time Insights**: Agents can analyze data in real-time, providing immediate insights and recommendations.
+- **Enhanced Decision-Making**: By leveraging AI capabilities, organizations can make informed decisions based on comprehensive data analysis.
+</details>
+
+### Copilot & AI Features
+
+> Copilot and AI features are accessible with all paid-SKU plans, starting from the F2 tier. This ensures that users subscribing to any paid plan can leverage advanced AI functionalities to enhance their data science and engineering tasks.
+
+| **Capability**                     | **Description**                                                                 | **Benefit**                                                                                   |
+|------------------------------------|---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| **Advanced Data Analysis Tools**   | Tools for complex data analyses, including statistical analysis, trend detection, and anomaly identification. | Helps uncover insights from large datasets, identify patterns, and make data-driven decisions more efficiently. |
+| **Model Building and Training**    | Features for creating, training, and deploying machine learning models.         | Facilitates building sophisticated models with minimal effort, leveraging automated processes for hyperparameter tuning, model evaluation, and deployment. |
+| **Automation of Repetitive Tasks** | AI functionalities that automate routine tasks such as data cleaning, preprocessing, and feature engineering. | Reduces time and effort required for data preparation, allowing focus on more strategic aspects of projects. |
+| **Natural Language Processing (NLP)** | Capabilities for text analysis, including summarization, sentiment analysis, classification, and translation. | Enables extraction of meaningful information from unstructured text data, perform sentiment analysis, classify documents, and translate text between languages. |
+| **Predictive Analytics**           | Tools that use historical data to predict future trends and outcomes.           | Helps organizations anticipate future events, optimize operations, and make proactive decisions. |
+| **Visualization and Reporting**    | Features that generate visualizations and reports to present data insights in an easily understandable format. | Helps communicate findings effectively, making it easier to share insights with stakeholders and drive informed decision-making. |
+| **Integration with Other Services**| Enhanced integration capabilities with other Azure services and third-party tools. | Allows leveraging a broader ecosystem of tools and services, enhancing overall functionality and interoperability of data science workflows. |
+
+### Autoscale Billing for Spark
+
+Serverless, pay-as-you-go billing, no longer consuming your Fabric capacity when enabled. Click [here to read a blog about Introducing Autoscale Billing for Spark in Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/introducing-autoscale-billing-for-data-engineering-in-microsoft-fabric/) and see how it looks.
+
+### Copilot Improvements
+
+> Copilot is now pre-installed, supports data-specific queries, and tracks historic interactions. Click here to see more about [Overview of Copilot for Data Science and Data Engineering (preview)](https://learn.microsoft.com/en-us/fabric/data-engineering/copilot-notebooks-overview)
+
+> Data-Specific Queries: 
+
+- **Enhanced Understanding**: Copilot `now supports data-specific queries, allowing users to ask questions directly related to their datasets`.
+- **Context-Aware Responses**: It `understands the schema and metadata of the data, providing accurate and context-aware answers or code snippets`.
+- **Code Generation**: Copilot `can generate code for data transformations, visualizations, and machine learning models based on the user's queries`.
+
+> Historic Interaction Tracking:
+
+- **Memory of Past Interactions**: Copilot tracks `historic interactions, enabling it to provide more personalized and relevant responses based on previous queries`.
+- **Improved Recommendations**: This feature helps in `refining suggestions and improving the accuracy of generated code or insights`.
+
+
+### AI Functions
+
+> Apply LLM models for summarization, text generation, classification, sentiment analysis, and translation.
+
+
+
+
+- Row-Level & Column-Level Security in Spark.
+
 
 ## Data Warehouse
 
