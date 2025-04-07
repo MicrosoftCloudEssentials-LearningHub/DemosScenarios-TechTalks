@@ -188,6 +188,7 @@ Last updated: 2025-04-07
 | **On-Premises Data Gateway** | Allows Fabric services to communicate with on-premises data sources without exposing them directly to the internet. | Ensures encrypted data transfers while maintaining compliance and security protocols. | Ideal for organizations needing to access mirrored databases behind on-premises firewalls. |
 | **VNET Data Gateway**        | Enables Fabric services like Data Factory and Power BI to securely access cloud databases without requiring on-premises infrastructure. | Maintains network isolation while ensuring low-latency and high-throughput connections. | Suitable for databases residing behind virtual network (VNET) firewalls. |
 
+## Data Engineering & Data Science
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
