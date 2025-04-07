@@ -41,7 +41,7 @@ Last updated: 2025-03-24
 
 ## Overview
 
-All Azure services as for now: <br/>
+> All Azure services as for now: 
 
 <a href="#content" style="display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: #007bff; text-align: center; text-decoration: none; border-radius: 5px;"> return to Content </a>
 
