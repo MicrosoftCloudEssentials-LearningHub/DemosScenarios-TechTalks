@@ -288,3 +288,8 @@ Steps to  Access Microsoft Purview via Audit Logs:
       <img width="550" alt="image" src="https://github.com/user-attachments/assets/6fe2fc5e-9db1-47f7-bfd8-dd85694e49c8">
 
       <img width="550" alt="image" src="https://github.com/user-attachments/assets/90730142-2a56-43af-a6e5-6c3aa5deddff">
+
+<div align="center">
+  <h3 style="color: #4CAF50;">Total Visitors</h3>
+  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
