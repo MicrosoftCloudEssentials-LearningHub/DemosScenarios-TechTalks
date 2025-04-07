@@ -1,4 +1,4 @@
-# Migrate to Microsoft Fabric - Overview 
+# Azure Synapse migrate to Microsoft Fabric - Overview 
 
  Costa Rica
 
