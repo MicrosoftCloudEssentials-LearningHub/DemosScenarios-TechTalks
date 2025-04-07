@@ -16,6 +16,9 @@ Last updated: 2025-04-07
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
+- [Announcements from the Microsoft Fabric Community Conference](https://www.microsoft.com/en-us/microsoft-fabric/blog/2024/03/26/announcements-from-the-microsoft-fabric-community-conference/?msockid=38ec3806873362243e122ce086486339)
+- [FabCon 2025: Fueling tomorrow’s AI with new agentic capabilities and security innovations in Fabric](https://www.microsoft.com/en-us/microsoft-fabric/blog/2025/03/31/fabcon-2025-fueling-tomorrows-ai-with-new-agentic-capabilities-and-security-innovations-in-fabric/)
+
 </details>
 
 ## Overview
