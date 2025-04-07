@@ -20,6 +20,7 @@ Last updated: 2025-04-07
 - [FabCon 2025: Fueling tomorrow’s AI with new agentic capabilities and security innovations in Fabric](https://www.microsoft.com/en-us/microsoft-fabric/blog/2025/03/31/fabcon-2025-fueling-tomorrows-ai-with-new-agentic-capabilities-and-security-innovations-in-fabric/)
 - [OneLake security overview](https://learn.microsoft.com/en-us/fabric/onelake/security/get-started-security)
 - [Best practices for OneLake security](https://learn.microsoft.com/en-us/fabric/onelake/security/best-practices-secure-data-in-onelake)
+- [What is Mirroring in Fabric?](https://learn.microsoft.com/en-us/fabric/database/mirrored-database/overview)
 
 </details>
 
@@ -79,6 +80,113 @@ Last updated: 2025-04-07
 - **Enhanced Data Pipelines**: The Variable Library is `already available for use in data pipelines, allowing for more streamlined and efficient data processing`.
 - **Future Integrations**: Plans are in place to `expand the use of the Variable Library to other areas within the Fabric platform, further enhancing its utility`.
 
+## Data Integration 
+
+> Database mirroring -> enables seamless data replication and high availability for critical workloads.
+
+| **Source**                        | **Support Status** | **Connectivity**                                                                 | **Technical Details**|
+|-----------------------------------|--------------------|----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Azure SQL Database**            | Current Support    | On-Premises Data Gateway or VNET Data Gateway for secure and efficient data movement | - **Mirroring Mechanism**: Utilizes SQL’s Change Data Capture (CDC) stack optimized for lake-centric architecture. CDC stores changes locally in the database, while mirroring reads data from the transaction log and publishes it to OneLake.<br>- **Data Format**: Converts data to Parquet format for analytics.<br>- **Features**: Supports DDL (Data Definition Language) operations like Alter/Drop/Rename tables/columns, and Truncate tables while mirroring is active.<br>- **APIs**: Programmatic APIs available for setup and management. |
+| **Snowflake**                     | Current Support    | On-Premises Data Gateway or VNET Data Gateway for secure and efficient data movement | - **Mirroring Mechanism**: Similar to Azure SQL Database, leveraging secure gateways for data replication.<br>- **Data Format**: Ensures data is analytics-ready in OneLake. |
+| **Azure SQL Managed Instance (MI)**| Coming Soon        | Will utilize On-Premises Data Gateway or VNET Data Gateway for secure connectivity | - **Mirroring Mechanism**: Expected to follow the same CDC-based approach as Azure SQL Database.<br>- **Data Format**: Will convert data to Parquet format for seamless integration. |
+| **On-Premises SQL Server, Oracle, and Dataverse** | Future Support     | Will follow secure connectivity protocols using On-Premises Data Gateway          | - **Mirroring Mechanism**: Anticipated to use similar CDC-based replication.<br>- **Data Format**: Data will be converted to Parquet format for analytics. |
+
+> Installation Steps: 
+<details>
+<summary>Azure SQL Database</summary>
+
+1. **Enable System Assigned Managed Identity (SAMI)**:
+   - In the Azure portal, navigate to your Azure SQL logical server.
+   - Enable System Assigned Managed Identity (SAMI) with a single step.
+
+2. **Configure Mirroring**:
+   - Go to the Fabric workspace and select the ⚙️.
+   - Choose `Manage connection and gateways` to configure the connection to your Azure SQL Database.
+
+3. **Set Up Gateway**:
+   - Deploy either the On-Premises Data Gateway or VNET Data Gateway depending on your network setup.
+   - Configure the gateway to securely connect to your Azure SQL Database.
+
+4. **Initial Replication**:
+   - Start the mirroring process. The initial replication time depends on the size of the data being brought in.
+   - Data is stored in a landing zone in OneLake, improving performance when converting files into delta verti-parquet.
+
+5. **Monitor Replication**:
+   - Use Dynamic Management Views (DMVs) and stored procedures to validate configuration and monitor replication status.
+   - Execute queries like `SELECT * FROM sys.dm_change_feed_log_scan_sessions` to check if changes are properly flowing.
+
+6. **Manage Connections**:
+   - Regularly check and manage connections through the Fabric workspace settings.
+   - Ensure compliance with security protocols and monitor data transfer activities.
+
+7. **Troubleshooting**: If experiencing mirroring problems, perform database-level checks and contact support if needed.
+
+</details>
+
+<details>
+<summary>Snowflake</summary>
+
+1. **Configure Snowflake Account**: Ensure your Snowflake account is set up and accessible.
+
+2. **Set Up Gateway**:
+   - Deploy either the On-Premises Data Gateway or VNET Data Gateway depending on your network setup.
+   - Configure the gateway to securely connect to your Snowflake account.
+
+3. **Configure Mirroring**:
+   - Go to the Fabric workspace and select the ⚙️.
+   - Choose "Manage connection and gateways" to configure the connection to your Snowflake account.
+
+4. **Initial Replication**:
+   - Start the mirroring process. The initial replication time depends on the size of the data being brought in.
+   - Data is stored in a landing zone in OneLake, improving performance when converting files into delta verti-parquet.
+
+5. **Monitor Replication**: Use Snowflake's monitoring tools to validate configuration and monitor replication status.
+
+6. **Manage Connections**:
+   - Regularly check and manage connections through the Fabric workspace settings.
+   - Ensure compliance with security protocols and monitor data transfer activities.
+
+7. **Troubleshooting**:  If experiencing mirroring problems, perform account-level checks and contact support if needed.
+
+</details>
+
+<details>
+<summary>Azure SQL Managed Instance (MI)</summary>
+
+1. **Enable System Assigned Managed Identity (SAMI)**:
+   - In the Azure portal, navigate to your Azure SQL Managed Instance.
+   - Enable System Assigned Managed Identity (SAMI) with a single step.
+
+2. **Configure Mirroring**:
+   - Go to the Fabric workspace and select the ⚙️.
+   - Choose "Manage connection and gateways" to configure the connection to your Azure SQL Managed Instance.
+
+3. **Set Up Gateway**:
+   - Deploy either the On-Premises Data Gateway or VNET Data Gateway depending on your network setup.
+   - Configure the gateway to securely connect to your Azure SQL Managed Instance.
+
+4. **Initial Replication**:
+   - Start the mirroring process. The initial replication time depends on the size of the data being brought in.
+   - Data is stored in a landing zone in OneLake, improving performance when converting files into delta verti-parquet.
+
+5. **Monitor Replication**:
+   - Use Dynamic Management Views (DMVs) and stored procedures to validate configuration and monitor replication status.
+   - Execute queries like `SELECT * FROM sys.dm_change_feed_log_scan_sessions` to check if changes are properly flowing.
+
+6. **Manage Connections**:
+   - Regularly check and manage connections through the Fabric workspace settings.
+   - Ensure compliance with security protocols and monitor data transfer activities.
+
+7. **Troubleshooting**: If experiencing mirroring problems, perform instance-level checks and contact support if needed.
+
+</details>
+
+### Gateway Solutions
+
+| **Gateway**                  | **Purpose**     | **Security**                                                                 | **Usage**|
+|------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| **On-Premises Data Gateway** | Allows Fabric services to communicate with on-premises data sources without exposing them directly to the internet. | Ensures encrypted data transfers while maintaining compliance and security protocols. | Ideal for organizations needing to access mirrored databases behind on-premises firewalls. |
+| **VNET Data Gateway**        | Enables Fabric services like Data Factory and Power BI to securely access cloud databases without requiring on-premises infrastructure. | Maintains network isolation while ensuring low-latency and high-throughput connections. | Suitable for databases residing behind virtual network (VNET) firewalls. |
 
 
 <div align="center">
