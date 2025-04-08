@@ -14,10 +14,8 @@ Last updated: 2024-12-24
 
 > $${\color{red}Same\ geo\ but\ across\ region}$$ The `multi-geography setup` in Microsoft Fabric allows you to deploy content to data centers in regions other than the home region of your Fabric tenant. This feature is particularly useful for multinational customers who need to address regional, industry-specific, or organizational data residency requirements.` In your example, if you have the US as the geography with Central US and West US 2 as regions, you can set up a Fabric capacity reservation in one of these regions. Once a capacity is created, it remains in that region, and any workspaces created under it will have their content stored in that region`. This approach ensures that `you don't need to move the home region`, which can simplify management and compliance. Click [here for more information about it](https://learn.microsoft.com/en-us/fabric/admin/service-admin-premium-multi-geo?tabs=power-bi-premium)
 
-## Wiki 
-
 <details>
-<summary><b>Table of Contents</b> (Click to expand)</summary>
+<summary><b>List of References</b> (Click to expand)</summary>
 
 - [Important update to Power BI Premium licensing](https://www.microsoft.com/en-us/licensing/news/power-bi-premium-sku-retirement)
 - [Important update coming to Power BI Premium licensing - Blog](https://powerbi.microsoft.com/en-us/blog/important-update-coming-to-power-bi-premium-licensing/)
@@ -36,6 +34,16 @@ Last updated: 2024-12-24
 - [Move and transform data with dataflow and data pipelines - Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-factory/transform-data)
 - [Configure Multi-Geo support for Fabric](https://learn.microsoft.com/en-us/fabric/admin/service-admin-premium-multi-geo?tabs=power-bi-premium)
   
+</details>
+
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
+
+- [Overview](#overview)
+- [Impact on Existing Reports and Dashboards](#impact-on-existing-reports-and-dashboards)
+- [How to transition](#how-to-transition)
+
+
 </details>
 
 ## Overview 
