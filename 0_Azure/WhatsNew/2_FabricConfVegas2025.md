@@ -306,22 +306,22 @@ Last updated: 2025-04-08
 
 ### Autoscale Billing for Spark
 
-Serverless, pay-as-you-go billing, no longer consuming your Fabric capacity when enabled. Click [here to read a blog about Introducing Autoscale Billing for Spark in Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/introducing-autoscale-billing-for-data-engineering-in-microsoft-fabric/) and see how it looks.
+> Serverless, pay-as-you-go billing, no longer consuming your Fabric capacity when enabled. Click [here to read a blog about Introducing Autoscale Billing for Spark in Microsoft Fabric](https://blog.fabric.microsoft.com/en-US/blog/introducing-autoscale-billing-for-data-engineering-in-microsoft-fabric/) and see how it looks.
 
 ### Copilot Improvements
 
 > Copilot is now pre-installed, supports data-specific queries, and tracks historic interactions. Click here to see more about [Overview of Copilot for Data Science and Data Engineering (preview)](https://learn.microsoft.com/en-us/fabric/data-engineering/copilot-notebooks-overview)
 
-> Data-Specific Queries: 
+Data-Specific Queries: 
 
-- **Enhanced Understanding**: Copilot `now supports data-specific queries, allowing users to ask questions directly related to their datasets`.
-- **Context-Aware Responses**: It `understands the schema and metadata of the data, providing accurate and context-aware answers or code snippets`.
-- **Code Generation**: Copilot `can generate code for data transformations, visualizations, and machine learning models based on the user's queries`.
+> - **Enhanced Understanding**: Copilot `now supports data-specific queries, allowing users to ask questions directly related to their datasets`. <br/>
+> - **Context-Aware Responses**: It `understands the schema and metadata of the data, providing accurate and context-aware answers or code snippets`. <br/>
+> - **Code Generation**: Copilot `can generate code for data transformations, visualizations, and machine learning models based on the user's queries`.
 
-> Historic Interaction Tracking:
+Historic Interaction Tracking:
 
-- **Memory of Past Interactions**: Copilot tracks `historic interactions, enabling it to provide more personalized and relevant responses based on previous queries`.
-- **Improved Recommendations**: This feature helps in `refining suggestions and improving the accuracy of generated code or insights`.
+> - **Memory of Past Interactions**: Copilot tracks `historic interactions, enabling it to provide more personalized and relevant responses based on previous queries`. <br/>
+> - **Improved Recommendations**: This feature helps in `refining suggestions and improving the accuracy of generated code or insights`.
 
 ### AI Functions
 
