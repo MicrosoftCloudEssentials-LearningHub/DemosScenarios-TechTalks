@@ -27,6 +27,7 @@ Last updated: 2025-04-08
 - [Overview of Copilot for Data Science and Data Engineering (preview)](https://learn.microsoft.com/en-us/fabric/data-engineering/copilot-notebooks-overview)
 - [Transform and enrich data seamlessly with AI functions (Preview)](https://learn.microsoft.com/en-us/fabric/data-science/ai-functions/overview?tabs=pandas)
 - [Summarize text with the ai.summarize function](https://learn.microsoft.com/en-us/fabric/data-science/ai-functions/summarize?tabs=column-summary)
+- [Fabric March 2025 Feature Summary - Fabric Blog](https://blog.fabric.microsoft.com/en-us/blog/fabric-march-2025-feature-summary?ft=Monthly-update:category#post-20656-_Toc193974187)
 
 </details>
 
