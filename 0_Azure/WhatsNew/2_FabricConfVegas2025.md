@@ -28,11 +28,28 @@ Last updated: 2025-04-07
 - [Transform and enrich data seamlessly with AI functions (Preview)](https://learn.microsoft.com/en-us/fabric/data-science/ai-functions/overview?tabs=pandas)
 - [Summarize text with the ai.summarize function](https://learn.microsoft.com/en-us/fabric/data-science/ai-functions/summarize?tabs=column-summary)
 
-
 </details>
 
-## Content 
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
 
+- [Platform Enhancements](#platform-enhancements)
+    - [OneLake Security Private Preview](#onelake-security-private-preview)
+    - [Command Line Interface CLI](#command-line-interface-cli)
+    - [Variable Library](#variable-library)
+- [Data Integration](#data-integration)
+    - [Gateway Solutions](#gateway-solutions)
+- [Data Engineering & Data Science](#data-engineering--data-science)
+    - [Fabric Data Agents Former AI Skills](#fabric-data-agents-former-ai-skills)
+    - [Copilot & AI Features](#copilot--ai-features)
+    - [Autoscale Billing for Spark](#autoscale-billing-for-spark)
+    - [Copilot Improvements](#copilot-improvements)
+    - [AI Functions](#ai-functions)
+- [Data Warehouse](#data-warehouse)
+- [Real-Time Intelligence](#real-time-intelligence)
+- [Power BI](#power-bi)
+
+</details>
 
 ## Platform Enhancements
 
@@ -305,36 +322,38 @@ Serverless, pay-as-you-go billing, no longer consuming your Fabric capacity when
 - **Memory of Past Interactions**: Copilot tracks `historic interactions, enabling it to provide more personalized and relevant responses based on previous queries`.
 - **Improved Recommendations**: This feature helps in `refining suggestions and improving the accuracy of generated code or insights`.
 
-
 ### AI Functions
 
 > Apply LLM models for summarization, text generation, classification, sentiment analysis, and translation.
 
 
-
-
-- Row-Level & Column-Level Security in Spark.
-
+| **Function**             | **Description**                                                                 | **Use Cases**                                      | **Supported Environments** |
+|--------------------------|---------------------------------------------------------------------------------|---------------------------------------------------|----------------------------|
+| `ai.summarize`           | Generates concise summaries of input text.                                       | Summarizing articles, reports, and descriptions.  | pandas, PySpark            |
+| `ai.generate_response`   | Produces coherent and contextually relevant text based on custom user prompts.   | Creating content for blogs, stories, and marketing materials. | pandas, PySpark            |
+| `ai.classify`            | Categorizes input text values according to predefined labels.                    | Sorting emails, customer feedback, and social media posts. | pandas, PySpark            |
+| `ai.analyze_sentiment`   | Identifies the emotional state expressed in the input text.                      | Monitoring brand sentiment, analyzing customer reviews, and gauging public opinion. | pandas, PySpark|
+| `ai.translate`           | Translates text from one language to another while maintaining context and meaning. | Translating documents, websites, and communication in multilingual environments. | pandas, PySpark|
+| `ai.extract`             | Finds and extracts specific types of information from text.                      | Extracting locations, names, and other entities from text. | pandas, PySpark            |
+| `ai.fix_grammar`         | Corrects spelling, grammar, and punctuation in text.                             | Improving the quality of written content.         | pandas, PySpark            |
+| `ai.similarity`          | Compares the meaning of input text with a common text value or corresponding text values in another column. | Finding similar text entries, deduplication.      | pandas, PySpark            |
 
 ## Data Warehouse
 
-| **Category**                | **Details**                                                                                                                                                                                                                                                                                                                                 |
-|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Data Warehouse**          | - **AI Functions**: Bring AI features to Data Warehouse, similar to Data Engineering & Data Science.<br/> - **User-Defined Functions (UDFs)**: Write custom Python functions and execute them directly through T-SQL.<br/> - **Migration Tool**: Public preview for migrating Azure Synapse Analytics warehouses to Fabric.                  |
+- **AI Functions**: Bring AI features to Data Warehouse, similar to Data Engineering & Data Science.
+- **User-Defined Functions (UDFs)**: Write custom Python functions and execute them directly through T-SQL.
+- **Migration Tool**: Public preview for migrating Azure Synapse Analytics warehouses to Fabric.    
 
 ## Real-Time Intelligence
 
-| **Category**                | **Details**                                                                                                                                                                                                                                                                                                                                 |
-|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Real-Time Intelligence**  | **Streaming & Event Connectors**: New integrations for MQTT, Solace, ADX, Real-Time Weather, and Azure Event Grid.|
+> **Streaming & Event Connectors**: New integrations for MQTT, Solace, ADX, Real-Time Weather, and Azure Event Grid.
 
 ## Power BI
 
-| **Category**                | **Details**                                                                                                                                                                                                                                                                                                                                 |
-|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Power BI**                | - **Direct Lake Semantic Models**: Create models directly in Power BI Desktop, and use data from multiple OneLake sources.<br/> - **Datapoint Annotations**: Add descriptive text to specific data points directly in PowerPoint presentations.<br/> - **Copilot Improvements**: Ask data questions from your model.<br/> - **Notebook Tools**: Quickly analyze semantic models with pre-built notebooks for best practices and memory optimization. |
-
-
+- **Direct Lake Semantic Models**: Create models directly in Power BI Desktop, and use data from multiple OneLake sources.
+- **Datapoint Annotations**: Add descriptive text to specific data points directly in PowerPoint presentations.
+- **Copilot Improvements**: Ask data questions from your model.
+- **Notebook Tools**: Quickly analyze semantic models with pre-built notebooks for best practices and memory optimization. 
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
