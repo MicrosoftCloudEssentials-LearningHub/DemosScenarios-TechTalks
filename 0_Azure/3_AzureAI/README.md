@@ -6,7 +6,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-03-24
+Last updated: 2025-04-07
 
 ----------
 
@@ -41,7 +41,7 @@ Last updated: 2025-03-24
 
 ## Overview
 
-All Azure services as for now: <br/>
+> All Azure services as for now: 
 
 <a href="#content" style="display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: #007bff; text-align: center; text-decoration: none; border-radius: 5px;"> return to Content </a>
 
