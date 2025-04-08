@@ -1,11 +1,11 @@
-# Migration from Power BI Premium (P-SKUs) to Fabric (F-SKUs) 
+# Migration from Power BI Premium (P-SKUs) to Fabric (F-SKUs) - Overview
 
 Costa Rica
 
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2024-12-24
+Last updated: 2025-04-08
 
 ----------
 
@@ -42,7 +42,9 @@ Last updated: 2024-12-24
 - [Overview](#overview)
 - [Impact on Existing Reports and Dashboards](#impact-on-existing-reports-and-dashboards)
 - [How to transition](#how-to-transition)
-
+  - [Same region](#same-region)
+  - [Across Region](#across-region)
+  - [For both approaches](#for-both-approaches)
 
 </details>
 
@@ -87,6 +89,14 @@ Last updated: 2024-12-24
 > - If `errors`, you can switch back to the old capacity, and troubleshoot.
 
 ## How to transition 
+
+> Overall:
+> - **Migrating workspace with only Power BI items** (`within the same region`): If the workspace contains only Power BI items (and no Fabric items), you can move the workspace to a different capacity within the same region. This process is supported and straightforward. <br/>
+> - **Migrating workspace with only Power BI items** (`to a different region`): If the workspace contains only Power BI items (and no Fabric items), moving it to another region is not supported directly. However, you can perform a backup and restore of semantic models using Power BI Premium. For detailed steps, refer to the  [Backup and restore semantic models with Power BI Premium](https://learn.microsoft.com/en-us/power-bi/enterprise/service-premium-backup-restore-dataset) documentation. Also, review the [Considerations and limitations](https://learn.microsoft.com/en-us/power-bi/enterprise/service-premium-backup-restore-dataset#considerations-and-limitations) before proceeding. <br/>
+> - **Migrating workspace with both Fabric and Power BI items** (`within the same region)`: If the workspace contains both Fabric and Power BI items, you can move it from one capacity to another within the same region. This migration is supported and can be done without any special considerations.
+> - **Migrating workspace with both Fabric and Power BI items** (`to a different region`): Moving workspaces that contain Fabric items to a different region is not supported. If you need to migrate such workspaces, you must first delete all Fabric artifacts. Once the workspace contains only Power BI items, you can then follow the migration process for workspaces with only Power BI items.
+
+### Same region 
 
 > [!NOTE]
 > If the resources are in the $${\color{red}same\ region}$$, it's just $${\color{red}reassigning\ the\ workspace\ compute\ ->\ Capacity}$$
@@ -136,8 +146,14 @@ Last updated: 2024-12-24
 
                <img width="550" alt="image" src="https://github.com/user-attachments/assets/1a6cbfdf-cde3-4eb4-a7d8-f66a28094059">
 
+### Across Region
+
 > [!NOTE]
 > If the $${\color{red}across\ region}$$, you need to $${\color{red}also\ export/import\ reports\ and\ semantic\ models,\ recreate\ dashboards}$$.
+
+
+https://github.com/user-attachments/assets/3fd19a65-1fd7-47ea-bc3c-a73314bb2d0b
+
 
 5. Data Export and Import: `-> Sematic Models/Dataset`
    - `For small Datasets`: Use Power BI’s export features to export datasets from the P1 capacity.
@@ -200,7 +216,9 @@ Last updated: 2024-12-24
          - Click on **Upload** > **Upload a file** and select the .pbix file you downloaded.
          - Update data sources and connections to point to the new F64 capacity.
       2. **Recreate Dashboards**: Manually recreate the dashboards in the F64 capacity by pinning the necessary visuals from the imported reports.
-         
+
+### For both approaches 
+        
 > [!NOTE]
 > Verify the $${\color{red}migration\ and\ documentation}$$ are steps recommended for $${\color{red}both\ approaches,\ same\ region\ migration\ or\ across\ region}$$.
          
