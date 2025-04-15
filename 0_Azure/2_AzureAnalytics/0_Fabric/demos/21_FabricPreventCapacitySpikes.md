@@ -158,3 +158,7 @@ Find below an example of the email format:
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/308e372d-48de-46f4-9138-984e15b5fd24">
 
+<div align="center">
+  <h3 style="color: #4CAF50;">Total Visitors</h3>
+  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
