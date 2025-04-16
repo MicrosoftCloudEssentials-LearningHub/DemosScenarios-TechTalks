@@ -53,7 +53,7 @@ Last updated: 2025-04-16
 1. **Publish the Report to Power BI Service**: Ensure your report is published to the [Fabric/Power BI](https://app.fabric.microsoft.com) service.
 2. **Get the Embed Code**:
    - In Power BI service, open the report you want to embed.
-   - Click on the `File"` menu and select `Embed report`.
+   - Click on the `File` menu and select `Embed report`.
    - Choose your prefered option.
   
       <img width="949" alt="image" src="https://github.com/user-attachments/assets/9232bd3a-577e-450c-8df8-d5389b0fcf1a" />
