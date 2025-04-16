@@ -26,6 +26,10 @@ Last updated: 2025-04-16
 - [Distribute Power BI content to external guest users with Microsoft Entra B2B](https://learn.microsoft.com/en-us/power-bi/enterprise/service-admin-azure-ad-b2b#guest-users-who-can-edit-and-manage-content)
 - [External data sharing in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/governance/external-data-sharing-overview)
 - [Pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?msockid=38ec3806873362243e122ce086486339)
+- [Power BI Premium Per User](https://learn.microsoft.com/en-us/power-bi/enterprise/service-premium-per-user-faq)
+- [Power BI service per-user and capacity-based licenses](https://learn.microsoft.com/en-us/power-bi/fundamentals/service-features-license-type)
+- [Permission model](https://learn.microsoft.com/en-us/fabric/security/permission-model)
+- [Roles in workspaces in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/fundamentals/roles-workspaces)
 
 </details>
 
