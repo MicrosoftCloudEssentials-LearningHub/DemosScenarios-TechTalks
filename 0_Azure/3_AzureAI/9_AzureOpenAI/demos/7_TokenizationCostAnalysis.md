@@ -1,4 +1,4 @@
-# Azure OpenAI: Tokenization & Cost Analysis 
+# AOAI Tokenization & Cost Analysis - Overview 
 
 Costa Rica
 
@@ -10,7 +10,7 @@ Last updated: 2025-04-22
 ----------
 
 <details>
-<summary><b>Table of References</b> (Click to expand)</summary>
+<summary><b>List of References</b> (Click to expand)</summary>
   
 - [Azure OpenAI Service - Pricing](https://azure.microsoft.com/en-gb/pricing/details/cognitive-services/openai-service/)
 - [Plan to manage costs for Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/manage-costs)
