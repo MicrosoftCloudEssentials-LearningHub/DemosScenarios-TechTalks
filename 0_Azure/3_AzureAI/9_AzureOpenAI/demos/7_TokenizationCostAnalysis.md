@@ -5,14 +5,12 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2024-11-19
+Last updated: 2025-04-22
 
 ----------
 
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki</b> (Click to expand)</summary>
+<summary><b>Table of References</b> (Click to expand)</summary>
   
 - [Azure OpenAI Service - Pricing](https://azure.microsoft.com/en-gb/pricing/details/cognitive-services/openai-service/)
 - [Plan to manage costs for Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/manage-costs)
@@ -28,13 +26,9 @@ Last updated: 2024-11-19
   
 </details>
 
-## Content 
-
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
 
-- [Wiki](#wiki)
-- [Content](#content)
 - [Cost Analysis](#cost-analysis)
 - [Deployments type](#deployments-type)
 - [Billing models](#billing-models)
