@@ -14,6 +14,7 @@ Last updated: 2025-04-23
 
 - [Migration overview: From SQL Server](https://learn.microsoft.com/en-us/data-migration/sql-server/overview)
 - [Migrate from SQL Server: Pre-migration](https://learn.microsoft.com/en-us/data-migration/sql-server/pre-migration?tabs=sqlmi)
+- [Migrate SQL Server to Azure SQL Managed Instance at Scale](https://techcommunity.microsoft.com/blog/modernizationbestpracticesblog/migrate-sql-server-to-azure-sql-managed-instance-at-scale/3970683)
 - [Migrate on-premises SQL Server or SQL Server on Azure VMs to Azure SQL Database using the Data Migration Assistant](https://learn.microsoft.com/en-us/sql/dma/dma-migrateonpremsqltosqldb?view=sql-server-ver16)
 - [Deploy SharePoint Server with Azure SQL Managed Instance](https://learn.microsoft.com/en-us/SharePoint/administration/deploy-azure-sql-managed-instance-with-sharepoint-servers)
 
