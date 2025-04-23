@@ -20,6 +20,9 @@ Last updated: 2025-04-23
 - [FAQs about working across projects](https://learn.microsoft.com/en-us/azure/devops/project/work-across-projects-faqs?view=azure-devops)
 - [Migrating repositories from Azure DevOps to GitHub Enterprise Cloud](https://docs.github.com/en/migrations/using-github-enterprise-importer/migrating-from-azure-devops-to-github-enterprise-cloud/m)
 - [Azure DevOps Cross-Organization Reporting and Analysis using Power BI](https://devblogs.microsoft.com/premier-developer/azure-devops-cross-organization-reporting-and-analysis-using-power-bi/)
+- [Customizing the board layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-board-layout)
+- [Manage priorities and gain visibility across teams](https://learn.microsoft.com/en-us/azure/devops/boards/plans/visibility-across-teams?view=azure-devops)
+- [About configuring and customizing Azure Boards](https://learn.microsoft.com/en-us/azure/devops/boards/configure-customize?view=azure-devops&tabs=agile-process)
 
 </details>
 
@@ -32,7 +35,8 @@ Last updated: 2025-04-23
 - [Azure Pipelines](#azure-pipelines)
 - [Azure Test Plans](#azure-test-plans)
 - [Azure Artifacts](#azure-artifacts)
-
+- [Setting Up a GitHub Board to Track Items Across Multiple Repositories](#setting-up-a-github-board-to-track-items-across-multiple-repositories)
+- [Setting Up an Azure DevOps Board to Track Items Across Multiple Repositories](#setting-up-an-azure-devops-board-to-track-items-across-multiple-repositories)
 </details>
 
 ## Overview
@@ -117,7 +121,70 @@ Last updated: 2025-04-23
   - **Dependency Management**: Manage dependencies between packages. Teams can define dependencies, resolve conflicts, and ensure that applications use the correct versions of packages.
   - **Integration with CI/CD Pipelines**: Integrate package management with CI/CD pipelines. Teams can automate the publishing and consumption of packages as part of the build and release process.
 </details>
-  
+
+## Setting Up an Azure DevOps Board to Track Items Across Multiple Repositories
+
+1. **Create Work Item Queries**: Filter and view work items across multiple repositories.
+    1. Navigate to Azure Boards and select `Queries`.
+    2. Create a new query and define the criteria to include work items from multiple repositories.
+    3. Save and run the query to view the filtered work items.
+2. **Set Up Delivery Plans**: Gain visibility into deliverables scheduled across multiple teams and repositories.
+    1. Navigate to Azure Boards and select `Delivery Plans`.
+    2. Create a new delivery plan and select the teams and backlog levels of interest.
+    3. Configure the plan to overlay backlogs onto your delivery schedule.
+3. **Configure Dashboards**: Visualize work item status, progress, and trends across multiple repositories.
+    1. Navigate to Azure Boards and select `Dashboards`.
+    2. Create a new dashboard or edit an existing one.
+    3. Add widgets to display data from multiple projects, such as burndown charts, query-based widgets, and embedded webpages.
+4. **Use Portfolio Backlogs**: Track features and epics across multiple teams and repositories.
+    1. Configure teams and backlogs to support the views you want.
+    2. Add a management team for a group of feature teams and turn on the Epic portfolio backlog level.
+    3. Add feature teams to manage features, stories, and tasks, and turn on the stories and features backlog levels.
+    4. Break down epics into features and map them to the epics on the management backlog.
+5. **Consistent Labeling Across Repositories**: Use consistent labels to categorize and filter work items.
+    1. Create consistent labels across repositories (e.g., `epic`, `story`, `task`).
+    2. Apply labels to work items and use filters in Azure Boards to view related items.
+6. **Customizing Board Layouts**: Customize board layouts to fit your workflow and make it easier to track progress.
+    1. Customize columns in your project board to reflect your workflow stages.
+    2. Use fields such as status, priority, or team to organize work items within columns.
+    3. Regularly update and maintain the board to ensure it reflects the current state of work.
+7. **Automate Workflows with Azure Pipelines**: Automate repetitive tasks and ensure consistency across repositories.
+    1. Set up Azure Pipelines to automate tasks such as labeling, assigning work items, and updating project boards.
+    2. Use workflows to trigger actions based on events (e.g., work item creation, pull request merge).
+8. **Regular Reviews and Updates**: Ensure the board remains up-to-date and accurately reflects the project’s status.
+    1. Schedule regular reviews of the project board with the team.
+    2. Update the status of work items, close completed tasks, and adjust priorities as needed.
+    3. Use the board to facilitate team meetings and discussions.
+
+## Setting Up a GitHub Board to Track Items Across Multiple Repositories
+
+1. **Create an Overarching Repository for Epics** Use an overarching repository to house high-level issues (e.g., epics) that span multiple repositories.
+    1. Create a new repository dedicated to tracking high-level issues.
+    2. Create issues in this repository that represent epics or large stories.
+    3. Link these high-level issues to detailed issues in other repositories using references (e.g., `#issue_number`).
+2. **Use GitHub Projects for Cross-Repository Tracking**: GitHub Projects allows you to create boards that include issues and pull requests from multiple repositories.
+    1. Go to the GitHub Projects section and create a new project.
+    2. Add issues from multiple repositories to the project board.
+    3. Use columns to organize the workflow (e.g., To Do, In Progress, Done).
+3. **Leverage Milestones for Multi-Repo Coordination**: Milestones help group issues from multiple repositories under a common goal.
+    1. Create a milestone in each repository that will be part of the epic.
+    2. Assign relevant issues to these milestones.
+    3. Use the milestone view to track progress across repositories.
+4. **Consistent Labeling Across Repositories**: Use consistent labels to categorize and filter issues.
+    1. Create consistent labels across repositories (e.g., `epic`, `story`, `task`).
+    2. Apply labels to issues and use filters in GitHub Projects to view related issues.
+5. **Customizing Board Layouts**: Customize board layouts to fit your workflow and make it easier to track progress.
+    1. Customize columns in your project board to reflect your workflow stages.
+    2. Use fields such as status, priority, or team to organize issues within columns.
+    3. Regularly update and maintain the board to ensure it reflects the current state of work.
+6. **Automate Workflows with GitHub Actions**: Automate repetitive tasks and ensure consistency across repositories.
+    1. Set up GitHub Actions to automate tasks such as labeling, assigning issues, and updating project boards.
+    2. Use workflows to trigger actions based on events (e.g., issue creation, pull request merge).
+7. **Regular Reviews and Updates**: Ensure the board remains up-to-date and accurately reflects the project’s status.
+    1. Schedule regular reviews of the project board with the team.
+    2. Update the status of issues, close completed tasks, and adjust priorities as needed.
+    3. Use the board to facilitate team meetings and discussions.
+
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
   <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
