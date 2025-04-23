@@ -23,7 +23,8 @@ Last updated: 2025-04-23
 - [Customizing the board layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-board-layout)
 - [Manage priorities and gain visibility across teams](https://learn.microsoft.com/en-us/azure/devops/boards/plans/visibility-across-teams?view=azure-devops)
 - [About configuring and customizing Azure Boards](https://learn.microsoft.com/en-us/azure/devops/boards/configure-customize?view=azure-devops&tabs=agile-process)
-
+- [Azure DevOps Migration overview](https://learn.microsoft.com/en-us/azure/devops/migrate/migration-overview?view=azure-devops)
+  
 </details>
 
 <details>
