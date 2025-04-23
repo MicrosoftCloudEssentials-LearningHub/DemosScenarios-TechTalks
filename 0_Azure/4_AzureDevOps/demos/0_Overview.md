@@ -12,10 +12,26 @@ Last updated: 2025-04-23
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
+- [Extensions overview](https://learn.microsoft.com/en-us/azure/devops/extend/overview?view=azure-devops)
+- [Extensions for Azure DevOps VS marketplace](https://marketplace.visualstudio.com/azuredevops/)
+- [Azure DevOps About GitHub integration](https://learn.microsoft.com/en-us/azure/devops/cross-service/github-integration?view=azure-devops)
+- [Planning and tracking work for your team or project](https://docs.github.com/en/issues/tracking-your-work-with-issues/configuring-issues/planning-and-tracking-work-for-your-team-or-project)
+- [Best Practices for Managing Multiple Teams with GitHub Issues and Projects (V2)](https://github.com/orgs/community/discussions/137358)
+- [FAQs about working across projects](https://learn.microsoft.com/en-us/azure/devops/project/work-across-projects-faqs?view=azure-devops)
+- [Migrating repositories from Azure DevOps to GitHub Enterprise Cloud](https://docs.github.com/en/migrations/using-github-enterprise-importer/migrating-from-azure-devops-to-github-enterprise-cloud/m)
+- [Azure DevOps Cross-Organization Reporting and Analysis using Power BI](https://devblogs.microsoft.com/premier-developer/azure-devops-cross-organization-reporting-and-analysis-using-power-bi/)
+
 </details>
 
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
+
+- [Overview](#overview)
+- [Azure Boards](#azure-boards)
+- [Azure Repos](#azure-repos)
+- [Azure Pipelines](#azure-pipelines)
+- [Azure Test Plans](#azure-test-plans)
+- [Azure Artifacts](#azure-artifacts)
 
 </details>
 
