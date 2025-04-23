@@ -12,6 +12,7 @@ Last updated: 2025-04-23
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
+- [SQL Server Discovery and Assessments now supports As on-premises assessments](https://techcommunity.microsoft.com/blog/azuresqlblog/sql-server-discovery-and-assessments-now-supports-as-on-premises-assessments/3988691)
 - [Migration overview: From SQL Server](https://learn.microsoft.com/en-us/data-migration/sql-server/overview)
 - [Migrate from SQL Server: Pre-migration](https://learn.microsoft.com/en-us/data-migration/sql-server/pre-migration?tabs=sqlmi)
 - [Migrate SQL Server to Azure SQL Managed Instance at Scale](https://techcommunity.microsoft.com/blog/modernizationbestpracticesblog/migrate-sql-server-to-azure-sql-managed-instance-at-scale/3970683)
