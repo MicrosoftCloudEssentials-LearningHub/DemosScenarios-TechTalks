@@ -38,10 +38,10 @@ graph LR
     A --> D
     B -->|Azure SQL Database Hyperscale​| 1
     B -->|Azure SQL Database| 2
-    B -->|Azure SQL Managed Instance| 3
-    B -->|SQL Server on Azure Virtual Machines| 4
+    B -->|Azure SQL MI| 3
+    B -->|SQL Server on Azure VM| 4
     C -->|Azure Cosmos DB for NoSQL| 5
-    C -->|Azure Managed Instance for Apache Cassandra​| 6
+    C -->|Azure MI for Apache Cassandra​| 6
     C -->|vCore-based Azure Cosmos DB for MongoDB| 7
     C -->|MongoDB Atlas on Azure| 8
     D -->|Azure Database for PostgreSQL| 9
