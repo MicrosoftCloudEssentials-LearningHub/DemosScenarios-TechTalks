@@ -13,8 +13,25 @@ Last updated: 2025-04-24
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
+- [Backup and restore semantic models with Power BI Premium](https://learn.microsoft.com/en-us/power-bi/enterprise/service-premium-backup-restore-dataset)
+- [REST API - Reports Export To File](https://learn.microsoft.com/en-us/rest/api/power-bi/reports/export-to-file)
 
 </details>
+
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
+
+- [Overview](#overview)
+- [How to Remove All Fabric Items and Move the Workspace](#how-to-remove-all-fabric-items-and-move-the-workspace)
+    - [Step 1: Identify Fabric Items](#step-1-identify-fabric-items)
+    - [Step 2: Remove Fabric Items](#step-2-remove-fabric-items)
+    - [Step 3: Verify Workspace Contents](#step-3-verify-workspace-contents)
+    - [Step 4: Migrate the Workspace](#step-4-migrate-the-workspace)
+    - [Step 5: Final Verification](#step-5-final-verification)    
+
+</details>
+
+## Overview 
 
 > Many users encounter this error when attempting to reassign a workspace that was on trial or located in a different region:
 
@@ -24,9 +41,19 @@ across regions. This is not supported currently. Remove the Fabric items, or mov
 within the same region, and then try again.
 ```
 
-<img width="951" alt="image" src="https://github.com/user-attachments/assets/86aa9c42-5c66-4751-94d6-2afb6ab24b4e" />
+
+<div align="center">
+  <img width="550" alt="image" src="https://github.com/user-attachments/assets/86aa9c42-5c66-4751-94d6-2afb6ab24b4e" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
 
 https://github.com/user-attachments/assets/b515273a-b134-4d5c-b906-1a97c510939a
+
+> [!NOTE]
+> The region for the trial account was specified at the beginning of the sign-up process.
+
+<div align="center">
+  <img width="550" alt="image" src="https://github.com/user-attachments/assets/e8cedea0-9769-4439-a849-ed8b097a1167" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
 
 > Overall:
 > - **Migrating workspace with only Power BI items** (`within the same region`): If the workspace contains only Power BI items (and no Fabric items), you can move the workspace to a different capacity within the same region. This process is supported and straightforward. <br/>
@@ -63,15 +90,19 @@ https://github.com/user-attachments/assets/b515273a-b134-4d5c-b906-1a97c510939a
    - Select the item and choose the delete option.
    - Confirm the deletion.
 
+      https://github.com/user-attachments/assets/b805728c-a7ba-4b0b-b0f4-f14a9130aee7
+
 ### Step 3: Verify Workspace Contents
+
 1. **Check Remaining Items**: Ensure that only Power BI items remain in the workspace.
 2. **Double-Check**: Verify that no Fabric items are left to avoid migration issues.
 
 ### Step 4: Migrate the Workspace
+
 1. **Within the Same Region**:
    - **Move to Different Capacity**: If you are migrating within the same region, you can move the workspace to a different capacity directly.
    - **Steps**:
-     - Go to the workspace settings.
+     - Go to the workspace settings. Under license.
      - Select the new capacity.
      - Save the changes.
 
@@ -80,8 +111,13 @@ https://github.com/user-attachments/assets/b515273a-b134-4d5c-b906-1a97c510939a
      - **Backup Semantic Models**: Use Power BI Premium to back up the semantic models.
      - **Restore in New Region**: Restore the backed-up models in the new region.
      - **Steps**:
-       - Refer to the Backup and restore semantic models with Power BI Premium documentation for detailed instructions.
-       - Review the Considerations and limitations before proceeding.
+       - Refer to the [Backup and restore semantic models with Power BI Premium documentation](https://learn.microsoft.com/en-us/power-bi/enterprise/service-premium-backup-restore-dataset) for detailed instructions.
+       - Review the [Considerations and limitations](https://learn.microsoft.com/en-us/power-bi/enterprise/service-premium-backup-restore-dataset#considerations-and-limitations) before proceeding.
+       - Go to the workspace settings. Under license.
+       - Select the new capacity.
+       - Save the changes.
+
+           https://github.com/user-attachments/assets/b25c0b7b-ec83-471a-bc0c-010ca28d5f7c
 
 ### Step 5: Final Verification
 1. **Check Migration**: Ensure that all items have been successfully migrated.
