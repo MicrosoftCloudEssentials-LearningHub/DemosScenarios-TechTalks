@@ -32,7 +32,7 @@ within the same region, and then try again.
 > - **Migrating workspace with only Power BI items** (`to a different region`): If the workspace contains only Power BI items (and no Fabric items), moving it to another region is not supported directly. However, you can perform a backup and restore of semantic models using Power BI Premium. For detailed steps, refer to the  [Backup and restore semantic models with Power BI Premium](https://learn.microsoft.com/en-us/power-bi/enterprise/service-premium-backup-restore-dataset) documentation. Also, review the [Considerations and limitations](https://learn.microsoft.com/en-us/power-bi/enterprise/service-premium-backup-restore-dataset#considerations-and-limitations) before proceeding. <br/>
 > - **Migrating workspace with both Fabric and Power BI items** (`within the same region)`: If the workspace contains both Fabric and Power BI items, you can move it from one capacity to another within the same region. This migration is supported and can be done without any special considerations.
 > - **Migrating workspace with both Fabric and Power BI items** (`to a different region`): Moving workspaces that contain Fabric items to a different region is not supported. If you need to migrate such workspaces, you must first delete all Fabric artifacts. Once the workspace contains only Power BI items, you can then follow the migration process for workspaces with only Power BI items. <br/> <br/>
-> If you want to read more about it please find this quick overview about [Migration from Power BI Premium (P-SKUs) to Fabric (F-SKUs)](./demos/8_MigrationPtoFSku.md)
+> If you want to read more about it please find this quick overview about [Migration from Power BI Premium (P-SKUs) to Fabric (F-SKUs)](./8_MigrationPtoFSku.md)
 
 
 
