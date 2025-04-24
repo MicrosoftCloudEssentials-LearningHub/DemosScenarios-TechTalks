@@ -52,6 +52,7 @@ Click here to follow the [steps to start the fabric capacity trial](https://lear
 
 <img width="300" alt="image" src="https://github.com/user-attachments/assets/1151ba72-0be9-41d4-8c05-861d95cdd9b9">
 
+https://github.com/user-attachments/assets/ff37f30a-7217-4b7e-9f35-d7ada27a5bd9
 
 ## Roles in Workspaces in Microsoft Fabric
 
