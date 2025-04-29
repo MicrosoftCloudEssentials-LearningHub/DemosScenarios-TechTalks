@@ -9,11 +9,8 @@ Last updated: 2025-01-13
 
 ------------------------------------------
 
-
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki Contents</b> (Click to expand)</summary>
+<summary><b>List of References</b> (Click to expand)</summary>
 
 - [Microsoft Azure AI Fundamentals: AI Overview](https://learn.microsoft.com/en-us/training/paths/get-started-with-artificial-intelligence-on-azure/)
 - [Develop generative AI apps in Azure AI Foundry portal](https://learn.microsoft.com/en-us/training/paths/create-custom-copilots-ai-studio/)
@@ -25,11 +22,13 @@ Last updated: 2025-01-13
 
 </details>
 
-## Content 
-
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
 
+- [Overview](#overview)
+- [Deploy a language model with Azure AI Foundry](#deploy-a-language-model-with-azure-ai-foundry)
+- [Understand the development lifecycle of a large language model LLM app](#understand-the-development-lifecycle-of-a-large-language-model-llm-app)
+- [Large Language Model LLM application with prompt flow](#large-language-model-llm-application-with-prompt-flow)
 
 </details>
 
@@ -403,11 +402,6 @@ These workflows typically consist of three main components:
 | **Standard Flow**  | General LLM-based application development                                   | - Versatile tools for various tasks<br>- Data processing, analysis, and transformation<br>- Handles large datasets<br>- Cleans and prepares data for analysis<br>- Enables complex workflows | - Building robust and flexible applications<br>- General-purpose LLM workflows                    |
 | **Chat Flow**      | Conversational applications                                                 | - Enhanced support for chat functionalities<br>- Natural language understanding<br>- Dialogue management<br>- Response generation<br>- Advanced NLP capabilities<br>- Manages conversation flow<br>- Generates context-aware responses | - Creating chatbots and virtual assistants<br>- Interactive conversational agents|
 | **Evaluation Flow**| Performance evaluation                                                      | - Tools for measuring performance metrics<br>- Comparing results<br>- Identifying areas for improvement<br>- Measures accuracy, precision, recall, and F1 score<br>- Compares results from different runs<br>- Pinpoints areas for enhancement | - Iterative development and optimization<br>- Ensuring applications meet performance standards|
-
-## Connections and Runtimes
-
-
-
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
