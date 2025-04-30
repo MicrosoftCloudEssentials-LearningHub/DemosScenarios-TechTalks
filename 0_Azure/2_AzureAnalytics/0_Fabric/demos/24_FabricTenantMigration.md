@@ -11,12 +11,15 @@ Last updated: 2024-12-28
 ----------
 
 > [!NOTE]
-> The examples below use regions `like Central US and East US, and capacities like P3 and F256 as example`. However, `the same logic can be applied to other region combinations`, essentially when dealing with `different regions`.
+> The examples below use regions `like Central US and East US, and capacities like P1 and F64 as example`. However, `the same logic can be applied to other region combinations`, essentially when dealing with `different regions`.
 
-## Wiki 
+> [!IMPORTANT]
+> Please read [Move between regions](https://learn.microsoft.com/en-us/power-bi/support/service-admin-region-move#can-i-migrate-or-merge-my-power-bi-tenant-into-a-different-tenant-for-example-because-of-a-company-merger) to understand the process. Also, click here to learn how to [Request a tenant region move](https://learn.microsoft.com/en-us/power-bi/support/service-admin-region-move#request-a-region-move). <br/>
+> - Microsoft Support will coordinate the migration of tenant, but you are responsible for backing up and restoring your data. <br/>
+> - They can assist with troubleshooting if issues arise during backup or restore.
 
 <details>
-<summary><b>Table of Wiki </b> (Click to expand)</summary>
+<summary><b>List of References </b> (Click to expand)</summary>
 
 - [Microsoft Fabric deployment patterns](https://learn.microsoft.com/en-us/azure/architecture/analytics/architecture/fabric-deployment-patterns)
 - [Evaluate and optimize your Microsoft Fabric capacity](https://learn.microsoft.com/en-us/fabric/enterprise/optimize-capacity)
@@ -27,20 +30,15 @@ Last updated: 2024-12-28
 
 </details>
 
-## Content
-
 <details>
 <summary><b>Table of Content </b> (Click to expand)</summary>
 
-- [Wiki](#wiki)
-- [Content](#content)
 - [Overview](#overview)
-- [Methods Approaches to achieve it](#methods-approaches-to-achieve-it)
-    - [Create F256 Capacity in Central US Same Region as Current P3 and Reassign Workspaces](#create-f256-capacity-in-central-us-same-region-as-current-p3-and-reassign-workspaces)
-    - [Create F256 Capacity in East US Same Region as Data Sources and Azure Tenant and Reassign Power BI Content Only Workspaces, Manually Migrate Fabric Items](#create-f256-capacity-in-east-us-same-region-as-data-sources-and-azure-tenant-and-reassign-power-bi-content-only-workspaces-manually-migrate-fabric-items)
-    - [Create New Capacity in East US Before Migrating Fabric Tenant](#create-new-capacity-in-east-us-before-migrating-fabric-tenant)
-    - [Hybrid Approach with Phased Migration](#hybrid-approach-with-phased-migration)
-    - [Utilize Azure ExpressRoute](#utilize-azure-expressroute)
+- [Create F64 Capacity in Central US Same Region as Current P1 and Reassign Workspaces](#create-f64-capacity-in-central-us-same-region-as-current-p1-and-reassign-workspaces)
+- [Create F64 Capacity in East US Same Region as Data Sources and Azure Tenant and Reassign Power BI Content Only Workspaces, Manually Migrate Fabric Items](#create-f64-capacity-in-east-us-same-region-as-data-sources-and-azure-tenant-and-reassign-power-bi-content-only-workspaces-manually-migrate-fabric-items)
+- [Create New Capacity in East US Before Migrating Fabric Tenant](#create-new-capacity-in-east-us-before-migrating-fabric-tenant)
+- [Hybrid Approach with Phased Migration](#hybrid-approach-with-phased-migration)
+- [Use Azure ExpressRoute](#use-azure-expressroute)
 
 </details>
 
@@ -51,15 +49,15 @@ Last updated: 2024-12-28
 | **Action** | **Scenario** | **Example** | **Technical Details** |
 |------------|--------------|-------------|-----------------------|
 | **Migrate Tenant** | Data Sources in Different Region | Your data sources are in East US, and your current Fabric/Power BI tenant is in Central US. To optimize performance and ensure compliance, you migrate your tenant to East US, aligning it with your data sources to reduce latency and improve data processing speeds. | - Reduces latency by aligning tenant with data sources.<br>- Ensures compliance with data residency requirements.<br>- Simplifies management of data connections and credentials.<br>- Requires updating all data source connections and credentials to reflect the new tenant region.<br>- Potential downtime during migration, so plan for a maintenance window. |
-| **Migrate Tenant** | Long-Term Regional Alignment | You plan to consolidate all resources in East US for better management and performance. Currently, your tenant is in Central US. You migrate your tenant to East US and then provision a new F256 capacity, aligning all resources in the same region. | - Aligns all resources in the same region for long-term management.<br>- Reduces complexity of multi-region setups.<br>- Ensures consistent performance and compliance.<br>- Requires thorough planning to ensure all services and data are migrated smoothly.<br>- May involve reconfiguring network settings and security policies. |
+| **Migrate Tenant** | Long-Term Regional Alignment | You plan to consolidate all resources in East US for better management and performance. Currently, your tenant is in Central US. You migrate your tenant to East US and then provision a new F64 capacity, aligning all resources in the same region. | - Aligns all resources in the same region for long-term management.<br>- Reduces complexity of multi-region setups.<br>- Ensures consistent performance and compliance.<br>- Requires thorough planning to ensure all services and data are migrated smoothly.<br>- May involve reconfiguring network settings and security policies. |
 | **Migrate Tenant** | Compliance and Governance | Regulatory requirements mandate that your tenant and data sources be in the same region. Your data sources are in East US, but your tenant is in Central US. You migrate your tenant to East US to meet compliance requirements. | - Necessary for meeting specific compliance or governance requirements.<br>- Ensures data residency and regulatory compliance.<br>- Simplifies audit and management processes.<br>- Involves validating compliance requirements and ensuring all data is correctly migrated.<br>- May require coordination with legal and compliance teams. |
-| **Reassign Workspaces** | Immediate Capacity Needs | Your current Power BI Premium P3 capacity in Central US is nearing its limit. You provision a new F256 capacity in East US and reassign your workspaces to this new capacity, addressing capacity issues immediately without migrating the tenant. | - Quick solution to manage capacity without full migration.<br>- Minimal disruption to ongoing operations.<br>- Ensure dataflows and datasets are configured for new capacity.<br>- Requires updating workspace settings to point to the new capacity.<br>- Monitor performance to ensure the new capacity meets your needs. |
-| **Reassign Workspaces** | Temporary Solution | You need an immediate solution for capacity management and plan a future tenant migration. You provision a new F256 capacity in East US and reassign workspaces as a temporary measure, addressing current needs while planning for the tenant migration. | - Provides a temporary fix while planning for future migration.<br>- Avoids immediate complexities of tenant migration.<br>- Monitor performance and plan for eventual migration.<br>- Allows for phased migration, reducing risk of disruption.<br>- Requires careful tracking of which workspaces have been reassigned. |
-| **Reassign Workspaces** | Performance Optimization | Your data sources are in East US, and you want to improve performance by reducing latency. You reassign workspaces to a new F256 capacity in East US, improving performance without migrating the tenant. | - Improves performance by moving workspaces closer to data sources.<br>- No need for full tenant migration.<br>- Ensure all datasets and dataflows are compatible with new capacity.<br>- Requires testing to ensure performance improvements are realized.<br>- May involve reconfiguring data refresh schedules to optimize performance. |
+| **Reassign Workspaces** | Immediate Capacity Needs | Your current Power BI Premium P1 capacity in Central US is nearing its limit. You provision a new F64 capacity in East US and reassign your workspaces to this new capacity, addressing capacity issues immediately without migrating the tenant. | - Quick solution to manage capacity without full migration.<br>- Minimal disruption to ongoing operations.<br>- Ensure dataflows and datasets are configured for new capacity.<br>- Requires updating workspace settings to point to the new capacity.<br>- Monitor performance to ensure the new capacity meets your needs. |
+| **Reassign Workspaces** | Temporary Solution | You need an immediate solution for capacity management and plan a future tenant migration. You provision a new F64 capacity in East US and reassign workspaces as a temporary measure, addressing current needs while planning for the tenant migration. | - Provides a temporary fix while planning for future migration.<br>- Avoids immediate complexities of tenant migration.<br>- Monitor performance and plan for eventual migration.<br>- Allows for phased migration, reducing risk of disruption.<br>- Requires careful tracking of which workspaces have been reassigned. |
+| **Reassign Workspaces** | Performance Optimization | Your data sources are in East US, and you want to improve performance by reducing latency. You reassign workspaces to a new F64 capacity in East US, improving performance without migrating the tenant. | - Improves performance by moving workspaces closer to data sources.<br>- No need for full tenant migration.<br>- Ensure all datasets and dataflows are compatible with new capacity.<br>- Requires testing to ensure performance improvements are realized.<br>- May involve reconfiguring data refresh schedules to optimize performance. |
 
-## Methods (Approaches to achieve it) 
+> Below are some methods (approaches to achieve it) for tenant migration.
 
-### Create F256 Capacity in Central US (Same Region as Current P3) and Reassign Workspaces
+## Create F64 Capacity in Central US (Same Region as Current P1) and Reassign Workspaces
 
 > Easier reassignment but incurs egress charges and networking inefficiencies. Useful when immediate reassignment is needed without changing the tenant region.
 
@@ -71,20 +69,20 @@ Last updated: 2024-12-28
 | --- | --- |  
 |  **Easy Workspace Reassignment**: Reassigning workspaces within the same region simplifies the process | - **Egress Charges**: Since the capacity is in a different region from your data sources and Azure tenant (East US), you will incur egress charges. <br/> - **Networking Inefficiencies**: Networking can be less efficient and more complex due to cross-region data transfers. Strategies to mitigate this include optimizing data performance, reviewing network architecture, improving redundancy, and using data transfer methods like Traffic Manager or ExpressRoute. | 
 
-### Create F256 Capacity in East US (Same Region as Data Sources and Azure Tenant) and Reassign Power BI Content Only Workspaces, Manually Migrate Fabric Items
+## Create F64 Capacity in East US (Same Region as Data Sources and Azure Tenant) and Reassign Power BI Content Only Workspaces, Manually Migrate Fabric Items
 
 > No egress charges and more efficient networking but requires manual migration of Fabric items and conversion of Gen1 Dataflows. Useful for long-term efficiency and cost-effectiveness when data sources are in East US. 
 > With this option, the Fabric tenant will remain in Central US, which affects the efficiency and cost of data transfers for Fabric-specific workloads. Although this option provides better performance for Power BI content, it adds some complexity in recreating the Fabric workloads.
 
 > [!IMPORTANT]
-> - The current P3 capacity should behave the same in the migrated tenant until you create the new capacity and reassign or move content. However, there might be some performance impacts due to the migration. <br/> 
-> - Existing content in the P3 capacity, such as dataflows, might be affected during the transition. Multi-geo limitations could still apply until the content is fully migrated and reassigned to the new capacity.
+> - The current P1 capacity should behave the same in the migrated tenant until you create the new capacity and reassign or move content. However, there might be some performance impacts due to the migration. <br/> 
+> - Existing content in the P1 capacity, such as dataflows, might be affected during the transition. Multi-geo limitations could still apply until the content is fully migrated and reassigned to the new capacity.
 
 | **Pros** | **Considerations** |
 | --- | --- |
 | - **No Egress Charges**: The capacity is in the same region as your data sources and Azure tenant, eliminating egress charges.<br/>- **Efficient Networking**: Reduced cross-region data transfer leads to more efficient and simpler networking. | - **Multi-Geo Limitations**: No Power BI Metrics feature. This can be worked around by creating custom reports or DAX measures to generate KPIs and reports.<br/>- **Convert Gen1 Dataflows**: All Gen1 Dataflows need to be converted to Gen2. Assistance can be provided for this process. Click [here for more information about how to move queries from Dataflow Gen1 to Dataflow Gen2](https://learn.microsoft.com/en-us/fabric/data-factory/move-dataflow-gen1-to-dataflow-gen2) <br/>- **Manual Migration of Fabric Content**: Items like data pipelines, data warehouses, notebooks, lakehouses, ML models, dataflows, or any embedded content need to be manually moved. |
 
-### Create New Capacity in East US Before Migrating Fabric Tenant
+## Create New Capacity in East US Before Migrating Fabric Tenant
 
 > No egress charges and efficient networking but introduces complications in tenant migration and potential multi-geo limitations. Useful when planning to consolidate all resources in East US but requires careful planning.
 
@@ -97,7 +95,7 @@ Last updated: 2024-12-28
 | --- | --- |
 | - **No Egress Charges**: The capacity is in the same region as your data sources and Azure tenant, eliminating egress charges.<br/>- **Efficient Networking**: Reduced cross-region data transfer leads to more efficient and simpler networking. | - **Complications in Tenant Migration**: Creating a new capacity in East US before migrating the tenant can introduce complications. The migration process might involve reassigning workspaces and content to the new capacity, which can be complex and time-consuming.<br/>- **Multi-Geo Limitations**: After migrating the tenant, multi-geo limitations would still apply if you have content spread across different regions. However, if all content is consolidated in the new region, some limitations might be reduced. |
 
-### Hybrid Approach with Phased Migration
+## Hybrid Approach with Phased Migration
 
 > Combines elements of the previous options, offering flexibility and reduced risk but requiring careful planning. Useful for addressing immediate capacity needs while planning for a full migration.
 
@@ -108,14 +106,14 @@ Last updated: 2024-12-28
 The hybrid approach involves a phased migration plan that combines elements of creating new capacity and migrating the tenant. This method allows you to address immediate capacity needs while planning for a full migration, reducing the risk of disruptions and providing flexibility.
 
 **Phases**:
-1. **Phase 1**: Create a new F256 capacity in East US and reassign critical workspaces to address immediate capacity needs. This step ensures that you can manage current workloads effectively without waiting for the entire migration process to complete.
+1. **Phase 1**: Create a new F64 capacity in East US and reassign critical workspaces to address immediate capacity needs. This step ensures that you can manage current workloads effectively without waiting for the entire migration process to complete.
 2. **Phase 2**: Gradually migrate the tenant and remaining workspaces to East US. This phase involves careful planning and coordination to ensure a smooth transition. By migrating in stages, you can monitor the impact and make adjustments as needed, minimizing disruptions.
 
 | **Pros** | **Considerations** |
 | --- | --- |
 | - **Flexibility**: Allows you to address immediate capacity needs while planning for a full migration.<br/>- **Reduced Risk**: Phased approach can reduce the risk of disruptions.<br/>- **Scalability**: Adaptable to different sizes and complexities of migrations. | - **Complexity**: Requires careful planning and coordination.<br/>- **Potential Temporary Egress Charges**: May incur temporary egress charges during the transition.<br/>- **Resource Allocation**: Adequate resources must be allocated to manage the migration phases.<br/>- **Testing and Validation**: Each phase should include thorough testing and validation. |
 
-### Utilize Azure ExpressRoute
+## Use Azure ExpressRoute
 
 > Improved performance and reduced egress charges, though it involves setup complexity and costs. Useful for reducing latency and egress charges without immediate tenant migration.
 
