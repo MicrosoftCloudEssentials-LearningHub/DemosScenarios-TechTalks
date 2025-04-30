@@ -12,7 +12,7 @@ Last updated: 2025-01-20
 > Each license level provides different amounts of computational power and features, allowing organizations to choose the one that best fits their needs
 
 <details>
-<summary><b>Table of References </b> (Click to expand)</summary>
+<summary><b>List of References </b> (Click to expand)</summary>
 
 - [Microsoft Fabric trial capacity](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial)
 - [Buy a Microsoft Fabric subscription](https://learn.microsoft.com/en-us/fabric/enterprise/buy-subscription)
