@@ -21,6 +21,7 @@ Last updated: 2025-04-30
 
 - [Fabric region availability](https://learn.microsoft.com/en-us/fabric/admin/region-availability)
 - [Limitations in Microsoft Fabric mirrored databases from Azure SQL Managed Instance (Preview)](https://learn.microsoft.com/en-us/fabric/database/mirrored-database/azure-sql-managed-instance-limitations)
+- [Overview of managed private endpoints for Fabric](https://learn.microsoft.com/en-us/fabric/security/security-managed-private-endpoints-overview)
 
 </details>
 
@@ -32,18 +33,17 @@ Last updated: 2025-04-30
 - [Pricing consideration](#pricing-consideration)
 - [Azure Pricing Calculator](#azure-pricing-calculator)
 
-
 </details>
 
 ## West Regions 
 
-> As today:
+> As today, please click here to read more about [Fabric region availability](https://learn.microsoft.com/en-us/fabric/admin/region-availability)
 
-| **Region**   | **Available Copilot Workloads**                     | **Unavailable Features**                                                                 | **Notes**                                                                                      |
-|--------------|-----------------------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| **West US**  | - Dataflows<br>- Exploration<br>- Synapse Notebook  | - Mirroring for Azure SQL Managed Instance<br>- User Data Functions                      | Copilot workloads are fully available, but backend features like SQL mirroring and User Data Functions are not supported. |
-| **West US 2**| - Dataflows<br>- Exploration<br>- Synapse Notebook  | - Mirroring for Azure SQL Managed Instance<br>- User Data Functions<br>- Retail Solutions<br>- Dataflow Gen2 with CI/CD | Copilot workloads are available, but this region lacks support for several enterprise and preview features, including SQL mirroring and CI/CD pipelines. |
-| **West US 3**| - Dataflows<br>- Synapse Notebook                   | - User Data Functions<br>- Retail Solutions                                              | Slightly more limited Copilot support (no Exploration). However, it supports CI/CD pipelines, unlike West US 2. Still lacks User Data Functions. |
+| **Region**   | **Available Copilot Workloads**                     | **Unavailable Features**                                                                 | 
+|--------------|-----------------------------------------------------|-------------------------------------------------------------------------------------------|
+| **West US**  | - Dataflows<br>- Exploration<br>- Synapse Notebook  | - Mirroring for Azure SQL Managed Instance<br>- User Data Functions<br>- [Managed Private Endpoints](https://learn.microsoft.com/en-us/fabric/security/security-managed-private-endpoints-overview) |
+| **West US 2**| - Dataflows<br>- Exploration<br>- Synapse Notebook  | - Mirroring for Azure SQL Managed Instance<br>- User Data Functions<br>- Dataflow Gen2 with CI/CD |
+| **West US 3**| - Dataflows<br>- Synapse Notebook                   | - User Data Functions<br>- Dataflow Gen2 with CI/CD               | 
 
 ## Copilot Workload
 
