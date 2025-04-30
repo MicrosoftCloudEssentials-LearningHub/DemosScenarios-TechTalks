@@ -9,6 +9,24 @@ Last updated: 2025-04-30
 
 ----------
 
+<details>
+<summary><b>List of References </b> (Click to expand)</summary>
+
+- [Microsoft Fabric concepts and licenses](https://learn.microsoft.com/en-us/fabric/enterprise/licenses)
+- [Microsoft Fabric features parity](https://learn.microsoft.com/en-us/fabric/enterprise/fabric-features)
+
+</details>
+
+<details>
+<summary><b>Table of Content </b> (Click to expand)</summary>
+
+- [What Makes It Straightforward?](#what-makes-it-straightforward) (How it works)
+- [Key Considerations](#key-considerations)
+
+
+</details>
+
+
 >  If your workspaces currently `contain only Power BI items`, migrating from Power BI Pro or Premium Per User (PPU) to Microsoft Fabric (F-SKUs) can be relatively straightforward, but there are a few important considerations please read below.
 
 | Pro Workspace | PPU workspace |
@@ -39,4 +57,33 @@ https://github.com/user-attachments/assets/16fd8e90-22cc-48d3-8dce-e79e4ee9789b
 
 https://github.com/user-attachments/assets/69891a7f-2777-44f7-853b-0afa74d5614e
 
+## Key Considerations
 
+| **Consideration**              | **Details** |
+|------------------------|-------------|
+| **SKU Size Matters**   | - SKUs below F64 require users to have Power BI Pro or PPU licenses to view content.<br>- SKUs F64 and above support broader Fabric features and allow free users to view Power BI content if configured properly. |
+| **Capacity Assignment**| You’ll need to assign the Fabric capacity to each workspace manually or via script. |
+
+> Reassign Capacity (Manual Approach):
+
+1. **Select Workspace**: Click on the workspace you want to migrate. This will open the workspace settings.
+2, **Change Capacity**: In the workspace settings, look for the `Capacity` section. You will see an option to change the capacity assignment.
+3. **Select Fabric SKU**: From the dropdown menu, select the new Fabric SKU that you have purchased.
+ 4. **Save Changes**: Click "Save" to apply the changes. The workspace will now be reassigned to the new Fabric SKU.
+
+     <img width="550" alt="image" src="https://github.com/user-attachments/assets/3587658e-50b8-484a-b048-07de018a15fe">
+
+> Reassign Capacity (Bulk Assignment):
+
+1. Use the bulk assignment feature in the Admin Portal to reassign multiple workspaces at once.
+
+     <img width="550" alt="image" src="https://github.com/user-attachments/assets/4c517df9-c79a-41bd-a21d-f0fb1b425aad">
+    
+2. Verify that all workspaces are correctly reassigned.
+
+     <img width="550" alt="image" src="https://github.com/user-attachments/assets/1a6cbfdf-cde3-4eb4-a7d8-f66a28094059">
+
+<div align="center">
+  <h3 style="color: #4CAF50;">Total Visitors</h3>
+  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
