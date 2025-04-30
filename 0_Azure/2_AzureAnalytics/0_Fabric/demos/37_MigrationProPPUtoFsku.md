@@ -9,6 +9,12 @@ Last updated: 2025-04-30
 
 ----------
 
+>  If your workspaces currently `contain only Power BI items`, migrating from Power BI Pro or Premium Per User (PPU) to Microsoft Fabric (F-SKUs) can be relatively straightforward, but there are a few important considerations please read below.
+
+| Pro Workspace | PPU workspace |
+| --- | --- | 
+| <img width="550" alt="image" src="https://github.com/user-attachments/assets/9419ee70-3fe6-4676-b94b-b2a080bc5aea" /> | <img width="550" alt="image" src="https://github.com/user-attachments/assets/20ebbca1-d1e5-446c-b713-2474dba714e6" /> |
+
 > [!IMPORTANT]
 > 🔺 This approach is around `reassign workspaces without tenant migration`, if you decide to migrate the tenant in the future, you can do so with the workspaces already assigned to the new capacity. 
 
@@ -24,4 +30,13 @@ Last updated: 2025-04-30
 > $${\color{red}Same\ geo\ but\ across\ region}$$ The `multi-geography setup` in Microsoft Fabric allows you to deploy content to data centers in regions other than the home region of your Fabric tenant. This feature is particularly useful for multinational customers who need to address regional, industry-specific, or organizational data residency requirements.` In your example, if you have the US as the geography with Central US and West US 2 as regions, you can set up a Fabric capacity reservation in one of these regions. Once a capacity is created, it remains in that region, and any workspaces created under it will have their content stored in that region`. This approach ensures that `you don't need to move the home region`, which can simplify management and compliance. Click [here for more information about it](https://learn.microsoft.com/en-us/fabric/admin/service-admin-premium-multi-geo?tabs=power-bi-premium)
 
 https://github.com/user-attachments/assets/16fd8e90-22cc-48d3-8dce-e79e4ee9789b
+
+## What Makes It Straightforward? 
+
+> - Power BI items are fully supported in Fabric capacities (F-SKUs), so you don’t need to refactor or convert the content itself. <br/>
+> - You can assign Fabric capacity to existing workspaces, and they will continue to function with enhanced performance and scalability. <br/>
+> - No re-licensing of content is needed—users with Pro or PPU licenses can still access content in Fabric workspaces, depending on the SKU size. 
+
+https://github.com/user-attachments/assets/69891a7f-2777-44f7-853b-0afa74d5614e
+
 
