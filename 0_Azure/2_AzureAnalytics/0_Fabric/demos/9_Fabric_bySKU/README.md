@@ -11,8 +11,6 @@ Last updated: 2025-01-20
 
 > Each license level provides different amounts of computational power and features, allowing organizations to choose the one that best fits their needs
 
-## Wiki 
-
 <details>
 <summary><b>Table of References </b> (Click to expand)</summary>
 
