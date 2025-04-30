@@ -13,10 +13,8 @@ Last updated: 2024-11-28
 > [!NOTE]
 > Ensure you have admin rights for the capacity you want to monitor.
 
-## Wiki 
-
 <details>
-<summary><b>Lis of References</b> (Click to expand)</summary>
+<summary><b>List of References</b> (Click to expand)</summary>
 
 - [Install the Microsoft Fabric capacity metrics app](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app-install?tabs=1st)
 - [What is the Microsoft Fabric Capacity Metrics app?](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app)
@@ -29,7 +27,8 @@ Last updated: 2024-11-28
 
 </details>
 
-## Content 
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
 
 - [Microsoft Fabric Capacity Metrics app](#microsoft-fabric-capacity-metrics-app)
     - [Installation Steps](#installation-steps)
@@ -41,6 +40,9 @@ Last updated: 2024-11-28
 - [Monitor Hub](#monitor-hub)
     - [How to Access and Use the Monitor Hub](#how-to-access-and-use-the-monitor-hub)
     - [Extending Activity History](#extending-activity-history)
+
+</details>
+
 
 ## Microsoft Fabric Capacity Metrics app 
 
