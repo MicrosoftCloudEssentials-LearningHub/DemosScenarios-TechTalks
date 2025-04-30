@@ -39,7 +39,7 @@ Last updated: 2025-04-30
 
 > As today:
 
-| **Region**   | **Available Copilot Workloads**                     | **Unavailable Features**                                                                 | **Notes **                                                                                      |
+| **Region**   | **Available Copilot Workloads**                     | **Unavailable Features**                                                                 | **Notes**                                                                                      |
 |--------------|-----------------------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | **West US**  | - Dataflows<br>- Exploration<br>- Synapse Notebook  | - Mirroring for Azure SQL Managed Instance<br>- User Data Functions                      | Copilot workloads are fully available, but backend features like SQL mirroring and User Data Functions are not supported. |
 | **West US 2**| - Dataflows<br>- Exploration<br>- Synapse Notebook  | - Mirroring for Azure SQL Managed Instance<br>- User Data Functions<br>- Retail Solutions<br>- Dataflow Gen2 with CI/CD | Copilot workloads are available, but this region lacks support for several enterprise and preview features, including SQL mirroring and CI/CD pipelines. |
