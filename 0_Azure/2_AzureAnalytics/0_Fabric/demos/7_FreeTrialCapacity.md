@@ -5,7 +5,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-04-02
+Last updated: 2025-05-02
 
 ----------
 
@@ -28,12 +28,15 @@ Last updated: 2025-04-02
 
 </details>
 
-## Content 
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
 
 - [Overview](#overview)
 - [Roles in Workspaces in Microsoft Fabric](#roles-in-workspaces-in-microsoft-fabric)
 - [How to extend trial period](#how-to-extend-trial-period)
 - [How to reassign a license to a workspace](#how-to-reassign-a-license-to-a-workspace)
+
+</details>
 
 ## Overview 
 
@@ -68,40 +71,42 @@ https://github.com/user-attachments/assets/ff37f30a-7217-4b7e-9f35-d7ada27a5bd9
 ## How to extend trial period 
 
 > [!NOTE]
-> If their trial period is extended without any action or request from the user, it is due to the Microsoft account team responsible for your company, as they are managing the request with the support team.
+> - If you are an existing customer, please create a support request to ask for an extension so your assigned team can collaborate with the support team to extend your trial period. Provide your trial capacity ID and explain the reason for the extension. You can find your trial capacity ID in the Account Manager under Trial status. <br/> 
+> - If you a `new customer`, Contact the [Microsoft Sales Team](https://azure.microsoft.com/en-us/contact/#contact-sales) so they can engage with you and provide the best service. <br/> 
 
-- If you are an existing customer, please create a support request to ask for an extension so your assigned team can collaborate with the support team to extend your trial period. Provide your trial capacity ID and explain the reason for the extension. You can find your trial capacity ID in the Account Manager under Trial status.
-    - Under `settings`, go to `Admin portal`:
-      
-        <img width="550" alt="image" src="https://github.com/user-attachments/assets/3feb7a7b-8402-4810-a5f3-31488e0427a2">
+- Under `settings`, go to `Admin portal`:
+  
+    <img width="550" alt="image" src="https://github.com/user-attachments/assets/3feb7a7b-8402-4810-a5f3-31488e0427a2">
 
-    - Click on `Capacity settings`, select the ⚙️, and copy the `Capacity ID`:
+- Click on `Capacity settings`, select the ⚙️, and copy the `Capacity ID`:
 
-        <img width="550" alt="image" src="https://github.com/user-attachments/assets/a2defd0e-9068-4b08-8117-d59cb1563a90">
+    <img width="550" alt="image" src="https://github.com/user-attachments/assets/a2defd0e-9068-4b08-8117-d59cb1563a90">
 
-- Are you a new customer? Contact the [Microsoft Sales Team](https://azure.microsoft.com/en-us/contact/#contact-sales) so they can engage with you and provide the best service.
 
-    - Select ⚙️, and click on `Get Microsoft help`:
- 
-        <img width="550" alt="image" src="https://github.com/user-attachments/assets/77aef4a9-04ba-4194-91b8-b75c4bd2aedf">
+- Select ⚙️, and click on `Get Microsoft help`:
 
-    - A window will open, prompting you to select the product with the issue. This window is the same as the one accessed by clicking `Admin portal`, under `Help + support`, then selecting `+ New support request`:
+    <img width="550" alt="image" src="https://github.com/user-attachments/assets/77aef4a9-04ba-4194-91b8-b75c4bd2aedf">
 
-        <img width="550" alt="image" src="https://github.com/user-attachments/assets/fddbc6d4-9283-418a-add2-50bf345b6aa2">
+- A window will open, prompting you to select the product with the issue. This window is the same as the one accessed by clicking `Admin portal`, under `Help + support`, then selecting `+ New support request`:
 
-    - In the text box, write `Trial`, choose `Trial license expiration or renewal`:
+    <img width="550" alt="image" src="https://github.com/user-attachments/assets/fddbc6d4-9283-418a-add2-50bf345b6aa2">
 
-        <img width="550" alt="image" src="https://github.com/user-attachments/assets/18a3913b-8ff3-48aa-8191-8697b7a44fa4">
+- In the text box, write `Trial`, choose `Trial license expiration or renewal`:
 
-        <img width="550" alt="image" src="https://github.com/user-attachments/assets/e72a1a9c-ba41-43cf-a638-01cd648e93db">
+    <img width="550" alt="image" src="https://github.com/user-attachments/assets/18a3913b-8ff3-48aa-8191-8697b7a44fa4">
 
-    - It will propose some solutions:
+    <img width="550" alt="image" src="https://github.com/user-attachments/assets/e72a1a9c-ba41-43cf-a638-01cd648e93db">
 
-        <img width="550" alt="image" src="https://github.com/user-attachments/assets/d0658777-fa30-4315-ad44-2d2f38d1b56c">
+- It will propose some solutions:
 
-    - Please click on the `Support` tab to select your `support plan`:
+    <img width="550" alt="image" src="https://github.com/user-attachments/assets/d0658777-fa30-4315-ad44-2d2f38d1b56c">
 
-        <img width="550" alt="image" src="https://github.com/user-attachments/assets/69d02457-b9f6-4c4b-ac1c-b23c29566381">
+- Please click on the `Support` tab to select your `support plan`:
+
+    <img width="550" alt="image" src="https://github.com/user-attachments/assets/69d02457-b9f6-4c4b-ac1c-b23c29566381">
+
+> [!NOTE]
+> If their trial period is extended without any action or request from the user, it is due to the Microsoft account team responsible for your company, as they are managing the request with the support team. <br/> 
 
 ## How to reassign a license to a workspace
 
