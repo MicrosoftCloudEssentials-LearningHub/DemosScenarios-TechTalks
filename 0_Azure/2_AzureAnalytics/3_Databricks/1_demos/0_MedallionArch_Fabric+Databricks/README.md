@@ -9,8 +9,6 @@ Last updated: 2025-02-13
 
 ------------------------------------------
 
-## References 
-
 <details>
 <summary><b>List of References </b> (Click to expand)</summary>
 
