@@ -44,7 +44,7 @@ Last updated: 2025-02-13
 
 ## Integration with Multiple Sources:
 
-> In these two examples of Medallion Archuitecture, `Azure SQL Database` was used as the input source, but the solution is highly flexible and can integrate with multiple data sources, including:
+> In these two examples of Medallion Architecture, `Azure SQL Database` was used as the input source, but the solution is highly flexible and can integrate with multiple data sources, including:
 
 - **Cloud Storage**: Azure Blob Storage, AWS S3, Google Cloud Storage.
 - **Databases**: SQL Server, MySQL, PostgreSQL, Oracle.
