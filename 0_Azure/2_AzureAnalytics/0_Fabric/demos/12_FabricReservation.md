@@ -17,7 +17,8 @@ Last updated: 2025-01-13
 > [!NOTE]
 > The total cost of the reservation is distributed over the reservation period. This means you don't have to pay the entire amount upfront; instead, the cost is spread out, making it easier to manage and predict your expenses.
 
-> Example: By choosing an F128 reservation in Microsoft Fabric, if the pay-as-you-go rate is $23.04 per hour, with the reservation, you might pay $13.706 per hour, saving ~41%.
+> E.g: By choosing an `F128 reservation` in Microsoft Fabric, if the pay-as-you-go rate is `$23.04 per hour`, with the reservation, you might pay `$13.706 per hour`, saving ~41%.
+> `F64 around 11.52/hour, $6.853/hour` ~41% savings. Click [here to see the pricing table](https://azure.microsoft.com/en-us/pricing/details/microsoft-fabric/?msockid=38ec3806873362243e122ce086486339)
 
 <details>
 <summary><b>Lis of References</b> (Click to expand)</summary>
