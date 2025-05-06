@@ -12,6 +12,16 @@ Last updated: 2024-11-19
 
 > `Azure Cost Management` is a suite of tools designed to help organizations monitor, allocate, and optimize their cloud spending. It provides comprehensive insights into your Azure usage and costs, enabling you to manage your budget effectively and ensure that your spending aligns with your financial goals.
 
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
+
+- [What is Microsoft Cost Management](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/overview-cost-management)
+- [Cost Management + Billing documentation](https://learn.microsoft.com/en-us/azure/cost-management-billing/)
+- [Use Cost management in the Microsoft 365 admin center](https://learn.microsoft.com/en-us/microsoft-365/commerce/use-cost-mgmt?view=o365-worldwide)
+- [Pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?msockid=38ec3806873362243e122ce086486339)
+
+</details>
+
 ## Overview 
 
 > Tips: 
