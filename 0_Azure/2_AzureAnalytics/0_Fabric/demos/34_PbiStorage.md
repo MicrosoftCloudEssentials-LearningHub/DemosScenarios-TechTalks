@@ -20,8 +20,8 @@ Last updated: 2025-05-07
 <details>
 <summary><b>Table of Content</b> (Click to expand)</summary>
 
-- [Workspace System Storage Option 1](#workspace-system-storage-option-1)
-- [Manage group storage Option 2](#manage-group-storage-option-2)
+- [Workspace System Storage](#workspace-system-storage-option-1) - Option 1
+- [Manage group storage](#manage-group-storage-option-2) -  Option 2
 
 </details>
 
