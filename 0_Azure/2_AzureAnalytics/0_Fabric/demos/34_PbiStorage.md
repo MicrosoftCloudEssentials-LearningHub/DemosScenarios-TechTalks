@@ -14,7 +14,6 @@ Last updated: 2025-05-07
 <summary><b>List of References</b> (Click to expand)</summary>
 
 - [Manage workspaces](https://learn.microsoft.com/en-us/fabric/admin/portal-workspaces)
-- 
 
 </details>
 
