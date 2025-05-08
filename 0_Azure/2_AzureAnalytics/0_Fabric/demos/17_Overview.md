@@ -17,18 +17,14 @@ Last updated: 2024-12-31
 > - `Azure Data`: Incorporates tools for data engineering and management. <br/>
 > - `Azure Analytics`: Features business intelligence and analytics tools, notably through its Power BI integration.
 
-## Wiki 
-
 <details>
-<summary><b>Table of references</b> (Click to expand)</summary>
+<summary><b>List of references</b> (Click to expand)</summary>
 
 - [What is data warehousing in Microsoft Fabric?](https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing)
 - [Query the SQL analytics endpoint or Warehouse in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-warehouse/query-warehouse)
 - [What is the SQL analytics endpoint for a lakehouse?](https://learn.microsoft.com/en-us/fabric/data-engineering/lakehouse-sql-analytics-endpoint)
   
 </details>
-
-## Content 
 
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
