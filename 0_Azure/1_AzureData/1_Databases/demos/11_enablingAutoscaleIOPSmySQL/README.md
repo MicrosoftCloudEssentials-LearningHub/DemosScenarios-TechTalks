@@ -25,7 +25,6 @@ Last updated: 2025-05-09
 - [How to provision](#how-to-provision)
 - [How to enable IOPS](#how-to-enable-iops)
 - [How to Monitor IOPS Scaling](#how-to-monitor-iops-scaling)
-- [Azure CLI Script to Enable Autoscale IOPS](#azure-cli-script-to-enable-autoscale-iops)
 
 </details>
 
@@ -80,59 +79,6 @@ Last updated: 2025-05-09
 3. **Enable Alerts (Optional)**: You can set up `alerts` in Azure Monitor to notify you when IOPS usage crosses certain thresholds, which can help you track scaling events in real time.
 
    https://github.com/user-attachments/assets/19b96128-e37f-40b4-8e23-8a5384bc6686
-
-## Azure CLI Script to Enable Autoscale IOPS 
-
-> [!NOTE]
-> The script below will execute: <br/>
-> - Using Python 3.13.3  <br/>
-> - Checks if Azure CLI is available at the specified path.  <br/>
-> - Lists all MySQL Flexible Servers. <br/>
-> - Tries to get each server’s resource group. <br/>
-> - If the resource group is missing, it prompts you to enter it. <br/>
-> - Asks for confirmation before enabling autoscale IOPS. <br/>
-
-```python
-import subprocess
-import json
-
-# Step 1: Get list of MySQL Flexible Servers
-servers_output = subprocess.check_output(
-    ["az", "mysql", "flexible-server", "list", "--query", "[].name", "-o", "tsv"],
-    text=True
-)
-servers = servers_output.strip().splitlines()
-
-# Step 2: Loop through each server and enable autoscale IOPS
-for server in servers:
-    # Get the resource group for the server
-    rg_output = subprocess.check_output(
-        ["az", "mysql", "flexible-server", "show", "--name", server, "--query", "resourceGroup", "-o", "tsv"],
-        text=True
-    )
-    resource_group = rg_output.strip()
-
-    print(f"Enabling autoscale IOPS for {server} in {resource_group}...")
-
-    # Update the server to enable autoscale IOPS
-    subprocess.run([
-        "az", "mysql", "flexible-server", "update",
-        "--name", server,
-        "--resource-group", resource_group,
-        "--iops", "Auto"
-    ])
-```
-
-## How to execute it Azure CLI Script to Enable Autoscale IOPS
-
-1. Download [the script](./enable_autoscale_iops.py) to your local machine or a cloud shell environment.
-2. Make sure you're logged in: `az login`
-4. Run the script: `py enable_autoscale_iops.py`
-
-> Example: enabling Autoscale IOPS on three different servers, each hosted in a separate resource group but under the same subscription.
-
-<img width="550" alt="image" src="https://github.com/user-attachments/assets/22aa763d-b358-441a-b5b9-aa0197ce680d" />
-
 
 
 <div align="center">
