@@ -12,8 +12,6 @@ Last updated: 2024-11-19
 
 > For Azure AI Search and OpenAI in a Retrieval-Augmented Generation (RAG) setup, find below an example of how these components are interconnected within a secure Azure environment.
 
-## Wiki 
-
 <details>
 <summary><b> References </b> (Click to expand)</summary>
    
