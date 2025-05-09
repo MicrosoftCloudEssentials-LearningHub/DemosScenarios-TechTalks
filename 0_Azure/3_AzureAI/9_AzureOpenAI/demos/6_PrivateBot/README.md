@@ -14,35 +14,29 @@ Last updated: 2024-11-19
 
 > You could use the `RAG pattern` to improve the search experience in your web application. For instance, when a `user queries the search system`, it can retrieve `relevant documents from Azure Storage Blob` Containers and use the `retrieved information to generate a more accurate and detailed search result`. [Click here for more information about RAG and AI Search](=https://github.com/brown9804/MicrosoftCloudEssentialsHub/tree/main/0_Azure/3_AzureAI/0_AISearch/demos).
 
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki </b> (Click to expand)</summary>
+<summary><b>List of References </b> (Click to expand)</summary>
   
 - [Create a private endpoint for a secure connection to Azure AI Search](https://learn.microsoft.com/en-us/azure/search/service-create-private-endpoint#use-the-azure-portal-to-access-a-private-search-service)
  
 </details>
 
-## Content
-
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
 
-- [Building a Private ChatBot with Azure OpenAI](#building-a-private-chatbot-with-azure-openai)
-    - [Wiki](#wiki)
-    - [How to](#how-to)
-        - [Create an Azure OpenAI Resource](#create-an-azure-openai-resource)
-        - [Set Up Azure AI Search](#set-up-azure-ai-search)
-        - [Integrate with Virtual Network VNet](#integrate-with-virtual-network-vnet)
-        - [Configure Private Endpoints for Azure AI Search](#configure-private-endpoints-for-azure-ai-search)
-        - [Configure Private Endpoints for Azure OpenAI](#configure-private-endpoints-for-azure-openai)
-        - [Set Up Network Security Groups NSGs](#set-up-network-security-groups-nsgs)
-        - [Create index/Upload Documents](#create-indexupload-documents)
-        - [Configure and Deploy AI model](#configure-and-deploy-ai-model)
+- [Overview](#overview)
+- [Create an Azure OpenAI Resource](#create-an-azure-openai-resource)
+- [Set Up Azure AI Search](#set-up-azure-ai-search)
+- [Integrate with Virtual Network VNet](#integrate-with-virtual-network-vnet)
+- [Configure Private Endpoints for Azure AI Search](#configure-private-endpoints-for-azure-ai-search)
+- [Configure Private Endpoints for Azure OpenAI](#configure-private-endpoints-for-azure-openai)
+- [Set Up Network Security Groups NSGs](#set-up-network-security-groups-nsgs)
+- [Create index/Upload Documents](#create-indexupload-documents)
+ - [Configure and Deploy AI model](#configure-and-deploy-ai-model)
  
 </details>
 
-## How to 
+## Overview
 
 > `same/different vnet` -> `shared access` can be used <br/>
 > `same vnet` -> `private endpoint` <br/>
