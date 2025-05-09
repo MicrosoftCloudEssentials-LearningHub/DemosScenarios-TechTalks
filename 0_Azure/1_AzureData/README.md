@@ -9,12 +9,13 @@ Last updated: 2025-02-13
 
 ----------
 
+> Azure Data Storage provides scalable, secure, and accessible cloud storage, ideal for big data and analytics, with various storage tiers. It supports a wide range of services and tools. Azure also offers relational and non-relational databases, with built-in management for high availability and performance, catering to different application needs.
+
+
 ## Content 
 
 - [Data Storage](./0_DataStorage/)
 - [Databases](./1_Databases/)
-
-Azure Data Storage provides scalable, secure, and accessible cloud storage, ideal for big data and analytics, with various storage tiers. It supports a wide range of services and tools. Azure also offers relational and non-relational databases, with built-in management for high availability and performance, catering to different application needs.
 
 ## Differences between Azure Data Storage and Databases
 
