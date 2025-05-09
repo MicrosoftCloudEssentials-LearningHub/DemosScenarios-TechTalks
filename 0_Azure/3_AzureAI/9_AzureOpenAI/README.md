@@ -11,13 +11,6 @@ Last updated: 2025-02-13
 
 ----------
 
-Key Features: 
-- **Advanced AI Models**: The service provides access to advanced AI models for conversational, content creation, and data grounding use cases.
-- **Fine-tuning**: You can fine-tune the models, apply generative AI, and integrate with other Azure AI services.
-- **Models Available**: The models available through Azure OpenAI Service include GPT-4, GPT-3.5-Turbo, and Embeddings.
--  **Security and Compliance**: Azure OpenAI Service offers the security and enterprise promise of Azure.
-
-
 <details>
 <summary><b>List of References </b> (Click to expand)</summary>
 
@@ -39,6 +32,11 @@ Key Features:
       
 </details>
 
+Key Features: 
+- **Advanced AI Models**: The service provides access to advanced AI models for conversational, content creation, and data grounding use cases.
+- **Fine-tuning**: You can fine-tune the models, apply generative AI, and integrate with other Azure AI services.
+- **Models Available**: The models available through Azure OpenAI Service include GPT-4, GPT-3.5-Turbo, and Embeddings.
+-  **Security and Compliance**: Azure OpenAI Service offers the security and enterprise promise of Azure.
 
 ## Example of Use Cases
 
