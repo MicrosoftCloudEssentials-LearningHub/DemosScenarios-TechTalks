@@ -69,12 +69,19 @@ Last updated: 2025-05-09
 
    - Set a `custom time range` to observe trends over time.
 
+     | Storage IO Count | Storage IO Percent |
+     | --- | --- | 
+     | <img width="550" alt="image" src="https://github.com/user-attachments/assets/9be08df9-3fe6-4010-9e75-487a325d0acb" /> | <img width="550" alt="image" src="https://github.com/user-attachments/assets/c5f7f45d-303d-48ce-82a4-00685da29849" /> |
+
 2. **Look for Scaling Patterns**:
    - If you see `sudden increases or decreases` in the IOPS metric that correlate with workload changes, this indicates that autoscale IOPS has adjusted the performance level.
    - You can also monitor `IO utilization percentage` to see how close your server is to its current IOPS limit.
 3. **Enable Alerts (Optional)**: You can set up `alerts` in Azure Monitor to notify you when IOPS usage crosses certain thresholds, which can help you track scaling events in real time.
 
    https://github.com/user-attachments/assets/19b96128-e37f-40b4-8e23-8a5384bc6686
+
+
+
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
