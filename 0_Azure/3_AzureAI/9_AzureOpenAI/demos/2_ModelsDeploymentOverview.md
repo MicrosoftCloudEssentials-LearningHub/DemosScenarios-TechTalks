@@ -9,6 +9,22 @@ Last updated: 2024-11-19
 
 ----------
 
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
+
+- [Overview: Deploy AI models in Azure AI Foundry portal](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/deployments-overview)
+
+</details>
+
+<details>
+<summary><b>Table of Contents</b> (Click to expand)</summary>
+
+- [Overview](#overview)
+- [How to](#how-to)
+- [Example API Call](#example-api-call)
+
+</details>
+
 ## Overview
 
 > `Deployments` in Azure OpenAI Studio involve making AI models, workflows, and applications available for use in production environments. This includes hosting models on servers or in the cloud and creating APIs or other interfaces for users to interact with the models.
