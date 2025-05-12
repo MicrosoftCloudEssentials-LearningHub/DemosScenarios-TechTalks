@@ -12,8 +12,6 @@ Last updated: 2025-03-03
 > [!NOTE]
 > Currently, there is no specific timeline for the full release of Azure OpenAI Assistants. It is typical for Azure services to stay in the preview phase for several months. During this period, we collect feedback and make necessary improvements.
 
-## Wiki 
-
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
   
