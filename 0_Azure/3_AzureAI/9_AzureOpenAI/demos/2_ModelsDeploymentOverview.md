@@ -13,6 +13,7 @@ Last updated: 2024-11-19
 <summary><b>List of References</b> (Click to expand)</summary>
 
 - [Overview: Deploy AI models in Azure AI Foundry portal](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/deployments-overview)
+- [Getting started with Azure OpenAI batch deployments](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/batch?tabs=global-batch%2Cstandard-input%2Cpython-secure&pivots=ai-foundry-portal)
 
 </details>
 
