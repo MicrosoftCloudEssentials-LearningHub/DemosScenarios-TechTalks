@@ -34,8 +34,7 @@ Last updated: 2025-05-12
 > - Lists all MySQL Flexible Servers in that resource group. <br/>
 > - Sends a `PATCH request`` to enable `autoIoScaling` for each server using the `Azure REST API`
 
-1. Make sure you're logged in: `az login`
-
+Review [the script](./enable_autoscale_iops_byRG.py), and download it to your local machine.
 
 ## Across a Subscription
 
@@ -44,47 +43,7 @@ Last updated: 2025-05-12
 > - For each server, retrieving its resource group.  <br/>
 > - Applying the update if the server is in a supported tier (General Purpose or Business Critical).  <br/>
 
-## Azure CLI Script to Enable Autoscale IOPS 
-
-> [!NOTE]
-> The script below will execute: <br/>
-> - Using Python 3.13.3  <br/>
-> - Checks if Azure CLI is available at the specified path.  <br/>
-> - Lists all MySQL Flexible Servers. <br/>
-> - Tries to get each server’s resource group. <br/>
-> - If the resource group is missing, it prompts you to enter it. <br/>
-> - Asks for confirmation before enabling autoscale IOPS. <br/>
-
-```python
-import subprocess
-import json
-
-# Step 1: Get list of MySQL Flexible Servers
-servers_output = subprocess.check_output(
-    ["az", "mysql", "flexible-server", "list", "--query", "[].name", "-o", "tsv"],
-    text=True
-)
-servers = servers_output.strip().splitlines()
-
-# Step 2: Loop through each server and enable autoscale IOPS
-for server in servers:
-    # Get the resource group for the server
-    rg_output = subprocess.check_output(
-        ["az", "mysql", "flexible-server", "show", "--name", server, "--query", "resourceGroup", "-o", "tsv"],
-        text=True
-    )
-    resource_group = rg_output.strip()
-
-    print(f"Enabling autoscale IOPS for {server} in {resource_group}...")
-
-    # Update the server to enable autoscale IOPS
-    subprocess.run([
-        "az", "mysql", "flexible-server", "update",
-        "--name", server,
-        "--resource-group", resource_group,
-        "--iops", "Auto"
-    ])
-```
+Review [the script](./enable_autoscale_iops.py), and download it to your local machine.
 
 ## How to execute it Azure CLI Script to Enable Autoscale IOPS
 
@@ -95,7 +54,6 @@ for server in servers:
 > Example: enabling Autoscale IOPS on three different servers, each hosted in a separate resource group but under the same subscription.
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/22aa763d-b358-441a-b5b9-aa0197ce680d" />
-
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
