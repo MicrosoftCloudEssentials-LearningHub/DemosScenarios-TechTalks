@@ -10,8 +10,6 @@ Last updated: 2024-11-28
 
 ----------
 
-## Wiki 
-
 <details>
 <summary><b>References </b> (Click to expand)</summary>
    
@@ -41,8 +39,6 @@ Last updated: 2024-11-28
 
 ## Content 
 
-- [Wiki](#wiki)
-- [Content](#content)
 - [Overview](#overview)
 - [Search Service](#search-service)
 - [Indexer](#indexer)
