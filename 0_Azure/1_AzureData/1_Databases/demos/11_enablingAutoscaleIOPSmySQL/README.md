@@ -5,7 +5,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-05-09
+Last updated: 2025-05-12
 
 ----------
 
@@ -79,8 +79,6 @@ Last updated: 2025-05-09
 3. **Enable Alerts (Optional)**: You can set up `alerts` in Azure Monitor to notify you when IOPS usage crosses certain thresholds, which can help you track scaling events in real time.
 
    https://github.com/user-attachments/assets/19b96128-e37f-40b4-8e23-8a5384bc6686
-
-
 
 
 <div align="center">
