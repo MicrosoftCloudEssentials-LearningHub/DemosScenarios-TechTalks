@@ -1,4 +1,4 @@
-# How to build Custom Copilots with Copilot Studio
+# How to build Custom Copilots with Copilot Studio - Overview
 
 Costa Rica
 
@@ -10,15 +10,33 @@ Last updated: 2024-11-19
 
 ----------
 
-## Wiki 
-
 <details>
-<summary><b>Table of Contents</b> (Click to expand)</summary>
+<summary><b>List of References</b> (Click to expand)</summary>
 
 - [Use entities and slot filling in copilots](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-entities-slot-filling)
 - [Create and edit topics with Copilot](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-authoring#whats-supported?wt.mc_id=power-virtual-agents_inproduct)
 - [Microsoft Power Automate documentation](https://learn.microsoft.com/en-us/power-automate/)
   
+</details>
+
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
+
+- [Overview](#overview)
+- [Examples of types of copilots using Microsoft tools](#examples-of-types-of-copilots-using-microsoft-tools)
+    - [Copilot Agents](#copilot-agents)
+    - [Autonomous Copilots](#autonomous-copilots)
+    - [Declarative Copilots](#declarative-copilots)
+    - [Analytical Copilots](#analytical-copilots)
+    - [Creative Copilots](#creative-copilots)
+    - [Integrative Copilots](#integrative-copilots)
+- [Demo](#demo)
+    - [Configure your your environment and Create a Copilot](#configure-your-your-environment-and-create-a-copilot)
+    - [Understanding Entities & Slot Filling](#understanding-entities--slot-filling)
+    - [Copilot Studio to request data from another data source using Power Automate](#copilot-studio-to-request-data-from-another-data-source-using-power-automate)
+    - [Benefits](#benefits)
+    - [Use Cases](#use-cases)
+
 </details>
 
 ## Overview 
@@ -34,7 +52,7 @@ Last updated: 2024-11-19
 
 ## Examples of types of copilots using Microsoft tools
 
-### 1. Copilot Agents
+### Copilot Agents
 
 > **Tool**: Power Virtual Agents
 
@@ -45,7 +63,7 @@ Last updated: 2024-11-19
 4. **Build Conversations**: Use the graphical interface to design the conversation flow for each topic.
 5. **Test and Publish**: Test your bot to ensure it works as expected, then publish it to make it available to users.
 
-### 2. Autonomous Copilots
+### Autonomous Copilots
 
 > **Tool**: Power Automate
 
@@ -56,7 +74,7 @@ Last updated: 2024-11-19
 4. **Configure Details**: Set up the details for each action, such as specifying conditions and data inputs.
 5. **Test and Activate**: Test your flow to ensure it works correctly, then activate it to start running.
 
-### 3. Declarative Copilots
+### Declarative Copilots
 
 > **Tool**: Power Automate
 
@@ -67,7 +85,7 @@ Last updated: 2024-11-19
 4. **Add Actions**: Specify the actions that the flow will take based on the defined rules.
 5. **Test and Deploy**: Test your flow to ensure it follows the rules correctly, then deploy it.
 
-### 4. Analytical Copilots
+### Analytical Copilots
 
 > **Tool**: Power BI
 
@@ -78,7 +96,7 @@ Last updated: 2024-11-19
 4. **Add Insights**: Use Power BI's AI features to add insights and predictive analytics to your reports.
 5. **Share and Collaborate**: Share your reports with others and collaborate on data analysis.
 
-### 5. Creative Copilots
+### Creative Copilots
 
 > **Tools**: Microsoft Designer, Microsoft 365 Apps
 
@@ -89,7 +107,7 @@ Last updated: 2024-11-19
 4. **Use AI Features**: Leverage AI-driven suggestions and tools to enhance your design.
 5. **Save and Share**: Save your design and share it with others.
 
-### 6. Integrative Copilots
+### Integrative Copilots
 
 > **Tools**: Power Platform, Microsoft Teams, Power BI
 
@@ -102,7 +120,7 @@ Last updated: 2024-11-19
 
 ## Demo 
 
-### Topic 1: Configure your your environment and Create a Copilot
+### Configure your your environment and Create a Copilot
 
 - Go to [Microsoft Copilot Studio Home Page](https://copilotstudio.microsoft.com/)
 - Prompt your case, for example:
@@ -156,7 +174,7 @@ Last updated: 2024-11-19
 
   <img width="550" alt="image" src="https://github.com/user-attachments/assets/c1f5deb9-8541-4fbf-9208-c354fc72e4f8">
 
-### Topic 2: Understanding Entities & Slot Filling
+### Understanding Entities & Slot Filling
 
 | Concept       | Description                                                                 | Example                                                                                   |
 |---------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
@@ -192,7 +210,7 @@ Last updated: 2024-11-19
 
   <img width="550" alt="image" src="https://github.com/user-attachments/assets/011e6cb9-e779-4852-9277-1038600eecab">
 
-### Topic 3: Copilot Studio to request data from another data source using Power Automate
+### Copilot Studio to request data from another data source using Power Automate
 
 > Microsoft Power Automate (formerly known as Microsoft Flow) is a cloud-based service that enables users to `create automated workflows between their favorite apps and services`. This helps streamline repetitive tasks, integrate various systems, and improve overall productivity.
 
