@@ -17,11 +17,11 @@ Last updated: 2025-04-08
  
 </details>
 
-## Content 
-
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
+  
 - [Azure AI Studio](./AIStudio/)
 - [Azure Machine Learning](./AMachineLearning/)
-- [AI Use Cases examples](./14_AIUseCases/)
 - [AI Search](./0_AISearch/README.md)
 - [AI Video Indexer](./1_AIVideoIndexer/README.md)
 - [AI Content Safety](./2_AIContentSafety/README.md)
@@ -38,6 +38,7 @@ Last updated: 2025-04-08
 - [Language Service](./13_LanguageService/README.md)
 - [Retired](#retired)
 
+</details>
 
 ## Overview
 
