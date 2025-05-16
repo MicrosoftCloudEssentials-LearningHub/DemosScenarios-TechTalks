@@ -23,10 +23,8 @@ Last updated: 2024-11-26
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/21ec5d04-1c9b-4273-ad98-7b46186de78e">
 
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki</b> (Click to expand)</summary>
+<summary><b>List of References</b> (Click to expand)</summary>
 
 - [Azure AI Document Intelligence documentation](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/?view=doc-intel-4.0.0)
 - [Get started with the Document Intelligence Sample Labeling tool](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/v21/try-sample-label-tool?view=doc-intel-2.1.0#prerequisites-for-training-a-custom-form-model)
@@ -49,10 +47,9 @@ Last updated: 2024-11-26
 
 </details>
 
-## Content 
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
 
-- [Wiki](#wiki)
-- [Content](#content)
 - [Overview](#overview)
 - [Step 1: Set Up Your Azure Environment](#step-1-set-up-your-azure-environment)
 - [Step 2: Set Up Azure Blob Storage for PDF Ingestion](#step-2-set-up-azure-blob-storage-for-pdf-ingestion)
@@ -72,6 +69,8 @@ Last updated: 2024-11-26
   - [Configure/Validate the Environment variables](#configurevalidate-the-environment-variables)
   - [Develop the Function](#develop-the-function)
 - [Step 6: Test the solution](#step-6-test-the-solution)
+
+</details>
 
 ## Overview 
 
