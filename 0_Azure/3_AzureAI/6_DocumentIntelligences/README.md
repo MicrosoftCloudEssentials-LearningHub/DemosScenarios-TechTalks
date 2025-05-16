@@ -15,23 +15,23 @@ Key Features:
 - **Flexible Deployment**: Ingest data from the cloud or at the edge and apply to search indexes, business automation workflows, and more.
 - **Built-in Security**: Rely on enterprise-grade security and privacy applied to both your data and any trained models.
 
-## Content 
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
+  
+- [Document Classification - Document Intelligence:](#document-classification---document-intelligence)
+- [Information Extraction - Document Intelligence:](#information-extraction---document-intelligence)
+- [Content Search - Document Intelligence:](#content-search---document-intelligence)
+- [Compliance and Risk Management - Document Intelligence:](#compliance-and-risk-management---document-intelligence)
+- [Customer Service - Document Intelligence:](#customer-service---document-intelligence)
 
-- [Document intelligences](#document-intelligences)
-    - [Content](#content)
-    - [Examples of Use Cases](#examples-of-use-cases)
-        - [Document Classification - Document Intelligence:](#document-classification---document-intelligence)
-        - [Information Extraction - Document Intelligence:](#information-extraction---document-intelligence)
-        - [Content Search - Document Intelligence:](#content-search---document-intelligence)
-        - [Compliance and Risk Management - Document Intelligence:](#compliance-and-risk-management---document-intelligence)
-        - [Customer Service - Document Intelligence:](#customer-service---document-intelligence)
+</details>
 
-## Examples of Use Cases
+> Examples of Use Cases
 
 > [!NOTE]
 > Here are some use cases:
 
-### Document Classification - Document Intelligence:
+## Document Classification - Document Intelligence:
 [return to Content](#content)
 
 Azure Document Intelligence can be used to automatically classify documents into predefined categories. This can be particularly useful in industries like legal, finance, and healthcare where large volumes of documents need to be categorized.
@@ -74,7 +74,7 @@ graph TD
 ```
 
 
-### Information Extraction - Document Intelligence:
+## Information Extraction - Document Intelligence:
 [return to Content](#content)
 
 Azure Document Intelligence can extract key information from unstructured documents. This can automate data entry tasks and improve data accuracy.
@@ -124,7 +124,7 @@ graph TD
     C --> D
 ```
 
-### Content Search - Document Intelligence:
+## Content Search - Document Intelligence:
 [return to Content](#content)
 
 Azure Document Intelligence can enable full text search across millions of documents. This can help users find specific documents or information within documents quickly and accurately.
@@ -155,7 +155,7 @@ graph TD
     E --> F
 ```
 
-### Compliance and Risk Management - Document Intelligence:
+## Compliance and Risk Management - Document Intelligence:
 [return to Content](#content)
 
 Azure Document Intelligence can help organizations maintain compliance and manage risk by identifying sensitive information in documents. It can detect and redact information like social security numbers, credit card numbers, and other personally identifiable information (PII).
@@ -187,7 +187,7 @@ graph TD
     C --> D
 ```
 
-### Customer Service - Document Intelligence:
+## Customer Service - Document Intelligence:
 [return to Content](#content)
 
 Azure Document Intelligence can be used to improve customer service by providing quick and accurate responses to customer inquiries. By analyzing customer emails, chat transcripts, and other documents, it can provide relevant information to customer service representatives or even automate responses.
