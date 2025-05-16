@@ -14,29 +14,23 @@ Last updated: 2024-11-19
 
 ![image](https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/bdaebc61-162f-4c0f-855f-6dc74de38397)
 
-## Content 
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
+  
+- [E-commerce and Retail - Azure AI Search:](#e-commerce-and-retail---azure-ai-search)
+- [Content and Document Management - Azure AI Search:](#content-and-document-management---azure-ai-search)
+- [Enterprise Search - Azure AI Search:](#enterprise-search---azure-ai-search)
+- [Healthcare and Life Sciences - Azure AI Search:](#healthcare-and-life-sciences---azure-ai-search)
+- [Media and Entertainment - Azure AI Search:](#media-and-entertainment---azure-ai-search)
+- [Travel and Hospitality - Azure AI Search:](#travel-and-hospitality---azure-ai-search)
+- [Financial Services - Azure AI Search:](#financial-services---azure-ai-search)
 
-<!-- TOC -->
-
-- [AI Search](#ai-search)
-    - [Content](#content)
-    - [Examples of Use Cases](#examples-of-use-cases)
-        - [E-commerce and Retail - Azure AI Search:](#e-commerce-and-retail---azure-ai-search)
-        - [Content and Document Management - Azure AI Search:](#content-and-document-management---azure-ai-search)
-        - [Enterprise Search - Azure AI Search:](#enterprise-search---azure-ai-search)
-        - [Healthcare and Life Sciences - Azure AI Search:](#healthcare-and-life-sciences---azure-ai-search)
-        - [Media and Entertainment - Azure AI Search:](#media-and-entertainment---azure-ai-search)
-        - [Travel and Hospitality - Azure AI Search:](#travel-and-hospitality---azure-ai-search)
-        - [Financial Services - Azure AI Search:](#financial-services---azure-ai-search)
-
-<!-- /TOC -->
-
-## Examples of Use Cases 
+</details>
 
 > [!NOTE]
 > Use Cases for Azure AI Search:
 
-### E-commerce and Retail - Azure AI Search:
+## E-commerce and Retail - Azure AI Search:
 [return to Content](#content)
 
    - Enhance product search experiences on e-commerce websites by providing relevant results, filters, and facets.
@@ -77,7 +71,7 @@ graph LR
     AI -->|Applies AI for smarter processing| AIS
 ```
 
-### Content and Document Management - Azure AI Search:
+## Content and Document Management - Azure AI Search:
 [return to Content](#content)
 
    - Index and search through large document repositories, intranets, and knowledge bases.
@@ -127,7 +121,7 @@ In this diagram:
 - **Azure Active Directory** ensures secure access to the documents, so only authorized employees can search and view the documents.
 - **Azure Monitor** and **Azure Application Insights** are used to monitor the performance of the search application and to get insights about its usage.
 
-### Enterprise Search - Azure AI Search:
+## Enterprise Search - Azure AI Search:
 [return to Content](#content)
 
    - Create a unified search experience across various enterprise data sources (files, databases, APIs).
@@ -180,7 +174,7 @@ graph LR
     E -->|User Queries| D
 ```
 
-### Healthcare and Life Sciences - Azure AI Search:
+## Healthcare and Life Sciences - Azure AI Search:
 [return to Content](#content)
 
    - Build medical knowledge bases for clinicians and researchers.
@@ -261,7 +255,7 @@ graph TB
     G --> H
 ```
 
-### Media and Entertainment - Azure AI Search:
+## Media and Entertainment - Azure AI Search:
 [return to Content](#content)
 
    - Enhance video and audio content discovery by indexing metadata and transcripts.
@@ -329,7 +323,7 @@ graph LR
     end
 ```
 
-### Travel and Hospitality - Azure AI Search:
+## Travel and Hospitality - Azure AI Search:
 [return to Content](#content)
 
    - Power hotel booking platforms with efficient search capabilities.
@@ -387,7 +381,7 @@ graph LR
     end
 ```
 
-### Financial Services - Azure AI Search:
+## Financial Services - Azure AI Search:
 [return to Content](#content)
 
    - Create powerful search interfaces for financial data, stock market information, and investment research.
