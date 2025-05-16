@@ -25,6 +25,7 @@ Last updated: 2025-04-08
 - [AI Search](./0_AISearch/README.md)
 - [AI Video Indexer](./1_AIVideoIndexer/README.md)
 - [AI Content Safety](./2_AIContentSafety/README.md)
+- [AI Use Cases examples](./14_AIUseCases/)
 - [Bot Services](./3_BotServices/README.md)
 - [Computer Vision](./4_ComputerVision/README.md)
 - [Custom Vision](./5_CustomVision/README.md)
