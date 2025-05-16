@@ -26,8 +26,6 @@ Key Features:
 
 </details>
 
-> Examples of Use Cases
-
 > [!NOTE]
 > Here are some use cases:
 
