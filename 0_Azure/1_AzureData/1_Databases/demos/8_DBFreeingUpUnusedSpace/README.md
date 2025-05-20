@@ -12,8 +12,6 @@ Last updated: 2025-01-20
 
 > Microsoft offers a variety of database solutions, both relational and non-relational. Quick overview about strategies for managing and reducing their size, ensuring optimal performance and efficient use of storage resources. It's essential to `follow best practices and monitor the operation to avoid potential issues like long-running commands or blocking sessions`.
 
-## Wiki 
-
 <details>
 <summary><b>Table of Wiki </b> (Click to expand)</summary>
 
@@ -25,13 +23,9 @@ Last updated: 2025-01-20
 
 </details>
 
-## Content 
-
 <details>
 <summary><b>Table of Content </b> (Click to expand)</summary>
 
-- [Wiki](#wiki)
-- [Content](#content)
 - [Overview](#overview)
 - [Relational Databases](#relational-databases)
     - [Azure SQL Database](#azure-sql-database)
