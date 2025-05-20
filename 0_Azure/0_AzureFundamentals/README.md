@@ -11,10 +11,13 @@ Last updated: 2024-11-19
 
 ---------------
 
-## Wiki 
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
 
 - [Azure Enterprise Development: 1 Governance and Infrastructure Deployments](https://www.linkedin.com/learning/azure-enterprise-development-1-governance-and-infrastructure-deployments/welcome?u=2095204)
 - [Exam Prep: Microsoft Azure Fundamentals (AZ-900)](https://www.linkedin.com/learning/exam-prep-microsoft-azure-fundamentals-az-900/azure-certification-for-advancement?u=2095204)
+
+</details>
 
 ## Types of Cloud Services 
 
