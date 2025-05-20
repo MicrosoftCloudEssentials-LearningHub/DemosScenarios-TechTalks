@@ -13,11 +13,14 @@ Last updated: 2024-11-19
 > Azure Language Service is part of Azure AI, is cloud-based service that provides a suite of Natural Language Processing (NLP) features for understanding and analyzing text. It helps build intelligent applications using the web-based Language Studio, REST APIs, and client libraries, offering a comprehensive suite of AI services and tools for developers to build intelligent natural language solutions. <br/> 
 > It leverages state-of-the-art language models, including Z-Code++ and fine-tuned GPT models.
 
-## References 
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
 
 - [What’s new in Azure AI Language | BUILD 2024](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/what-s-new-in-azure-ai-language-build-2024/ba-p/4147399)
 - [What's new in Azure AI Language?](https://learn.microsoft.com/en-us/azure/ai-services/language-service/whats-new?tabs=csharp)
 - [azurerm_cognitive_account - terraform doc](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/cognitive_account)
+
+</details>
 
 ## Overview
 
