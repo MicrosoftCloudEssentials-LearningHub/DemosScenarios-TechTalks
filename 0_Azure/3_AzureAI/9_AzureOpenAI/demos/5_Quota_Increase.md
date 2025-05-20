@@ -9,13 +9,28 @@ Last updated: 2024-11-19
 
 ----------
 
-## Wiki 
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
 
+- [Azure OpenAI Service: Request for Quota Increase](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR4xPXO648sJKt4GoXAed-0pUMFE1Rk9CU084RjA0TUlVSUlMWEQzVkJDNCQlQCN0PWcu) - Form
 - [Azure OpenAI Service quotas and limits](https://learn.microsoft.com/en-us/azure/ai-services/openai/quotas-limits)
 - [Manage Azure OpenAI Service quota](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/quota?tabs=rest)
 - [Azure OpenAI Service models](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models)
 - [Strategies for Optimizing High-Volume Token Usage with Azure OpenAI](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/strategies-for-optimizing-high-volume-token-usage-with-azure/ba-p/4007751)
 - [Azure OpenAI Service Multitenant Load Balancing and TPM Handling](https://learn.microsoft.com/en-us/samples/azure-samples/shared-azure-openai-tpm/azure-openai-service-multitenant-load-balancing-and-tpm-handling/)
+
+</details>
+
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
+
+- [How to](#how-to)
+- [Additional approaches](#additional-approaches)
+
+</details>
+
+> [!TIP]
+> Requesting a quota increase for the current standard deployment in a specific region is a straightforward first step. Please [fill this form](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR4xPXO648sJKt4GoXAed-0pUMFE1Rk9CU084RjA0TUlVSUlMWEQzVkJDNCQlQCN0PWcu), is used to submit requests for quota increases for the standard deployment type. Requests are accepted and processed in the order they are received. Priority is given to customers whose traffic usage reaches their existing quota allocation. If this condition is not met, your request may be denied.  If this does not `meet your needs, please review the` [process outlined below](#additional-approaches) `and choose the option that best fits your use case.`
 
 ## How to 
 
