@@ -1,4 +1,4 @@
-# Optimizing Database Performance by Freeing Up Unused Space 
+# Azure Databases: Optimizing Database Performance by Freeing Up Unused Space - Overview
 
 Costa Rica
 
@@ -6,9 +6,12 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-01-20
+Last updated: 2025-05-20
 
 ----------
+
+> [!IMPORTANT]
+> Please note that `these demos are intended as a guide and are based on my personal experiences. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly`: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
 
 > Microsoft offers a variety of database solutions, both relational and non-relational. Quick overview about strategies for managing and reducing their size, ensuring optimal performance and efficient use of storage resources. It's essential to `follow best practices and monitor the operation to avoid potential issues like long-running commands or blocking sessions`.
 
@@ -28,21 +31,21 @@ Last updated: 2025-01-20
 
 - [Overview](#overview)
 - [Relational Databases](#relational-databases)
-    - [Azure SQL Database](#azure-sql-database)
-    - [Azure SQL Managed Instance](#azure-sql-managed-instance)
-    - [SQL Server on Azure Virtual Machines](#sql-server-on-azure-virtual-machines)
-    - [Azure Database for PostgreSQL](#azure-database-for-postgresql)
-    - [Azure Database for MySQL](#azure-database-for-mysql)
+  - [Azure SQL Database](#azure-sql-database)
+  - [Azure SQL Managed Instance](#azure-sql-managed-instance)
+  - [SQL Server on Azure Virtual Machines](#sql-server-on-azure-virtual-machines)
+  - [Azure Database for PostgreSQL](#azure-database-for-postgresql)
+  - [Azure Database for MySQL](#azure-database-for-mysql)
 - [Non-Relational Databases](#non-relational-databases)
-    - [Azure Cosmos DB](#azure-cosmos-db)
-    - [Azure Managed Instance for Apache Cassandra](#azure-managed-instance-for-apache-cassandra)
-    - [Azure Cache for Redis](#azure-cache-for-redis)
+  - [Azure Cosmos DB](#azure-cosmos-db)
+  - [Azure Managed Instance for Apache Cassandra](#azure-managed-instance-for-apache-cassandra)
+  - [Azure Cache for Redis](#azure-cache-for-redis)
 
 </details>
 
 ## Overview 
 
-General Strategies for All Databases:
+> General Strategies for All Databases:
 
 - **Archiving Old Data**: Move old or rarely accessed data to an archive database or storage solution. Reduces the size of the active database, improving performance and manageability. `Use SQL Server's built-in tools or third-party solutions to archive data based on specific criteria (e.g., date, usage).`
 - **Data Compression**: Apply data compression techniques to reduce storage space.
@@ -53,7 +56,11 @@ General Strategies for All Databases:
 - **Monitoring and Maintenance**: Regularly monitor database size and performance, and perform maintenance tasks.
 - **Using Filegroups**: Distribute database objects across multiple filegroups to improve performance and manageability.
 
-<img width="550" alt="image" src="https://github.com/user-attachments/assets/81d088ab-da80-4643-9c2c-2558709c90ff">
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/81d088ab-da80-4643-9c2c-2558709c90ff" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
+
+From [Managing database file space in Azure SQL Database](https://learn.microsoft.com/zh-cn/azure/azure-sql/database/file-space-manage?view=azuresql-db)
 
 > General Tips:
 
@@ -166,4 +173,3 @@ graph TD
   <h3 style="color: #4CAF50;">Total Visitors</h3>
   <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
-
