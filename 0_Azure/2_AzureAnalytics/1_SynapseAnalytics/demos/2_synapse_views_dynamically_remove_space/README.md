@@ -13,8 +13,6 @@ Last updated: 2025-01-24
 > [!NOTE]
 > Both the `table name and column name fields will be reviewed`. We'll remove any blank spaces to create the view.
 
-## Wiki 
-
 <details>
 <summary><b>List of References </b> (Click to expand)</summary>
 
@@ -25,13 +23,9 @@ Last updated: 2025-01-24
   
 </details>
 
-## Content
-
 <details>
 <summary><b>Table of Content </b> (Click to expand)</summary>
 
-- [Wiki](#wiki)
-- [Content](#content)
 - [Overview](#overview)
     - [SQL Pools](#sql-pools)
     - [Synapse Views](#synapse-views)
