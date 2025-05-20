@@ -11,10 +11,15 @@ Last updated: 2024-11-15
 
 ----------
 
-<div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
-</div>
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
+
+- [SharePoint: Site Customization](https://www.linkedin.com/learning/sharepoint-site-customization/welcome?u=2095204)
+- [SharePoint Quick Tips](https://www.linkedin.com/learning/sharepoint-quick-tips/welcome?u=2095204)
+- [SharePoint 365: Integrating with PowerBI](https://www.linkedin.com/learning/sharepoint-365-integrating-with-powerbi/welcome?u=2095204)
+
+</details>
+
 
 | Aspect | Information |
 | -------- | -------- |
@@ -25,10 +30,9 @@ Last updated: 2024-11-15
 | Integration | SharePoint is integrated with other Microsoft 365 apps, which means content and resources can be accessed across the Microsoft 365 ecosystem. |
 | Pricing | SharePoint is included in Microsoft 365 subscriptions. There are also standalone plans available for purchase. |
 
-## Wiki
 
-- [SharePoint: Site Customization](https://www.linkedin.com/learning/sharepoint-site-customization/welcome?u=2095204)
-- [SharePoint Quick Tips](https://www.linkedin.com/learning/sharepoint-quick-tips/welcome?u=2095204)
-- [SharePoint 365: Integrating with PowerBI](https://www.linkedin.com/learning/sharepoint-365-integrating-with-powerbi/welcome?u=2095204)
-
+<div align="center">
+  <h3 style="color: #4CAF50;">Total Visitors</h3>
+  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
 
