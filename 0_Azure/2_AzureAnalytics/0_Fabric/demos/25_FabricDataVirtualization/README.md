@@ -21,10 +21,8 @@ Data Virtualization can be leveraged either through a dedicated tool or an integ
 > - **Data Quality**: Implement data validation and cleansing during the ingestion process to ensure the quality of the ingested data. <br/>
 > - **Security**: Secure data in transit and at rest using encryption and access control mechanisms.
 
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki </b> (Click to expand)</summary>
+<summary><b>List of References </b> (Click to expand)</summary>
 
 - [What is Microsoft Fabric?](https://learn.microsoft.com/en-us/fabric/get-started/microsoft-fabric-overview)
 - [Introducing Microsoft Fabric: Data analytics for the era of AI](https://azure.microsoft.com/en-us/blog/introducing-microsoft-fabric-data-analytics-for-the-era-of-ai/)
@@ -43,13 +41,9 @@ Data Virtualization can be leveraged either through a dedicated tool or an integ
 
 </details>
 
-## Content
-
 <details>
 <summary><b>Table of Content </b> (Click to expand)</summary>
 
-- [Wiki](#wiki)
-- [Content](#content)
 - [What is Data Virtualization?](#what-is-data-virtualization)
     - [Key Features & Fabric Components](#key-features--fabric-components)
     - [Benefits:](#benefits)
