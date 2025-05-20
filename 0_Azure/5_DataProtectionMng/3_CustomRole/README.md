@@ -19,10 +19,8 @@ Last updated: 2025-02-21
 > E.g., Imagine you have a team of developers who need to manage virtual machines but should not have access to billing information. You can create a custom role that includes permissions to start, stop, and restart virtual machines but excludes any billing-related actions.
 
 
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki</b> (Click to expand)</summary>
+<summary><b>List of References</b> (Click to expand)</summary>
 
 - [Install Azure CLI on Windows](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli)
 - [Tutorial: Create an Azure custom role using Azure CLI](https://learn.microsoft.com/en-us/azure/role-based-access-control/tutorial-custom-role-cli)
