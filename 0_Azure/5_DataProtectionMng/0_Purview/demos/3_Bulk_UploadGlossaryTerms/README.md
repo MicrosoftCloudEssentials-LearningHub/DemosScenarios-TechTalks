@@ -13,8 +13,6 @@ Last updated: 2025-01-17
 > Bulk upload glossary terms from the classic Purview to the new Unified Catalog
 
 
-## Wiki 
-
 <details>
 <summary><b>Table of References </b> (Click to expand)</summary>
 
@@ -30,13 +28,9 @@ Last updated: 2025-01-17
 </details>
 
 
-## Content 
-
 <details>
 <summary><b>Table of Content </b> (Click to expand)</summary>
 
-- [Wiki](#wiki)
-- [Content](#content)
 - [Prerequisites](#prerequisites)
 - [Create a Microsoft Purview Account](#create-a-microsoft-purview-account)
 - [Uploading Glossary Terms - Classic Purview](#uploading-glossary-terms---classic-purview)
