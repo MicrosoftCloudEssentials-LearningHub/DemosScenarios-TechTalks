@@ -10,33 +10,28 @@ Last updated: 2024-11-19
 
 ----------
 
-Key Features: 
-- **Text Translation**: Execute text translation between supported source and target languages in real time.
-- **Asynchronous Batch Document Translation**: Translate batch and complex files while preserving the structure and format of the original documents.
-- **Synchronous Document Translation**: Translate a single document file alone or with a glossary file while preserving the structure and format of the original document.
-- **Custom Translator**: Build customized models to translate domain- and industry-specific language, terminology, and style.
+> Key Features: 
+> - **Text Translation**: Execute text translation between supported source and target languages in real time.
+> - **Asynchronous Batch Document Translation**: Translate batch and complex files while preserving the structure and format of the original documents.
+> - **Synchronous Document Translation**: Translate a single document file alone or with a glossary file while preserving the structure and format of the original document.
+> - **Custom Translator**: Build customized models to translate domain- and industry-specific language, terminology, and style.
 
-## Content
-<!-- TOC -->
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
 
-- [Translators](#translators)
-    - [Content](#content)
-    - [Example of Use Case](#example-of-use-case)
-        - [Multilingual Customer Support - Azure Translators:](#multilingual-customer-support---azure-translators)
-        - [Content Localization - Azure Translators:](#content-localization---azure-translators)
-        - [Real-Time Communication - Azure Translators:](#real-time-communication---azure-translators)
-        - [Language Learning Applications - Azure Translators:](#language-learning-applications---azure-translators)
-        - [Accessibility - Azure Translators:](#accessibility---azure-translators)
+- [Multilingual Customer Support - Azure Translators:](#multilingual-customer-support---azure-translators)
+- [Content Localization - Azure Translators:](#content-localization---azure-translators)
+- [Real-Time Communication - Azure Translators:](#real-time-communication---azure-translators)
+- [Language Learning Applications - Azure Translators:](#language-learning-applications---azure-translators)
+- [Accessibility - Azure Translators:](#accessibility---azure-translators)
 
-<!-- /TOC -->
-
-## Example of Use Case
+</details>
 
 > [!NOTE]
 > Here are some use cases:
 
-### Multilingual Customer Support - Azure Translators:
-[return to Content](#content)
+## Multilingual Customer Support - Azure Translators:
+
 
 Azure Translators can be used to provide real-time translation for customer support. This allows businesses to offer support in multiple languages, improving customer experience and satisfaction.
 
@@ -59,8 +54,8 @@ Azure Translators can be used to provide real-time translation for customer supp
 > 
 > By using Azure Translator in conjunction with Azure Bot Service and Azure Cognitive Services, businesses can provide effective customer support in multiple languages, improving customer experience and satisfaction.
 
-### Content Localization - Azure Translators:
-[return to Content](#content)
+## Content Localization - Azure Translators:
+
 
 Azure Translators can be used to translate and localize content such as websites, applications, and documents. This helps businesses reach a global audience by making their content accessible in various languages.
 
@@ -107,8 +102,8 @@ Azure Translators can be used to translate and localize content such as websites
 > Please replace `'YOUR_SUBSCRIPTION_KEY'` with your actual subscription key. This is just a basic example. Depending on your application, you might need to handle more complex scenarios, such as translating text in images or handling different character sets.
 > 
 
-### Real-Time Communication - Azure Translators:
-[return to Content](#content)
+## Real-Time Communication - Azure Translators:
+
 
 Azure Translators can be used in real-time communication scenarios such as international conferences or meetings. It can provide instant translation of spoken language, enabling seamless communication between participants who speak different languages.
 
@@ -136,8 +131,8 @@ Azure Translators can be used in real-time communication scenarios such as inter
 > Please note that this is a high-level overview and the actual implementation may require additional steps based on your specific requirements. Please replace the placeholder text with your actual Azure resource names and keys. Remember to keep your keys secure and do not share them publicly. Also, this is a simplified example and real-world applications may require additional considerations for error handling, scalability, and security.
 > 
 
-### Language Learning Applications - Azure Translators:
-[return to Content](#content)
+## Language Learning Applications - Azure Translators:
+
 
 Azure Translators can be integrated into language learning applications to provide accurate translations and help users learn a new language more effectively.
 
@@ -180,8 +175,8 @@ Azure Translators can be integrated into language learning applications to provi
 > Please replace 'your-subscription-key' with your actual Azure Translator subscription key. By integrating Azure Translator into a language learning application, we can provide users with accurate translations, enhancing their language learning experience.
 > 
 
-### Accessibility - Azure Translators:
-[return to Content](#content)
+## Accessibility - Azure Translators:
+
 
 Azure Translators can be used to make content more accessible for people with disabilities. For example, it can be used to translate text into sign language for the hearing impaired, or to convert text into audio for the visually impaired.
 
