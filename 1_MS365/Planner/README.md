@@ -11,12 +11,14 @@ Last updated: 2024-11-15
 
 ----------
 
-<div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
-</div>
-
 > Microsoft Planner is a planning application available on the Microsoft 365 platform. It was initially released on June 6, 2016. 
+
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
+
+- [Microsoft Planner Quick Tips](https://www.linkedin.com/learning/microsoft-planner-quick-tips/saving-time-in-microsoft-planner?u=2095204)
+
+</details>
 
 | Aspect | Information |
 | -------- | -------- |
@@ -27,6 +29,7 @@ Last updated: 2024-11-15
 | Integration | Microsoft Planner is integrated with other Microsoft 365 apps, which means tasks and plans can be accessed across the Microsoft 365 ecosystem. |
 | Pricing | Microsoft Planner is included in Microsoft 365 subscriptions. There are also standalone plans available for purchase. |
 
-## Wiki
-
-- [Microsoft Planner Quick Tips](https://www.linkedin.com/learning/microsoft-planner-quick-tips/saving-time-in-microsoft-planner?u=2095204)
+<div align="center">
+  <h3 style="color: #4CAF50;">Total Visitors</h3>
+  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
