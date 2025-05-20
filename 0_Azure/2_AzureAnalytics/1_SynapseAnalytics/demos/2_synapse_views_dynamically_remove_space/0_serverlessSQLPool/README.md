@@ -10,8 +10,6 @@ Last updated: 2025-01-26
 
 ----------
 
-## Content
-
 <details>
 <summary><b>Table of Content </b> (Click to expand)</summary>
 
