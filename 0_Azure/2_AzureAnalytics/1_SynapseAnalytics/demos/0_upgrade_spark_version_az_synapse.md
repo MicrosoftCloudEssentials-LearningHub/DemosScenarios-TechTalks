@@ -10,10 +10,8 @@ Last updated: 2025-01-13
 
 ----------
 
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki </b> (Click to expand)</summary>
+<summary><b>List of References </b> (Click to expand)</summary>
 
 - [Azure Synapse runtimes](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-version-support)
 - [How to upgrade Spark version in Synaspe?](https://learn.microsoft.com/en-us/answers/questions/1165315/how-to-upgrade-spark-version-in-synaspe)
@@ -23,13 +21,9 @@ Last updated: 2025-01-13
 
 </details>
 
-## Content
-
 <details>
 <summary><b>Table of Content </b> (Click to expand)</summary>
 
-- [Wiki](#wiki)
-- [Content](#content)
 - [Overview](#overview)
 - [How to create Apache Spark Pool in Azure Synapse](#how-to-create-apache-spark-pool-in-azure-synapse)
     - [Registering the Microsoft Azure Synapse Provider](#registering-the-microsoft-azure-synapse-provider)
