@@ -10,7 +10,8 @@ Last updated: 2024-11-19
 
 ----------
 
-## Wiki 
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
 
 - [Quickstart: Create an event hub using Azure portal](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-create)
 - [Overview of features - Azure Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-features)
@@ -20,7 +21,9 @@ Last updated: 2024-11-19
 - [Troubleshoot connectivity issues - Azure Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/troubleshooting-guide)
 - [Monitoring data reference for Azure Event Hubs - Azure Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/monitor-event-hubs-reference)
 - [Dynamically add partitions to an event hub in Azure Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/dynamically-add-partitions)
-  
+
+</details>
+
 ## Overview 
 
 > Azure Event Hubs is a fully managed, `real-time data ingestion service` that can `stream millions of events per second from any source to any destination`. It is designed to handle large-scale event processing and is ideal for big data and analytics scenarios.
