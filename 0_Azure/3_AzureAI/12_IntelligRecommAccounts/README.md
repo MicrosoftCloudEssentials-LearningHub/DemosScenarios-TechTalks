@@ -10,6 +10,18 @@ Last updated: 2024-11-19
 
 ----------
 
+> When creating a new Intelligent Recommendations account: You can `create and manage Azure resources for Intelligent Recommendations` via the Intelligent Recommendations Azure Resource Manager (ARM) portal. You'll create three resources: `Account (Parent resource), Serving (Child resource), and Modeling (Child resource).`
+
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
+
+- [E-commerce Personalization - Intelligent Recommendations Accounts:](#e-commerce-personalization---intelligent-recommendations-accounts)
+- [Content Discovery - Intelligent Recommendations Accounts:](#content-discovery---intelligent-recommendations-accounts)
+- [Ad Targeting - Intelligent Recommendations Accounts:](#ad-targeting---intelligent-recommendations-accounts)
+- [Learning Path Suggestions - Intelligent Recommendations Accounts:](#learning-path-suggestions---intelligent-recommendations-accounts)
+
+</details>
+
 Key Features: 
 - Provides personalized product recommendations and telemetry insights using modern machine-learning algorithms.
 - Helps improve catalog navigation and item discovery.
@@ -24,30 +36,11 @@ Capabilities:
 - Trustworthy software service at scale.
 - Highly adaptable to custom business scenarios and logic, based on input data and algorithm choice.
 
-Creating a new Intelligent Recommendations account: 
-- You can create and manage Azure resources for Intelligent Recommendations via the Intelligent Recommendations Azure Resource Manager (ARM) portal. You'll create three resources: Account (Parent resource), Serving (Child resource), and Modeling (Child resource).
-
-## Content
-
-<!-- TOC -->
-
-- [Intelligent Recommendations Accounts](#intelligent-recommendations-accounts)
-    - [Content](#content)
-    - [Example of Use Cases](#example-of-use-cases)
-        - [E-commerce Personalization - Intelligent Recommendations Accounts:](#e-commerce-personalization---intelligent-recommendations-accounts)
-        - [Content Discovery - Intelligent Recommendations Accounts:](#content-discovery---intelligent-recommendations-accounts)
-        - [Ad Targeting - Intelligent Recommendations Accounts:](#ad-targeting---intelligent-recommendations-accounts)
-        - [Learning Path Suggestions - Intelligent Recommendations Accounts:](#learning-path-suggestions---intelligent-recommendations-accounts)
-
-<!-- /TOC -->
-
-## Example of Use Cases
-
 > [!NOTE]
 > Here are some use cases:
 
-### E-commerce Personalization - Intelligent Recommendations Accounts:
-[return to Content](#content)
+## E-commerce Personalization - Intelligent Recommendations Accounts:
+
 
 Azure Intelligent Recommendations can be used to provide personalized product recommendations to users based on their browsing and purchasing history. This can significantly improve the user experience and increase sales.
 
@@ -136,8 +129,8 @@ graph LR
     G --> H
 ```
 
-### Content Discovery - Intelligent Recommendations Accounts:
-[return to Content](#content)
+## Content Discovery - Intelligent Recommendations Accounts:
+
 
 In media or news platforms, Azure Intelligent Recommendations can suggest articles, videos, or other content that might interest the user, enhancing user engagement and time spent on the platform.
 
@@ -174,8 +167,8 @@ graph TB
 ```
 
 
-### Ad Targeting - Intelligent Recommendations Accounts:
-[return to Content](#content)
+## Ad Targeting - Intelligent Recommendations Accounts:
+
 
 Advertisers can use Azure Intelligent Recommendations to target users with ads that are relevant to their interests and online behavior, increasing the effectiveness of ad campaigns.
 
@@ -237,8 +230,8 @@ graph LR
     G -->|Ad Serving| M[Code Snippet for Ad Serving]
 ```
 
-### Learning Path Suggestions - Intelligent Recommendations Accounts:
-[return to Content](#content)
+## Learning Path Suggestions - Intelligent Recommendations Accounts:
+
 
 In educational platforms, Azure Intelligent Recommendations can suggest courses or learning paths to users based on their learning history and career goals, helping them to achieve their learning objectives more efficiently.
 
