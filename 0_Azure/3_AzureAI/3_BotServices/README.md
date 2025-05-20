@@ -11,22 +11,25 @@ Last updated: 2024-11-19
 
 > Azure Bot Service is a cloud-based platform provided by Microsoft Azure that enables businesses to build, deploy, and manage AI-powered chatbots. These chatbots can interact with users through text or voice and can be integrated into websites, messaging platforms, or mobile apps. Azure Bot Service simplifies creating and managing chatbots, making them accessible for businesses with varying technical expertise. In addition, Azure Bot Service offers the scalability and performance needed to handle varying workloads. Businesses can quickly scale their chatbot infrastructure up or down based on demand, ensuring optimal performance and cost efficiency.
 
-Here are some of the key features of the Azure AI Bot Service: 
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
+
+
+- [Customer Service - Bot Services:](#customer-service---bot-services)
+- [Sales and Marketing - Bot Services:](#sales-and-marketing---bot-services)
+- [Human Resources - Bot Services:](#human-resources---bot-services)
+- [IT Help Desk - Bot Services:](#it-help-desk---bot-services)
+- [E-commerce - Bot Services:](#e-commerce---bot-services)
+
+</details>
+
+> Here are some of the key features of the Azure AI Bot Service: 
 1. **Integrated Development Environment**: Azure AI Bot Service provided an integrated development environment for bot building. Its integration with Power Virtual Agents, a fully hosted low-code platform, enabled developers of all technical abilities to build conversational AI bots.
 2. **Build Bots Quickly**: Users could make, test, and publish bots using a low-code graphical interface. They could also improve their bot applications over time.
 3. **Real-Time Notification**: Whenever anomalies were detected, Azure AI Bot Service was able to send real-time notifications through multiple channels using hooks.
 4. **Smart Diagnostic Insights**: Azure AI Bot Service combined anomalies detected on the same multi-dimensional metric into a diagnostic tree to help users analyze root cause into specific dimensions.
 
-## Content 
-
-- [Bot Services](#bot-services)
-    - [Content](#content)
-    - [Example of Use Cases](#example-of-use-cases)
-        - [Customer Service - Bot Services:](#customer-service---bot-services)
-        - [Sales and Marketing - Bot Services:](#sales-and-marketing---bot-services)
-        - [Human Resources - Bot Services:](#human-resources---bot-services)
-        - [IT Help Desk - Bot Services:](#it-help-desk---bot-services)
-        - [E-commerce - Bot Services:](#e-commerce---bot-services)
+## Customer Service - Bot Services
 
 - **Automated Support**: Azure Bot Services can be used to create chatbots that provide automated responses to common customer inquiries, reducing the workload on human customer service representatives.
 
@@ -152,7 +155,7 @@ graph LR
     E --> G
 ```
 
-### Sales and Marketing - Bot Services:
+## Sales and Marketing - Bot Services:
 [return to Content](#content)
 
 - **Lead Generation**: Bots can engage with potential customers on a website or social media platform, ask qualifying questions, and generate leads for the sales team.
@@ -253,7 +256,7 @@ graph LR
     D --> F
 ```
 
-### Human Resources - Bot Services:
+## Human Resources - Bot Services:
 [return to Content](#content)
 
 - **Employee Onboarding**: Bots can guide new hires through the onboarding process, answering common questions and providing information about company policies and procedures.
@@ -318,7 +321,7 @@ graph LR
     E --> F
 ```
 
-### IT Help Desk - Bot Services:
+## IT Help Desk - Bot Services:
 [return to Content](#content)
 
 - **Troubleshooting**: Bots can assist with common IT issues, such as password resets or software installation, freeing up IT staff for more complex tasks.
@@ -414,7 +417,7 @@ graph LR
     H --> I
 ```
 
-### E-commerce - Bot Services:
+## E-commerce - Bot Services:
 [return to Content](#content)
 
 - **Order Tracking**: Bots can provide customers with updates on their order status and estimated delivery times.
