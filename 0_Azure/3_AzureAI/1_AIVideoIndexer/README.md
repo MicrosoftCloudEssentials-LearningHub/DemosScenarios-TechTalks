@@ -10,17 +10,19 @@ Last updated: 2024-11-19
 
 ----------
 
-> Azure AI Video Indexer is a powerful tool that uses AI to extract actionable insights from stored videos, and no machine learning expertise is necessary. It provides the integration of multiple machine learning models into one pipeline. It's easy to evaluate and integrate, and available via web portal, web widget, and REST API. It can identify and extract speech, on-screen text, detect objects, identify brands, detect and recognize faces, extract topics discussed, and create closed captions or subtitles from the audio track. [1](https://vi.microsoft.com/en-us/learn), [2](https://azure.microsoft.com/en-us/products/ai-video-indexer/), [3](https://learn.microsoft.com/en-us/azure/azure-video-indexer/faq), [4](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/empower-azure-video-indexer-insights-with-your-own-models/ba-p/4023243)
+> Azure AI Video Indexer is a powerful tool that uses AI to extract actionable insights from stored videos, and no machine learning expertise is necessary. It provides the integration of multiple machine learning models into one pipeline. It's easy to evaluate and integrate, and available via web portal, web widget, and REST API. It can identify and extract speech, on-screen text, detect objects, identify brands, detect and recognize faces, extract topics discussed, and create closed captions or subtitles from the audio track.
 
-## Content 
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
 
-- [AI Video Indexer](#ai-video-indexer)
-    - [Content](#content)
-        - [Advertising - AI Video Indexer:](#advertising---ai-video-indexer)
-        - [Education - AI Video Indexer:](#education---ai-video-indexer)
-        - [Corporate - AI Video Indexer:](#corporate---ai-video-indexer)
-        - [Security and Surveillance - AI Video Indexer:](#security-and-surveillance---ai-video-indexer)
-        - [Healthcare - AI Video Indexer:](#healthcare---ai-video-indexer)
+
+ - [Advertising - AI Video Indexer:](#advertising---ai-video-indexer)
+ - [Education - AI Video Indexer:](#education---ai-video-indexer)
+ - [Corporate - AI Video Indexer:](#corporate---ai-video-indexer)
+ - [Security and Surveillance - AI Video Indexer:](#security-and-surveillance---ai-video-indexer)
+ - [Healthcare - AI Video Indexer:](#healthcare---ai-video-indexer)
+
+</details>
 
 > 1. **Content Upload and Storage**: The first step in the process is to upload the media content. This can be done using **Azure Blob Storage**, which provides a scalable and secure place to store the media files.
 > 
@@ -61,8 +63,7 @@ flowchart TB
     D --> F
 ```
 
-### Advertising - AI Video Indexer:
-[return to Content](#content)
+## Advertising - AI Video Indexer:
 
 It can enhance ad insertion by analyzing the content of videos and targeting ads based on the extracted insights.
 
@@ -120,8 +121,7 @@ flowchart TB
     F --> H
 ```
 
-### Education - AI Video Indexer:
-[return to Content](#content)
+## Education - AI Video Indexer:
 
 In educational institutions, it can be used to transcribe lectures and make them searchable. This can help students find relevant sections of lectures quickly.
 
@@ -168,8 +168,7 @@ flowchart TB
     D --> F
 ```
 
-### Corporate - AI Video Indexer:
-[return to Content](#content)
+## Corporate - AI Video Indexer:
 
 In a corporate setting, it can be used for transcribing meetings and making them searchable. It can also be used for training purposes, where videos can be analyzed to extract key points.
 
@@ -223,8 +222,7 @@ flowchart TB
     D --> G
 ```
 
-### Security and Surveillance - AI Video Indexer:
-[return to Content](#content)
+## Security and Surveillance - AI Video Indexer:
 
 In security and surveillance, it can be used to analyze surveillance footage for object detection and recognition.
 
@@ -255,8 +253,8 @@ graph LR
     D --> G[Azure Security Center]
 ```
 
-### Healthcare - AI Video Indexer:
-[return to Content](#content)
+## Healthcare - AI Video Indexer:
+
 
 In healthcare, it can be used to analyze medical instructional videos and make them searchable for medical professionals and students.
 
