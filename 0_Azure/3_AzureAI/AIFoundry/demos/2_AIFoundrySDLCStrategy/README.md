@@ -22,10 +22,8 @@ Last updated: 2025-01-02
 > 5. **Provide Documentation and Support**: Ensure users have the necessary resources and support to integrate the APIs. <br/>
 > 6. **Implement Monitoring and Analytics**: Track the performance and usage of your AI models to ensure they meet your needs.
 
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki </b> (Click to expand)</summary>
+<summary><b>List of References </b> (Click to expand)</summary>
 
 - [Create a project in Azure AI Foundry portal](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/create-projects)
 - [Overview: Deploy AI models in Azure AI Foundry portal](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/deployments-overview)
@@ -41,13 +39,9 @@ Last updated: 2025-01-02
 
 </details>
 
-## Content
-
 <details>
 <summary><b>Table of Content </b> (Click to expand)</summary>
     
-- [Wiki](#wiki)
-- [Content](#content)
 - [Overview](#overview)
 - [Demo](#demo)
     - [Create a Resource Group](#create-a-resource-group)
