@@ -30,7 +30,7 @@ Last updated: 2024-11-19
 </details>
 
 > [!TIP]
-> Requesting a quota increase for the current standard deployment in a specific region is a straightforward first step. Please [fill this form](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR4xPXO648sJKt4GoXAed-0pUMFE1Rk9CU084RjA0TUlVSUlMWEQzVkJDNCQlQCN0PWcu), is used to submit requests for quota increases for the standard deployment type. Requests are accepted and processed in the order they are received. Priority is given to customers whose traffic usage reaches their existing quota allocation. If this condition is not met, your request may be denied.  If this does not `meet your needs, please review the` [process outlined below](#additional-approaches) `and choose the option that best fits your use case.`
+> Requesting a quota increase for the current standard deployment in a `specific region is a straightforward first step`. Please [fill this form](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR4xPXO648sJKt4GoXAed-0pUMFE1Rk9CU084RjA0TUlVSUlMWEQzVkJDNCQlQCN0PWcu), is used to submit requests for `quota increases for the standard deployment type`. Requests are accepted and processed in the order they are received. Priority is given to customers whose traffic usage reaches their existing quota allocation. If this condition is not met, your request may be denied.  If this does not `meet your needs, please review the` [process outlined below](#additional-approaches) `and choose the option that best fits your use case.`
 
 ## How to 
 
