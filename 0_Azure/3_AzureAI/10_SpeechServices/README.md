@@ -10,43 +10,37 @@ Last updated: 2024-11-19
 
 ----------
 
-Key Features:
-- **Speech to Text**: Transcribe audio into text, either in real-time or asynchronously with batch transcription.
-- **Text to Speech**: Produce natural-sounding text-to-speech voices.
-- **Speech Translation**: Translate spoken audio.
-- **Speaker Recognition**: Use speaker recognition during conversations.
+> Key Features:
+> - **Speech to Text**: Transcribe audio into text, either in real-time or asynchronously with batch transcription.
+> - **Text to Speech**: Produce natural-sounding text-to-speech voices.
+> - **Speech Translation**: Translate spoken audio.
+> - **Speaker Recognition**: Use speaker recognition during conversations.
 
-You can create custom voices, add specific words to your base vocabulary, or build your own models. It's easy to speech enable your applications, tools, and devices with the Speech CLI, Speech SDK, Speech Studio, or REST APIs. <br/> 
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
 
-Applications (Common scenarios for speech include):
+- [Transcription Services - Azure Speech Services:](#transcription-services---azure-speech-services)
+- [Speech Translation - Azure Speech Services:](#speech-translation---azure-speech-services)
+- [Voice Assistants and Bots - Azure Speech Services:](#voice-assistants-and-bots---azure-speech-services)
+- [Accessibility - Azure Speech Services:](#accessibility---azure-speech-services)
+- [Content Creation - Azure Speech Services:](#content-creation---azure-speech-services)
+
+</details>
+
+> [!NOTE]
+> You can create custom voices, add specific words to your base vocabulary, or build your own models. It's easy to speech enable your applications, tools, and devices with the Speech CLI, Speech SDK, Speech Studio, or REST APIs. <br/> 
+
+> Applications (Common scenarios for speech include):
 - **Captioning**: Synchronize captions with your input audio, apply profanity filters, get partial results, apply customizations, and identify spoken languages for multilingual scenarios.
 - **Audio Content Creation**: Use neural voices to make interactions with chatbots and voice assistants more natural and engaging, convert digital texts such as e-books into audiobooks and enhance in-car navigation systems.
 - **Call Center**: Transcribe calls in real-time or process a batch of calls, redact personally identifying information, and extract insights such as sentiment to help with your call center use case.
 -  **Language Learning**: Provide pronunciation assessment feedback to language learners, support real-time transcription for remote learning conversations, and read aloud teaching materials with neural voices.
 -  **Voice Assistants**: Create natural, human-like conversational interfaces for their applications and experiences. 
 
-## Content 
-
-<!-- TOC -->
-
-- [Speech Services](#speech-services)
-    - [Content](#content)
-    - [Examples of Use Cases](#examples-of-use-cases)
-        - [Transcription Services - Azure Speech Services:](#transcription-services---azure-speech-services)
-        - [Speech Translation - Azure Speech Services:](#speech-translation---azure-speech-services)
-        - [Voice Assistants and Bots - Azure Speech Services:](#voice-assistants-and-bots---azure-speech-services)
-        - [Accessibility - Azure Speech Services:](#accessibility---azure-speech-services)
-        - [Content Creation - Azure Speech Services:](#content-creation---azure-speech-services)
-
-<!-- /TOC -->
-
-## Examples of Use Cases 
-
 > [!NOTE]
 > Here are some use cases:
 
-### Transcription Services - Azure Speech Services:
-[return to Content](#content)
+## Transcription Services - Azure Speech Services:
 
 Azure Speech Services can be used to transcribe audio into text in real time. This can be particularly useful in scenarios such as live events, meetings, or conferences where there's a need to provide real-time captions for the audience.
 
@@ -105,8 +99,7 @@ Azure Speech Services can be used to transcribe audio into text in real time. Th
 > - Please replace `"YourSubscriptionKey"` and `"YourServiceRegion"` with your actual Azure Speech Services subscription key and service region. Remember to keep your subscription key secure. Do not share it with anyone or expose it in public repositories.
 > 
 
-### Speech Translation - Azure Speech Services:
-[return to Content](#content)
+## Speech Translation - Azure Speech Services:
 
 Azure Speech Services can provide real-time, multi-language speech translation. This can be used in international conferences, customer support centers, or any scenario where there's a need to communicate across different languages.
 
@@ -170,8 +163,7 @@ Azure Speech Services can provide real-time, multi-language speech translation. 
 > Remember to install the necessary packages and to run this script in an environment where your microphone is accessible.
 > 
 
-### Voice Assistants and Bots - Azure Speech Services:
-[return to Content](#content)
+## Voice Assistants and Bots - Azure Speech Services:
 
 Azure Speech Services can be used to build intelligent voice assistants and bots. These can provide hands-free interaction, take commands, answer questions, and provide services through spoken language.
 
@@ -198,8 +190,7 @@ Azure Speech Services can be used to build intelligent voice assistants and bots
 > By leveraging Azure Bot Service, Azure Speech Service, and Azure Cognitive Services (LUIS), we can build intelligent voice assistants and bots that provide hands-free interaction, take commands, answer questions, and provide services through spoken language.
 > 
 
-### Accessibility - Azure Speech Services:
-[return to Content](#content)
+## Accessibility - Azure Speech Services:
 
 Azure Speech Services can be used to make applications more accessible. For example, it can be used to provide voice navigation in applications for visually impaired users, or to provide speech-to-text services for users with hearing impairments.
 
@@ -221,8 +212,7 @@ Azure Speech Services can be used to make applications more accessible. For exam
 > By leveraging Azure Speech Services, we can make applications more accessible for all users. Voice navigation can assist visually impaired users in navigating the application, while speech-to-text services can assist users with hearing impairments in understanding spoken language.
 > 
 
-### Content Creation - Azure Speech Services:
-[return to Content](#content)
+## Content Creation - Azure Speech Services:
 
 Azure Speech Services can be used in content creation, such as generating audio for video narration, creating podcasts, or converting blog posts into audio format.
 
