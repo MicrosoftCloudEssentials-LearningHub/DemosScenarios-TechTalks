@@ -10,23 +10,17 @@ Last updated: 2025-01-13
 
 ----------
 
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki </b> (Click to expand)</summary>
+<summary><b>List of References </b> (Click to expand)</summary>
 
 - [Azure Synapse Analytics Pricing](https://azure.microsoft.com/en-us/pricing/details/synapse-analytics/)
 - [Plan and Manage Costs for Azure Synapse Analytics](https://learn.microsoft.com/en-us/azure/synapse-analytics/plan-manage-costs)
 
 </details>
 
-## Content
-
 <details>
 <summary><b>Table of Content </b> (Click to expand)</summary>
 
-- [Wiki](#wiki)
-- [Content](#content)
 - [Azure Cost Management + Billing](#azure-cost-management--billing)
 - [Setting Budgets and Alerts](#setting-budgets-and-alerts)
 - [Azure Synapse Analytics Cost Breakdown](#azure-synapse-analytics-cost-breakdown)
