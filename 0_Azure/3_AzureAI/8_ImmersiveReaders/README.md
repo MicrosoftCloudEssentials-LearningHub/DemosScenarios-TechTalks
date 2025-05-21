@@ -30,8 +30,7 @@ Last updated: 2024-11-19
 
 ## Enhancing Reading Comprehension - Immersive readers:
 
-
-Azure Immersive Reader can be used to enhance reading comprehension for users. It provides features like Read Aloud, Line Focus, and Picture Dictionary that can help users, especially those with learning difficulties, to better understand the content.
+> Azure Immersive Reader can be used to enhance reading comprehension for users. It provides features like Read Aloud, Line Focus, and Picture Dictionary that can help users, especially those with learning difficulties, to better understand the content.
 
 > [!IMPORTANT]
 > Here’s an example of an end-to-end solution using Azure resources and Azure Immersive readers: Azure Immersive Reader is a tool that can be used to enhance reading comprehension for users. It provides features like Read Aloud, Line Focus, and Picture Dictionary that can help users, especially those with learning difficulties, to better understand the content.
@@ -95,7 +94,7 @@ graph TD
 ## Multilingual Support - Immersive readers:
 
 
-Azure Immersive Reader supports text translation in over 70 languages. This can be used in applications that have a diverse user base, allowing users to translate and understand content in their preferred language.
+> Azure Immersive Reader supports text translation in over 70 languages. This can be used in applications that have a diverse user base, allowing users to translate and understand content in their preferred language.
 
 > [!IMPORTANT]
 > Here’s an example of an end-to-end solution using Azure resources and Azure Immersive readers: 
@@ -151,8 +150,7 @@ graph TD
 
 ## Accessibility - Immersive readers:
 
-
-Azure Immersive Reader improves the accessibility of applications by providing features that make content more accessible to people with disabilities. For example, it can increase text spacing, break words into syllables, and highlight parts of speech to make text easier to read.
+> Azure Immersive Reader improves the accessibility of applications by providing features that make content more accessible to people with disabilities. For example, it can increase text spacing, break words into syllables, and highlight parts of speech to make text easier to read.
 
 > [!IMPORTANT]
 > Here’s an example of an end-to-end solution using Azure resources and Azure Immersive readers: 
@@ -230,7 +228,7 @@ graph TB
 ## Education - Immersive readers:
 
 
-In the education sector, Azure Immersive Reader can be used to create more inclusive classrooms. It can help students with dyslexia, ADHD, emerging readers, and non-native speakers to improve their reading skills.
+> In the education sector, Azure Immersive Reader can be used to create more inclusive classrooms. It can help students with dyslexia, ADHD, emerging readers, and non-native speakers to improve their reading skills.
 
 > [!IMPORTANT]
 > Here’s an example of an end-to-end solution using Azure resources and Azure Immersive readers:
