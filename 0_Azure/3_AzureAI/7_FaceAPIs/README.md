@@ -9,34 +9,29 @@ Last updated: 2024-11-19
 
 ----------
 
-Key Features: 
-- **Face Detection and Recognition**: The service provides AI algorithms that detect, recognize, and analyze human faces in images.
-- **Facial Recognition Software**: This software is important in many different scenarios, such as security, natural user interface, image content analysis and management, mobile apps, and robotics.
-- **API Categories**: The Face APIs comprise the following categories: Face Algorithm APIs, DetectLiveness session APIs, FaceList APIs, LargePersonGroup Person APIs, LargePersonGroup APIs, LargeFaceList APIs, PersonGroup Person APIs, PersonGroup APIs, PersonDirectory Person APIs, PersonDirectory DynamicPersonGroup APIs, Liveness Session APIs and Liveness-With-Verify Session APIs.
+> Key Features: 
+> - **Face Detection and Recognition**: The service provides AI algorithms that detect, recognize, and analyze human faces in images.
+> - **Facial Recognition Software**: This software is important in many different scenarios, such as security, natural user interface, image content analysis and management, mobile apps, and robotics.
+> - **API Categories**: The Face APIs comprise the following categories: Face Algorithm APIs, DetectLiveness session APIs, FaceList APIs, LargePersonGroup Person APIs, LargePersonGroup APIs, LargeFaceList APIs, PersonGroup Person APIs, PersonGroup APIs, PersonDirectory Person APIs, PersonDirectory DynamicPersonGroup APIs, Liveness Session APIs and Liveness-With-Verify Session APIs.
 
-## Content 
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
 
-<!-- TOC -->
 
-- [Face APIs](#face-apis)
-    - [Content](#content)
-    - [Examples of Use Cases](#examples-of-use-cases)
-        - [Facial Recognition for Security Systems - Face APIs:](#facial-recognition-for-security-systems---face-apis)
-        - [Personalized User Experience - Face APIs:](#personalized-user-experience---face-apis)
-        - [People Counting - Face APIs:](#people-counting---face-apis)
-        - [Emotion Analysis for Market Research - Face APIs:](#emotion-analysis-for-market-research---face-apis)
-        - [Identity Verification - Face APIs:](#identity-verification---face-apis)
+- [Facial Recognition for Security Systems - Face APIs:](#facial-recognition-for-security-systems---face-apis)
+- [Personalized User Experience - Face APIs:](#personalized-user-experience---face-apis)
+- [People Counting - Face APIs:](#people-counting---face-apis)
+- [Emotion Analysis for Market Research - Face APIs:](#emotion-analysis-for-market-research---face-apis)
+- [Identity Verification - Face APIs:](#identity-verification---face-apis)
 
-<!-- /TOC -->
-
-## Examples of Use Cases
+</details>
 
 > [!NOTE]
 > Here are some use cases:
-### Facial Recognition for Security Systems - Face APIs:
-[return to Content](#content)
 
-Azure Face API can be used to build security systems that use facial recognition. The API can detect, recognize, and analyze human faces in images. This can be used to authenticate users based on their facial features.
+## Facial Recognition for Security Systems - Face APIs:
+
+> Azure Face API can be used to build security systems that use facial recognition. The API can detect, recognize, and analyze human faces in images. This can be used to authenticate users based on their facial features.
 
 > [!IMPORTANT]
 > Here’s an example of an end-to-end solution using Azure resources and Azure Face APIs: This solution uses Azure Face API for facial recognition and Azure Document Intelligence for document processing. The system can detect, recognize, and analyze human faces in images for user authentication.
@@ -68,10 +63,9 @@ graph TD
     F -->|Stores Processed Results| G[User Authentication]
 ```
 
-### Personalized User Experience - Face APIs:
-[return to Content](#content)
+## Personalized User Experience - Face APIs:
 
-Azure Face API can be used to create personalized user experiences in applications. For example, a digital billboard can change its content based on the age, gender, or emotion of the person looking at it.
+> Azure Face API can be used to create personalized user experiences in applications. For example, a digital billboard can change its content based on the age, gender, or emotion of the person looking at it.
 
 > [!IMPORTANT]
 > Here’s an example of an end-to-end solution using Azure resources and Azure Face APIs: This solution uses the Azure Face API to detect and analyze faces in real-time. The data gathered (age, gender, emotion) is then used to personalize the content displayed on a digital billboard.
@@ -99,10 +93,9 @@ graph TD
     F -->|Updates Billboard State| G[Digital Billboard]
 ```
 
-### People Counting - Face APIs:
-[return to Content](#content)
+## People Counting - Face APIs:
 
-Azure Face API can be used to count the number of people in a room or area by analyzing the video feed from a camera. This can be useful in scenarios like crowd management or occupancy monitoring in smart buildings.
+> Azure Face API can be used to count the number of people in a room or area by analyzing the video feed from a camera. This can be useful in scenarios like crowd management or occupancy monitoring in smart buildings.
 
 > [!IMPORTANT]
 > Here’s an example of an end-to-end solution using Azure resources and Azure Face APIs: This solution uses the Azure Face API to count the number of people in a room or area by analyzing the video feed from a camera. This can be useful in scenarios like crowd management or occupancy monitoring in smart buildings.
@@ -151,10 +144,9 @@ graph TD
     F -->|Broadcasts Face Count| G[Connected Clients]
 ```
 
-### Emotion Analysis for Market Research - Face APIs:
-[return to Content](#content)
+## Emotion Analysis for Market Research - Face APIs:
 
-Azure Face API can analyze emotions expressed by people's faces. This can be used in market research to understand how customers react to a product or advertisement.
+> Azure Face API can analyze emotions expressed by people's faces. This can be used in market research to understand how customers react to a product or advertisement.
 
 > [!IMPORTANT]
 > Here’s an example of an end-to-end solution using Azure resources and Azure Face APIs: how you might use Azure Face API for emotion analysis in market research. This example is written in Python and uses the azure-cognitiveservices-vision-face package.
@@ -209,10 +201,9 @@ graph TB
     G --> H[Output emotions]
 ```
 
-### Identity Verification - Face APIs:
-[return to Content](#content)
+## Identity Verification - Face APIs:
 
-Azure Face API can be used for identity verification in applications. For example, it can be used to verify a person's identity during a remote exam or online banking transaction.
+> Azure Face API can be used for identity verification in applications. For example, it can be used to verify a person's identity during a remote exam or online banking transaction.
 
 > [!IMPORTANT]
 > Here’s an example of an end-to-end solution using Azure resources and Azure Face APIs: how you might use Azure Face API for identity verification in a remote exam or online banking transaction. This example is written in Python.
