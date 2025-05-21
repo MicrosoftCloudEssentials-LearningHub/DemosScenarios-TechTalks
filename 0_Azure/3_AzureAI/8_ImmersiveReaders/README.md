@@ -9,33 +9,27 @@ Last updated: 2024-11-19
 
 ----------
 
-Key Features: 
-- **Reading and Comprehension**: The service provides AI algorithms that help users of any age and reading ability with reader tools and features like reading aloud, translating languages, and focusing attention through highlighting and other design elements.
-- **Translation**: Translation is available in more than 100 languages.
--  **Accessibility**: Immersive Reader is designed to make reading easier and more accessible for everyone. It can isolate content for improved readability, display pictures for common words, highlight parts of speech, read content aloud, translate content in real-time, and split words into syllables.
--  **Data Privacy**: Immersive reader doesn't store any customer data. 
+> Key Features: 
+> - **Reading and Comprehension**: The service provides AI algorithms that help users of any age and reading ability with reader tools and features like reading aloud, translating languages, and focusing attention through highlighting and other design elements.
+> - **Translation**: Translation is available in more than 100 languages.
+> -  **Accessibility**: Immersive Reader is designed to make reading easier and more accessible for everyone. It can isolate content for improved readability, display pictures for common words, highlight parts of speech, read content aloud, translate content in real-time, and split words into syllables.
+> -  **Data Privacy**: Immersive reader doesn't store any customer data. 
 
-## Content 
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
 
-<!-- TOC -->
+- [Enhancing Reading Comprehension - Immersive readers:](#enhancing-reading-comprehension---immersive-readers)
+- [Multilingual Support - Immersive readers:](#multilingual-support---immersive-readers)
+- [Accessibility - Immersive readers:](#accessibility---immersive-readers)
+- [Education - Immersive readers:](#education---immersive-readers)
 
-- [Immersive readers](#immersive-readers)
-    - [Content](#content)
-    - [Example of Use Cases](#example-of-use-cases)
-        - [Enhancing Reading Comprehension - Immersive readers:](#enhancing-reading-comprehension---immersive-readers)
-        - [Multilingual Support - Immersive readers:](#multilingual-support---immersive-readers)
-        - [Accessibility - Immersive readers:](#accessibility---immersive-readers)
-        - [Education - Immersive readers:](#education---immersive-readers)
-
-<!-- /TOC -->
-
-## Example of Use Cases 
+</details>
 
 > [!NOTE]
 > Here are some use cases:
 
-### Enhancing Reading Comprehension - Immersive readers:
-[return to Content](#content)
+## Enhancing Reading Comprehension - Immersive readers:
+
 
 Azure Immersive Reader can be used to enhance reading comprehension for users. It provides features like Read Aloud, Line Focus, and Picture Dictionary that can help users, especially those with learning difficulties, to better understand the content.
 
@@ -98,8 +92,8 @@ graph TD
     E --> F[Enhanced Reading Experience]
 ```
 
-### Multilingual Support - Immersive readers:
-[return to Content](#content)
+## Multilingual Support - Immersive readers:
+
 
 Azure Immersive Reader supports text translation in over 70 languages. This can be used in applications that have a diverse user base, allowing users to translate and understand content in their preferred language.
 
@@ -155,8 +149,8 @@ graph TD
     G --> H[Enhanced Understanding of Content]
 ```
 
-### Accessibility - Immersive readers:
-[return to Content](#content)
+## Accessibility - Immersive readers:
+
 
 Azure Immersive Reader improves the accessibility of applications by providing features that make content more accessible to people with disabilities. For example, it can increase text spacing, break words into syllables, and highlight parts of speech to make text easier to read.
 
@@ -233,8 +227,8 @@ graph TB
     G -->|Outcome| H[Improved Accessibility of Application]
 ```
 
-### Education - Immersive readers:
-[return to Content](#content)
+## Education - Immersive readers:
+
 
 In the education sector, Azure Immersive Reader can be used to create more inclusive classrooms. It can help students with dyslexia, ADHD, emerging readers, and non-native speakers to improve their reading skills.
 
