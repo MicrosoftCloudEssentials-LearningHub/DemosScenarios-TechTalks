@@ -43,9 +43,7 @@ Last updated: 2024-11-19
 1. **Sign in to the Azure Portal**:
    - Open your web browser and go to [portal.azure.com](https://portal.azure.com/)
    - Enter your Azure account credentials to log in.
-2. **Navigate to Quotas**:
-   - In the search bar at the top of the Azure Portal, type `Quotas`.
-   - Select `My quotas` from the search results.
+2. **Navigate to Quotas**: In the search bar at the top of the Azure Portal, type `Quotas`.
 3. **Select the Resource**:
    - In the Quotas page, you will see a list of resources.
    - Find and click on the specific resource for which you want to increase the quota (e.g., Azure OpenAI).
