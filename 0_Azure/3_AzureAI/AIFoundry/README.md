@@ -14,13 +14,24 @@ Last updated: 2025-01-02
 > [!IMPORTANT]
 > Please be aware that prior to being named AI Studio, AI Foundry introduced new components and optimized the backend operations.
 
-## Content 
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
+
+- [Introducing Meta Llama 3 Models on Azure AI Model Catalog](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/introducing-meta-llama-3-models-on-azure-ai-model-catalog/ba-p/4117144)
+- [Meta’s next generation model, Llama 3.1 405B is now available on Azure AI](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/meta-s-next-generation-model-llama-3-1-405b-is-now-available-on/ba-p/4198379)
+- [Model benchmarks in Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/model-benchmarks)
+- [What are Azure AI services?](https://learn.microsoft.com/en-us/azure/ai-services/what-are-ai-services)
+- [Azure AI Studio architecture](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/architecture)
+- [Role-based access control in Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/rbac-ai-studio)
+- [Collaboratively build AI apps and share resources with hubs and projects](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/collaboratively-build-ai-apps-and-share-resources-with-hubs-and/ba-p/4153938)
+- [Deploy models, flows, and web apps with Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/deployments-overview)
+- [How to deploy Azure OpenAI models with Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/deploy-models-openai)
+
+</details>
 
 <details>
-  <summary>Click to display </summary>
-  
-- [Content](#content)
-- [Wiki](#wiki)
+<summary><b>Table of Contents</b> (Click to expand)</summary>
+
 - [Overview](#overview)
    - [Model Catalog](#model-catalog)
    - [Model Benchmarks](#model-benchmarks)
@@ -50,18 +61,6 @@ Last updated: 2025-01-02
 
 </details>
 
-## Wiki
-
-- [Introducing Meta Llama 3 Models on Azure AI Model Catalog](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/introducing-meta-llama-3-models-on-azure-ai-model-catalog/ba-p/4117144)
-- [Meta’s next generation model, Llama 3.1 405B is now available on Azure AI](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/meta-s-next-generation-model-llama-3-1-405b-is-now-available-on/ba-p/4198379)
-- [Model benchmarks in Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/model-benchmarks)
-- [What are Azure AI services?](https://learn.microsoft.com/en-us/azure/ai-services/what-are-ai-services)
-- [Azure AI Studio architecture](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/architecture)
-- [Role-based access control in Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/rbac-ai-studio)
-- [Collaboratively build AI apps and share resources with hubs and projects](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/collaboratively-build-ai-apps-and-share-resources-with-hubs-and/ba-p/4153938)
-- [Deploy models, flows, and web apps with Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/deployments-overview)
-- [How to deploy Azure OpenAI models with Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/deploy-models-openai)
-  
 ## Overview 
 
 - Provides a trusted and inclusive platform that empowers developers of all abilities and preferences to innovate with AI and shape the future.
