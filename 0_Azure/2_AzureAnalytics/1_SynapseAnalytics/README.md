@@ -10,44 +10,37 @@ Last updated: 2024-11-19
 
 ----------
 
-Key Features: 
-- Accelerates time to insight across data warehouses and big data systems.
-- Offers limitless scale, security, privacy.
-- Provides a unified experience for data engineering, data science, and business analysis.
-- Enables data warehousing and data virtualization scenarios.
-- Extends T-SQL to address streaming and machine learning scenarios.
-- Integrates AI with SQL by using machine learning models to score data.
-- Allows data engineers to use a code-free visual environment for managing data pipelines.
-- Automates query optimization.
-- Seamlessly integrates with Power BI, CosmosDB, and AzureML.
+> Key Features: 
+> - Accelerates time to insight across data warehouses and big data systems.
+> - Offers limitless scale, security, privacy.
+> - Provides a unified experience for data engineering, data science, and business analysis.
+> - Enables data warehousing and data virtualization scenarios.
+> - Extends T-SQL to address streaming and machine learning scenarios.
+> - Integrates AI with SQL by using machine learning models to score data.
+> - Allows data engineers to use a code-free visual environment for managing data pipelines.
+> - Automates query optimization.
+> - Seamlessly integrates with Power BI, CosmosDB, and AzureML.
   
-Creating a new Azure Synapse Analytics account:
-- You can create and manage Azure resources for Azure Synapse Analytics via the Azure portal. 
+> Creating a new Azure Synapse Analytics account: You can create and manage Azure resources for Azure Synapse Analytics via the [Azure portal](https://portal.azure.com/). 
 
-## Content
+<details>
+<summary><b>Table of Contents</b> (Click to expand)</summary>
 
-<!-- TOC -->
 
-- [Azure Synapse Analytics](#azure-synapse-analytics)
-    - [Content](#content)
-    - [Example of Use Cases](#example-of-use-cases)
-        - [Real-Time Analytics in Retail - Azure Synapse Analytics:](#real-time-analytics-in-retail---azure-synapse-analytics)
-        - [Predictive Maintenance in Manufacturing - Azure Synapse Analytics:](#predictive-maintenance-in-manufacturing---azure-synapse-analytics)
-        - [Customer Segmentation in Marketing - Azure Synapse Analytics:](#customer-segmentation-in-marketing---azure-synapse-analytics)
-        - [Risk Assessment in Finance - Azure Synapse Analytics:](#risk-assessment-in-finance---azure-synapse-analytics)
-        - [Healthcare Analytics - Azure Synapse Analytics:](#healthcare-analytics---azure-synapse-analytics)
+- [Real-Time Analytics in Retail - Azure Synapse Analytics:](#real-time-analytics-in-retail---azure-synapse-analytics)
+- [Predictive Maintenance in Manufacturing - Azure Synapse Analytics:](#predictive-maintenance-in-manufacturing---azure-synapse-analytics)
+- [Customer Segmentation in Marketing - Azure Synapse Analytics:](#customer-segmentation-in-marketing---azure-synapse-analytics)
+- [Risk Assessment in Finance - Azure Synapse Analytics:](#risk-assessment-in-finance---azure-synapse-analytics)
+- [Healthcare Analytics - Azure Synapse Analytics:](#healthcare-analytics---azure-synapse-analytics)
 
-<!-- /TOC -->
-
-## Example of Use Cases
+</details>
 
 > [!NOTE]
 > Here are some use cases:
 
-### Real-Time Analytics in Retail - Azure Synapse Analytics:
-[return to Content](#content)
+## Real-Time Analytics in Retail - Azure Synapse Analytics:
 
-Azure Synapse Analytics can be used to analyze real-time data from point-of-sale systems, online shopping carts, and social media feeds to understand customer behavior and preferences. This can help retailers optimize their inventory, pricing, and promotional strategies.
+> Azure Synapse Analytics can be used to analyze real-time data from point-of-sale systems, online shopping carts, and social media feeds to understand customer behavior and preferences. This can help retailers optimize their inventory, pricing, and promotional strategies.
 
 > [!IMPORTANT]
 > Here’s an example of an end-to-end solution using Azure resources and Azure Synapse Analytics: This solution leverages **Azure Synapse Analytics** to analyze real-time data from point-of-sale systems, online shopping carts, and social media feeds to understand customer behavior and preferences. This can help retailers optimize their inventory, pricing, and promotional strategies.
@@ -86,10 +79,9 @@ graph LR
     end
 ```
 
-### Predictive Maintenance in Manufacturing - Azure Synapse Analytics:
-[return to Content](#content)
+## Predictive Maintenance in Manufacturing - Azure Synapse Analytics:
 
-By analyzing sensor data from machinery and equipment, Azure Synapse Analytics can help predict when a machine is likely to fail. This allows for proactive maintenance, reducing downtime and saving costs.
+> By analyzing sensor data from machinery and equipment, Azure Synapse Analytics can help predict when a machine is likely to fail. This allows for proactive maintenance, reducing downtime and saving costs.
 
 > [!IMPORTANT]
 > Here’s an example of an end-to-end solution using Azure resources and Azure Synapse Analytics: This solution aims to predict machinery failure by analyzing sensor data from equipment using Azure Synapse Analytics. This allows for proactive maintenance, reducing downtime, and saving costs.
@@ -134,10 +126,9 @@ graph LR
     end
 ```
 
-### Customer Segmentation in Marketing - Azure Synapse Analytics:
-[return to Content](#content)
+## Customer Segmentation in Marketing - Azure Synapse Analytics:
 
-Azure Synapse Analytics can analyze customer data to identify distinct segments based on purchasing behavior, demographics, and other factors. This can help marketers tailor their campaigns to specific customer groups, improving conversion rates.
+> Azure Synapse Analytics can analyze customer data to identify distinct segments based on purchasing behavior, demographics, and other factors. This can help marketers tailor their campaigns to specific customer groups, improving conversion rates.
 
 > [!IMPORTANT]
 > Here’s an example of an end-to-end solution using Azure resources and Azure Synapse Analytics: 
@@ -197,10 +188,9 @@ graph TD
     end
 ```
 
-### Risk Assessment in Finance - Azure Synapse Analytics:
-[return to Content](#content)
+## Risk Assessment in Finance - Azure Synapse Analytics:
 
-Azure Synapse Analytics can analyze financial data to assess the risk of loan defaults, fraudulent transactions, and other financial risks. This can help financial institutions make informed decisions and mitigate risks.
+> Azure Synapse Analytics can analyze financial data to assess the risk of loan defaults, fraudulent transactions, and other financial risks. This can help financial institutions make informed decisions and mitigate risks.
 
 > [!IMPORTANT]
 > Here’s an example of an end-to-end solution using Azure resources and Azure Synapse Analytics: Azure Synapse Analytics can analyze financial data to assess the risk of loan defaults, fraudulent transactions, and other financial risks. This can help financial institutions make informed decisions and mitigate risks. By leveraging Azure Synapse Analytics, financial institutions can effectively assess risk and make informed decisions. This end-to-end solution provides a robust framework for risk assessment in finance.
@@ -246,10 +236,9 @@ graph LR
     end
 ```
 
-### Healthcare Analytics - Azure Synapse Analytics:
-[return to Content](#content)
+## Healthcare Analytics - Azure Synapse Analytics:
 
-Azure Synapse Analytics can analyze patient data to identify trends and patterns, helping healthcare providers improve patient outcomes, reduce costs, and enhance operational efficiency.
+> Azure Synapse Analytics can analyze patient data to identify trends and patterns, helping healthcare providers improve patient outcomes, reduce costs, and enhance operational efficiency.
 
 > [!IMPORTANT]
 > Here’s an example of an end-to-end solution using Azure resources and Azure Synapse Analytics: This solution leverages Azure Synapse Analytics to analyze patient data, identify trends and patterns, and help healthcare providers improve patient outcomes, reduce costs, and enhance operational efficiency. By leveraging Azure Synapse Analytics, healthcare providers can gain valuable insights from their patient data, leading to improved patient outcomes and operational efficiency.
