@@ -21,7 +21,7 @@ Last updated: 2024-11-19
 > - Automates query optimization.
 > - Seamlessly integrates with Power BI, CosmosDB, and AzureML.
   
-> [!NOTE]
+> [!TIP]
 > You can create and manage Azure resources for Azure Synapse Analytics via the [Azure portal](https://portal.azure.com/). 
 
 <details>
