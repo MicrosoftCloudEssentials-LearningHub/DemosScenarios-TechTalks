@@ -18,11 +18,11 @@ Last updated: 2024-11-19
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
 
-- [Retail - Custom Vision:](#retail---custom-vision)
-- [Healthcare - Custom Vision:](#healthcare---custom-vision)
-- [Manufacturing - Custom Vision:](#manufacturing---custom-vision)
-- [Agriculture - Custom Vision:](#agriculture---custom-vision)
-- [Transportation - Custom Vision:](#transportation---custom-vision)
+- [Retail - Custom Vision](#retail---custom-vision)
+- [Healthcare - Custom Vision](#healthcare---custom-vision)
+- [Manufacturing - Custom Vision](#manufacturing---custom-vision)
+- [Agriculture - Custom Vision](#agriculture---custom-vision)
+- [Transportation - Custom Vision](#transportation---custom-vision)
 
 </details>
 
