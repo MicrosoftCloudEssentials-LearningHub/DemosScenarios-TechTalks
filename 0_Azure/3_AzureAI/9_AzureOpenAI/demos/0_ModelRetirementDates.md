@@ -21,6 +21,7 @@ Last updated: 2024-11-19
 - [Azure Open AI models retirement date + suggested models](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/model-retirements#current-models) - Table
 - [Available models + Features + limits](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions#gpt-4-and-gpt-4-turbo-models) - Tables
 - [How model versions work](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/model-versions#how-model-versions-work)
+- [Deprecated models](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/legacy-models) - legacy models
     
 </details>
 
