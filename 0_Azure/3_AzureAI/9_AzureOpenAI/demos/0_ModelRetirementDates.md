@@ -10,14 +10,23 @@ Last updated: 2024-11-19
 
 ----------
 
-Microsoft is always improving its AI models, regularly introducing newer and more capable versions. This continuous improvement leads to the deprecation and eventual retirement of older models. 
+>  Microsoft is always improving its AI models, regularly introducing newer and more capable versions. This continuous improvement leads to the deprecation and eventual retirement of older models. 
 
-## Wiki 
+
+<details>
+<summary><b> List of References </b> (Click to expand)</summary>
+
 - [What You Need to Know About Azure OpenAI Model Version Upgrades](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/model-versions#what-you-need-to-know-about-azure-openai-model-version-upgrades).
+- [How model deprecations and retirements works](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/model-retirements#overview)
+- [Azure Open AI models retirement date + suggested models](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/model-retirements#current-models) - Table
+- [Available models + Features + limits](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions#gpt-4-and-gpt-4-turbo-models) - Tables
+- [How model versions work](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/model-versions#how-model-versions-work)
+    
+</details>
 
 ## Model Deprecation and Retirement
 
-To understand why models are deprecated and retired, please refer to the following resources:
+> To understand why models are deprecated and retired, please refer to the following resources:
 
 | Topic | Description | Link |
 |-------|-------------|------|
@@ -26,7 +35,7 @@ To understand why models are deprecated and retired, please refer to the followi
 
 ## Update Policies
 
-Azure OpenAI provides several update policies to manage model versions effectively. For more details, see [How Model Versions Work](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/model-versions#how-model-versions-work).
+> Azure OpenAI provides several update policies to manage model versions effectively. For more details, see [How Model Versions Work](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/model-versions#how-model-versions-work).
 
 ## Deployment Settings
 
