@@ -94,7 +94,7 @@ Last updated: 2024-11-19
 
 1. **Understand PTUs**: Research PTU (Performance and Throughput Units) and their benefits.
 2. **Analyze Usage Patterns**: Review system usage patterns to determine PTU needs.
-3. **Reserve PTUs**: Use the cloud provider's management console or API to reserve PTUs.
+3. **Reserve PTUs**: Use the [Azure Portal](https://portal.azure.com) or API to reserve PTUs.
 4. **Confirm Reservations**: Ensure reservations are correctly applied.
 5. **Monitor Performance**: Continuously monitor system performance.
 6. **Adjust Reservations**: Modify PTU reservations as needed to optimize costs and performance. 
