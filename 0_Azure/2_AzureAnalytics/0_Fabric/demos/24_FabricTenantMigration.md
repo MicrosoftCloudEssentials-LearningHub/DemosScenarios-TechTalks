@@ -11,7 +11,7 @@ Last updated: 2025-04-30
 ----------
 
 > [!NOTE]
-> The examples below use regions `like Central US and East US, and capacities like P1 and F64 as example`. However, `the same logic can be applied to other region combinations`, essentially when dealing with `different regions`.
+> The examples below use regions `like Central US` \& `East US` and `West US` \& `West US 2`, and capacities like P1 and F64 as example. However, `the same logic can be applied to other region combinations`, essentially when dealing with `different regions`.
 
 > [!IMPORTANT]
 > Please read [Move between regions](https://learn.microsoft.com/en-us/power-bi/support/service-admin-region-move#can-i-migrate-or-merge-my-power-bi-tenant-into-a-different-tenant-for-example-because-of-a-company-merger) to understand the process. Also, click here to learn how to [Request a tenant region move](https://learn.microsoft.com/en-us/power-bi/support/service-admin-region-move#request-a-region-move). <br/>
@@ -33,6 +33,7 @@ Last updated: 2025-04-30
 <details>
 <summary><b>Table of Content </b> (Click to expand)</summary>
 
+- [Why Migrate?](#why-migrate)
 - [Overview](#overview)
 - [Create F64 Capacity in Central US Same Region as Current P1 and Reassign Workspaces](#create-f64-capacity-in-central-us-same-region-as-current-p1-and-reassign-workspaces)
 - [Create F64 Capacity in East US Same Region as Data Sources and Azure Tenant and Reassign Power BI Content Only Workspaces, Manually Migrate Fabric Items](#create-f64-capacity-in-east-us-same-region-as-data-sources-and-azure-tenant-and-reassign-power-bi-content-only-workspaces-manually-migrate-fabric-items)
@@ -41,6 +42,17 @@ Last updated: 2025-04-30
 - [Use Azure ExpressRoute](#use-azure-expressroute)
 
 </details>
+
+## Why Migrate?
+
+| **Potential Challenges of a Cross-Region Setup** | **Description** |
+|----------------------------------|-----------------|
+| **Increased Latency** | Since `West US` and `West US 2` are separate Azure regions, any interaction between the Fabric tenant and its capacity involves `cross-region data movement`. While latency is relatively low, typically `single-digit milliseconds`, there can still be an impact on `high-frequency queries, refreshes, and DirectQuery models`. For dashboards with multiple visuals, `slight delays in load times` may occur, especially under heavy usage scenarios. |
+| **Data Residency & Compliance Risks** | Although both regions are within the `United States`, some `industry-specific compliance frameworks` such as `CJIS, HIPAA, FedRAMP` may require workloads to reside within a `single Azure region` for legal or security reasons. If strict `data residency` is necessary, operating a `tenant in West US` and `capacity in West US 2` may introduce `governance complexities` that require additional review. |
+| **Complex Troubleshooting** | If a report running on a `West US 2 capacity` is slow or encounters issues, `Microsoft support teams` may need to `coordinate across regions` to diagnose the root cause. `Logs, telemetry, and diagnostics data` may be `split across both regions`, creating challenges in `incident resolution` and `extending troubleshooting timelines`. |
+| **Cost Implications** | `Azure charges for data egress` when transferring data between different regions. Though costs are lower for `intra-US transfers` compared to international movement, frequent `query execution, dataset refreshes, and data ingestion` between `West US` and `West US 2` may `gradually increase cloud expenses` over time. Organizations with `high data volume workloads` should carefully `monitor egress costs` to avoid unexpected billing spikes. |
+| **Service Availability & Redundancy** | Some `Fabric features`, such as `OneLake shortcuts, real-time event streaming, and failover configurations`, may require `additional setup complexity` in a `cross-region tenant-capacity configuration`. If a `disaster recovery` scenario occurs, failing over a `Fabric service` from `West US` to `West US 2` might require `extra configuration` to ensure that `all metadata, permissions, and workspace structures` remain intact. |
+| **Managed Private Endpoints Efficiency** | While `Managed Private Endpoints` enhance security by allowing `private connectivity`, using them across `West US` and `West US 2` requires `explicit network configurations`, needs proper routing. A `single-region setup` eliminates these extra network requirements, making `private endpoints` more efficient. |
 
 ## Overview 
 
