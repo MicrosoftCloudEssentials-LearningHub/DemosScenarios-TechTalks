@@ -50,7 +50,7 @@ https://github.com/user-attachments/assets/16fd8e90-22cc-48d3-8dce-e79e4ee9789b
 |----------------------------------|--------------------------|----------------------------------|----------------------------------------------|----------------|
 | **Private Endpoints (PE)**       | Capacity                 | Bound to the **region of the Fabric capacity**. All traffic and data remain in that region. | Secure access to Fabric services within a specific region. | Must be in a supported region. Up to 450 capacities per tenant can support Private Link.              |
 | **Private Link (PL)**            | Tenant                   | Applies **globally across the tenant**. Controls access to all capacities regardless of region. | Enforce secure-by-default access across all Fabric services. | Not all services support Private Link. Requires tenant-level configuration and DNS setup.             |
-| **Managed Private Endpoints (MPE)** | Workspace                | Region is determined by the **capacity backing the workspace**. Data access is region-bound. | Secure access to external data sources (e.g., Azure SQL, Storage) from within a workspace.       | Workspace migration across regions is not supported. Must be recreated in the target region.          |
+| **Managed Private Endpoints (MPE)** | Workspace (Capacity)               | Region is determined by the **capacity backing the workspace**. Data access is region-bound. | Secure access to external data sources (e.g., Azure SQL, Storage) from within a workspace.       | Workspace migration across regions is not supported. Must be recreated in the target region.          |
 
 ## Private Endpoints (PE)
 
