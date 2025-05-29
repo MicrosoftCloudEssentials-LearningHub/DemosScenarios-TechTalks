@@ -33,7 +33,7 @@ Last updated: 2025-03-21
 https://github.com/user-attachments/assets/16fd8e90-22cc-48d3-8dce-e79e4ee9789b
 
 > [!NOTE]
-> `Multi-Geo allows you to deploy Fabric capacities in regions other than your tenant’s home region`. When you deploy a workspace in a region different from your tenant’s home region, the `workspace’s data resides` in the region of the `capacity`. But, some `metadata and control-plane operations still interact with the tenant’s home region`. This setup supports data residency compliance while maintaining centralized governance. `Egress charges between regions like West US and West US 2 are minimal, especially since they are part of the same Azure geography (United States).`
+> When you deploy a workspace in a region different from your tenant’s home region, the `workspace’s data resides` in the region of the `capacity`. But, some `metadata and control-plane operations still interact with the tenant’s home region`. This setup supports data residency compliance while maintaining centralized governance. `Egress charges between regions like West US and West US 2 are minimal, especially since they are part of the same Azure geography (United States).`
 
 ## Fabric Object Residency
 
