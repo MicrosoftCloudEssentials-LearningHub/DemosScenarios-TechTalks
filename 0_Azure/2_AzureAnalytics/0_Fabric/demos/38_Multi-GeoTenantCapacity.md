@@ -28,6 +28,12 @@ Last updated: 2025-03-21
 <details>
 <summary><b>Table of Content </b> (Click to expand)</summary>
 
+- [Fabric Object Residency](#fabric-object-residency)
+- [Private Connectivity Residency](#private-connectivity-residency)
+    - [Private Endpoints PE](#private-endpoints-pe)
+    - [Private Link PL](#private-link-pl)
+    - [Managed Private Endpoints MPE](#managed-private-endpoints-mpe)
+
 </details>
 
 https://github.com/user-attachments/assets/16fd8e90-22cc-48d3-8dce-e79e4ee9789b
@@ -52,7 +58,7 @@ https://github.com/user-attachments/assets/16fd8e90-22cc-48d3-8dce-e79e4ee9789b
 | **Private Link (PL)**            | Tenant                   | Applies **globally across the tenant**. Controls access to all capacities regardless of region. | Enforce secure-by-default access across all Fabric services. | Not all services support Private Link. Requires tenant-level configuration and DNS setup.             |
 | **Managed Private Endpoints (MPE)** | Workspace (Capacity)               | Region is determined by the **capacity backing the workspace**. Data access is region-bound. | Secure access to external data sources (e.g., Azure SQL, Storage) from within a workspace.       | Workspace migration across regions is not supported. Must be recreated in the target region.          |
 
-## Private Endpoints (PE)
+### Private Endpoints (PE)
 
 > **Private Endpoints** are configured at the **capacity level**. They provide a secure, private IP-based connection to Fabric services, ensuring that traffic between your network and Fabric remains isolated from the public internet. Each private endpoint is tied to a specific Fabric capacity and is region-specific.
 
@@ -82,7 +88,7 @@ https://github.com/user-attachments/assets/16fd8e90-22cc-48d3-8dce-e79e4ee9789b
 
 </details>
 
-## Private Link (PL)
+### Private Link (PL)
 
 > **Private Link** is a **tenant-wide setting** that enforces secure, private access to Microsoft Fabric services across all capacities and regions. Once enabled, it ensures that all traffic to Fabric endpoints is routed through Azure’s private backbone network, bypassing the public internet.
 
@@ -112,7 +118,7 @@ https://github.com/user-attachments/assets/16fd8e90-22cc-48d3-8dce-e79e4ee9789b
 
 </details>
 
-## Managed Private Endpoints (MPE)
+### Managed Private Endpoints (MPE)
 
 > **Managed Private Endpoints** are configured at the **workspace level**. They allow Fabric workspaces to securely connect to **external Azure resources** (e.g., Azure SQL, Azure Data Lake Storage) over a private network. These endpoints are created and managed within Fabric and are **not visible in the Azure portal**.
 
