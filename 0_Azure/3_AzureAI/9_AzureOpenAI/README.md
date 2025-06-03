@@ -15,6 +15,7 @@ Last updated: 2025-02-13
 <summary><b>List of References </b> (Click to expand)</summary>
 
 - [Azure Open AI resource - Change log](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/openai/Azure.AI.OpenAI/CHANGELOG.md)
+- [How to evaluate generative AI models and applications with Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/evaluate-generative-ai-app)
 
 </details>
 
