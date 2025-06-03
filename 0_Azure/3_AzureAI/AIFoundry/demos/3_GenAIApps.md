@@ -19,6 +19,7 @@ Last updated: 2025-01-13
 - [Model summary table and region availability](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions#model-summary-table-and-region-availability)
 - [Create and Use Custom Tool Package - Prompt Flow](https://microsoft.github.io/promptflow/how-to-guides/develop-a-tool/create-and-use-tool-package.html)
 - [Create a custom environment - Customize base image for compute session](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-customize-session-base-image?view=azureml-api-2)
+- [How to evaluate generative AI models and applications with Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/evaluate-generative-ai-app)
 
 </details>
 
