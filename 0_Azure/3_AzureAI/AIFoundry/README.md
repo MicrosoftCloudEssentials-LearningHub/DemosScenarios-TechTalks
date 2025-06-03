@@ -26,6 +26,7 @@ Last updated: 2025-01-02
 - [Collaboratively build AI apps and share resources with hubs and projects](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/collaboratively-build-ai-apps-and-share-resources-with-hubs-and/ba-p/4153938)
 - [Deploy models, flows, and web apps with Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/deployments-overview)
 - [How to deploy Azure OpenAI models with Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/deploy-models-openai)
+- [How to evaluate generative AI models and applications with Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/evaluate-generative-ai-app)
 
 </details>
 
