@@ -27,6 +27,7 @@ Last updated: 2025-01-02
 - [Deploy models, flows, and web apps with Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/deployments-overview)
 - [How to deploy Azure OpenAI models with Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/deploy-models-openai)
 - [How to evaluate generative AI models and applications with Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/evaluate-generative-ai-app)
+- [What is Azure AI Foundry?](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry#which-type-of-project-do-i-need) - Which type of project do I need? Hub or Project
 
 </details>
 
