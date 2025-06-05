@@ -13,15 +13,6 @@ Last updated: 2025-01-02
 > [!NOTE]
 > If you require additional information on Cloud and the SDLC process, please visit this [repository](https://github.com/brown9804/CloudDevOps_LPath?tab=readme-ov-file#cloud-devops---learning-path). It contains content not only on SDLC but also on DevOps practices.
 
-> [!IMPORTANT]
-> This overview provides an example of how to create an infrastructure that enables efficient and secure delivery of AI models into different solutions. By setting up AI Foundry with RBAC, using Azure API Management, and implementing monitoring and analytics, you can ensure your AI models are accessible, manageable, and perform well across different environments. Please ensure to adjust the infrastructure, networking, and other configurations as required. <br/>
-> 1. **Set Up Resource Group and AI Foundry Hub**: Create a centralized hub for managing your AI resources. <br/>
-> 2. **Create Projects for Different Environments**: Organize your AI models into development, testing, and production projects. <br/>
-> 3. **Implement RBAC**: Assign roles to users based on their profile to manage access and permissions. <br/>
-> 4. **Expose Models as APIs**: Use Azure API Management to make your AI models accessible via APIs. <br/>
-> 5. **Provide Documentation and Support**: Ensure users have the necessary resources and support to integrate the APIs. <br/>
-> 6. **Implement Monitoring and Analytics**: Track the performance and usage of your AI models to ensure they meet your needs.
-
 <details>
 <summary><b>List of References </b> (Click to expand)</summary>
 
@@ -36,6 +27,7 @@ Last updated: 2025-01-02
 - [GenAIOps with prompt flow and Azure DevOps](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-end-to-end-azure-devops-with-prompt-flow?view=azureml-api-2)
 - [Integrate prompt flow with DevOps for LLM-based applications](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-integrate-with-llm-app-devops?view=azureml-api-2&tabs=cli)
 - [GenAIOps with prompt flow and GitHub](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-end-to-end-llmops-with-prompt-flow?view=azureml-api-2)
+- [What is Azure AI Foundry?](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry#which-type-of-project-do-i-need) - Which type of project do I need? Hub or Project
 
 </details>
 
@@ -53,6 +45,15 @@ Last updated: 2025-01-02
     - [Implement Monitoring and Analytics](#implement-monitoring-and-analytics)
 
 </details>
+
+> [!IMPORTANT]
+> This overview provides an example of how to create an infrastructure that enables efficient and secure delivery of AI models into different solutions. By setting up AI Foundry with RBAC, using Azure API Management, and implementing monitoring and analytics, you can ensure your AI models are accessible, manageable, and perform well across different environments. Please ensure to adjust the infrastructure, networking, and other configurations as required. <br/>
+> 1. **Set Up Resource Group and AI Foundry Hub**: Create a centralized hub for managing your AI resources. <br/>
+> 2. **Create Projects for Different Environments**: Organize your AI models into development, testing, and production projects. <br/>
+> 3. **Implement RBAC**: Assign roles to users based on their profile to manage access and permissions. <br/>
+> 4. **Expose Models as APIs**: Use Azure API Management to make your AI models accessible via APIs. <br/>
+> 5. **Provide Documentation and Support**: Ensure users have the necessary resources and support to integrate the APIs. <br/>
+> 6. **Implement Monitoring and Analytics**: Track the performance and usage of your AI models to ensure they meet your needs.
 
 ## Overview 
 
