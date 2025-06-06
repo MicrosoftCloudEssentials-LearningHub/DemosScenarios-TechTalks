@@ -102,7 +102,7 @@ https://github.com/user-attachments/assets/16fd8e90-22cc-48d3-8dce-e79e4ee9789b
 ### Same region 
 
 > [!NOTE]
-> If the resources are in the $${\color{red}same\ region}$$, it's just $${\color{red}reassigning\ the\ workspace\ compute\ ->\ Capacity}$$
+> 🔺 If the resources are in the `same region`, it's just `reassigning the workspace compute -> Capacity`
 
 > [!IMPORTANT]
 > API Call for Bulk Migration: For multiple workspaces using an API call to get all workspaces in a capacity and then performing a bulk migration, could simplify the process and identify any workspaces that need manual intervention. Use this as reference [Solved: Re: Bulk Assign Workspace Capacity - Microsoft Fabric Community](https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html), and [Admin - Groups GetGroupsAsAdmin](https://learn.microsoft.com/en-us/rest/api/power-bi/admin/groups-get-groups-as-admin)
@@ -152,7 +152,7 @@ https://github.com/user-attachments/assets/16fd8e90-22cc-48d3-8dce-e79e4ee9789b
 ### Across Region
 
 > [!NOTE]
-> If the $${\color{red}across\ region}$$, you need to $${\color{red}also\ export/import\ reports\ and\ semantic\ models,\ recreate\ dashboards}$$.
+> 🔺 If the `across region`, you need to `also export/import reports and semantic models, recreate dashboards`.
 
 
 https://github.com/user-attachments/assets/3fd19a65-1fd7-47ea-bc3c-a73314bb2d0b
@@ -223,7 +223,7 @@ https://github.com/user-attachments/assets/3fd19a65-1fd7-47ea-bc3c-a73314bb2d0b
 ### For both approaches 
         
 > [!NOTE]
-> Verify the $${\color{red}migration\ and\ documentation}$$ are steps recommended for $${\color{red}both\ approaches,\ same\ region\ migration\ or\ across\ region}$$.
+> 🔺 `Verify the `migration and documentation` are steps recommended for `both approaches, same region migration or across region.`
          
 7. **Verify Migration**:
    - **Check Functionality**:
