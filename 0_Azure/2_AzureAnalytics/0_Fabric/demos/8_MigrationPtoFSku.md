@@ -45,9 +45,9 @@ https://github.com/user-attachments/assets/16fd8e90-22cc-48d3-8dce-e79e4ee9789b
 - [Overview](#overview)
 - [Impact on Existing Reports and Dashboards](#impact-on-existing-reports-and-dashboards)
 - [How to transition](#how-to-transition)
-  - [Same region](#same-region)
-  - [Across Region](#across-region)
-  - [For both approaches](#for-both-approaches)
+- [Same region](#same-region)
+- [Across Region](#across-region)
+- [For both approaches](#for-both-approaches)
 
 </details>
 
@@ -99,7 +99,7 @@ https://github.com/user-attachments/assets/16fd8e90-22cc-48d3-8dce-e79e4ee9789b
 > - **Migrating workspace with both Fabric and Power BI items** (`within the same region)`: If the workspace contains both Fabric and Power BI items, you can move it from one capacity to another within the same region. This migration is supported and can be done without any special considerations.
 > - **Migrating workspace with both Fabric and Power BI items** (`to a different region`): Moving workspaces that contain Fabric items to a different region is not supported. If you need to migrate such workspaces, you must first delete all Fabric artifacts. Once the workspace contains only Power BI items, you can then follow the migration process for workspaces with only Power BI items.
 
-### Same region 
+## Same region 
 
 > [!NOTE]
 > 🔺 If the resources are in the `same region`, it's just `reassigning the workspace compute -> Capacity`
@@ -149,7 +149,7 @@ https://github.com/user-attachments/assets/16fd8e90-22cc-48d3-8dce-e79e4ee9789b
 
                <img width="550" alt="image" src="https://github.com/user-attachments/assets/1a6cbfdf-cde3-4eb4-a7d8-f66a28094059">
 
-### Across Region
+## Across Region
 
 > [!NOTE]
 > 🔺 If the `across region`, you need to `also export/import reports and semantic models, recreate dashboards`.
@@ -220,7 +220,7 @@ https://github.com/user-attachments/assets/3fd19a65-1fd7-47ea-bc3c-a73314bb2d0b
          - Update data sources and connections to point to the new F64 capacity.
       2. **Recreate Dashboards**: Manually recreate the dashboards in the F64 capacity by pinning the necessary visuals from the imported reports.
 
-### For both approaches 
+## For both approaches 
         
 > [!NOTE]
 > 🔺 `Verify the `migration and documentation` are steps recommended for `both approaches, same region migration or across region.`
