@@ -75,7 +75,7 @@ Last updated: 2025-06-11
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/49aa432b-a3fd-4a2d-a504-ce08841b681e">
 
 
-https://github.com/user-attachments/assets/f76cd192-775f-4d1c-9422-edb6080e6381
+    https://github.com/user-attachments/assets/f76cd192-775f-4d1c-9422-edb6080e6381
 
 ### Configuration Steps
 
@@ -130,6 +130,7 @@ https://github.com/user-attachments/assets/f76cd192-775f-4d1c-9422-edb6080e6381
 
        <img width="550" alt="image" src="https://github.com/user-attachments/assets/be675f2f-82a4-4799-a72b-04cc9b47f3aa">
 
+        https://github.com/user-attachments/assets/98cfc500-cf01-4fd4-b9ab-eb857878264e
 
 ### Troubleshooting
 
