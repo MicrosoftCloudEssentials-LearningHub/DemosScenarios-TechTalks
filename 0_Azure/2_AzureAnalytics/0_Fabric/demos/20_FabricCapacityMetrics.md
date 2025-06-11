@@ -6,7 +6,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2024-11-28
+Last updated: 2025-06-11
 
 ----------
 
@@ -58,24 +58,27 @@ Last updated: 2024-11-28
 
 ### Installation Steps
 
-1. **Get the App**:
-    - Navigate to [Microsoft Fabric](https://app.fabric.microsoft.com/). In the left panel, locate the `Apps` icon and click on `Get apps`.
+- **Get the App**: Go to [Microsoft Fabric](https://app.fabric.microsoft.com/). In the left panel, locate the `Apps` icon and click on `Get apps`.
 
-        <img width="550" alt="image" src="https://github.com/user-attachments/assets/931eb614-bb29-4e03-9637-4a9ef0cc3e7a">
-        
-     - Search for `Microsoft Fabric Capacity Metrics`:
+    <img width="550" alt="image" src="https://github.com/user-attachments/assets/931eb614-bb29-4e03-9637-4a9ef0cc3e7a">
 
-          <img width="550" alt="image" src="https://github.com/user-attachments/assets/a743d770-f1ea-474b-8d2c-c363e2a40e13">
+- Search for `Microsoft Fabric Capacity Metrics`:
 
-     - Select `Get it now`:
+    <img width="550" alt="image" src="https://github.com/user-attachments/assets/a743d770-f1ea-474b-8d2c-c363e2a40e13">
 
-          <img width="550" alt="image" src="https://github.com/user-attachments/assets/93412866-bf62-4c09-a62c-4bda280d7a40">
+- Select `Get it now`:
 
-     - Click on `Install`:
+    <img width="550" alt="image" src="https://github.com/user-attachments/assets/93412866-bf62-4c09-a62c-4bda280d7a40">
 
-          <img width="550" alt="image" src="https://github.com/user-attachments/assets/49aa432b-a3fd-4a2d-a504-ce08841b681e">
+- Click on `Install`:
+
+    <img width="550" alt="image" src="https://github.com/user-attachments/assets/49aa432b-a3fd-4a2d-a504-ce08841b681e">
+
+
+    https://github.com/user-attachments/assets/f76cd192-775f-4d1c-9422-edb6080e6381
 
 ### Configuration Steps
+
 1. **Run the App for the First Time**:
    - In Microsoft Fabric, go to **Apps** and select the Microsoft Fabric Capacity Metrics app.
    - When prompted with `You have to connect to your own data to view this report`, select **Connect**.
@@ -126,6 +129,8 @@ Last updated: 2024-11-28
        <img width="550" alt="image" src="https://github.com/user-attachments/assets/35bd1fc0-e5b3-43f0-acf8-d71310134273">
 
        <img width="550" alt="image" src="https://github.com/user-attachments/assets/be675f2f-82a4-4799-a72b-04cc9b47f3aa">
+
+        https://github.com/user-attachments/assets/98cfc500-cf01-4fd4-b9ab-eb857878264e
 
 ### Troubleshooting
 
