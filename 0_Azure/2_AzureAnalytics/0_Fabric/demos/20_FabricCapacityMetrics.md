@@ -10,6 +10,9 @@ Last updated: 2025-06-11
 
 ----------
 
+> [!IMPORTANT]
+> Is designed to provide monitoring capabilities for Fabric and Power BI Premium capacities
+
 > [!NOTE]
 > Ensure you have admin rights for the capacity you want to monitor.
 
