@@ -85,7 +85,7 @@ Last updated: 2025-04-08
 ## **Expanding Chat with User Data Capabilities to Power BI and Copilot Studio**  
 
 > Microsoft extends **chat-based AI interactions** with **user data** across **Power BI** and **Copilot Studio**, enabling **context-aware AI responses**.  
-> `We’re making it easier than ever to explore data using natural language. With the new “Chat with your data” experience in Power BI and Copilot Studio, users can simply ask questions and get insights without needing to dig through reports or write complex queries. Business users in Power BI can now chat with data agents without switching context`. Whether you're a business analyst or a data scientist, our AI-powered agents help you find answers quickly using the tools you already know and trust.`
+> `We’re making it easier than ever to explore data using natural language. With the new “Chat with your data” experience in Power BI and Copilot Studio, users can simply ask questions and get insights without needing to dig through reports or write complex queries. Business users in Power BI can now chat with data agents without switching context`. Whether you're a business analyst or a data scientist, our AI-powered agents help you find answers quickly using the tools you already know and trust.
 
 > [!IMPORTANT]  
 > **Copilot Studio now supports fine-tuned LLMs**, allowing **custom AI agents** to interact with **Power BI datasets**.  
@@ -135,7 +135,7 @@ Last updated: 2025-04-08
 ## **Digital Twin Builder in Microsoft Fabric Now in Preview**  
 
 > Microsoft Fabric introduces a **Digital Twin Builder**, enabling **graph-based modeling** for **predictive analytics**.
-> `With the new Digital Twin Builder in Microsoft Fabric, we’re simplifying how organizations model and simulate real-world systems. Using a no-code or low-code interface, even non-technical users can create digital twins by connecting live data from physical assets and processes. You can visualize and analize digital twin data with Power Bi and Copilot in MS Fabric`. These models can then power deep analytics, support what-if scenarios, and enable AI-driven automation, unlocking new levels of operational insight and efficiency.`
+> `With the new Digital Twin Builder in Microsoft Fabric, we’re simplifying how organizations model and simulate real-world systems. Using a no-code or low-code interface, even non-technical users can create digital twins by connecting live data from physical assets and processes. You can visualize and analize digital twin data with Power Bi and Copilot in MS Fabric`. These models can then power deep analytics, support what-if scenarios, and enable AI-driven automation, unlocking new levels of operational insight and efficiency.
 
 > [!IMPORTANT]  
 > **Fabric’s Digital Twin API** now supports **real-time IoT telemetry ingestion**, improving **asset monitoring**.  
