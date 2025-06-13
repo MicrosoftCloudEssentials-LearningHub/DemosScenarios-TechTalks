@@ -34,6 +34,7 @@ Last updated: 2025-04-08
 ## Create powerful AI agents in Azure AI Foundry with data in Azure Databricks
 
 > Azure AI Foundry now integrates with **Azure Databricks**, enabling **multi-agent orchestration** with **real-time data processing**.
+> `With our new integration between Azure AI Foundry and Azure Databricks, we’re empowering developers to build intelligent AI agents that can access and process enterprise data in real time. These agents can run Spark jobs, interact with data using natural language, and operate securely under Unity Catalog governance. This integration brings AI closer to your data, enabling smarter and faster decision-making across the organization.`
 
 > [!IMPORTANT]  
 > **Agents can now leverage Databricks Delta Lake** for **low-latency data access**, improving AI-driven decision-making.
@@ -84,6 +85,8 @@ Last updated: 2025-04-08
 ## **Expanding Chat with User Data Capabilities to Power BI and Copilot Studio**  
 
 > Microsoft extends **chat-based AI interactions** with **user data** across **Power BI** and **Copilot Studio**, enabling **context-aware AI responses**.  
+> `We’re making it easier than ever to explore data using natural language. With the new “Chat with your data” experience in Power BI and Copilot Studio, users can simply ask questions and get insights without needing to dig through reports or write complex queries. Whether you're a business analyst or a data scientist, our AI-powered agents help you find answers quickly using the tools you already know and trust.`
+
 
 > [!IMPORTANT]  
 > **Copilot Studio now supports fine-tuned LLMs**, allowing **custom AI agents** to interact with **Power BI datasets**.  
@@ -132,7 +135,8 @@ Last updated: 2025-04-08
 
 ## **Digital Twin Builder in Microsoft Fabric Now in Preview**  
 
-> Microsoft Fabric introduces a **Digital Twin Builder**, enabling **graph-based modeling** for **predictive analytics**.  
+> Microsoft Fabric introduces a **Digital Twin Builder**, enabling **graph-based modeling** for **predictive analytics**.
+> `With the new Digital Twin Builder in Microsoft Fabric, we’re simplifying how organizations model and simulate real-world systems. Using a no-code or low-code interface, even non-technical users can create digital twins by connecting live data from physical assets and processes. These models can then power deep analytics, support what-if scenarios, and enable AI-driven automation, unlocking new levels of operational insight and efficiency.`
 
 > [!IMPORTANT]  
 > **Fabric’s Digital Twin API** now supports **real-time IoT telemetry ingestion**, improving **asset monitoring**.  
@@ -181,7 +185,8 @@ Last updated: 2025-04-08
 
 ## **Shortcut Transformations Help Create AI-Ready Data Faster in OneLake**  
 
-> OneLake now supports **shortcut transformations**, enabling **automated data preprocessing** for **AI model training**.  
+> OneLake now supports **shortcut transformations**, enabling **automated data preprocessing** for **AI model training**.
+> `We’re evolving OneLake into a true hub for enterprise data. With shortcut transformations, users can bring in data from multiple sources and automatically convert it into analytics-ready formats like Delta Lake. Even better, they can apply AI-powered transformations such as summarization, translation, and classification in real time, without duplicating or moving the data. It’s a seamless and efficient way to prepare data for analysis and AI.`
 
 > [!IMPORTANT]  
 > **OneLake’s new transformation engine** supports **schema evolution**, allowing **adaptive data pipelines**.  
@@ -230,7 +235,8 @@ Last updated: 2025-04-08
 
 ## **Translytical Task Flows in Microsoft Fabric in Preview**  
 
-> Microsoft Fabric introduces **Translytical Task Flows**, merging **transactional and analytical processing**.  
+> Microsoft Fabric introduces **Translytical Task Flows**, merging **transactional and analytical processing**.
+> `We’re taking Power BI beyond visualization by enabling users to take action directly from their reports. With translytical task flows, users can update records, trigger workflows, or call external APIs based on the context of the data they’re viewing. This bridges the gap between analytics and operations, helping teams move from insight to action without ever leaving the report.`
 
 > [!IMPORTANT]  
 > **Fabric’s Translytical Engine** now supports **HTAP (Hybrid Transactional/Analytical Processing)**, reducing **ETL overhead**.  
