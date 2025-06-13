@@ -135,7 +135,7 @@ Last updated: 2025-04-08
 ## **Digital Twin Builder in Microsoft Fabric Now in Preview**  
 
 > Microsoft Fabric introduces a **Digital Twin Builder**, enabling **graph-based modeling** for **predictive analytics**.
-> `With the new Digital Twin Builder in Microsoft Fabric, we’re simplifying how organizations model and simulate real-world systems. Using a no-code or low-code interface, even non-technical users can create digital twins by connecting live data from physical assets and processes. You can visualize and analize digital twin data with Power Bi and Coipit in MS Fabric`. These models can then power deep analytics, support what-if scenarios, and enable AI-driven automation, unlocking new levels of operational insight and efficiency.`
+> `With the new Digital Twin Builder in Microsoft Fabric, we’re simplifying how organizations model and simulate real-world systems. Using a no-code or low-code interface, even non-technical users can create digital twins by connecting live data from physical assets and processes. You can visualize and analize digital twin data with Power Bi and Copilot in MS Fabric`. These models can then power deep analytics, support what-if scenarios, and enable AI-driven automation, unlocking new levels of operational insight and efficiency.`
 
 > [!IMPORTANT]  
 > **Fabric’s Digital Twin API** now supports **real-time IoT telemetry ingestion**, improving **asset monitoring**.  
