@@ -20,10 +20,8 @@ Last updated: 2024-11-29
 > In Microsoft Fabric, `smoothing is automatically applied to help manage and optimize capacity usage by spreading the compute demand over time`. This helps prevent sudden spikes and ensures more consistent performance.
 > However, `there is no automatic autoscale feature available. Instead, you can configure the autoscale a P capacity or you can manually adjust your capacity based on your usage patterns and needs`. 
 
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki</b> (Click to expand)</summary>
+<summary><b>List of References</b> (Click to expand)</summary>
 
 - [Evaluate and optimize your Microsoft Fabric capacity](https://learn.microsoft.com/en-us/fabric/enterprise/optimize-capacity)
 - [Smoothing and throttling in Fabric Data Warehouse](https://learn.microsoft.com/en-us/fabric/data-warehouse/compute-capacity-smoothing-throttling)
@@ -37,16 +35,17 @@ Last updated: 2024-11-29
 
 </details>
 
-## Content 
-
-- [Wiki](#wiki)
-- [Content](#content)
+<details>
+<summary><b>Table of Content </b> (Click to expand)</summary>
+    
 - [Overview](#overview)
     - [Bursting and Smoothing](#bursting-and-smoothing)
     - [Throttling](#throttling)
 - [Actions you can take to recover from overload situations](#actions-you-can-take-to-recover-from-overload-situations)
 - [Monitor Usage](#monitor-usage)
 - [Steps to Configure Capacity Alerts](#steps-to-configure-capacity-alerts)
+
+</details>
 
 ## Overview 
 
