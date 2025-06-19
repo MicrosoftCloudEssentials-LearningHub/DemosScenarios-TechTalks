@@ -11,8 +11,9 @@ Last updated: 2024-11-19
 
 > These functionalities include the ability to query data, manage relationships between different data items, enforce data integrity rules, and perform transactions. These products are typically used when you need to work with structured or unstructured data, and need more advanced features compared to basic data storage products.
 
-<img width="700" alt="image" src="https://github.com/brown9804/MSCloudEssentials_LPath/assets/24630902/697f7265-647a-41e2-a2f5-ec4b66cf3321"> <br/>
-
+<div align="center">
+  <img src="https://github.com/brown9804/MSCloudEssentials_LPath/assets/24630902/697f7265-647a-41e2-a2f5-ec4b66cf3321" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
 
 
 | Properties               | Structured Data                                  | Unstructured Data                               |
@@ -36,18 +37,18 @@ graph LR
     A --> B
     A --> C
     A --> D
-    B -->|Azure SQL Database Hyperscale​| 1
+    B -->|Azure SQL <br>Database Hyperscale​| 1
     B -->|Azure SQL Database| 2
     B -->|Azure SQL MI| 3
-    B -->|SQL Server on Azure VM| 4
-    C -->|Azure Cosmos DB for NoSQL| 5
-    C -->|Azure MI for Apache Cassandra​| 6
-    C -->|vCore-based Azure Cosmos DB for MongoDB| 7
-    C -->|MongoDB Atlas on Azure| 8
-    D -->|Azure Database for PostgreSQL| 9
-    D -->|Azure Database for MySQL​| 10
-    D -->|Oracle Database@Azure| 11
-    D -->|Azure Cache for Redis| 12
+    B -->|SQL Server <br>on Azure VM| 4
+    C -->|Azure Cosmos DB <br>for NoSQL| 5
+    C -->|Azure MI <br>for Apache Cassandra​| 6
+    C -->|vCore-based Azure <br>Cosmos DB for MongoDB| 7
+    C -->|MongoDB <br>Atlas on Azure| 8
+    D -->|Azure Database <br>for PostgreSQL| 9
+    D -->|Azure Database <br>for MySQL​| 10
+    D -->|Oracle <br>Database  in Azure| 11
+    D -->|Azure Cache <br>for Redis| 12
 ```
 
 | Product | Category | Description | Benefits | Differentiators | Use Cases | Related Products (tendency used with) |
