@@ -9,10 +9,8 @@ Last updated: 2025-01-13
 
 ------------------------------------------
 
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki </b> (Click to expand)</summary>
+<summary><b>List of References </b> (Click to expand)</summary>
 
 - [Time intelligence functions](https://learn.microsoft.com/en-us/dax/time-intelligence-functions-dax)
 - [Time Intelligence: Calendar Table](https://community.fabric.microsoft.com/t5/Power-BI-Community-Blog/Time-Intelligence-Calendar-Table/ba-p/1000565)
@@ -31,13 +29,9 @@ Last updated: 2025-01-13
   
 </details>
 
-## Content 
-
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
 
-- [Wiki](#wiki)
-- [Content](#content)
 - [Overview](#overview)
 - [Migration Considerations](#migration-considerations)
 - [Lifecycle Comparison](#lifecycle-comparison)
