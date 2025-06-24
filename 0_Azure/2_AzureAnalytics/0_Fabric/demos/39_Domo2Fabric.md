@@ -64,16 +64,6 @@ graph TD
     C --> L[Role-based Experiences]
 ```
 
-| Feature                | Domo                                                                 | Microsoft Fabric                                                                 |
-|------------------------|----------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| **Data Visualization** | Cards, dashboards, and stories                                       | Power BI for advanced, interactive visualizations                                |
-| **Dashboards**         | Drag-and-drop dashboard builder                                      | Unified reporting and dashboard experience                                       |
-| **Data Connectivity**  | 1000+ connectors, Domo Workbench                                    | Azure Data Factory, Synapse, Power Query, and more                              |
-| **Ease of Use**        | Intuitive UI, Appstore, Magic ETL                                   | SaaS model, low-code/no-code, Power Query                                       |
-| **Advanced Analytics** | Beast Modes, Data Science tools, AI/ML apps                         | Built-in AI, DAX, Python/R integration, Copilot                                 |
-| **Unified Platform**   | Focused on business intelligence and apps                           | End-to-end analytics: ingestion, transformation, modeling, visualization         |
-| **Role-Specific**      | Business users, analysts, IT, data scientists                       | Tailored experiences for engineers, scientists, business users                   |
-
 <details>
 <summary><b>Data Visualization</b> – Click to expand</summary>
 
@@ -157,6 +147,17 @@ graph TD
 - **Related Tools:** Fabric Experiences (BI, Data Engineering, Data Science), Power BI, Notebooks, Pipelines.<br/>
 
 </details>
+
+| Feature                | Domo                                                                 | Microsoft Fabric                                                                 |
+|------------------------|----------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| **Data Visualization** | Cards, dashboards, and stories                                       | Power BI for advanced, interactive visualizations                                |
+| **Dashboards**         | Drag-and-drop dashboard builder                                      | Unified reporting and dashboard experience                                       |
+| **Data Connectivity**  | 1000+ connectors, Domo Workbench                                    | Azure Data Factory, Synapse, Power Query, and more                              |
+| **Ease of Use**        | Intuitive UI, Appstore, Magic ETL                                   | SaaS model, low-code/no-code, Power Query                                       |
+| **Advanced Analytics** | Beast Modes, Data Science tools, AI/ML apps                         | Built-in AI, DAX, Python/R integration, Copilot                                 |
+| **Unified Platform**   | Focused on business intelligence and apps                           | End-to-end analytics: ingestion, transformation, modeling, visualization         |
+| **Role-Specific**      | Business users, analysts, IT, data scientists                       | Tailored experiences for engineers, scientists, business users                   |
+
 
 ## Migration Considerations
 
