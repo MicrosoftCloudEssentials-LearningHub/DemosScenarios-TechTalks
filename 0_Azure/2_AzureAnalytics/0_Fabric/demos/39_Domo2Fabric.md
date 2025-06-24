@@ -444,6 +444,58 @@ graph TD
 
 ### Data Connection Types
 
+<details>
+<summary><b>Domo Import</b> – Click to expand</summary>
+
+> Data is imported into Domo and stored in its internal data engine for processing and visualization.
+
+- **Performance:** Fast and cached, optimized for quick access and rendering.<br/>
+- **Security:** Governed by Domo’s PDP (Personalized Data Permissions) and internal security model.<br/>
+- **Offline Access:** Supported, as data is stored within Domo’s environment.<br/>
+- **Use Cases:** Dashboards requiring high performance, offline access, or frequent reuse.<br/>
+- **Related Tools:** Domo Workbench, Magic ETL, Dataflows.<br/>
+
+</details>
+
+<details>
+<summary><b>Domo Federated</b> – Click to expand</summary>
+
+> Live query connection to the source system without importing data into Domo.
+
+- **Performance:** Depends on the source system’s responsiveness and network latency.<br/>
+- **Security:** Inherits security from the source system; no data is stored in Domo.<br/>
+- **Offline Access:** Not supported, as data is queried in real time.<br/>
+- **Use Cases:** Real-time dashboards, sensitive data that shouldn’t be stored in Domo.<br/>
+- **Related Tools:** Federated connectors, Domo Federated Query Engine.<br/>
+
+</details>
+
+<details>
+<summary><b>Fabric Import</b> – Click to expand</summary>
+
+> Data is imported into Microsoft Fabric or Power BI and stored in the VertiPaq engine for high-performance analytics.
+
+- **Performance:** Fast and cached; optimized for in-memory querying and compression.<br/>
+- **Security:** Governed by Row-Level Security (RLS) and Fabric’s workspace-level permissions.<br/>
+- **Offline Access:** Supported, as data is stored within the Fabric environment.<br/>
+- **Use Cases:** High-performance dashboards, offline reporting, reusable datasets.<br/>
+- **Related Tools:** Power BI Desktop, Dataflows, OneLake, DAX.<br/>
+
+</details>
+
+<details>
+<summary><b>Fabric Direct Lake / Direct Query</b> – Click to expand</summary>
+
+> Live query to the source system or Direct Lake access to data stored in OneLake without importing.
+
+- **Performance:** Depends on the source system or lakehouse performance; Direct Lake offers near-import speed.<br/>
+- **Security:** Inherits source system security; supports RLS and Azure AD-based access control.<br/>
+- **Offline Access:** Not supported, as data is queried in real time.<br/>
+- **Use Cases:** Real-time analytics, large datasets, lakehouse architecture, sensitive data.<br/>
+- **Related Tools:** Direct Lake, Synapse Lakehouse, Power BI, OneLake.<br/>
+
+</details>
+
 | Feature         | Domo Import | Domo Federated | Fabric Import | Fabric Direct Lake/Query |
 |-----------------|-------------|---------------|---------------|-------------------------|
 | **Definition**  | Data imported into Domo | Live query to source | Data imported into Fabric/Power BI | Live query to source or Direct Lake |
@@ -464,6 +516,83 @@ graph TD
 
 ## Data Modelling
 
+<details>
+<summary><b>Dataflows</b> – Click to expand</summary>
+
+> Domo Dataflows and Microsoft Fabric Dataflows both enable reusable ETL logic, but they differ significantly in architecture and flexibility.
+
+- In Domo, Dataflows are built using Magic ETL or SQL-based transformations and are tightly coupled with Domo’s internal data engine. In Microsoft Fabric, Dataflows are built using Power Query (M language) and can output to OneLake, Power BI datasets, or Excel. Fabric Dataflows are modular, support parameterization, and can be scheduled or triggered via APIs.
+- **Execution Model:** Fabric Dataflows execute in the Power Query engine, which supports query folding—pushing transformations back to the source system when possible, improving performance and reducing data movement.
+- **Reusability:** Fabric Dataflows can be reused across multiple datasets and reports, and can be version-controlled via Git integration.
+- **Use Cases:** Centralized transformation logic, shared business rules, multi-report consistency, and integration with lakehouse architecture.
+- **Developer Considerations:** Fabric Dataflows support advanced transformations, error handling, and incremental refresh, making them suitable for enterprise-scale ETL pipelines.
+
+</details>
+
+<details>
+<summary><b>Date Tables & Time Intelligence</b> – Click to expand</summary>
+
+> Domo supports date dimensions, but Microsoft Fabric (via Power BI) requires explicitly defined date tables for time intelligence functions to work correctly.
+
+- Power BI’s DAX engine relies on a properly related date table to enable time intelligence functions like YTD, QTD, MTD, and rolling averages. These functions use the date table to understand calendar logic and apply filters dynamically.
+- **Best Practices:** The date table should be marked as a "Date Table" in Power BI and must have a continuous range of dates with no gaps. It should be related to fact tables via a single-column relationship.
+- **Performance Implications:** Using a dedicated date table improves query performance and ensures consistent behavior across measures and visuals.
+- **Use Cases:** Financial reporting, fiscal calendars, trend analysis, and forecasting.
+- **Developer Considerations:**  Developers should create reusable date tables with calculated columns for year, quarter, month, week, and fiscal periods. These can be stored in shared datasets or templates.
+
+</details>
+
+<details>
+<summary><b>Calculations</b> – Click to expand</summary>
+
+> Domo’s Beast Modes are similar to Power BI’s calculated columns and measures, but DAX offers more advanced and optimized calculation capabilities.
+
+- Beast Modes are SQL-like expressions applied at the visualization layer. In Power BI, calculated columns are evaluated during data refresh and stored in the model, while measures are evaluated at query time and are context-sensitive.
+- **Engine Behavior:** Calculated columns increase model size but are useful for row-level logic. Measures are more efficient and preferred for aggregations and dynamic calculations.
+- **Expression Language:** DAX (Data Analysis Expressions) is a functional language optimized for in-memory analytics. It supports filter context, row context, and advanced functions like CALCULATE, FILTER, and ALL.
+- **Use Cases:** Derived fields, conditional logic, dynamic KPIs, and context-aware metrics.
+- **Developer Considerations:** Use calculated columns sparingly to avoid bloating the model. Prefer measures for performance and flexibility. Leverage tools like DAX Studio for debugging and optimization.
+
+</details>
+
+<details>
+<summary><b>Measures</b> – Click to expand</summary>
+
+> Domo’s aggregations and Beast Modes are functionally similar to Power BI measures, but Fabric’s DAX measures are more powerful and efficient.
+
+- Measures in Power BI are evaluated at query time using the current filter and row context. They do not consume storage and are highly optimized by the VertiPaq engine.
+- **Performance Model:** Measures leverage columnar storage and in-memory compression, enabling sub-second query performance even on large datasets.
+- **Context Awareness:** Measures adapt dynamically to slicers, filters, and visual interactions, making them ideal for interactive dashboards.
+- **Use Cases:** Sales totals, profit margins, year-over-year comparisons, dynamic benchmarks.
+- **Developer Considerations:** Measures should be modular and reusable. Use variables (`VAR`) to simplify logic and improve readability. Avoid complex nested logic in visuals—keep it in the model.
+
+</details>
+
+<details>
+<summary><b>Conditionals</b> – Click to expand</summary>
+
+> Domo uses SQL-style CASE WHEN logic, while Power BI uses DAX functions like IF, SWITCH, and nested expressions for conditional logic.
+
+- DAX conditionals are more expressive and support both scalar and table-returning logic. SWITCH is preferred for multiple conditions, while IF is used for binary logic.
+- **Advanced Logic:** DAX allows combining conditionals with CALCULATE, FILTER, and other functions to create dynamic, context-aware expressions.
+- **Use Cases:** Conditional formatting, dynamic labels, tiered pricing, segmentation.
+- **Developer Considerations:** Use SWITCH for readability when handling multiple conditions. Combine with SELECTEDVALUE or HASONEVALUE for dynamic behavior in visuals.
+
+</details>
+
+<details>
+<summary><b>Star Schemas</b> – Click to expand</summary>
+
+> Domo supports joins between datasets, but Microsoft Fabric (via Power BI) strongly recommends using a star schema for performance and maintainability.
+
+- A star schema consists of a central fact table connected to multiple dimension tables via one-to-many relationships. This structure is optimized for the VertiPaq engine.
+- **Performance Benefits:** Star schemas reduce ambiguity, improve query folding, and enable efficient compression and indexing.
+- **Modeling Best Practices:** Avoid many-to-many relationships and snowflake schemas when possible. Use surrogate keys and ensure clean, unique dimension tables.
+- **Use Cases:** Enterprise data models, scalable reporting, semantic layer design.
+- **Developer Considerations:** Design models with clarity and performance in mind. Use tools like Tabular Editor to manage relationships, hierarchies, and metadata.
+
+</details>
+
 | **Category**                         | **Comparison**                                                                                                                                      | **Learn More** |
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
 | **Dataflows**                        | `Domo Dataflows are similar to Microsoft Fabric Dataflows, enabling reusable ETL logic.`                                                            | [Fabric Dataflows](https://learn.microsoft.com/en-us/power-bi/transform-model/dataflows/dataflows-introduction-self-service) |
@@ -476,6 +605,64 @@ graph TD
 ## How to create visualizations
 
 ### Recreate Simple Visuals
+
+<details>
+<summary><b>Card Builder</b> – Click to expand</summary>
+
+> Domo and Power BI both offer drag-and-drop interfaces for building visuals, but Power BI provides a more granular and extensible visualization experience.
+
+- In Domo, cards are built using a simplified UI with limited customization. Power BI’s Visualizations pane allows users to select from a wide range of visual types, configure fields, and apply formatting, analytics, and interactivity.
+- **Customization:** Power BI supports conditional formatting, reference lines, tooltips, and analytics overlays (e.g., trend lines, forecasts).
+- **Performance Considerations:** Power BI visuals are rendered using the VertiPaq engine, which optimizes query performance and visual responsiveness.
+- **Use Cases:** KPI cards, bar/line charts, tables, matrices, and combo charts.
+- **Developer Considerations:**  Use the Fields pane to control data bindings, and the Format pane for styling. Leverage bookmarks and selection panes for layered visual storytelling.
+
+</details>
+
+<details>
+<summary><b>Appstore / Marketplace</b> – Click to expand</summary>
+
+> Domo’s Appstore and Power BI’s Visuals Marketplace both offer extensibility through custom visuals, but Power BI provides a more open and developer-friendly ecosystem.
+
+- Power BI custom visuals are built using TypeScript and the Power BI Visuals SDK. They can be imported from the Marketplace or developed in-house and deployed via organizational visuals.
+- **Security & Governance:** Power BI supports certified visuals (Microsoft-validated) and organizational visuals (IT-approved), ensuring compliance and trust.
+- **Deployment:** Custom visuals can be packaged as `.pbiviz` files and distributed via GitHub, internal portals, or directly uploaded to reports.
+- **Use Cases:** Specialized charts (e.g., Sankey, Gantt, Radar), branded visuals, or industry-specific components.
+- **Developer Considerations:** Use the Power BI Visuals CLI for development. Test visuals in sandboxed environments and follow accessibility and performance guidelines.
+
+</details>
+
+<details>
+<summary><b>Drill Path</b> – Click to expand</summary>
+
+> Domo supports basic drill paths within cards. Power BI offers more advanced drillthrough, drill-down, and hierarchy navigation.
+
+-  Power BI supports three types of drill interactions:
+    - **Drill-down:** Navigate within a hierarchy (e.g., Year → Quarter → Month).
+    - **Drill-through:** Navigate to a different page with context passed (e.g., click a region to open a detailed region report).
+    - **Expand/Collapse:** Inline hierarchy navigation within visuals.
+- **Interactivity:** Users can enable or disable drill modes, and visuals can be configured to respond to cross-filtering and highlighting.
+- **Use Cases:** Multi-level reporting, detailed analysis, contextual navigation.
+- **Developer Considerations:**  Define hierarchies in the model, use drill-through filters on target pages, and design consistent navigation cues for users.
+
+</details>
+
+<details>
+<summary><b>Filters</b> – Click to expand</summary>
+
+> Domo supports page-level and global filters. Power BI offers a more flexible filtering system with slicers, visual-level filters, page filters, and report-level filters.
+
+- Power BI’s filter pane allows developers to apply filters at different scopes:
+    - **Visual-level:** Affects only one visual.
+    - **Page-level:** Affects all visuals on a page.
+    - **Report-level:** Affects all pages in the report.
+- **Slicers:**  Slicers are visual filter controls that users can interact with. They support single/multi-select, dropdowns, relative date filtering, and sync across pages.
+- **Advanced Filtering:**  Power BI supports Top N, relative time, wildcard, and measure-based filtering.
+- **Use Cases:**  Interactive dashboards, user-driven exploration, dynamic filtering.
+- **Developer Considerations:**  Use synced slicers for consistent filtering across pages. Leverage filter pane customization to guide user behavior and reduce clutter.
+
+</details>
+
 
 | Functionality | Domo | Power BI (Fabric) |
 |---------------|------|-------------------|
