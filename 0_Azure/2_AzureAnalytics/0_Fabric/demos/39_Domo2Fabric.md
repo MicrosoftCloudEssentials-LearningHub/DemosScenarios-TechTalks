@@ -74,6 +74,90 @@ graph TD
 | **Unified Platform**   | Focused on business intelligence and apps                           | End-to-end analytics: ingestion, transformation, modeling, visualization         |
 | **Role-Specific**      | Business users, analysts, IT, data scientists                       | Tailored experiences for engineers, scientists, business users                   |
 
+<details>
+<summary><b>Data Visualization</b> – Click to expand</summary>
+
+> Domo uses cards, dashboards, and stories for visualizations. Microsoft Fabric leverages Power BI for advanced, interactive, and customizable visuals.
+
+- **Benefits:** Power BI supports rich interactivity, custom visuals, and AI-driven insights.<br/>
+- **Differentiators:** Power BI integrates with DAX, Copilot, and supports embedding in apps and portals.<br/>
+- **Use Cases:** Executive dashboards, operational reporting, embedded analytics.<br/>
+- **Related Tools:** Power BI Desktop, Power BI Service, Visuals Marketplace.<br/>
+
+</details>
+
+<details>
+<summary><b>Dashboards</b> – Click to expand</summary>
+
+> Domo provides a drag-and-drop dashboard builder. Fabric offers a unified reporting and dashboard experience through Power BI.
+
+- **Benefits:** Power BI dashboards aggregate visuals from multiple reports and datasets.<br/>
+- **Differentiators:** Supports live tiles, cross-report pinning, and integration with Teams and SharePoint.<br/>
+- **Use Cases:** Real-time monitoring, cross-functional reporting, executive summaries.<br/>
+- **Related Tools:** Power BI Apps, Power BI Service, Microsoft Teams.<br/>
+
+</details>
+
+<details>
+<summary><b>Data Connectivity</b> – Click to expand</summary>
+
+> Domo supports 1000+ connectors and Workbench. Fabric uses Azure Data Factory, Synapse, and Power Query for scalable, enterprise-grade connectivity.
+
+- **Benefits:** Enables hybrid data access, real-time ingestion, and lakehouse integration.<br/>
+- **Differentiators:** Native support for Direct Lake, Delta Lake, and Parquet formats.<br/>
+- **Use Cases:** ETL/ELT pipelines, streaming data, hybrid cloud access.<br/>
+- **Related Tools:** Azure Data Factory, Power Query, Synapse Pipelines, OneLake.<br/>
+
+</details>
+
+<details>
+<summary><b>Ease of Use</b> – Click to expand</summary>
+
+> Domo emphasizes ease with Magic ETL and Appstore. Fabric offers a SaaS model with low-code/no-code experiences via Power Query.
+
+- **Benefits:** Power Query provides a familiar, Excel-like interface for data transformation.<br/>
+- **Differentiators:** Unified UX across roles, reusable queries, and parameterization.<br/>
+- **Use Cases:** Self-service data prep, rapid prototyping, business user reporting.<br/>
+- **Related Tools:** Power Query Editor, Dataflows, Power BI Desktop.<br/>
+
+</details>
+
+<details>
+<summary><b>Advanced Analytics</b> – Click to expand</summary>
+
+> Domo includes Beast Modes and AI/ML apps. Fabric integrates built-in AI, DAX, Python/R, and Copilot for advanced analytics.
+
+- **Benefits:** Supports predictive modeling, natural language queries, and embedded AI insights.<br/>
+- **Differentiators:** Copilot enables natural language report creation and data exploration.<br/>
+- **Use Cases:** Forecasting, anomaly detection, NLP-driven insights, data science collaboration.<br/>
+- **Related Tools:** Power BI Copilot, Azure ML, Python/R scripts, DAX Studio.<br/>
+
+</details>
+
+<details>
+<summary><b>Unified Platform</b> – Click to expand</summary>
+
+> Domo focuses on business intelligence and apps. Fabric delivers end-to-end analytics from ingestion to visualization in a single platform.
+
+- **Benefits:** Reduces tool sprawl and improves governance and collaboration.<br/>
+- **Differentiators:** Combines Power BI, Synapse, Data Factory, and OneLake in one SaaS experience.<br/>
+- **Use Cases:** Enterprise data platforms, centralized analytics, cross-functional workflows.<br/>
+- **Related Tools:** Microsoft Fabric, OneLake, Synapse Data Warehouse, Data Factory.<br/>
+
+</details>
+
+<details>
+<summary><b>Role-Specific Experiences</b> – Click to expand</summary>
+
+> Domo supports business users, analysts, and data scientists. Fabric offers tailored experiences for engineers, scientists, and business users.
+
+- **Benefits:** Each role gets a customized interface and toolset, from no-code to pro-code.<br/>
+- **Differentiators:** Fabric provides role-based hubs (e.g., Data Engineering, Data Science, BI) within a single platform.<br/>
+- **Use Cases:** Data engineering pipelines, BI reporting, data science notebooks, business dashboards.<br/>
+- **Related Tools:** Fabric Experiences (BI, Data Engineering, Data Science), Power BI, Notebooks, Pipelines.<br/>
+
+</details>
+
 ## Migration Considerations
 
 | Category               | Domo Approach | Microsoft Fabric Approach |
