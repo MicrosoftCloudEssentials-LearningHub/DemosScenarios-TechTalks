@@ -15,15 +15,12 @@ Last updated: 2025-06-24
 - [Microsoft Fabric documentation](https://learn.microsoft.com/en-us/fabric/)
 - [Domo Official Site](https://www.domo.com/)
 - [Dataflows in Microsoft Fabric](https://learn.microsoft.com/en-us/power-bi/transform-model/dataflows/dataflows-introduction-self-service)
-- [Data modeling in Power BI](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-modeling)
 - [Time intelligence functions (DAX)](https://learn.microsoft.com/en-us/dax/time-intelligence-functions-dax)
 - [Star schema guidance](https://learn.microsoft.com/en-us/power-bi/guidance/star-schema)
 - [Conditional formatting in Power BI](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-conditional-table-formatting)
 - [Optimization guide for Power BI](https://learn.microsoft.com/en-us/power-bi/guidance/power-bi-optimization)
 - [Power BI sharing and collaboration](https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-share-dashboards)
-- [Power BI governance and administration](https://learn.microsoft.com/en-us/power-bi/guidance/powerbi-implementation-planning-governance)
-- [Microsoft Fabric migration guidance](https://learn.microsoft.com/en-us/fabric/get-started/migration-overview)
-- [Domo Knowledge Base](https://domo-support.domo.com/s/)
+
 </details>
 
 <details>
