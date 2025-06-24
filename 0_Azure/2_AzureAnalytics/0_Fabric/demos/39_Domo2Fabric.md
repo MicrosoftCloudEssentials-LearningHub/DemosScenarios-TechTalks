@@ -161,6 +161,126 @@ graph TD
 
 ## Migration Considerations
 
+<details>
+<summary><b>Data Ingestion</b> – Click to expand</summary>
+
+> Domo uses connectors, Workbench, and Dataflows for ingestion. Microsoft Fabric supports ingestion via Data Factory, Power Query, Dataflows, and Direct Lake.
+
+- **Benefits:** Fabric enables scalable, hybrid ingestion with support for real-time and batch pipelines.<br/>
+- **Differentiators:** Direct Lake allows high-performance access to data in OneLake without import or duplication.<br/>
+- **Use Cases:** Streaming data, hybrid cloud ingestion, enterprise ETL/ELT pipelines.<br/>
+- **Related Tools:** Azure Data Factory, Power Query, Synapse Pipelines, OneLake.<br/>
+
+</details>
+
+<details>
+<summary><b>Data Modelling</b> – Click to expand</summary>
+
+> Domo uses Dataflows, Joins, and Beast Modes. Fabric supports Dataflows, DAX, Star Schema, and Relationships for robust modeling.
+
+- **Benefits:** Fabric promotes reusable, scalable models with semantic layers and time intelligence.<br/>
+- **Differentiators:** DAX enables complex calculations, and star schema improves performance and maintainability.<br/>
+- **Use Cases:** Enterprise semantic models, KPI dashboards, time-based analytics.<br/>
+- **Related Tools:** Power BI Desktop, DAX Studio, Dataflows, Tabular Editor.<br/>
+
+</details>
+
+<details>
+<summary><b>Visualizations</b> – Click to expand</summary>
+
+> Domo offers Cards, Stories, and Appstore Visuals. Fabric uses Power BI visuals, custom visuals, and themes for rich reporting.
+
+- **Benefits:** Power BI supports interactive visuals, drillthrough, bookmarks, and custom themes.<br/>
+- **Differentiators:** Power BI Visuals Marketplace allows importing or developing custom visuals.<br/>
+- **Use Cases:** Executive dashboards, operational reports, embedded analytics.<br/>
+- **Related Tools:** Power BI Desktop, Visuals Marketplace, Report Builder.<br/>
+
+</details>
+
+<details>
+<summary><b>Optimization</b> – Click to expand</summary>
+
+> Domo uses DataFusions, Magic ETL, and DataSet Views. Fabric optimizes with query folding, aggregations, and Performance Analyzer.
+
+- **Benefits:** Fabric enables performance tuning at the query and model level.<br/>
+- **Differentiators:** Query folding pushes transformations to the source, reducing load times.<br/>
+- **Use Cases:** Large datasets, complex models, performance-critical dashboards.<br/>
+- **Related Tools:** Performance Analyzer, DAX Studio, Power BI Optimizer.<br/>
+
+</details>
+
+<details>
+<summary><b>Lifecycle</b> – Click to expand</summary>
+
+> Domo follows a lifecycle of import, transform, visualize, and share. Fabric extends this with connect, transform, model, visualize, and share.
+
+- **Benefits:** Fabric supports a more modular and governed lifecycle with reusable components.<br/>
+- **Differentiators:** Modeling is a distinct phase, enabling semantic consistency and reuse.<br/>
+- **Use Cases:** Enterprise BI workflows, governed self-service analytics.<br/>
+- **Related Tools:** Power BI Desktop, Dataflows, Deployment Pipelines.<br/>
+
+</details>
+
+<details>
+<summary><b>Sharing & Collaboration</b> – Click to expand</summary>
+
+> Domo uses Groups, Buzz, Appstore, and Publication Groups. Fabric enables collaboration via Workspaces, Apps, Power BI Service, and Teams.
+
+- **Benefits:** Fabric integrates with Microsoft 365 for seamless sharing and collaboration.<br/>
+- **Differentiators:** Power BI Apps allow packaging and distributing reports across audiences.<br/>
+- **Use Cases:** Cross-team collaboration, secure sharing, embedded analytics.<br/>
+- **Related Tools:** Power BI Service, Microsoft Teams, SharePoint, OneDrive.<br/>
+
+</details>
+
+<details>
+<summary><b>Licensing</b> – Click to expand</summary>
+
+> Domo offers per user, per instance, and enterprise licensing. Fabric supports per user, Premium, and Fabric Capacity models.
+
+- **Benefits:** Fabric offers flexible scaling with capacity-based pricing for enterprise workloads.<br/>
+- **Differentiators:** Fabric Capacity allows shared resources across services like Power BI, Synapse, and Data Factory.<br/>
+- **Use Cases:** Small teams to large enterprises, cost-optimized scaling.<br/>
+- **Related Tools:** Microsoft 365 Admin Center, Fabric Capacity Metrics App.<br/>
+
+</details>
+
+<details>
+<summary><b>Governance & Admin</b> – Click to expand</summary>
+
+> Domo provides Admin Center and Data Governance Toolkit. Fabric includes Admin Portal, Sensitivity Labels, and Compliance tools.
+
+- **Benefits:** Fabric supports enterprise-grade governance with audit logs, data classification, and policy enforcement.<br/>
+- **Differentiators:** Integration with Microsoft Purview and Microsoft 365 compliance center.<br/>
+- **Use Cases:** Regulated industries, data protection, audit readiness.<br/>
+- **Related Tools:** Admin Portal, Microsoft Purview, Power BI Audit Logs.<br/>
+
+</details>
+
+<details>
+<summary><b>End Users</b> – Click to expand</summary>
+
+> Domo supports users through Domo University, Community, and Support. Fabric offers Microsoft Learn, Community, and Support resources.
+
+- **Benefits:** Microsoft Learn provides structured, role-based learning paths and certifications.<br/>
+- **Differentiators:** Deep integration with Microsoft ecosystem and global community support.<br/>
+- **Use Cases:** Onboarding, upskilling, certification, community-driven learning.<br/>
+- **Related Tools:** Microsoft Learn, Power BI Community, Fabric Documentation.<br/>
+
+</details>
+
+<details>
+<summary><b>Migration Approach</b> – Click to expand</summary>
+
+> Domo migration involves manual rebuilds, Domo API, and export options. Fabric migration also requires manual rebuilds, guided by best practices.
+
+- **Benefits:** Fabric provides structured migration guidance and tooling for rebuilding reports and models.<br/>
+- **Differentiators:** Fabric supports Git integration and deployment pipelines for managing migrated content.<br/>
+- **Use Cases:** BI modernization, platform consolidation, phased migration strategies.<br/>
+- **Related Tools:** Power BI Desktop, Deployment Pipelines, Migration Playbooks.<br/>
+
+</details>
+
 | Category               | Domo Approach | Microsoft Fabric Approach |
 |------------------------|---------------|--------------------------|
 | **Data Ingestion**     | Connectors, Workbench, Dataflows | Data Factory, Power Query, Dataflows, Direct Lake |
