@@ -296,6 +296,48 @@ graph TD
 
 ## Lifecycle Comparison
 
+<details>
+<summary><b>Prepare Stage</b> – Click to expand</summary>
+
+> In Domo, preparation is done using Dataflows and Workbench. In Microsoft Fabric, preparation is handled through Data Factory and Power Query.
+
+- **Benefits:** Fabric supports both low-code (Power Query) and pro-code (Data Factory) for data preparation.<br/>
+- **Differentiators:** Fabric enables scalable, reusable pipelines with support for parameterization, scheduling, and monitoring.<br/>
+- **Use Cases:** Data cleansing, transformation, ingestion from multiple sources, scheduled refreshes.<br/>
+- **Tools (Domo):** Dataflows, Workbench.<br/>
+- **Tools (Fabric):** Power Query, Data Factory, Dataflows.<br/>
+- **Definition:** Connect to data sources, clean and transform data for modeling and visualization.<br/>
+
+</details>
+
+<details>
+<summary><b>Visualize Stage</b> – Click to expand</summary>
+
+> Domo uses Cards and Stories for visualization. Fabric uses Power BI to build interactive reports and dashboards.
+
+- **Benefits:** Power BI supports advanced visuals, interactivity, and AI-driven insights.<br/>
+- **Differentiators:** Power BI allows drillthrough, bookmarks, custom visuals, and integration with Copilot for natural language insights.<br/>
+- **Use Cases:** KPI dashboards, operational reports, executive summaries, embedded analytics.<br/>
+- **Tools (Domo):** Cards, Stories.<br/>
+- **Tools (Fabric):** Power BI Desktop, Power BI Service.<br/>
+- **Definition:** Build visual representations of data to support decision-making and storytelling.<br/>
+
+</details>
+
+<details>
+<summary><b>Share Stage</b> – Click to expand</summary>
+
+> Domo shares content via Buzz, Publication Groups, and links. Fabric uses Workspaces, Apps, and Microsoft Teams for sharing and collaboration.
+
+- **Benefits:** Fabric integrates with Microsoft 365, enabling seamless sharing, collaboration, and governance.<br/>
+- **Differentiators:** Power BI Apps allow packaging and distributing content to different audiences with role-based access.<br/>
+- **Use Cases:** Cross-team collaboration, secure sharing, enterprise distribution, embedded reporting.<br/>
+- **Tools (Domo):** Buzz, Publication Groups.<br/>
+- **Tools (Fabric):** Workspaces, Apps, Teams, SharePoint.<br/>
+- **Definition:** Distribute reports and dashboards to stakeholders through secure, scalable channels.<br/>
+
+</details>
+
 | Stage                  | Prepare (Domo) | Prepare (Fabric) | Visualize (Domo) | Visualize (Fabric) | Share (Domo) | Share (Fabric) |
 |------------------------|----------------|------------------|------------------|--------------------|--------------|----------------|
 | **Tool**               | Dataflows, Workbench | Data Factory, Power Query | Cards, Stories | Power BI | Buzz, Publication Groups | Workspaces, Apps, Teams |
@@ -305,6 +347,90 @@ graph TD
 ## Data Ingestion
 
 ### Essentials for Developers
+
+<details>
+<summary><b>Dataflows</b> – Click to expand</summary>
+
+> Both Domo and Microsoft Fabric support Dataflows for reusable ETL logic and data transformation.
+
+- **Benefits:** Enables modular, reusable data preparation across multiple reports or datasets.<br/>
+- **Differentiators:** Fabric Dataflows integrate with Power BI, Excel, and OneLake, and support parameterization and incremental refresh.<br/>
+- **Use Cases:** Shared transformation logic, centralized data prep, multi-report consistency.<br/>
+- **Related Tools:** Power BI Dataflows, Power Query, OneLake.<br/>
+
+</details>
+
+<details>
+<summary><b>Custom Connectors</b> – Click to expand</summary>
+
+> Both platforms support building custom connectors to integrate with non-native or proprietary data sources.
+
+- **Benefits:** Extends platform capabilities to connect with any API or data service.<br/>
+- **Differentiators:** Fabric supports custom connectors via Power Query SDK and M language, with Git-based development workflows.<br/>
+- **Use Cases:** Connecting to internal APIs, legacy systems, or third-party services.<br/>
+- **Related Tools:** Power Query SDK, Visual Studio Code, GitHub.<br/>
+
+</details>
+
+<details>
+<summary><b>ETL/ELT</b> – Click to expand</summary>
+
+> Domo uses Magic ETL and SQL for data transformation. Fabric uses Data Factory and Power Query for ETL/ELT processes.
+
+- **Benefits:** Fabric supports both visual and code-based pipelines, with scheduling, monitoring, and parameterization.<br/>
+- **Differentiators:** Data Factory enables scalable, enterprise-grade ELT with integration across Azure services.<br/>
+- **Use Cases:** Batch processing, data lake ingestion, transformation pipelines.<br/>
+- **Related Tools:** Azure Data Factory, Power Query, Synapse Pipelines.<br/>
+
+</details>
+
+<details>
+<summary><b>Scripting</b> – Click to expand</summary>
+
+> Domo supports Python/R and Beast Modes. Fabric supports Python/R, DAX, and M for scripting and calculations.
+
+- **Benefits:** Fabric allows advanced analytics, custom calculations, and automation using multiple scripting languages.<br/>
+- **Differentiators:** DAX enables powerful, in-memory calculations; M is used for data transformation in Power Query.<br/>
+- **Use Cases:** Custom KPIs, statistical modeling, data transformation, automation.<br/>
+- **Related Tools:** Power BI Desktop, DAX Studio, Power Query Editor, Notebooks.<br/>
+
+</details>
+
+<details>
+<summary><b>Row-Level Security</b> – Click to expand</summary>
+
+> Domo uses PDP (Personalized Data Permissions). Fabric uses Row-Level Security (RLS) to restrict data access.
+
+- **Benefits:** Ensures users only see data relevant to their role or region.<br/>
+- **Differentiators:** Fabric RLS integrates with Azure AD and supports dynamic security rules using DAX.<br/>
+- **Use Cases:** Multi-tenant reporting, departmental dashboards, compliance-driven access control.<br/>
+- **Related Tools:** Power BI Desktop, RLS Roles, Azure AD Groups.<br/>
+
+</details>
+
+<details>
+<summary><b>Collaboration</b> – Click to expand</summary>
+
+> Domo uses Buzz and Groups for collaboration. Fabric uses Workspaces and Microsoft Teams for integrated collaboration.
+
+- **Benefits:** Fabric enables real-time collaboration, commenting, and sharing within Microsoft 365 tools.<br/>
+- **Differentiators:** Deep integration with Teams, SharePoint, and OneDrive for seamless collaboration.<br/>
+- **Use Cases:** Team-based report development, feedback loops, shared workspaces.<br/>
+- **Related Tools:** Power BI Workspaces, Microsoft Teams, SharePoint.<br/>
+
+</details>
+
+<details>
+<summary><b>AI/ML</b> – Click to expand</summary>
+
+> Domo offers Domo AI and Appstore ML tools. Fabric includes Copilot, AI Insights, and integration with Azure ML.
+
+- **Benefits:** Fabric enables natural language querying, automated insights, and integration with enterprise ML models.<br/>
+- **Differentiators:** Copilot in Power BI allows users to generate visuals and insights using natural language.<br/>
+- **Use Cases:** Predictive analytics, anomaly detection, AI-assisted reporting.<br/>
+- **Related Tools:** Power BI Copilot, Azure Machine Learning, AI Insights, Python/R Notebooks.<br/>
+
+</details>
 
 | Feature                     | Domo | Microsoft Fabric |
 |-----------------------------|------|-----------------|
