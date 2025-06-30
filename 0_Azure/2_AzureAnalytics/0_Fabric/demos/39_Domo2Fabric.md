@@ -64,6 +64,22 @@ graph TD
     C --> L[Role-based Experiences]
 ```
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/8fdb3198-8fda-4dd0-869e-b0dccb268a30" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
+
+From [Microsoft Documentation](https://learn.microsoft.com/pt-br/fabric/fundamentals/microsoft-fabric-overview)
+
+| Feature                | Domo                                                                 | Microsoft Fabric                                                                 |
+|------------------------|----------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| **Data Visualization** | Cards, dashboards, and stories                                       | Power BI for advanced, interactive visualizations                                |
+| **Dashboards**         | Drag-and-drop dashboard builder                                      | Unified reporting and dashboard experience                                       |
+| **Data Connectivity**  | 1000+ connectors, Domo Workbench                                    | Azure Data Factory, Synapse, Power Query, and more                              |
+| **Ease of Use**        | Intuitive UI, Appstore, Magic ETL                                   | SaaS model, low-code/no-code, Power Query                                       |
+| **Advanced Analytics** | Beast Modes, Data Science tools, AI/ML apps                         | Built-in AI, DAX, Python/R integration, Copilot                                 |
+| **Unified Platform**   | Focused on business intelligence and apps                           | End-to-end analytics: ingestion, transformation, modeling, visualization         |
+| **Role-Specific**      | Business users, analysts, IT, data scientists                       | Tailored experiences for engineers, scientists, business users                   |
+
 <details>
 <summary><b>Data Visualization</b> – Click to expand</summary>
 
@@ -99,6 +115,22 @@ graph TD
 - **Related Tools:** Azure Data Factory, Power Query, Synapse Pipelines, OneLake.<br/>
 
 </details>
+
+<details>
+<summary><b> Domo Workbench & Fabric (Pull/Push) </b> – Click to expand</summary>
+
+> In most modern data architectures, the `standard approach is to pull data from input sources into the analytics or ETL platform`.
+> Data is typically extracted from source systems using scheduled or event-driven pull methods, where the analytics or ETL platform manages and initiates the data ingestion process.
+
+- **Domo Workbench** operates differently, it’s a **push-based tool** that runs on-premise and sends data directly to Domo.
+- **Microsoft Fabric**, is primarily **pull-based**, but it can simulate push behavior. This flexibility allows Fabric to accommodate both traditional pull workflows and modern push-style integrations when needed.
+Through:
+    - **Uploading files** to OneLake using APIs, `azcopy`, or automation tools.
+    - **Eventstream** for real-time data ingestion.
+    - **Triggering pipelines** from external systems using REST APIs or Logic Apps.
+
+</details>
+
 
 <details>
 <summary><b>Ease of Use</b> – Click to expand</summary>
@@ -148,18 +180,20 @@ graph TD
 
 </details>
 
-| Feature                | Domo                                                                 | Microsoft Fabric                                                                 |
-|------------------------|----------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| **Data Visualization** | Cards, dashboards, and stories                                       | Power BI for advanced, interactive visualizations                                |
-| **Dashboards**         | Drag-and-drop dashboard builder                                      | Unified reporting and dashboard experience                                       |
-| **Data Connectivity**  | 1000+ connectors, Domo Workbench                                    | Azure Data Factory, Synapse, Power Query, and more                              |
-| **Ease of Use**        | Intuitive UI, Appstore, Magic ETL                                   | SaaS model, low-code/no-code, Power Query                                       |
-| **Advanced Analytics** | Beast Modes, Data Science tools, AI/ML apps                         | Built-in AI, DAX, Python/R integration, Copilot                                 |
-| **Unified Platform**   | Focused on business intelligence and apps                           | End-to-end analytics: ingestion, transformation, modeling, visualization         |
-| **Role-Specific**      | Business users, analysts, IT, data scientists                       | Tailored experiences for engineers, scientists, business users                   |
-
-
 ## Migration Considerations
+
+| Category               | Domo Approach | Microsoft Fabric Approach |
+|------------------------|---------------|--------------------------|
+| **Data Ingestion**     | Connectors, Workbench, Dataflows | Data Factory, Power Query, Dataflows, Direct Lake |
+| **Data Modelling**     | Dataflows, Joins, Beast Modes    | Dataflows, DAX, Star Schema, Relationships        |
+| **Visualizations**     | Cards, Stories, Appstore Visuals | Power BI visuals, custom visuals, themes          |
+| **Optimization**       | DataFusions, Magic ETL, DataSet Views | Query folding, aggregations, Performance Analyzer |
+| **Lifecycle**          | Import, transform, visualize, share | Connect, transform, model, visualize, share      |
+| **Sharing & Collaboration** | Groups, Buzz, Appstore, Publication Groups | Workspaces, Apps, Power BI Service, Teams        |
+| **Licensing**          | Per user, per instance, enterprise | Per user, Premium, Fabric Capacity               |
+| **Governance & Admin** | Admin Center, Data Governance Toolkit | Admin Portal, Sensitivity Labels, Compliance     |
+| **End Users**          | Domo University, Community, Support | Microsoft Learn, Community, Support              |
+| **Migration Approach** | Manual rebuild, Domo API, export options | Manual rebuild, migration guidance, best practices |
 
 <details>
 <summary><b>Data Ingestion</b> – Click to expand</summary>
@@ -281,20 +315,12 @@ graph TD
 
 </details>
 
-| Category               | Domo Approach | Microsoft Fabric Approach |
-|------------------------|---------------|--------------------------|
-| **Data Ingestion**     | Connectors, Workbench, Dataflows | Data Factory, Power Query, Dataflows, Direct Lake |
-| **Data Modelling**     | Dataflows, Joins, Beast Modes    | Dataflows, DAX, Star Schema, Relationships        |
-| **Visualizations**     | Cards, Stories, Appstore Visuals | Power BI visuals, custom visuals, themes          |
-| **Optimization**       | DataFusions, Magic ETL, DataSet Views | Query folding, aggregations, Performance Analyzer |
-| **Lifecycle**          | Import, transform, visualize, share | Connect, transform, model, visualize, share      |
-| **Sharing & Collaboration** | Groups, Buzz, Appstore, Publication Groups | Workspaces, Apps, Power BI Service, Teams        |
-| **Licensing**          | Per user, per instance, enterprise | Per user, Premium, Fabric Capacity               |
-| **Governance & Admin** | Admin Center, Data Governance Toolkit | Admin Portal, Sensitivity Labels, Compliance     |
-| **End Users**          | Domo University, Community, Support | Microsoft Learn, Community, Support              |
-| **Migration Approach** | Manual rebuild, Domo API, export options | Manual rebuild, migration guidance, best practices |
-
 ## Lifecycle Comparison
+
+| Stage                  | Prepare (Domo) | Prepare (Fabric) | Visualize (Domo) | Visualize (Fabric) | Share (Domo) | Share (Fabric) |
+|------------------------|----------------|------------------|------------------|--------------------|--------------|----------------|
+| **Tool**               | Dataflows, Workbench | Data Factory, Power Query | Cards, Stories | Power BI | Buzz, Publication Groups | Workspaces, Apps, Teams |
+| **Definition**         | Connect, clean, transform | Connect, clean, transform | Build cards, dashboards | Build reports, dashboards | Share via groups, links | Share via workspaces, apps |
 
 <details>
 <summary><b>Prepare Stage</b> – Click to expand</summary>
@@ -338,15 +364,19 @@ graph TD
 
 </details>
 
-| Stage                  | Prepare (Domo) | Prepare (Fabric) | Visualize (Domo) | Visualize (Fabric) | Share (Domo) | Share (Fabric) |
-|------------------------|----------------|------------------|------------------|--------------------|--------------|----------------|
-| **Tool**               | Dataflows, Workbench | Data Factory, Power Query | Cards, Stories | Power BI | Buzz, Publication Groups | Workspaces, Apps, Teams |
-| **Definition**         | Connect, clean, transform | Connect, clean, transform | Build cards, dashboards | Build reports, dashboards | Share via groups, links | Share via workspaces, apps |
-
-
 ## Data Ingestion
 
 ### Essentials for Developers
+
+| Feature                     | Domo | Microsoft Fabric |
+|-----------------------------|------|-----------------|
+| **Dataflows**               | Yes  | Yes             |
+| **Custom Connectors**       | Yes  | Yes             |
+| **ETL/ELT**                 | Magic ETL, SQL | Data Factory, Power Query |
+| **Scripting**               | Python/R, Beast Modes | Python/R, DAX, M        |
+| **Row-Level Security**      | PDP Policies | Row-Level Security (RLS)  |
+| **Collaboration**           | Buzz, Groups | Workspaces, Teams         |
+| **AI/ML**                   | Domo AI, Appstore | Copilot, AI Insights     |
 
 <details>
 <summary><b>Dataflows</b> – Click to expand</summary>
@@ -432,17 +462,14 @@ graph TD
 
 </details>
 
-| Feature                     | Domo | Microsoft Fabric |
-|-----------------------------|------|-----------------|
-| **Dataflows**               | Yes  | Yes             |
-| **Custom Connectors**       | Yes  | Yes             |
-| **ETL/ELT**                 | Magic ETL, SQL | Data Factory, Power Query |
-| **Scripting**               | Python/R, Beast Modes | Python/R, DAX, M        |
-| **Row-Level Security**      | PDP Policies | Row-Level Security (RLS)  |
-| **Collaboration**           | Buzz, Groups | Workspaces, Teams         |
-| **AI/ML**                   | Domo AI, Appstore | Copilot, AI Insights     |
-
 ### Data Connection Types
+
+| Feature         | Domo Import | Domo Federated | Fabric Import | Fabric Direct Lake/Query |
+|-----------------|-------------|---------------|---------------|-------------------------|
+| **Definition**  | Data imported into Domo | Live query to source | Data imported into Fabric/Power BI | Live query to source or Direct Lake |
+| **Performance** | Fast, cached | Depends on source | Fast, cached | Depends on source       |
+| **Security**    | PDP (Personalized Data Permissions), Domo security | Source security | RLS (Row-Level Security), Fabric security | Source security         |
+| **Offline**     | Yes         | No            | Yes           | No                      |
 
 <details>
 <summary><b>Domo Import</b> – Click to expand</summary>
@@ -496,12 +523,6 @@ graph TD
 
 </details>
 
-| Feature         | Domo Import | Domo Federated | Fabric Import | Fabric Direct Lake/Query |
-|-----------------|-------------|---------------|---------------|-------------------------|
-| **Definition**  | Data imported into Domo | Live query to source | Data imported into Fabric/Power BI | Live query to source or Direct Lake |
-| **Performance** | Fast, cached | Depends on source | Fast, cached | Depends on source       |
-| **Security**    | PDP (Personalized Data Permissions), Domo security | Source security | RLS (Row-Level Security), Fabric security | Source security         |
-| **Offline**     | Yes         | No            | Yes           | No                      |
 
 ## Data Transformation
 
@@ -515,6 +536,15 @@ graph TD
 | **Output**             | Datasets, Views| Data model, Excel, Lake    |
 
 ## Data Modelling
+
+| **Category**                         | **Comparison**                                                                                                                                      | **Learn More** |
+|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
+| **Dataflows**                        | `Domo Dataflows are similar to Microsoft Fabric Dataflows, enabling reusable ETL logic.`                                                            | [Fabric Dataflows](https://learn.microsoft.com/en-us/power-bi/transform-model/dataflows/dataflows-introduction-self-service) |
+| **Date Tables & Time Intelligence**  | `Domo supports date dimensions; Fabric/Power BI recommends dedicated date tables for time intelligence`                                             | [Time intelligence in DAX](https://learn.microsoft.com/en-us/dax/time-intelligence-functions-dax) |
+| **Calculations**                     | `Domo Beast Modes ≈ Power BI Calculated Columns/Measures (DAX)`                                                                                     | [DAX basics in Power BI](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculated-columns) |
+| **Measures**                         | `Domo Aggregations/Beast Modes ≈ Power BI Measures`                                                                                                 | [Create and use measures in Power BI](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-measures) |
+| **Conditionals**                     | `Domo CASE WHEN ≈ DAX IF/SWITCH.`                                                                                                                   | [DAX IF and SWITCH](https://learn.microsoft.com/en-us/dax/if-function-dax) |
+| **Star Schemas**                     | `Domo supports joins; Fabric/Power BI recommends star schema for performance.`                                                                      | [Star schema guidance](https://learn.microsoft.com/en-us/power-bi/guidance/star-schema) |
 
 <details>
 <summary><b>Dataflows</b> – Click to expand</summary>
@@ -593,18 +623,16 @@ graph TD
 
 </details>
 
-| **Category**                         | **Comparison**                                                                                                                                      | **Learn More** |
-|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
-| **Dataflows**                        | `Domo Dataflows are similar to Microsoft Fabric Dataflows, enabling reusable ETL logic.`                                                            | [Fabric Dataflows](https://learn.microsoft.com/en-us/power-bi/transform-model/dataflows/dataflows-introduction-self-service) |
-| **Date Tables & Time Intelligence**  | `Domo supports date dimensions; Fabric/Power BI recommends dedicated date tables for time intelligence`                                             | [Time intelligence in DAX](https://learn.microsoft.com/en-us/dax/time-intelligence-functions-dax) |
-| **Calculations**                     | `Domo Beast Modes ≈ Power BI Calculated Columns/Measures (DAX)`                                                                                     | [DAX basics in Power BI](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculated-columns) |
-| **Measures**                         | `Domo Aggregations/Beast Modes ≈ Power BI Measures`                                                                                                 | [Create and use measures in Power BI](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-measures) |
-| **Conditionals**                     | `Domo CASE WHEN ≈ DAX IF/SWITCH.`                                                                                                                   | [DAX IF and SWITCH](https://learn.microsoft.com/en-us/dax/if-function-dax) |
-| **Star Schemas**                     | `Domo supports joins; Fabric/Power BI recommends star schema for performance.`                                                                      | [Star schema guidance](https://learn.microsoft.com/en-us/power-bi/guidance/star-schema) |
-
 ## How to create visualizations
 
 ### Recreate Simple Visuals
+
+| Functionality | Domo | Power BI (Fabric) |
+|---------------|------|-------------------|
+| Card Builder  | Drag-and-drop | Drag-and-drop, Visualizations pane |
+| Appstore      | Custom visuals | Power BI Marketplace               |
+| Drill Path    | Drill Path     | Drillthrough, Hierarchies          |
+| Filters       | Page/Global    | Slicers, Filters                   |
 
 <details>
 <summary><b>Card Builder</b> – Click to expand</summary>
@@ -662,14 +690,6 @@ graph TD
 - **Developer Considerations:**  Use synced slicers for consistent filtering across pages. Leverage filter pane customization to guide user behavior and reduce clutter.
 
 </details>
-
-
-| Functionality | Domo | Power BI (Fabric) |
-|---------------|------|-------------------|
-| Card Builder  | Drag-and-drop | Drag-and-drop, Visualizations pane |
-| Appstore      | Custom visuals | Power BI Marketplace               |
-| Drill Path    | Drill Path     | Drillthrough, Hierarchies          |
-| Filters       | Page/Global    | Slicers, Filters                   |
 
 ### Custom Visuals
 
