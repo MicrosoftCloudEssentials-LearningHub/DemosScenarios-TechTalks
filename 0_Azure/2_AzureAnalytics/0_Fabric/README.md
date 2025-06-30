@@ -19,7 +19,7 @@ Microsoft Fabric is an end-to-end analytics and data platform designed for enter
 ## Wiki 
 
 <details>
-  <summary>Click here to display </summary>
+  <summary> List of References (Click here to display) </summary>
   <ul>
     <li><a href="https://learn.microsoft.com/en-us/fabric/get-started/microsoft-fabric-overview">What is Microsoft Fabric</a></li>
     <li><a href="https://www.microsoft.com/en-us/microsoft-fabric">Data Analytics</a></li>
