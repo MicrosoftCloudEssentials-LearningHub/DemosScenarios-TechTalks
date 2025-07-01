@@ -11,31 +11,36 @@ Last updated: 2024-11-19
 
 ----------
 
-<div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
-</div>
+<details>
+<summary><b>Table of Content </b> (Click to expand)</summary>
 
-## Table of Contents
+- [Power Platform](./3_PowerPlatform/) 
+    - [Power Apps](./3_PowerPlatform/0_PowerApps/) 
+    - [Power Bi](./3_PowerPlatform/1_PowerBI/) 
 
-- [Power Platform](./3_PowerPlatform/) <br/>
-    - [Power Apps](./3_PowerPlatform/0_PowerApps/) <br/>
-    - [Power Bi](./3_PowerPlatform/1_PowerBI/) <br/>
+</details>
 
-Microsoft Power Platform is a collection of **low-code development tools** that empower users to:
+> Microsoft Power Platform is a collection of **low-code development tools** that empower users to:
+
 - **Build custom business applications**
 - **Automate workflows**
 - **Analyze data**
 
-## Key Components:
+## Key Components
 
 1. **Power Apps**: Create custom apps with minimal coding. Intuitive and versatile for various use cases.
 2. **Power Automate**: Automate repetitive tasks and workflows across different apps and services.
 3. **Power BI**: Visualize and analyze data through interactive dashboards and reports.
 4. **Power Pages**: Design and publish web pages with ease.
 
-## Integration:
+## Integration
+
 - Seamlessly integrates with **GitHub**, **Microsoft Dynamics 365**, and **Microsoft Teams**.
 - Also supports third-party applications.
 
 Explore more on the [Microsoft Power Platform website](https://www.microsoft.com/en-us/power-platform/).
+
+<div align="center">
+  <h3 style="color: #4CAF50;">Total Visitors</h3>
+  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
