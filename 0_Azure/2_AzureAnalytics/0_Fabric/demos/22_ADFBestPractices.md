@@ -10,8 +10,6 @@ Last updated: 2024-12-24
 
 ----------
 
-## Wiki 
-
 <details>
 <summary><b>Table of Wiki </b> (Click to expand)</summary>
 
@@ -24,8 +22,6 @@ Last updated: 2024-12-24
 - [Use Azure Key Vault secrets in pipeline activities - ADF](https://learn.microsoft.com/en-us/azure/data-factory/how-to-use-azure-key-vault-secrets-pipeline-activities)
 
 </details>
-
-## Content
 
 <details>
 <summary><b>Table of Content </b> (Click to expand)</summary>
