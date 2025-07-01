@@ -11,7 +11,7 @@ Last updated: 2024-12-24
 ----------
 
 <details>
-<summary><b>Table of Wiki </b> (Click to expand)</summary>
+<summary><b>List of references </b> (Click to expand)</summary>
 
 - [Automated enterprise BI](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/data/enterprise-bi-adf)
 - [Data warehousing and analytics](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/data/data-warehouse)
