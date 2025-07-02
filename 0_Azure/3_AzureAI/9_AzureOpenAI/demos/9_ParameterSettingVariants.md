@@ -9,18 +9,13 @@ Last updated: 2024-11-19
 
 ------------------------------------------
 
-
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki Contents</b> (Click to expand)</summary>
+<summary><b>List of References</b> (Click to expand)</summary>
 
 - [Tune prompts using variants in Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/flow-tune-prompts-using-variants)
 - [Prompt tool for flows in Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/prompt-flow-tools/prompt-tool)
   
 </details>
-
-## Content 
 
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
