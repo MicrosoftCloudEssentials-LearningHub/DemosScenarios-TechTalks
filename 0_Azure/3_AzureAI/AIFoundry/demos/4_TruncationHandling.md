@@ -13,15 +13,20 @@ Last updated: 2025-03-03
 
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
-  
+
+- [Chunk large documents for vector search solutions in Azure AI Search](https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-chunk-documents)
+- [What is Azure OpenAI in Azure AI Foundry Models?](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/overview)
+- [Troubleshooting and best practices for Azure OpenAI On Your Data](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/on-your-data-best-practices)
  
 </details>
 
 
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
-  
- 
+
+- [Overview](#overview)
+- [How to resolve truncation issues](#how-to-resolve-truncation-issues)
+
 </details>
 
 
@@ -106,6 +111,90 @@ Last updated: 2025-03-03
 
 </details>
 
+## How to resolve truncation issues 
+
+| **Solution Area**         | **Action**                                                                 | **Why It Helps**                                                                 |
+|--------------------------|--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| Token Budgeting          | Use Azure Functions with `tiktoken` to pre-calculate token usage before inference          | Prevents exceeding token limits and enables chunk-aware document processing     |
+| Semantic Chunking        | Use Azure AI Search’s Document Layout or Text Split skillset for structure-aware chunking  | Preserves logical boundaries and improves embedding and retrieval quality       |
+| Temperature Control      | Configure temperature and `top_p` in Azure OpenAI deployment settings                      | Reduces verbosity and keeps completions within token budget                     |
+| Output Constraints       | Use `max_tokens`, `stop` sequences, and `top_p` in Azure OpenAI API calls                  | Ensures clean, bounded outputs and avoids mid-sentence truncation               |
+| Monitoring & Scaling     | Use Azure Monitor, Log Analytics, and PTUs for throughput and cost control                 | Enables observability and resilience at enterprise scale                        |
+
+<details>
+<summary><b> Token Budgeting in Azure </b> (Click to expand)</summary>
+
+> Azure OpenAI models like GPT-4-128k enforce strict token limits. Complex documents with nested logic or rare terms can tokenize inefficiently, leading to unexpected truncation. Use an `Azure Function or Logic App` with the `tiktoken` library to analyze and split documents into token-aware chunks before sending them to Azure OpenAI.
+
+**How to Apply in Azure:**
+
+- Deploy a lightweight Azure Function that:
+  - Accepts document input
+  - Uses `tiktoken` to count tokens
+  - Splits content into ≤3000-token chunks
+  - Returns chunks to Power Automate or Azure OpenAI for inference 
+
+**Monitoring:**
+- Use Azure Monitor and Log Analytics to track:
+  - `tokens_used`
+  - `flowRunId`
+  - `request_uri`
+- Visualize trends in Power BI to detect spikes or anomalies
+
+</details>
+
+<details>
+<summary><b> Semantic Chunking with Azure AI Search </b> (Click to expand)</summary>
+
+> Azure `AI Search` supports semantic chunking via built-in skills like `Document Layout and Text Split`. These tools preserve logical structure and improve retrieval quality for RAG pipelines. `Chunking is not just about staying under token limits—it also improves embedding quality and relevance scoring.` Click here to read more about [Chunk large documents for vector search solutions in Azure AI Search](https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-chunk-documents) 
+
+**How to Apply in Azure:**
+- Use the **Document Layout skill** to chunk by:
+  - Paragraphs
+  - Headings (e.g., Markdown or HTML)
+  - Tables or sections
+- Use the **Text Split skill** to:
+  - Split by sentence or character count
+  - Add 10–15% overlap between chunks
+
+**Example Configuration:**
+
+```json
+{
+  "skills": [
+    {
+      "@odata.type": "#Microsoft.Skills.Text.SplitSkill",
+      "textSplitMode": "pages",
+      "maximumPageLength": 800,
+      "overlappingLength": 100
+    }
+  ]
+}
+```
+
+</details>
+
+<details>
+<summary><b> Temperature & Output Control in Azure OpenAI </b> (Click to expand)</summary>
+
+> High temperature values (e.g., 0.8–1.0) increase creativity but also verbosity, which can lead to token overflow. Lower values (e.g., 0.2–0.4) yield more concise, deterministic outputs. Combine temperature control with `top_p`, `stop` sequences, and `max_tokens` in your Azure OpenAI deployment or API call. Click here to read more about [What is Azure OpenAI in Azure AI Foundry Models?](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/overview)
+
+**How to Apply in Azure:**
+- In Azure OpenAI Studio or API:
+  ```json
+  {
+    "temperature": 0.3,
+    "top_p": 0.9,
+    "max_tokens": 1500,
+    "stop": ["\n\n", "###", "END"]
+  }
+  ```
+
+- For stateless, high-throughput scenarios:
+  - Use Provisioned Throughput Units (PTUs) for predictable performance
+  - Monitor latency and token usage with Azure Monitor.
+
+</details>
 
 
 
