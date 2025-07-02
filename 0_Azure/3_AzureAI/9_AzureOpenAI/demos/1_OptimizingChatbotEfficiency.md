@@ -10,31 +10,28 @@ Last updated: 2024-11-19
 
 ----------
 
-## Content 
 
-<!-- TOC -->
+<details>
+<summary><b>Table of Contents</b> (Click to expand)</summary>
 
-- [Optimizing Chatbot Efficiency](#optimizing-chatbot-efficiency)
-    - [Content](#content)
-    - [General Overview](#general-overview)
-        - [Set Up Your Azure Environment](#set-up-your-azure-environment)
-        - [Set Up a Database for Context Storage](#set-up-a-database-for-context-storage)
-    - [Implement Contextual Memory in the Application](#implement-contextual-memory-in-the-application)
-        - [Example](#example)
-        - [Other considerations:](#other-considerations)
-    - [Wiki](#wiki)
+- [General Overview](#general-overview)
+- [Set Up Your Azure Environment](#set-up-your-azure-environment)
+- [Set Up a Database for Context Storage](#set-up-a-database-for-context-storage)
+- [Implement Contextual Memory in the Application](#implement-contextual-memory-in-the-application)
+- [Example](#example)
+- [Other considerations:](#other-considerations)
+- [Wiki](#wiki)
+ 
+</details>
+
       
-<!-- /TOC -->
-
-Find below strategies to enhance process efficiency:
+> Find below strategies to enhance process efficiency, these approaches can significantly reduce computational demands and enhance model efficiency in chatbot applications.
 
 - [Contextual Memory](#implement-contextual-memory-in-the-application): Implement a server-side system that retains conversation context. This allows for sending only new user requests to the model, with the server adding necessary context before the API call.
 - **Prompt Compression**: Apply techniques to shorten the prompt by removing non-essential words, simplifying sentences, and concentrating on key context and instructions.
 - **Batch Processing**: For multiple queries, group them into a single API call to decrease request numbers and boost efficiency.
 - **Parameterization**: Use a parameterized format for prompts to allow dynamic input substitution, reducing prompt size while keeping it flexible.
 - **Preprocessing**: Clean and preprocess input data to eliminate unnecessary whitespace, punctuation, and formatting issues, optimizing prompt processing efficiency.
-
-These approaches can significantly reduce computational demands and enhance model efficiency in chatbot applications.
 
 ## General Overview 
 ### Set Up Your Azure Environment
@@ -45,7 +42,9 @@ These approaches can significantly reduce computational demands and enhance mode
 | **Deploy a Model**          | 1. **Navigate to Azure OpenAI Studio**: <br> - Go to Azure OpenAI Studio. <br> - Sign in with your Azure credentials. <br> 2. **Create a Deployment**: <br> - Select your Azure OpenAI resource. <br> - Click on `Deployments` and then `Create new deployment`. <br> - Choose the model you want to deploy (e.g., GPT-4). <br> - Configure the deployment settings and click `Create`. |
 
 ### Set Up a Database for Context Storage
-Using Azure SQL Database: 
+
+> Using Azure SQL Database: 
+
 1. Create an Azure SQL Database:
     - In the Azure Portal, click on `Create a resource`.
     - Search for `SQL Database` and select it.
@@ -54,17 +53,17 @@ Using Azure SQL Database:
 2. Configure the Database:
     - Set up the firewall rules to allow your application to connect to the database.
     - Create a table to store conversation context.
-
-```sql 
-CREATE TABLE context (
-    user_id NVARCHAR(50) PRIMARY KEY,
-    conversation NVARCHAR(MAX)
-);
-```
+    
+    ```sql 
+    CREATE TABLE context (
+        user_id NVARCHAR(50) PRIMARY KEY,
+        conversation NVARCHAR(MAX)
+    );
+    ```
 
 ## Implement Contextual Memory in the Application
 
-To implement contextual memory, you'll need to store and manage the conversation context on the server. This way, you only have to send the user's most recent request with each request. Here's a step-by-step guide to getting started:
+> To implement contextual memory, you'll need to store and manage the conversation context on the server. This way, you only have to send the user's most recent request with each request. Here's a step-by-step guide to getting started:
 
 - Set Up a Server: To store the conversation context. This can be done using a web server with a database.
 - Store Conversation Context: When a user sends a message, store the conversation context in a database. This context can include the user’s previous messages, the bot’s responses, and any other relevant information.
@@ -73,7 +72,7 @@ To implement contextual memory, you'll need to store and manage the conversation
 
 ### Example
 
-Here’s a simplified example using Python and a database like Azure SQL. For more information on how to connect to the SQL database click [here](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-python-quickstart?view=azuresql&tabs=windows%2Csql-auth#add-code-to-connect-to-azure-sql-database). For more about Azure OpenAI On Your Data API click [here](https://learn.microsoft.com/en-us/azure/ai-services/openai/references/on-your-data?tabs=python)
+> Here’s a simplified example using Python and a database like Azure SQL. For more information on how to connect to the SQL database click [here](https://learn.microsoft.com/en-us/azure/azure-sql/database/azure-sql-python-quickstart?view=azuresql&tabs=windows%2Csql-auth#add-code-to-connect-to-azure-sql-database). For more about Azure OpenAI On Your Data API click [here](https://learn.microsoft.com/en-us/azure/ai-services/openai/references/on-your-data?tabs=python)
 
 ```python
 import pyodbc
@@ -142,9 +141,10 @@ def retrieve_context(user_id):
                 return result[0] if result else ""
 ```
 
-Integrating with Azure OpenAI:
+> Integrating with Azure OpenAI:
 
-Use the Azure OpenAI API to send the prompt and receive the response. Click [here](https://learn.microsoft.com/en-us/azure/ai-services/openai/quickstart?tabs=command-line%2Cpython-new&pivots=programming-language-python) if want to see more.
+> [!TIP]
+> Use the Azure OpenAI API to send the prompt and receive the response. Click [here](https://learn.microsoft.com/en-us/azure/ai-services/openai/quickstart?tabs=command-line%2Cpython-new&pivots=programming-language-python) if want to see more.
 
 ```python
 import os
@@ -187,6 +187,7 @@ store_context(user_id, new_context)
 ```
 
 ### Other considerations:
+
 - To enhance context management, consider truncating older parts of the conversation, summarizing previous discussions, and using tokens effectively to manage prompt size.
 - For security and privacy, ensure the stored context is secure and adheres to privacy laws by encrypting sensitive data, implementing access controls, and ensuring compliance with data protection regulations like GDPR and CCPA.
 
