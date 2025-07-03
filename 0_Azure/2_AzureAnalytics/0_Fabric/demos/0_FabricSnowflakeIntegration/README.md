@@ -10,10 +10,8 @@ Last updated: 2024-12-31
 
 ----------
 
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki </b> (Click to expand)</summary>
+<summary><b>Table of References </b> (Click to expand)</summary>
 
 - [Overview of healthcare data solutions in Microsoft Fabric](https://learn.microsoft.com/en-us/industry/healthcare/healthcare-data-solutions/overview)
 - [Introducing healthcare data solutions in Microsoft Fabric](https://www.microsoft.com/en-us/microsoft-fabric/blog/2024/03/11/introducing-healthcare-data-solutions-in-microsoft-fabric-a-game-changer-for-healthcare-data-analysis/)
@@ -21,13 +19,9 @@ Last updated: 2024-12-31
   
 </details>
 
-## Content
-
 <details>
 <summary><b>Table of Content </b> (Click to expand)</summary>
 
-- [Wiki](#wiki)
-- [Content](#content)
 - [Overview](#overview)
     - [Why Integrate?](#why-integrate)
 - [Microsoft Fabric Use Cases](#microsoft-fabric-use-cases)
