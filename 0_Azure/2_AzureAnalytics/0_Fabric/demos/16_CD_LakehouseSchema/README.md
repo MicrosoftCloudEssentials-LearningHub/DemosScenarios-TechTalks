@@ -9,10 +9,8 @@ Last updated: 2024-12-26
 
 ------------------------------------------
 
-## Wiki 
-
 <details>
-<summary><b> References </b> (Click to expand)</summary>
+<summary><b>List of References </b> (Click to expand)</summary>
 
 - [Table deletes, updates, and merges - DeltaTables](https://docs.delta.io/latest/delta-update.html#-merge-in-streaming)
 - [DeltaLake - DeltaTables Releases](https://github.com/delta-io/delta/releases)
@@ -28,13 +26,9 @@ Last updated: 2024-12-26
 </details>
 
 
-## Content 
-
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
 
-- [Wiki](#wiki)
-- [Content](#content)
 - [Deployment Pipelines](#deployment-pipelines)
     - [Demo](#demo)
     - [How to refresh the data](#how-to-refresh-the-data)
