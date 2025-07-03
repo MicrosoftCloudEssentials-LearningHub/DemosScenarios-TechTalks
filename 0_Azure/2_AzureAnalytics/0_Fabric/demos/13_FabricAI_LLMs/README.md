@@ -11,10 +11,8 @@ Last updated: 2024-11-19
 
 > Microsoft Fabric is a comprehensive data and analytics platform designed to unify various data operations and enhance AI capabilities. 
 
-## Wiki 
-
 <details>
-<summary><b>Table of Contents</b> (Click to expand)</summary>
+<summary><b>List of References</b> (Click to expand)</summary>
 
 - [Unleashing the Power of Microsoft Fabric and SynapseML](https://blog.fabric.microsoft.com/en-us/blog/unleashing-the-power-of-synapseml-and-microsoft-fabric-a-guide-to-qa-on-pdf-documents-2)
 - [Building a RAG application with Microsoft Fabric](https://techcommunity.microsoft.com/t5/startups-at-microsoft/building-high-scale-rag-applications-with-microsoft-fabric/ba-p/4217816)
