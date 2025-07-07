@@ -19,7 +19,4 @@ CALCULATE ( AVERAGE ( 'Table (2)'[Value] ), ALLEXCEPT ( Table (2), 'Table (2)'[C
 
 
 // References 
-// [1] https://www.enjoysharepoint.com/power-bi-measure-by-category/
-// [2] https://blog.enterprisedna.co/calculating-averages-per-day-month-or-year-within-power-bi/
-// [3] https://www.sqlbi.com/tv/average-averagea-averagex-dax-guide/
-// [4] https://docs.microsoft.com/en-us/power-bi/create-reports/service-aggregates
+// https://docs.microsoft.com/en-us/power-bi/create-reports/service-aggregates
