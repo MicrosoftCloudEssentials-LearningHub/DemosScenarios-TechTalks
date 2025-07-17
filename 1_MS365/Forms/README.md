@@ -27,7 +27,9 @@ Last updated: 2024-11-15
 | Learning Microsoft Forms | For beginners, there are many resources available online to learn Microsoft Forms. These resources introduce the most important features and functions needed when starting out with Microsoft Forms. |
 | Security | Due to a wave of phishing attacks utilizing Microsoft 365 in early 2021, Microsoft uses algorithms to automatically detect and block phishing attempts with Microsoft Forms. |
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-9-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-16</p>
 </div>
+<!-- END BADGE -->
