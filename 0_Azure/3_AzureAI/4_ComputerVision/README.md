@@ -76,7 +76,7 @@ Here are some of the key features of the Azure AI Vision service:
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-354-limegreen" alt="Total views">
+  <img src="https://img.shields.io/badge/Total%20views-366-limegreen" alt="Total views">
   <p>Refresh Date: 2025-07-17</p>
 </div>
 <!-- END BADGE -->
