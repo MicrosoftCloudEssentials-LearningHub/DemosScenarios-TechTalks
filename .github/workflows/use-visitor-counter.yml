@@ -57,28 +57,32 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      # Checkout to correct branch before commit
-      - name: Checkout to correct branch (PR or main)
-        run: |
-          BRANCH="${{ github.head_ref || github.ref_name }}"
-          git fetch origin
-          git checkout "$BRANCH" || git checkout -b "$BRANCH" "origin/$BRANCH"
-
-      - name: Pre-commit local changes
-        run: |
-          # Only add files that exist
-          [ -f metrics.json ] && git add metrics.json || true
-          git add "*.md" || true
-          git commit -m "Automated update of visitor count" || echo "No changes to commit"
-
-      - name: Pull (merge) and push changes
+      # Commit and push logic for PR events (merge, not rebase)
+      - name: Commit and push changes (PR)
+        if: github.event_name == 'pull_request'
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          BRANCH="${{ github.head_ref || github.ref_name }}"
-          git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
-          git pull origin "$BRANCH" || echo "No merge needed"
-          [ -f metrics.json ] && git add metrics.json || true
+          git fetch origin
+          git checkout ${{ github.head_ref }}
+          git pull origin ${{ github.head_ref }} || echo "No merge needed"
           git add "*.md" || true
+          [ -f metrics.json ] && git add metrics.json || true
           git commit -m "Update visitor count" || echo "No changes to commit"
-          git push origin HEAD:"$BRANCH"
+          git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
+          git push origin HEAD:${{ github.head_ref }}
+
+      # Commit and push logic for non-PR events (merge, not rebase)
+      - name: Commit and push changes (non-PR)
+        if: github.event_name != 'pull_request'
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git fetch origin
+          git checkout ${{ github.ref_name }} || git checkout -b ${{ github.ref_name }} origin/${{ github.ref_name }}
+          git pull origin ${{ github.ref_name }} || echo "No merge needed"
+          git add "*.md" || true
+          [ -f metrics.json ] && git add metrics.json || true
+          git commit -m "Update visitor count" || echo "No changes to commit"
+          git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
+          git push origin HEAD:${{ github.ref_name }}
