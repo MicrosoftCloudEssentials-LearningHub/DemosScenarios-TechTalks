@@ -57,6 +57,12 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
+      # Pre-commit all changes before any branch switching
+      - name: Pre-commit local changes
+        run: |
+          git add "*.md" metrics.json || true
+          git commit -m "Save local changes before branch switching" || echo "No changes to commit"
+
       # Commit and push logic for PR events
       - name: Commit and push changes (PR)
         if: github.event_name == 'pull_request'
@@ -65,10 +71,10 @@ jobs:
         run: |
           git fetch origin
           git checkout ${{ github.head_ref }}
+          git pull --rebase origin ${{ github.head_ref }} || echo "No rebase needed"
           git add "*.md" metrics.json
           git commit -m "Update visitor count" || echo "No changes to commit"
           git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
-          git pull --rebase origin ${{ github.head_ref }} || echo "No rebase needed"
           git push origin HEAD:${{ github.head_ref }}
 
       # Commit and push logic for non-PR events (schedule, workflow_dispatch)
@@ -79,10 +85,10 @@ jobs:
         run: |
           git fetch origin
           git checkout ${{ github.ref_name }} || git checkout -b ${{ github.ref_name }} origin/${{ github.ref_name }}
+          git pull --rebase origin ${{ github.ref_name }} || echo "No rebase needed"
           git add "*.md" metrics.json
           git commit -m "Update visitor count" || echo "No changes to commit"
           git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
-          git pull --rebase origin ${{ github.ref_name }} || echo "No rebase needed"
           git push origin HEAD:${{ github.ref_name }}
 
       - name: Create Pull Request (non-PR)
