@@ -47,7 +47,9 @@ Last updated: 2024-11-19
 
 > Power BI is used differently by different roles in a project or team. You may view reports and dashboards in the Power BI service. Others may create reports in Power BI Desktop and publish them to the service. Some may use the Power BI Mobile app to track sales data. Developers may use Power BI APIs to integrate data and visuals into their apps.
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-9-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-16</p>
 </div>
+<!-- END BADGE -->
