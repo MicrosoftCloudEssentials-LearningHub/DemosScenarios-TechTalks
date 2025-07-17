@@ -46,7 +46,9 @@ Last updated: 2024-11-19
 | Upgrade When Expired | Deployments set to this option automatically update when the current version is retired. |
 | No Auto Upgrade | Deployments set to this option stop working when the model is retired. |
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-354-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->

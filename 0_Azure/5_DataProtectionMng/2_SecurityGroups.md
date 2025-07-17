@@ -86,3 +86,10 @@ Last updated: 2024-11-26
 4. **Add Members**: Select the members you want to add to the group.
 5. **Create**: Click **Create** to finalize the group creation.
 
+<!-- START BADGE -->
+<div align="center">
+  <img src="https://img.shields.io/badge/Total%20views-354-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
+</div>
+<!-- END BADGE -->
+

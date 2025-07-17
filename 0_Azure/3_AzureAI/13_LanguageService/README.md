@@ -111,7 +111,9 @@ Last updated: 2024-11-19
 | `TextTranslation`                    | Translates text between languages, enabling multilingual communication and content localization. |
 | `WebLM`                              | Provides language models for web-based applications, enhancing natural language processing capabilities for web services. |
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-354-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->

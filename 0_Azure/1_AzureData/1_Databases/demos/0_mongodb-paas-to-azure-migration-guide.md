@@ -128,7 +128,9 @@ For a more streamlined process, consider using Azure Database Migration Service 
 - [Migrate to vCore-based Azure Cosmos DB for MongoDB](https://learn.microsoft.com/en-us/training/modules/migrate-vcore-based-azure-cosmos-db-mongodb/): This module helps you plan and assess the readiness of a migration from MongoDB to vCore-based Azure Cosmos DB for MongoDB, using tools like Azure Data Studio and Azure Database Migration Service.
 - [Tutorial: Migrate MongoDB online to Azure Cosmos DB using Azure Database Migration Service](https://learn.microsoft.com/en-us/azure/dms/tutorial-mongodb-cosmos-db-online): This tutorial demonstrates the steps to migrate MongoDB data to Azure Cosmos DB using Azure Database Migration Service.
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-354-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->

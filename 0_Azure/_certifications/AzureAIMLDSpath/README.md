@@ -1,10 +1,6 @@
 # Azure Machine Learning <br> Data Scientist path
 
-----------
-
 Costa Rica
-
-Belinda Brown, belindabrownr04@gmail.com
 
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
@@ -89,3 +85,10 @@ This folder contains all Microsoft badges and trophies earned during the learnin
 56. [Monitor data drift with Azure Machine Learning](https://github.com/brown9804/MSCloudEssentials_LPath/blob/main/0_Azure/_certifications/AzureAIMLDSpath/0_badges/56-Monitor%20data%20drift%20with%20Azure%20Machine%20Learning.pdf)
 57. [Explore security concepts in Azure Machine Learning](https://github.com/brown9804/MSCloudEssentials_LPath/blob/main/0_Azure/_certifications/AzureAIMLDSpath/0_badges/57-Explore%20security%20concepts%20in%20Azure%20Machine%20Learning.pdf)
 58. [Introduction to Azure Database for PostgreSQL](https://github.com/brown9804/MSCloudEssentials_LPath/blob/main/0_Azure/_certifications/AzureAIMLDSpath/0_badges/58-Introduction%20to%20Azure%20Database%20for%20PostgreSQL.pdf)
+
+<!-- START BADGE -->
+<div align="center">
+  <img src="https://img.shields.io/badge/Total%20views-354-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
+</div>
+<!-- END BADGE -->

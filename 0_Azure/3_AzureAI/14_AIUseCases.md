@@ -17,7 +17,9 @@ Last updated: 2024-11-26
 - [Automated PDF Invoice Processing using Function App + OpenFramework](https://github.com/MicrosoftCloudEssentials-LearningHub/PDF-Processing-Fapp-OpenFramework/): Using Azure Functions, Blob Storage, and Cosmos DB
 - [Automated PDF Invoice Processing using Azure Storage + Document Intelligence + Cosmos DB](https://github.com/MicrosoftCloudEssentials-LearningHub/PDF-Processing-Fapp-DocIntelligence/tree/main): How to parse PDFs from an Azure Storage Account, process them using Azure Document Intelligence, and store the results in Cosmos DB.
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-354-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->
