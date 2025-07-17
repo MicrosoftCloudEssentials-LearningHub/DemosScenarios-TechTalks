@@ -29,7 +29,9 @@ Last updated: 2024-11-19
 - **Efficiency**: With the Dynamics 365 ecosystem, you spend less time switching between applications and searching for information.
 - **Cost-effective**: Dynamics 365 makes large-scale, costly and lengthy ERP and CRM projects a thing of the past. You can start small, achieve results fast, and pay only for the applications that you actually need.
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-9-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-16</p>
 </div>
+<!-- END BADGE -->
