@@ -57,13 +57,13 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      # Pre-commit all changes before any branch switching
+      # Pre-commit changes before any branch switching to avoid overwriting local changes
       - name: Pre-commit local changes
         run: |
           git add "*.md" metrics.json || true
-          git commit -m "Save local changes before branch switching" || echo "No changes to commit"
+          git commit -m "Auto-commit local changes before branch switch" || echo "No changes to commit"
 
-      # Commit and push logic for PR events
+      # Commit and push logic for PR events (merge, not rebase)
       - name: Commit and push changes (PR)
         if: github.event_name == 'pull_request'
         env:
@@ -71,13 +71,13 @@ jobs:
         run: |
           git fetch origin
           git checkout ${{ github.head_ref }}
-          git pull --rebase origin ${{ github.head_ref }} || echo "No rebase needed"
+          git pull origin ${{ github.head_ref }} || echo "No merge needed"
           git add "*.md" metrics.json
           git commit -m "Update visitor count" || echo "No changes to commit"
           git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
           git push origin HEAD:${{ github.head_ref }}
 
-      # Commit and push logic for non-PR events (schedule, workflow_dispatch)
+      # Commit and push logic for non-PR events (merge, not rebase)
       - name: Commit and push changes (non-PR)
         if: github.event_name != 'pull_request'
         env:
@@ -85,18 +85,8 @@ jobs:
         run: |
           git fetch origin
           git checkout ${{ github.ref_name }} || git checkout -b ${{ github.ref_name }} origin/${{ github.ref_name }}
-          git pull --rebase origin ${{ github.ref_name }} || echo "No rebase needed"
+          git pull origin ${{ github.ref_name }} || echo "No merge needed"
           git add "*.md" metrics.json
           git commit -m "Update visitor count" || echo "No changes to commit"
           git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
           git push origin HEAD:${{ github.ref_name }}
-
-      - name: Create Pull Request (non-PR)
-        if: github.event_name != 'pull_request'
-        uses: peter-evans/create-pull-request@v6
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: update-visitor-count
-          title: "Update visitor count"
-          body: "Automated update of visitor count"
-          base: main
