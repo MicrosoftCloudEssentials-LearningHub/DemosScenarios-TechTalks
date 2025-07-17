@@ -69,7 +69,7 @@ jobs:
           # Only add files that exist
           [ -f metrics.json ] && git add metrics.json || true
           git add "*.md" || true
-          git commit -m "Auto-commit local changes before pull/merge" || echo "No changes to commit"
+          git commit -m "Automated update of visitor count" || echo "No changes to commit"
 
       - name: Pull (merge) and push changes
         env:
