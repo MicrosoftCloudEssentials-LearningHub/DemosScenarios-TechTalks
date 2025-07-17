@@ -6,7 +6,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-03-24
+Last updated: 2025-07-17
 
 ----------
 
@@ -93,7 +93,9 @@ https://github.com/user-attachments/assets/eb3d57d3-5bef-43f2-b069-1d25c3ef047b
 - **Endpoint DLP**: Configure settings for endpoint devices to restrict actions like copying, printing, or transferring sensitive data
 - **Integration with Microsoft Defender**: Extend DLP alerts to Microsoft Defender XDR and Microsoft Sentinel for advanced threat detection and response
      
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-366-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->

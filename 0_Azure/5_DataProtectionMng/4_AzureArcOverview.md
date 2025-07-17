@@ -6,7 +6,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2024-12-24
+Last updated: 2025-07-17
 
 ----------
 
@@ -69,3 +69,10 @@ The table below provides a comparison of the two agents, highlighting their spec
 Find below some general guides around:
 - [How Arc works for SQL Server](https://github.com/brown9804/MicrosoftCloudEssentialsHub/blob/main/0_Azure/1_AzureData/1_Databases/demos/3_ArcSQLServerOverview.md)
 - [How to set up Arc for different SQL environments](https://github.com/brown9804/MicrosoftCloudEssentialsHub/blob/main/0_Azure/1_AzureData/1_Databases/demos/5_ArcSQLHowtoSetup.md)
+
+<!-- START BADGE -->
+<div align="center">
+  <img src="https://img.shields.io/badge/Total%20views-366-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
+</div>
+<!-- END BADGE -->

@@ -6,7 +6,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2024-11-26
+Last updated: 2025-07-17
 
 ----------
 
@@ -85,4 +85,11 @@ Last updated: 2024-11-26
    - **Membership Type**: Choose the membership type (e.g., Assigned, Dynamic User, Dynamic Device).
 4. **Add Members**: Select the members you want to add to the group.
 5. **Create**: Click **Create** to finalize the group creation.
+
+<!-- START BADGE -->
+<div align="center">
+  <img src="https://img.shields.io/badge/Total%20views-366-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
+</div>
+<!-- END BADGE -->
 

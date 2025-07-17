@@ -5,7 +5,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-01-13
+Last updated: 2025-07-17
 
 ------------------------------------------
 
@@ -404,7 +404,9 @@ These workflows typically consist of three main components:
 | **Chat Flow**      | Conversational applications                                                 | - Enhanced support for chat functionalities<br>- Natural language understanding<br>- Dialogue management<br>- Response generation<br>- Advanced NLP capabilities<br>- Manages conversation flow<br>- Generates context-aware responses | - Creating chatbots and virtual assistants<br>- Interactive conversational agents|
 | **Evaluation Flow**| Performance evaluation                                                      | - Tools for measuring performance metrics<br>- Comparing results<br>- Identifying areas for improvement<br>- Measures accuracy, precision, recall, and F1 score<br>- Compares results from different runs<br>- Pinpoints areas for enhancement | - Iterative development and optimization<br>- Ensuring applications meet performance standards|
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-366-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->

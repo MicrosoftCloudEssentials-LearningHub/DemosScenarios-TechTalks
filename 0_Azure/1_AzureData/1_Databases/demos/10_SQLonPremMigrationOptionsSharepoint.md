@@ -5,7 +5,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-04-23
+Last updated: 2025-07-17
 
 ----------
 
@@ -255,7 +255,9 @@ Last updated: 2025-04-23
 | **SQL Server on Azure Virtual Machines (IaaS)** | Provides full control over the SQL Server instance. | - Supports linked servers and all SQL Server features.<br/>- Suitable for applications requiring OS-level access.<br/>- Full control over the database and OS. | Use custom APIs or Azure Logic Apps for integration with SharePoint Online. |
 
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-366-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->

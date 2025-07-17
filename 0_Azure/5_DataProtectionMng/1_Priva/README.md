@@ -5,7 +5,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2024-11-19
+Last updated: 2025-07-17
 
 ----------
 
@@ -33,7 +33,9 @@ Last updated: 2024-11-19
 | Data Discovery and Analytics    | Showcase data discovery and analytics capabilities| Enable Data Discovery and Analytics features   | 1. Access the Data Discovery section.<br>2. Discover personal data across environments.<br>3. Analyze privacy issues and risks.<br>4. Generate reports and dashboards.                                                              | Highlight how Priva provides insights into privacy issues and helps in risk management.           |
 | Integration with Microsoft Purview | Demonstrate integration with Microsoft Purview | Configure integration settings                 | 1. Access the integration settings.<br>2. Link Priva with Microsoft Purview.<br>3. Show enhanced data governance and compliance capabilities.<br>4. Demonstrate unified reporting and management of data privacy.                   | Illustrate the benefits of integrating Priva with Purview for comprehensive data governance.      |
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-366-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->

@@ -6,7 +6,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-02-21
+Last updated: 2025-07-17
 
 ----------
 
@@ -199,3 +199,10 @@ Custom roles can be created using various methods:
 | <img width="550" alt="image" src="https://github.com/user-attachments/assets/a8aed7bc-7f7a-43b0-8eee-789ed6397f31"> | <img width="650" alt="image" src="https://github.com/user-attachments/assets/cf6af4cf-8479-499b-b002-1a1c783c5b59" /> | 
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/813f1137-c16e-464d-b8bf-41761578ba9a" />
+
+<!-- START BADGE -->
+<div align="center">
+  <img src="https://img.shields.io/badge/Total%20views-366-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
+</div>
+<!-- END BADGE -->
