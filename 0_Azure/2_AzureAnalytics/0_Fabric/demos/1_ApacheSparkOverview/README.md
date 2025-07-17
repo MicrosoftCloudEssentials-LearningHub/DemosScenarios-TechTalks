@@ -24,7 +24,9 @@ This collection of demos showcasing the powerful capabilities of Apache Spark wi
 - [Use Apache Spark in Microsoft Fabric](https://learn.microsoft.com/en-us/training/modules/use-apache-spark-work-files-lakehouse/)
 - [Hands-on Lab video on MS Fabric and how to use Apache Spark for data](https://techcommunity.microsoft.com/t5/it-resources-training/hands-on-lab-video-on-ms-fabric-and-how-to-use-apache-spark-for/td-p/3912488)
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-9-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->

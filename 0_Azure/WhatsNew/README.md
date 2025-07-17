@@ -17,7 +17,9 @@ Last updated: 2025-04-08
 - [​What's new in Azure AI Vision?​ - March 2025 Overview](./1_AIvisionMarch2025.md)
 - [Microsoft Fabric Community Conference (Las Vegas 2025) - Overview](./2_FabricConfVegas2025.md)
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-9-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->

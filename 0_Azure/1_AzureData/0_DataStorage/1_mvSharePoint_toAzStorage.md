@@ -118,7 +118,9 @@ Testing and Automation:
 4. **Map the Data**: Map the file data from SharePoint to the corresponding fields in Azure Blob Storage.
 5. **Save and Test**: Save the Logic App and test it by creating a file in the SharePoint folder to ensure it gets copied to Azure Storage.
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-9-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->

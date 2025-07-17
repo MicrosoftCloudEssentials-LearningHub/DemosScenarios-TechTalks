@@ -209,7 +209,9 @@ From [official documentation](https://learn.microsoft.com/en-us/azure/ai-service
 | **Face Liveness Client-Side SDK 1.1.0 Release** | Release of the new version of the Face Liveness Client-Side SDK.                | - **Release Date**: February 2025 <br> - **Improvements**: <ul><li>Increased timeout for the head-turn scenario to provide end-users more time to complete the flow.</li><li>Fixes to iOS and Android SDKs to resolve compatibility issues with Microsoft Intune Mobile Application Management SDKs.</li><li>Security related fixes/improvements.</li></ul> <br> - **More Information**: [See the SDK release notes](https://github.com/Azure-Samples/azure-ai-vision-sdk/releases/tag/1.0.0). |
 | **Image Analysis 4.0 Preview API Deprecation**  | Deprecation of the Image Analysis 4.0 Preview API.                              | - **Deprecation Date**: March 31, 2025 <br> - **Migration**: Users need to migrate their Azure Image Analysis workloads to the Image Analysis 4.0 GA API before the deprecation date. <br> - **Improvements**: Access to features such as multimodal embedding, synchronous OCR, people detection, image tagging, smart cropping, caption, dense caption, and image object detection. <br> - **Retired Preview APIs**: <ul><li>2022-07-31-preview</li><li>2022-10-12-preview</li><li>2023-02-01-preview</li><li>2023-04-01-preview</li><li>2023-07-01-preview</li><li>v4.0-preview.1</li></ul> <br> - **Removed Features**: Model customization, background removal, product recognition (removed from Studio experience as of January 10, 2025). <br> - **Alternative**: Transition to [Azure AI Custom Vision](https://learn.microsoft.com/en-us/azure/ai-services/Custom-Vision-Service/overview) for similar functionality. |
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-9-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-16</p>
 </div>
+<!-- END BADGE -->

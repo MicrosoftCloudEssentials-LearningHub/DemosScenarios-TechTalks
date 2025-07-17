@@ -137,7 +137,9 @@ The hybrid approach involves a phased migration plan that combines elements of c
 | --- | --- |
 | - **Improved Performance**: Reduces latency and improves data transfer speeds.<br/>- **Cost Savings**: Reduces egress charges by using a private connection. | - **Setup Complexity**: Requires setup and configuration of ExpressRoute.<br/>- **Cost**: There are costs associated with setting up and maintaining ExpressRoute. |
 
- <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+<!-- START BADGE -->
+<div align="center">
+  <img src="https://img.shields.io/badge/Total%20views-9-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->

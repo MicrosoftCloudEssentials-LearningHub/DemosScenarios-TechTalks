@@ -734,7 +734,9 @@ For more information, please refer to the general guidance provided below:
     - **Gain early buy-ins**: By focusing on crucial reports first, you can demonstrate the value of Power BI early in the migration process. This helps in gaining buy-in from stakeholders and building momentum for the migration.
     - **Ensure data accuracy and consistency**: During the migration of critical reports, pay close attention to data accuracy and consistency. Validate the migrated reports thoroughly to ensure they match the original Tableau reports.
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-9-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->

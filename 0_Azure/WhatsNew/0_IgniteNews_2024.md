@@ -187,7 +187,9 @@ graph TD
 | **Governance, Risk, and Compliance** | Assist in governance, risk, and compliance workflows | - `AI Reports`: Create impact assessments and AI reports for governance<br/>- `Risk Evaluations`: Perform risk and safety evaluations for AI-generated content | 1. `Create AI Reports`: Use the Azure AI Foundry portal to assemble key project details into AI reports<br/>2. `Perform Evaluations`: Use the risk and safety evaluation tools to assess AI-generated content |
 | **Azure Essentials** | Resources to help customers adopt AI at scale | - `Comprehensive Guidance`: Detailed guidance for AI adoption and architectural design<br/>- `Resource Kit`: Includes tools, skilling, and reference architectures | 1. `Access Azure Essentials`: Navigate to Azure Essentials in the Azure portal<br/>2. `Utilize Resources`: Use the provided tools and guidance to adopt AI at scale<br/>3. `Implement Best Practices`: Follow the best practices and reference architectures for AI workloads |
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-9-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-16</p>
 </div>
+<!-- END BADGE -->

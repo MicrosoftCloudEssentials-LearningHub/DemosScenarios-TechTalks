@@ -18,7 +18,9 @@ Last updated: 2024-11-19
 | **Data Management**| Encompasses the entire lifecycle of data, from creation to disposal.           | Implements policies and procedures for data.   | Data preparation, data pipelines, ETL processes, data cataloging, data warehousing.  | Azure Data Factory, Azure Synapse Analytics    | Building data pipelines for ETL, managing a data warehouse for business analytics.  |
 | **Data Security**  | Protects data from unauthorized access, breaches, and other threats.           | Ensures confidentiality, integrity, availability of data. | Implementing encryption, access controls, monitoring for threats.                   | Azure Security Center, Azure Sentinel          | Encrypting sensitive data, monitoring for security breaches, setting access controls.|
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-9-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->

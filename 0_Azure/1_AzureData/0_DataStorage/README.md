@@ -48,7 +48,9 @@ graph TB
 | **Azure Stack Edge** | Cloud storage gateway to transfer data efficiently and easily between the cloud and the edge [11](https://azure.microsoft.com/en-us/products/azure-stack/edge/). | Used for machine learning at the edge, edge and IoT solutions, network data transfer from edge to cloud [12](https://learn.microsoft.com/en-us/azure/databox-online/azure-stack-edge-deploy-aks-on-azure-stack-edge). | Works with Azure Kubernetes Service, Azure Batch, and Azure Machine Learning [11](https://azure.microsoft.com/en-us/products/azure-stack/edge/). |
 | **Azure Data Box** | Appliances and solutions for transferring data into and out of Azure quickly and cost-effectively [13](https://azure.microsoft.com/en-us/products/databox/). | Used for onetime migration, initial bulk transfer, periodic uploads [14](https://learn.microsoft.com/en-us/azure/databox/data-box-overview). | Works with Azure Storage [13](https://azure.microsoft.com/en-us/products/databox/). |
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-9-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->

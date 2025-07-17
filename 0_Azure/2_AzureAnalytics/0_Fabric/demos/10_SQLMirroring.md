@@ -44,7 +44,9 @@ If you need near real-time data from SQLDB and your SQL Server is in a private n
 2. [Mirroring Azure SQL Database in Microsoft Fabric](https://www.mssqltips.com/sqlservertip/8001/microsoft-fabric-mirroring-for-data-replication/): Mirroring in Microsoft Fabric allows for near real-time replication of Azure SQL Database into Fabric's OneLake. This feature leverages SQL's CDC stack to keep data in sync without complex ETL processes. For more [click here](https://techcommunity.microsoft.com/t5/azure-sql-blog/announcing-mirroring-azure-sql-database-in-fabric-for-public/ba-p/4085988).
 3. [Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-sql-database-well-architected-framework): This framework provides best practices for designing and operating reliable, secure, efficient, and cost-effective systems in the cloud. It includes guidance on using Active Geo-Replication and Auto Failover Groups for high availability and disaster recovery.
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-9-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->
