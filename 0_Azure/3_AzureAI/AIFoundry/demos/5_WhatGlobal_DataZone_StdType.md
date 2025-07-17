@@ -14,6 +14,9 @@ Last updated: 2025-07-17
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
+- [Model summary table and region availability](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models?tabs=global-ptum%2Cstandard-chat-completions#model-summary-table-and-region-availability)
+- [Deployment types for Azure AI Foundry Models](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/deployment-types)
+
 </details>
 
 <details>
