@@ -5,7 +5,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-01-16
+Last updated: 2025-07-17
 
 ----------
 
@@ -47,7 +47,9 @@ Last updated: 2025-01-16
 | **Microsoft Security**: A comprehensive set of security solutions integrated across the Microsoft Cloud to protect data, devices, identities, and applications. | - Microsoft Defender: Advanced threat protection <br/> - Azure Security Center: Unified security management system <br/> - Azure Information Protection: Cloud-based solution that helps protect documents and emails <br/> - Microsoft Cloud App Security: Multimode Cloud Access Security Broker (CASB). |
 | **Industry Solutions**: Tailored cloud services designed to meet the specific needs of various industries. | - Microsoft Cloud for Healthcare: Enhances patient engagement, empowers health team collaboration, and improves clinical and operational insights <br/> - Microsoft Cloud for Retail: Delivers a personalized, seamless, and differentiated customer experience <br/> - Microsoft Cloud for Financial Services: Accelerates innovation in banking, capital markets, and insurance <br/> - Microsoft Cloud for Manufacturing: Delivers capabilities that support the core processes and requirements of the industry. |
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-9-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-16</p>
 </div>
+<!-- END BADGE -->
