@@ -6,7 +6,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-02-13
+Last updated: 2025-07-17
 
 ----------
 
@@ -28,7 +28,9 @@ Last updated: 2025-02-13
 | Big Data Analytics | Service | [Azure Databricks](https://azure.microsoft.com/en-us/products/databricks/) | Azure Databricks is a fast, easy, and collaborative Apache Spark-based analytics platform optimized for Azure. It provides an interactive workspace for data engineers, data scientists, and business analysts. <br/> <br/> For more information: <br/> [Azure Databricks Overview](https://azure.microsoft.com/en-us/products/databricks/) <br/> [What is Azure Databricks?](https://learn.microsoft.com/en-us/azure/databricks/scenarios/what-is-azure-databricks) <br/> [Azure Databricks Learning documents](https://learn.microsoft.com/en-us/azure/databricks/). |
 | Data Integration | Service | [Azure Data Factory](https://azure.microsoft.com/en-us/products/data-factory/) | Azure Data Factory is a cloud-based data integration service that allows you to create data-driven workflows for orchestrating data movement and transforming data at scale. <br/> <br/> For more information: <br/> [Azure Data Factory Overview](https://azure.microsoft.com/en-us/products/data-factory/) <br/> [What is Azure Data Factory?](https://learn.microsoft.com/en-us/azure/data-factory/introduction) <br/> [Azure Data Factory Learning documents](https://learn.microsoft.com/en-us/azure/data-factory/). |
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-354-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->

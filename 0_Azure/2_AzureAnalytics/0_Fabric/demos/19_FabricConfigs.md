@@ -6,7 +6,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2024-11-26
+Last updated: 2025-07-17
 
 ----------
 
@@ -118,3 +118,10 @@ This section allows administrators to view embed codes that have been created by
 | **Logo** | Administrators can upload a logo with a recommended size of 190 x 30 pixels. <br/> **Technical Context**: Uploading a custom logo helps organizations maintain brand consistency across their Power BI environment. The logo appears in the Power BI service, providing a branded experience for users. Ensuring the logo meets the recommended size ensures it displays correctly without distortion. Custom branding features like logos help organizations create a consistent brand experience across all their tools and platforms, enhancing user recognition and trust. |
 | **Cover Image** | Administrators can upload a cover image that is at least 1920 x 160 pixels and less than 1 MB in size. <br/> **Technical Context**: The cover image is displayed on the Power BI home page, enhancing the visual appeal and reinforcing the organization's brand identity. Ensuring the image meets the size and file requirements is important for optimal display quality. A high-resolution image that fits within the specified dimensions ensures a professional and polished appearance. Customizing the visual elements of Power BI can improve the user experience by making the interface more engaging and aligned with the organization's identity. |
 | **Theme Color** | There is an option to set a theme color using a color picker or by entering a hex code. <br/> **Technical Context**: Setting a theme color allows organizations to align the Power BI interface with their corporate color scheme. This customization helps create a cohesive look and feel, making the Power BI environment more familiar and visually appealing to users. Using the correct hex code ensures that the chosen color is accurately represented in the interface, maintaining visual consistency. Adhering to the recommended sizes and file formats for logos and cover images ensures that these elements are displayed correctly and look professional. |
+
+<!-- START BADGE -->
+<div align="center">
+  <img src="https://img.shields.io/badge/Total%20views-354-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
+</div>
+<!-- END BADGE -->

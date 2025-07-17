@@ -6,7 +6,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2024-12-31
+Last updated: 2025-07-17
 
 ----------
 
@@ -178,7 +178,9 @@ Here are some key features:
 |----------|---------|
 | If your organization needs advanced analytics capabilities, such as geospatial analysis or machine learning model deployment, Snowflake's support for AI/ML and advanced analytics can complement Microsoft Fabric's capabilities. | A retail company using Snowflake's AI/ML functions to analyze customer sentiment and predict purchasing behavior, while using Microsoft Fabric for real-time sales data integration. |
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-354-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->

@@ -5,7 +5,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2024-11-19
+Last updated: 2025-07-17
 
 ------------------------------------------
 
@@ -45,7 +45,9 @@ Last updated: 2024-11-19
 - [Embed Power BI Analytics](https://learn.microsoft.com/en-us/training/paths/power-bi-embedded/): This learning path teaches you how to embed Power BI content in apps, develop programmatic solutions using the Power BI REST API and the Power BI Client APIs, enforce row-level security (RLS) for embedded content, automate common Power BI setup tasks, configure a development environment, and determine appropriate licensing.
 - [Introduction to Power BI Embedded Analytics](https://learn.microsoft.com/en-us/training/modules/power-bi-embedded-intro/): This module covers planning for Power BI embedded analytics, determining the Power BI content types that you can embed, adopting a development methodology to embed Power BI content, preparing Power BI content for embedding, and using no-code embedding techniques.
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-354-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->

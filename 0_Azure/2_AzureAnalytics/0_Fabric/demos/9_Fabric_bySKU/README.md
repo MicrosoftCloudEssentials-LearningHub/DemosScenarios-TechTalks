@@ -5,7 +5,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-01-20
+Last updated: 2025-07-17
 
 ------------------------------------------
 
@@ -80,7 +80,9 @@ This flexibility allows you to optimize your Microsoft Fabric costs based on you
 | **F1024**     | 1024                    | P5/A8            | 128                  | 1024 TB              | 10000                    | Maximum computational power, Data Factory, comprehensive AI capabilities, including advanced analytics and big data processing. Ideal for large-scale enterprise applications. **Copilot:** Yes **AI Skills:** Yes |
 | **F2048**     | 2048                    | Not applicable   | 256                  | 2048 TB              | 20000                    | Ultimate performance, Data Factory, full suite of AI and ML capabilities, including large-scale data processing and analytics. Suitable for the largest and most complex data environments. **Copilot:** Yes **AI Skills:** Yes |
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-354-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-17</p>
 </div>
+<!-- END BADGE -->
