@@ -14,10 +14,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout PR branch
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.ref }}
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -35,13 +36,13 @@ jobs:
       - name: Update last modified date in Markdown files
         run: python .github/workflows/update_date.py
 
-      - name: Commit changes
+      - name: Pull (merge) remote changes, commit, and push if needed
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git fetch origin ${{ github.event.pull_request.head.ref }}
-          git pull --rebase origin ${{ github.event.pull_request.head.ref }} || echo "No rebase needed"
+          BRANCH="${{ github.event.pull_request.head.ref }}"
+          git pull origin "$BRANCH" || echo "No merge needed"
           git add -A
           git commit -m "Update last modified date in Markdown files" || echo "No changes to commit"
           git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
-          git push origin HEAD:${{ github.event.pull_request.head.ref }}
+          git push origin HEAD:"$BRANCH"
