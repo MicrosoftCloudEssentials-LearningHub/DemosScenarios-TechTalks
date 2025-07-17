@@ -9,10 +9,8 @@ Last updated: 2025-01-02
 
 ----------
 
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki </b> (Click to expand)</summary>
+<summary><b>List of References </b> (Click to expand)</summary>
 
 - [Azure OpenAI Service models available + preview)](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models)
 - [Create and manage prompt flow compute sessions in Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/create-manage-compute-session)
@@ -25,25 +23,19 @@ Last updated: 2025-01-02
 
 </details>
 
-
-## Content 
-
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
 
-- [Wiki](#wiki)
-- [Content](#content)
-- [How to](#how-to)
-    - [Creating an Azure AI Studio Resource with Azure Open Studio](#creating-an-azure-ai-studio-resource-with-azure-open-studio)
-    - [Create Compute](#create-compute)
-    - [Create a New Project in Azure AI Studio](#create-a-new-project-in-azure-ai-studio)
-    - [Choose a Model](#choose-a-model)
-    - [Add Your Data](#add-your-data)
-    - [Create a Prompt Flow](#create-a-prompt-flow)
-    - [Customize with Multiple Data Sources](#customize-with-multiple-data-sources)
-    - [Evaluate and Test](#evaluate-and-test)
-    - [Deploy Your Copilot](#deploy-your-copilot)
-    - [Monitor and Update](#monitor-and-update)
+- [Creating an Azure AI Studio Resource with Azure Open Studio](#creating-an-azure-ai-studio-resource-with-azure-open-studio)
+- [Create Compute](#create-compute)
+- [Create a New Project in Azure AI Studio](#create-a-new-project-in-azure-ai-studio)
+- [Choose a Model](#choose-a-model)
+- [Add Your Data](#add-your-data)
+- [Create a Prompt Flow](#create-a-prompt-flow)
+- [Customize with Multiple Data Sources](#customize-with-multiple-data-sources)
+- [Evaluate and Test](#evaluate-and-test)
+- [Deploy Your Copilot](#deploy-your-copilot)
+- [Monitor and Update](#monitor-and-update)
 
 </details>
 
@@ -69,9 +61,7 @@ Find below some of the trending AI models in Azure AI Studio. You can use `model
 | **JAIS**             | Core42       | Leading Arabic language model, optimized for Arabic NLP tasks|
 | **Nixtla**           | Nixtla       | Specialized in time-series forecasting and anomaly detection|
 
-## How to 
-
-### Creating an Azure AI Studio Resource with Azure Open Studio
+## Creating an Azure AI Studio Resource with Azure Open Studio
 
 - Sign in to Azure Portal
   1. Go to the Azure Portal.
@@ -99,13 +89,13 @@ Find below some of the trending AI models in Azure AI Studio. You can use `model
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/de646a19-be04-4fe8-8350-92d613043d79">
 
-### Create Compute
+## Create Compute
 
 - Make sure to create you compute, with your specifications and region availability of features considered.
 
   <img width="550" alt="image" src="https://github.com/user-attachments/assets/2159b327-718b-4e31-96fc-87583c74aa3d">
 
-### Create a New Project in Azure AI Studio
+## Create a New Project in Azure AI Studio
 
 - **Navigate to AI Studio**: Go to the Azure AI Hub created, anc launch the Azure AI Studio from the Azure portal.
     
@@ -115,14 +105,14 @@ Find below some of the trending AI models in Azure AI Studio. You can use `model
 
     <img width="550" alt="image" src="https://github.com/user-attachments/assets/b4e5c8f3-298d-4ab9-bb8e-7087d974e77a">
 
-### Choose a Model
+## Choose a Model
 
 - **Model Catalog**: Browse the model catalog in Azure AI Studio.
 - **Select Model**: Choose a model that fits your use case, for example gpt-4o-mini.
   
   <img width="550" alt="image" src="https://github.com/user-attachments/assets/d7e96dd0-7e18-4bb4-9226-63a345632b1b">
 
-### Add Your Data
+## Add Your Data
 
 - **Data Integration**: Integrate your own data into the model. This can include:
     - **Product Information**: Upload product catalogs or databases.
@@ -150,7 +140,7 @@ Find below some of the trending AI models in Azure AI Studio. You can use `model
 
   <img width="550" alt="image" src="https://github.com/user-attachments/assets/6b350e0c-6c0b-41d7-aa10-e948c20f06db">
 
-### Create a Prompt Flow
+## Create a Prompt Flow
 
 >  You can use the prompt flow feature to design how your copilot will interact with users.
 
@@ -178,7 +168,7 @@ Find below some of the trending AI models in Azure AI Studio. You can use `model
 
         <img width="550" alt="image" src="https://github.com/user-attachments/assets/21e506bb-b16f-483f-a06d-c48b7cb86e2b">
 
-### Customize with Multiple Data Sources
+## Customize with Multiple Data Sources
 
 - Enhance Responses: Integrate multiple data sources to provide more accurate and comprehensive responses.
     1. **Identify Data Sources**: Determine which data sources will enhance your copilot's responses.
@@ -194,7 +184,7 @@ Find below some of the trending AI models in Azure AI Studio. You can use `model
         2. **Optimize Search Results**: Fine-tune the search algorithms to provide the most relevant results.
           - Example: Use semantic search for understanding user intent and keyword search for specific terms.
 
-### Evaluate and Test
+## Evaluate and Test
 
 - Evaluation Dataset: Use a question and answer evaluation dataset to test your copilot's performance.
     1. **Create Dataset**: Compile a dataset of questions and answers to evaluate your copilot.
@@ -210,7 +200,7 @@ Find below some of the trending AI models in Azure AI Studio. You can use `model
     1. **Analyze Results**: Analyze test results to identify areas for improvement.
     2. **Make Adjustments**: Adjust the prompt flows, data integration, and search algorithms as needed.
 
-### Deploy Your Copilot
+## Deploy Your Copilot
 
 - Deployment Endpoint: **Create Endpoint**: Deploy your copilot to an endpoint for user access.
    - Example: Use Azure Functions to create a serverless endpoint.
@@ -228,7 +218,7 @@ Find below some of the trending AI models in Azure AI Studio. You can use `model
   1. **Create API**: Use Azure API Management to create and manage your copilot's API.
   2. **Secure API**: Implement security measures, such as API keys and authentication, to protect your API.
 
-### Monitor and Update
+## Monitor and Update
 
 - Performance Monitoring: Continuously monitor your copilot's performance using Azure Monitor.
   1. **Set Up Monitoring**: Use Azure Monitor to track your copilot's performance.
