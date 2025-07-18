@@ -26,13 +26,19 @@ From [Enterprise trust in Azure OpenAI Service strengthened with Data Zones](htt
 <summary><b>List of References</b> (Click to expand)</summary>
 
 - [Model summary table and region availability](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models?tabs=global-ptum%2Cstandard-chat-completions#model-summary-table-and-region-availability)
+- [Deployment overview for Azure AI Foundry Models](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/deployments-overview)
 - [Deployment types for Azure AI Foundry Models](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/deployment-types)
 - [Optimize AI costs by choosing the right Azure OpenAI pricing offer for you](https://techcommunity.microsoft.com/blog/finopsblog/optimize-ai-costs-by-choosing-the-right-azure-openai-pricing-offer-for-you/4286390)
 - [Azure OpenAI Service pricing](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/?msockid=38ec3806873362243e122ce086486339)
+- [Azure OpenAI in Azure AI Foundry Models](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models?tabs=global-standard%2Cstandard-chat-completions)
 - [Q&A - Data residency and processing: where does it occur, and how does it depend on the DataZoneStandard?](https://learn.microsoft.com/en-us/answers/questions/2201321/openai-ai-foundry-deployment-type-datazonestandard)
 - [Azure region list](https://learn.microsoft.com/en-us/azure/reliability/regions-list) -  full list of Azure regions and their metadata (location, geography, availability zone support)
 - [Enterprise trust in Azure OpenAI Service strengthened with Data Zones](https://azure.microsoft.com/en-us/blog/enterprise-trust-in-azure-openai-service-strengthened-with-data-zones/) - data residency explained with types
 - [Azure AI Foundry Deployment Data Processing Locations](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/deployment-types#azure-ai-foundry-deployment-data-processing-locations)
+- [Data landing zone architecture](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/data-landing-zone#data-landing-zone-architecture)
+- [Announcing the availability of Azure OpenAI Data Zones and latest updates from Azure AI](https://azure.microsoft.com/en-us/blog/announcing-the-availability-of-azure-openai-data-zones-and-latest-updates-from-azure-ai/?msockid=38ec3806873362243e122ce086486339)
+- [Explore Azure AI Foundry Models](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/foundry-models-overview)
+- [Azure AI Foundry feature availability across clouds regions](https://learn.microsoft.com/en-us/azure/ai-foundry/reference/region-support)
 
 </details>
 
