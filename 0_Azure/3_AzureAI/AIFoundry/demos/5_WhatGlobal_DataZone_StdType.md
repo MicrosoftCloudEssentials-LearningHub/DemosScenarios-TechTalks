@@ -11,16 +11,39 @@ Last updated: 2025-07-17
 
 > This overview guide helps you choose between **Global**, **Standard**, and **Data Zone** deployment types for Azure OpenAI models when all three are available. Understanding these deployment options is crucial for optimizing performance, ensuring compliance, and managing costs effectively in your Azure AI implementations.
 
+> [!NOTE]
+> - `Regions` refer to `specific Azure datacenter locations`, e.g Sweden Central.
+> - `Data zones` are `logical groupings of these regions that share compliance and data residency characteristics`. E.g, the EU Data Zone includes regions like Sweden Central, West Europe, etc.
+
+<div align="center">
+   <img width="750" alt="image" src="https://github.com/user-attachments/assets/1fc0b22f-6b24-475a-acff-8a99e0631843" />
+</div>
+
+From [Enterprise trust in Azure OpenAI Service strengthened with Data Zones](https://azure.microsoft.com/en-us/blog/enterprise-trust-in-azure-openai-service-strengthened-with-data-zones/)
+
+
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
 - [Model summary table and region availability](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models?tabs=global-ptum%2Cstandard-chat-completions#model-summary-table-and-region-availability)
 - [Deployment types for Azure AI Foundry Models](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/deployment-types)
+- [Optimize AI costs by choosing the right Azure OpenAI pricing offer for you](https://techcommunity.microsoft.com/blog/finopsblog/optimize-ai-costs-by-choosing-the-right-azure-openai-pricing-offer-for-you/4286390)
+- [Azure OpenAI Service pricing](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/?msockid=38ec3806873362243e122ce086486339)
+- [Q&A - Data residency and processing: where does it occur, and how does it depend on the DataZoneStandard?](https://learn.microsoft.com/en-us/answers/questions/2201321/openai-ai-foundry-deployment-type-datazonestandard)
+- [Azure region list](https://learn.microsoft.com/en-us/azure/reliability/regions-list) -  full list of Azure regions and their metadata (location, geography, availability zone support)
+- [Enterprise trust in Azure OpenAI Service strengthened with Data Zones](https://azure.microsoft.com/en-us/blog/enterprise-trust-in-azure-openai-service-strengthened-with-data-zones/) - data residency explained with types
+- [Azure AI Foundry Deployment Data Processing Locations](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/deployment-types#azure-ai-foundry-deployment-data-processing-locations)
 
 </details>
 
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
+
+- [Overview](#overview)
+- [Global Deployment](#global-deployment)
+- [Standard Deployment](#standard-deployment)
+- [Data Zone Deployment](#data-zone-deployment)
+- [How to View Deployment Options for a Model](#how-to-view-deployment-options-for-a-model)
 
 </details>
 
