@@ -175,7 +175,7 @@ Click here to go to source of the [example of how you might configure the XML pa
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-366-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-07-17</p>
+  <img src="https://img.shields.io/badge/Total%20views-393-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-18</p>
 </div>
 <!-- END BADGE -->
