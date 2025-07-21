@@ -21,6 +21,16 @@ Last updated: 2025-07-18
 
 From [Enterprise trust in Azure OpenAI Service strengthened with Data Zones](https://azure.microsoft.com/en-us/blog/enterprise-trust-in-azure-openai-service-strengthened-with-data-zones/)
 
+> [!TIP]
+> The appropriate deployment model depends on your data residency and compliance requirements. Here's a breakdown of the three main options, and we also need to consider the different ways the models are available to be deployed:
+> - `Regional PTU`: Use this model when you have strict regional data residency requirements. For example, if you deploy in Sweden Central, all data (`both at rest and in transit`) remains within that `region’s boundaries.`
+> - `Standard Deployment`: Choose this when you need to keep data at rest within a specific Azure region, but are comfortable with some flexibility for data in transit.
+>   - You select the region (e.g., Sweden Central).
+>   - Azure ensures `data at rest stays in that region.`
+>   - Data in `transit may leave the region but will remain within the same data zone (e.g., EU).`
+> - `Data Zone Deployment`: This model is suitable when you need to ensure that `both data at rest and in transit remain within a specific data zone` (e.g., EU), but you don’t require control over the specific region.
+>    - You select the `zone, not the region.`
+>    - Azure manages the region placement internally, ensuring all data remains within the selected zone.
 
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
