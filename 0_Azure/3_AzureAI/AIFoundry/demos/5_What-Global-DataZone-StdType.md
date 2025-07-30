@@ -13,7 +13,7 @@ Last updated: 2025-07-18
 
 > [!NOTE]
 > - `Regions` refer to `specific Azure datacenter locations`, e.g Sweden Central. `Deployments for stricter compliance needs.`
-> - `Data zones` are `logical groupings of these regions that share compliance and data residency characteristics`. E.g, the EU Data Zone includes regions like Sweden Central, West Europe, etc. `Deployments for stricter compliance needs.`
+> - `Data zones` are `logical groupings of these regions that share compliance and data residency characteristics`. E.g, the EU Data Zone includes regions like Sweden Central, West Europe, etc. `Deployments for less region compliance needs.`
 
 <div align="center">
    <img width="750" alt="image" src="https://github.com/user-attachments/assets/1fc0b22f-6b24-475a-acff-8a99e0631843" />
