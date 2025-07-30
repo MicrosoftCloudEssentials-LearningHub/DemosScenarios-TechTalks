@@ -1,0 +1,56 @@
+Resources
+| where type == "microsoft.web/sites"
+
+// 1) Expand out every hostname binding up front
+| mv-expand hostSsl = properties.hostNameSslStates
+
+// 2) Pull in site-level lockdown flags + hostname/thumbprint
+| extend
+    publicNetworkAccess = tostring(properties.publicNetworkAccess),
+    clientCertRequired  = tostring(properties.clientCertEnabled),
+    privateEndpoints    = array_length(properties.privateEndpointConnections),
+    ipRestrictions      = array_length(properties.siteConfig.ipSecurityRestrictions),
+    hostName            = tostring(hostSsl.name),
+    thumbprint          = tostring(hostSsl.thumbprint)
+
+// 3) Compute booleans for locking and custom domain
+| extend
+    isLockedDown = (
+      publicNetworkAccess == "Disabled" or 
+      clientCertRequired  == "Required" or
+      privateEndpoints    > 0 or
+      ipRestrictions      > 0
+    ),
+    isCustom = not(tolower(hostName) endswith ".azurewebsites.net")
+
+// 4) Bring in ASMC certs (they all have a non-empty canonicalName)
+| join kind=leftouter (
+    Resources
+    | where type == "microsoft.web/certificates"
+    | extend
+        certThumb = tostring(properties.thumbprint),
+        canonical = tostring(properties.canonicalName)
+    | where canonical != "" 
+    | project certThumb, certName = name, certExpiry = properties.expirationDate, canonical
+) on $left.thumbprint == $right.certThumb
+
+// 5) Keep rows that are either locked-down sites or custom hostnames WITH a managed cert
+| where 
+    isLockedDown 
+    or (isCustom and isnotempty(certThumb))
+
+// 6) Final shape
+| project
+    siteName             = name,
+    resourceGroup,
+    publicNetworkAccess,
+    clientCertRequired,
+    privateEndpoints,
+    ipRestrictions,
+    hostName,
+    thumbprint,
+    isManagedCert        = iff(isnotempty(certThumb), "Yes", "No"),
+    certName,
+    canonical,
+    certExpiry
+| order by resourceGroup asc, siteName asc
