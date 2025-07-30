@@ -10,10 +10,10 @@ Resources
     thumbprint          = tostring(hostSsl.thumbprint)
 | extend
     isLockedDown = (
-      publicNetworkAccess == "Disabled" or 
-      clientCertRequired  == "Required" or
-      privateEndpoints    > 0 or
-      ipRestrictions      > 0
+    publicNetworkAccess == "Disabled" or 
+    clientCertRequired == "Required" or
+    privateEndpoints > 0 or
+    ipRestrictions > 0
     ),
     isCustom = not(tolower(hostName) endswith ".azurewebsites.net")
 | join kind=leftouter (
@@ -24,7 +24,8 @@ Resources
         canonical = tostring(properties.canonicalName)
     | where canonical != "" 
     | project certThumb, certName = name, certExpiry = properties.expirationDate, canonical
-) on $left.thumbprint == $right.certThumb
+    )
+    on $left.thumbprint == $right.certThumb
 | where 
     isLockedDown 
     or (isCustom and isnotempty(certThumb))
