@@ -52,14 +52,6 @@ Last updated: 2025-07-17
 
 https://github.com/user-attachments/assets/13cac993-764f-4fb7-972e-3c54d2f3cb8f
 
-
-
-## Your site uses Azure Traffic Manager "nested" or "external" endpoints:
-
-## Your site relies on *.trafficmanager.net domain
-
-
-
 <!-- START BADGE -->
 <div align="center">
   <img src="https://img.shields.io/badge/Total%20views-393-limegreen" alt="Total views">
