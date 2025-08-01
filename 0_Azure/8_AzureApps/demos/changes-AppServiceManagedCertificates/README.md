@@ -52,6 +52,23 @@ Last updated: 2025-07-17
 
 https://github.com/user-attachments/assets/13cac993-764f-4fb7-972e-3c54d2f3cb8f
 
+## Your site uses Azure Traffic Manager "nested" or "external" endpoints
+
+> **You’re affected if your App Service uses Azure Traffic Manager with any of these endpoint types:**  
+> - `Nested endpoints`  
+> - `External endpoints`
+
+> [!TIP]
+>  Only **Azure Endpoints** in Traffic Manager are supported for App Service Managed Certificate creation and renewal.  
+> **Action:**  
+> - Transition to using  [Azure Endpoints for your Traffic Manager profile](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-endpoint-types#azure-endpoints)  
+> - If you cannot switch, you must obtain and bind your own [SSL certificate for the custom domain](https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-certificate?tabs=apex%2Crbac%2Cazure-cli)  
+
+## Your site relies on *.trafficmanager.net domain
+
+
+
+
 <!-- START BADGE -->
 <div align="center">
   <img src="https://img.shields.io/badge/Total%20views-393-limegreen" alt="Total views">
