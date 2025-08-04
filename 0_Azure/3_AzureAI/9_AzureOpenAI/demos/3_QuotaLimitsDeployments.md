@@ -162,7 +162,7 @@ This means with 50 PTUs, you can process 75,000 tokens per minute.
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-393-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-07-18</p>
+  <img src="https://img.shields.io/badge/Total%20views-1559-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-08-04</p>
 </div>
 <!-- END BADGE -->
