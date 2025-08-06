@@ -9,17 +9,27 @@ Last updated: 2025-07-17
 
 ----------
 
-> Provisioned Throughput Units (PTUs) <br/>
-> Tokens Per Minute (TPM)
+`Provisioned Throughput Units (PTUs)` <br/>
+`Tokens Per Minute (TPM)`
 
-| **PTUs** | **Calls per Minute** | **Tokens in Prompt** | **Tokens in Response** | **Tokens per Minute (TPM)** |
-|----------|----------------------|----------------------|------------------------|-----------------------------|
-| 1        | 10                   | 50                   | 100                    | 1,500                       |
-| 2        | 20                   | 50                   | 100                    | 3,000                       |
-| 5        | 50                   | 50                   | 100                    | 7,500                       |
-| 10       | 100                  | 50                   | 100                    | 15,000                      |
-| 20       | 200                  | 50                   | 100                    | 30,000                      |
-| 50       | 500                  | 50                   | 100                    | 75,000                      |
+<details>
+<summary><b>List of References </b> (Click to expand)</summary>
+
+- [How much throughput per PTU you get for each model](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/provisioned-throughput-onboarding)
+- [Understanding costs associated with provisioned throughput units (PTU)](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/provisioned-throughput-onboarding#azure-reservations-for-azure-ai-foundry-provisioned-throughput)
+- [Deployment types for Azure AI Foundry Models](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/deployment-types#global-provisioned)
+- [Region availability for provisioned throughput capability](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/provisioned-throughput?tabs=global-ptum#region-availability-for-provisioned-throughput-capability)
+- [Model summary table and region availability](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models?tabs=global-ptum%2Cstandard-chat-completions#model-summary-table-and-region-availability)
+- [Fine-tuning models](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models?tabs=global-ptum%2Cstandard-chat-completions#fine-tuning-models) - input/output Max
+- [Azure OpenAI in Azure AI Foundry Models quotas and limits](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/quotas-limits?context=%2Fazure%2Fai-foundry%2Fcontext%2Fcontext&tabs=REST)
+
+</details>
+
+<div align="center">
+  <img width="700" alt="image" src="https://github.com/user-attachments/assets/0741d4b2-d70e-4b5e-a6cf-9c399483e598" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
+
+From [Microsoft official documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/provisioned-throughput-onboarding#model-independent-quota)
 
 > Explanation:
 
@@ -29,34 +39,28 @@ Last updated: 2025-07-17
 - **Tokens in Response**: The number of tokens in the model's response for each call.
 - **Tokens per Minute (TPM)**: The total number of tokens processed per minute, calculated as:
 
-$$
-\text{TPM} = \text{Calls per Minute} \times (\text{Tokens in Prompt} + \text{Tokens in Response})
-$$
-
-> Example Calculation:
-For 50 PTUs:
-
-1. **Calls per Minute**: Calculate the number of calls per minute:
-
-$$
-\text{Calls per Minute} = \text{PTUs} \times \text{Calls per PTU per Minute}
-$$
-
-$$
-\text{Calls per Minute} = 50 \times 10 = 500
-$$
-
-2. **Tokens per Minute**: Calculate the total tokens per minute:
+1. **Tokens per Minute**: Calculate the total tokens per minute:
 
 $$
 \text{TPM} = \text{Calls per Minute} \times (\text{Tokens in Prompt} + \text{Tokens in Response})
 $$
 
+2. **Provisioned Throughput Units**: 
+
 $$
-\text{TPM} = 500 \times (50 + 100) = 500 \times 150 = 75,000
+\text{PTUs} = \frac{\text{TPM}}{\text{Tokens per PTU per Minute}}
 $$
 
-This means with 50 PTUs, you can process 75,000 tokens per minute.
+Where:
+- **TPM** = Total tokens you want to process per minute
+- **Tokens per PTU per Minute** = Depends on the model (e.g., 3,000 tokens/min for GPT-4.1 or GPT-4.1 Mini)
+
+> E.g
+> If you want to process **150,000 tokens per minute** using GPT-4.1:
+
+$$
+\text{PTUs} = \frac{150{,}000}{3{,}000} = 50
+$$
 
 ## Provisioned Capacity Calculator
 
