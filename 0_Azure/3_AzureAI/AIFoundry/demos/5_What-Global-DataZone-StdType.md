@@ -11,50 +11,6 @@ Last updated: 2025-07-18
 
 > This overview guide helps you choose between **Global**, **Standard**, and **Data Zone** deployment types for Azure OpenAI models when all three are available. Understanding these deployment options is crucial for optimizing performance, ensuring compliance, and managing costs effectively in your Azure AI implementations.
 
-> [!NOTE]
-> - `Regions` refer to `specific Azure datacenter locations`, e.g Sweden Central. `Deployments for stricter compliance needs.`
-> - `Data zones` are `logical groupings of these regions that share compliance and data residency characteristics`. E.g, the EU Data Zone includes regions like Sweden Central, West Europe, etc. `Deployments for less region compliance needs.`
-
-<div align="center">
-   <img width="750" alt="image" src="https://github.com/user-attachments/assets/1fc0b22f-6b24-475a-acff-8a99e0631843" />
-</div>
-
-From [Enterprise trust in Azure OpenAI Service strengthened with Data Zones](https://azure.microsoft.com/en-us/blog/enterprise-trust-in-azure-openai-service-strengthened-with-data-zones/)
-
-> [!TIP]
-> The appropriate deployment model depends on your data residency and compliance requirements. Here's a breakdown of the three main options, and we also need to consider the different ways the models are available to be deployed:
-> `Global Deployments`: Suitable for scenarios where compliance with regional data laws is not required, and performance and scale are the primary concerns.
->    -  Data `at rest and in transit are not restricted to any specific region or data zone`.
->    -  Azure may `store or process data anywhere across its global infrastructure`.
->    -  This model offers maximum flexibility and scalability, but provides the least control over data residency and movement.
-> - `Regional PTU`: Use this model when you have strict regional data residency requirements. For example, if you deploy in Sweden Central, all data (`both at rest and in transit`) remains within that `region’s boundaries.`
-> - `Standard Deployment`: Choose this when you need to keep data at rest within a specific Azure region, but are comfortable with some flexibility for data in transit.
->   - You select the region (e.g., Sweden Central).
->   - Azure ensures `data at rest stays in that region.`
->   - Data in `transit may leave the region but will remain within the same data zone (e.g., EU).`
-> - `Data Zone Deployment`: This model is suitable when you need to ensure that `both data at rest and in transit remain within a specific data zone` (e.g., EU), but you don’t require control over the specific region.
->    - You select the `zone, not the region.`
->    - Azure manages the region placement internally, ensuring all data remains within the selected zone.
-
-| **Deployment Type**             | **Scope**       | **Model Type**         | **Data Residency (At Rest & In Transit)**                                                                 | **Latency & Performance**                                                                 | **Use Case / Description**                                                                 |
-|--------------------------------|------------------|------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| Global Standard                | Global           | Standard               | Data at rest stays in the designated Azure geography; data in transit may be processed in any Azure region. | Low latency under normal usage; may experience **latency variation** at high volumes.     | Best for general use cases where flexibility and scale are prioritized over strict residency. |
-| Global Provisioned Managed     | Global           | Managed                | Same as Global Standard, but with **reserved model capacity** across global infrastructure.                | More consistent latency; suitable for **high-volume workloads** needing predictable performance. | Ideal for enterprise-grade deployments with consistent traffic and performance needs.       |
-| Global Batch                   | Global           | Batch                  | Same residency as other global types; data processed asynchronously across global regions.                 | **Up to 24-hour turnaround**; optimized for cost and throughput, not real-time latency.    | Large-scale processing like document summarization, content generation, or NLP tasks.       |
-| Data Zone Standard             | Data Zone        | Standard               | Data at rest stays in the designated geography; data in transit processed within the selected data zone.   | Similar to Global Standard; **latency may vary** at high volumes.                          | Ensures compliance with zone-level regulations (e.g., EU), with moderate performance control. |
-| Data Zone Provisioned Managed  | Data Zone        | Managed                | Same as Data Zone Standard, but with **reserved capacity** within the zone.                                | Lower latency variance; optimized for **predictable performance** in compliant environments. | Combines compliance with performance for regulated industries.                              |
-| Data Zone Batch                | Data Zone        | Batch                  | Same as other Data Zone types; batch processing within the zone.                                           | **Up to 24-hour turnaround**; cost-effective for non-real-time workloads.                  | Compliant batch processing for large datasets within a data zone.                           |
-| Regional PTU                  | Specific Region  | PTU-based              | Data at rest and in transit remain strictly within the selected Azure region.                              | Lowest latency variance; **tightest control** over data movement.                          | Required for strict regional compliance (e.g., financial or government workloads).           |
-| Standard Deployment           | Specific Region  | Standard               | Data at rest stays in region; data in transit may leave but stays within the same data zone.               | Moderate latency control; **some flexibility** in data routing.                            | Balanced option for regional control with some scalability.                                 |
-| Data Zone Deployment          | Data Zone        | Standard               | Both data at rest and in transit remain within the selected data zone; Azure chooses the region internally. | Similar to Data Zone Standard; **no control over specific region**, but zone compliance maintained. | Good for zone-level compliance without needing to manage region specifics.                  |
-
-> [!TIP]
-> - **Global Batch** and **Data Zone Batch**: Target turnaround time is **up to 24 hours**, making them unsuitable for real-time applications.
-> - **Standard deployments** (Global/Data Zone/Regional): May experience **latency variation** at high usage volumes.
-> - **Provisioned deployments**: Offer **reserved capacity**, reducing latency variance and improving predictability.
-> - **Streaming**: Can reduce perceived latency by returning tokens incrementally, especially useful in chat interfaces.
-> - **Content Filtering**: Adds safety but may increase latency slightly.
-
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
@@ -85,6 +41,50 @@ From [Enterprise trust in Azure OpenAI Service strengthened with Data Zones](htt
 - [How to View Deployment Options for a Model](#how-to-view-deployment-options-for-a-model)
 
 </details>
+
+> [!NOTE]
+> - `Regions` refer to `specific Azure datacenter locations`, e.g Sweden Central. `Deployments for stricter compliance needs.`
+> - `Data zones` are `logical groupings of these regions that share compliance and data residency characteristics`. E.g, the EU Data Zone includes regions like Sweden Central, West Europe, etc. `Deployments for less region compliance needs.`
+
+<div align="center">
+   <img width="750" alt="image" src="https://github.com/user-attachments/assets/1fc0b22f-6b24-475a-acff-8a99e0631843" />
+</div>
+
+From [Enterprise trust in Azure OpenAI Service strengthened with Data Zones](https://azure.microsoft.com/en-us/blog/enterprise-trust-in-azure-openai-service-strengthened-with-data-zones/)
+
+> [!TIP]
+> The appropriate deployment model depends on your data residency and compliance requirements. Here's a breakdown of the three main options, and we also need to consider the different ways the models are available to be deployed:
+> - `Global Deployments`: Suitable for scenarios where compliance with regional data laws is not required, and performance and scale are the primary concerns.
+>    -  Data `at rest and in transit are not restricted to any specific region or data zone`.
+>    -  Azure may `store or process data anywhere across its global infrastructure`.
+>    -  This model offers maximum flexibility and scalability, but provides the least control over data residency and movement.
+> - `Regional PTU`: Use this model when you have strict regional data residency requirements. For example, if you deploy in Sweden Central, all data (`both at rest and in transit`) remains within that `region’s boundaries.`
+> - `Standard Deployment`: Choose this when you need to keep data at rest within a specific Azure region, but are comfortable with some flexibility for data in transit.
+>   - You select the region (e.g., Sweden Central).
+>   - Azure ensures `data at rest stays in that region.`
+>   - Data in `transit may leave the region but will remain within the same data zone (e.g., EU).`
+> - `Data Zone Deployment`: This model is suitable when you need to ensure that `both data at rest and in transit remain within a specific data zone` (e.g., EU), but you don’t require control over the specific region.
+>    - You select the `zone, not the region.`
+>    - Azure manages the region placement internally, ensuring all data remains within the selected zone.
+
+| **Deployment Type**             | **Scope**       | **Model Type**         | **Data Residency (At Rest & In Transit)**                                                                 | **Latency & Performance**                                                                 | **Use Case / Description**                                                                 |
+|--------------------------------|------------------|------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| Global Standard                | Global           | Standard               | Data at rest stays in the designated Azure geography; data in transit may be processed in any Azure region. | Low latency under normal usage; may experience **latency variation** at high volumes.     | Best for general use cases where flexibility and scale are prioritized over strict residency. |
+| Global Provisioned Managed     | Global           | Managed                | Same as Global Standard, but with **reserved model capacity** across global infrastructure.                | More consistent latency; suitable for **high-volume workloads** needing predictable performance. | Ideal for enterprise-grade deployments with consistent traffic and performance needs.       |
+| Global Batch                   | Global           | Batch                  | Same residency as other global types; data processed asynchronously across global regions.                 | **Up to 24-hour turnaround**; optimized for cost and throughput, not real-time latency.    | Large-scale processing like document summarization, content generation, or NLP tasks.       |
+| Data Zone Standard             | Data Zone        | Standard               | Data at rest stays in the designated geography; data in transit processed within the selected data zone.   | Similar to Global Standard; **latency may vary** at high volumes.                          | Ensures compliance with zone-level regulations (e.g., EU), with moderate performance control. |
+| Data Zone Provisioned Managed  | Data Zone        | Managed                | Same as Data Zone Standard, but with **reserved capacity** within the zone.                                | Lower latency variance; optimized for **predictable performance** in compliant environments. | Combines compliance with performance for regulated industries.                              |
+| Data Zone Batch                | Data Zone        | Batch                  | Same as other Data Zone types; batch processing within the zone.                                           | **Up to 24-hour turnaround**; cost-effective for non-real-time workloads.                  | Compliant batch processing for large datasets within a data zone.                           |
+| Regional PTU                  | Specific Region  | PTU-based              | Data at rest and in transit remain strictly within the selected Azure region.                              | Lowest latency variance; **tightest control** over data movement.                          | Required for strict regional compliance (e.g., financial or government workloads).           |
+| Standard Deployment           | Specific Region  | Standard               | Data at rest stays in region; data in transit may leave but stays within the same data zone.               | Moderate latency control; **some flexibility** in data routing.                            | Balanced option for regional control with some scalability.                                 |
+| Data Zone Deployment          | Data Zone        | Standard               | Both data at rest and in transit remain within the selected data zone; Azure chooses the region internally. | Similar to Data Zone Standard; **no control over specific region**, but zone compliance maintained. | Good for zone-level compliance without needing to manage region specifics.                  |
+
+> [!TIP]
+> - **Global Batch** and **Data Zone Batch**: Target turnaround time is **up to 24 hours**, making them unsuitable for real-time applications.
+> - **Standard deployments** (Global/Data Zone/Regional): May experience **latency variation** at high usage volumes.
+> - **Provisioned deployments**: Offer **reserved capacity**, reducing latency variance and improving predictability.
+> - **Streaming**: Can reduce perceived latency by returning tokens incrementally, especially useful in chat interfaces.
+> - **Content Filtering**: Adds safety but may increase latency slightly.
 
 ## Overview
 
