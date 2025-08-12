@@ -17,6 +17,7 @@ Last updated: 2025-07-17
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
+- [LLM as Judge](https://github.com/microsoft/llm-as-judge)
 - [Introducing Meta Llama 3 Models on Azure AI Model Catalog](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/introducing-meta-llama-3-models-on-azure-ai-model-catalog/ba-p/4117144)
 - [Meta’s next generation model, Llama 3.1 405B is now available on Azure AI](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/meta-s-next-generation-model-llama-3-1-405b-is-now-available-on/ba-p/4198379)
 - [Model benchmarks in Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/model-benchmarks)
