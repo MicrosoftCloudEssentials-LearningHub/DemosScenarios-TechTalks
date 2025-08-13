@@ -14,6 +14,15 @@ Last updated: 2025-08-01
 > [!IMPORTANT]
 > Please review this article first: [Important Changes to App Service Managed Certificates: Is Your Certificate Affected?](https://techcommunity.microsoft.com/blog/appsonazureblog/important-changes-to-app-service-managed-certificates-is-your-certificate-affect/4435193)
 
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
+
+- [App Service Managed Certificate (ASMC) changes – July 28, 2025](https://learn.microsoft.com/en-us/azure/app-service/app-service-managed-certificate-changes-july-2025)
+- [Important Changes to App Service Managed Certificates: Is Your Certificate Affected?](https://techcommunity.microsoft.com/blog/appsonazureblog/important-changes-to-app-service-managed-certificates-is-your-certificate-affect/4435193)
+
+</details>
+
+
 > [!NOTE]
 > For the scenarios outlined in the article, please find an alternative set of queries to help you determine whether your environment might be impacted. These queries include visual guidance for reference.
 > If you have any questions or need further clarification, please reach out to your Microsoft account team or contact Microsoft directly: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME) for additional support and guidance, or
