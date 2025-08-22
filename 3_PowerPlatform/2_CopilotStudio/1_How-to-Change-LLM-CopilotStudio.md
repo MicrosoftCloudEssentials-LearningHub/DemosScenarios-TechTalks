@@ -17,6 +17,12 @@ Last updated: 2025-07-17
 > - Your tenant or admin settings might need to enable LLM manually once it's generally available.
 
 
+> [!TIP]
+> What You Can Do?
+> - Check with your tenant admin to see if your environment is part of the early release cycle.
+> - Look for updates in the Model selection dropdown in the agent settings, LLM should appear soon.
+> - Keep an eye on the Copilot Studio blog or release notes for rollout updates.
+
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
