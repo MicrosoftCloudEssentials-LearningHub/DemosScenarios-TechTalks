@@ -93,6 +93,7 @@ Click here to see detailed table about [Project vs Hub](https://learn.microsoft.
 
 From [Migrate from hub-based to Foundry projects](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/migrate-project?tabs=azure-ai-foundry)
 
+## Overview 
 
 > [!IMPORTANT]
 > This overview provides an example of how to create an infrastructure that enables efficient and secure delivery of AI models into different solutions. By setting up AI Foundry with RBAC, using Azure API Management, and implementing monitoring and analytics, you can ensure your AI models are accessible, manageable, and perform well across different environments. Please ensure to adjust the infrastructure, networking, and other configurations as required. <br/>
@@ -103,7 +104,6 @@ From [Migrate from hub-based to Foundry projects](https://learn.microsoft.com/en
 > 5. **Provide Documentation and Support**: Ensure users have the necessary resources and support to integrate the APIs. <br/>
 > 6. **Implement Monitoring and Analytics**: Track the performance and usage of your AI models to ensure they meet your needs.
 
-## Overview 
 
 ```mermaid
 graph TD
