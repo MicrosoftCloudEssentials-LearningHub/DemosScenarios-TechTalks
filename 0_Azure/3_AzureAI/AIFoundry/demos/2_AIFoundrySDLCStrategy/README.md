@@ -10,6 +10,9 @@ Last updated: 2025-07-17
 
 ----------
 
+`Hub = shared, reusable, governed assets.`
+`Project = focused, goal-driven AI development.`
+
 > [!NOTE]
 > If you require additional information on Cloud and the SDLC process, please visit this [repository](https://github.com/brown9804/CloudDevOps_LPath?tab=readme-ov-file#cloud-devops---learning-path). It contains content not only on SDLC but also on DevOps practices.
 
@@ -28,12 +31,14 @@ Last updated: 2025-07-17
 - [Integrate prompt flow with DevOps for LLM-based applications](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-integrate-with-llm-app-devops?view=azureml-api-2&tabs=cli)
 - [GenAIOps with prompt flow and GitHub](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/how-to-end-to-end-llmops-with-prompt-flow?view=azureml-api-2)
 - [What is Azure AI Foundry?](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry#which-type-of-project-do-i-need) - Which type of project do I need? Hub or Project
+- [Migrate from hub-based to Foundry projects](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/migrate-project?tabs=azure-ai-foundry) - From hub to project
 
 </details>
 
 <details>
 <summary><b>Table of Content </b> (Click to expand)</summary>
-    
+
+- [Project vs Hub](#project-vs-hub)
 - [Overview](#overview)
 - [Demo](#demo)
     - [Create a Resource Group](#create-a-resource-group)
@@ -45,6 +50,49 @@ Last updated: 2025-07-17
     - [Implement Monitoring and Analytics](#implement-monitoring-and-analytics)
 
 </details>
+
+## Project vs Hub
+
+<details>
+<summary> Azure AI Foundry Hub</summary>
+
+> **Use the Hub when you want to:**
+- Centralize and manage assets across multiple projects.
+- Share models, datasets, components, environments, and pipelines across teams.
+- Maintain governance and versioning of reusable AI assets.
+- Enable collaboration across different teams or departments.
+
+> **What's in the Hub:**
+- Registries for models, datasets, environments, and components.
+- Version control and metadata tracking.
+- Access control and sharing settings.
+- Reusable templates and pipelines.
+
+</details>
+
+<details>
+<summary> Azure AI Foundry Project</summary>
+
+> **Use the Project when you want to:**
+- Build and manage a specific AI solution or experiment.
+- Organize work around a single use case or business problem.
+- Track experiments, runs, and deployments for that solution.
+- Collaborate with a focused team on a defined goal.
+
+> **What's in the Project:**
+- Experiments and runs (e.g., training jobs).
+- Linked assets from the Hub (models, datasets, etc.).
+- Deployment targets and endpoints.
+- Project-specific configurations and notebooks.
+
+</details>
+
+Click here to see detailed table about [Project vs Hub](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-azure-ai-foundry#which-type-of-project-do-i-need)
+
+<img width="1579" height="732" alt="image" src="https://github.com/user-attachments/assets/42fdce9d-82d3-49e6-ba63-aeaad5b9d1af" />
+
+From [Migrate from hub-based to Foundry projects](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/migrate-project?tabs=azure-ai-foundry)
+
 
 > [!IMPORTANT]
 > This overview provides an example of how to create an infrastructure that enables efficient and secure delivery of AI models into different solutions. By setting up AI Foundry with RBAC, using Azure API Management, and implementing monitoring and analytics, you can ensure your AI models are accessible, manageable, and perform well across different environments. Please ensure to adjust the infrastructure, networking, and other configurations as required. <br/>
