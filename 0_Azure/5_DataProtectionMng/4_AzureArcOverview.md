@@ -14,10 +14,8 @@ Last updated: 2025-07-17
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/d7f3ccfc-b11a-4788-ab53-1d7b2ae3d216">
 
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki </b> (Click to expand)</summary>
+<summary><b>List of References </b> (Click to expand)</summary>
 
 - [Enabling hybrid solutions on any cloud, on any infrastructure](https://techcommunity.microsoft.com/t5/azure-arc-blog/enabling-hybrid-solutions-on-any-cloud-on-any-infrastructure/ba-p/2476120)
 - [Azure Arc: Extending Azure management to any infrastructure](https://azure.microsoft.com/en-us/blog/azure-arc-extending-azure-management-to-any-infrastructure/)
@@ -32,17 +30,18 @@ Last updated: 2025-07-17
   
 </details>
 
-## Content 
+<details>
+<summary><b>Table of Content </b> (Click to expand)</summary>
 
-- [Wiki](#wiki)
-- [Content](#content)
 - [Arc Agents](#arc-agents)
     - [Azure Connected Machine Agent](#azure-connected-machine-agent)
     - [Azure Arc Data Controller](#azure-arc-data-controller)
 
+</details>
+
 ## Arc Agents 
 
-The table below provides a comparison of the two agents, highlighting their specific uses and the types of resources they manage:
+> The table below provides a comparison of the two agents, highlighting their specific uses and the types of resources they manage:
 
 | **Aspect** | **Azure Arc Data Controller** | **Azure Connected Machine Agent** |
 |------------|-------------------------------|-----------------------------------|
