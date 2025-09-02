@@ -10,7 +10,7 @@ Last updated: 2025-07-17
 
 ----------
 
-`Hub = shared, reusable, governed assets.`
+`Hub = shared, reusable, governed assets.` <br/>
 `Project = focused, goal-driven AI development.`
 
 > [!NOTE]
