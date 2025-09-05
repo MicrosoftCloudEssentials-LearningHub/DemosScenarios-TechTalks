@@ -428,7 +428,7 @@ Azure Sentinel: Enhance security by using Azure Sentinel for SIEM (security info
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-1559-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-08-04</p>
+  <img src="https://img.shields.io/badge/Total%20views-1443-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-09-05</p>
 </div>
 <!-- END BADGE -->
