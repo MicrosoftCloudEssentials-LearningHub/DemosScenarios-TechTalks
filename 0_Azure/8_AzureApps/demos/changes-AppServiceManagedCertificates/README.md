@@ -7,12 +7,21 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-07-17
+Last updated: 2025-09-05
 
 ----------
 
 > [!IMPORTANT]
 > Please review this article first: [Important Changes to App Service Managed Certificates: Is Your Certificate Affected?](https://techcommunity.microsoft.com/blog/appsonazureblog/important-changes-to-app-service-managed-certificates-is-your-certificate-affect/4435193)
+
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
+
+- [App Service Managed Certificate (ASMC) changes – July 28, 2025](https://learn.microsoft.com/en-us/azure/app-service/app-service-managed-certificate-changes-july-2025)
+- [Important Changes to App Service Managed Certificates: Is Your Certificate Affected?](https://techcommunity.microsoft.com/blog/appsonazureblog/important-changes-to-app-service-managed-certificates-is-your-certificate-affect/4435193)
+
+</details>
+
 
 > [!NOTE]
 > For the scenarios outlined in the article, please find an alternative set of queries to help you determine whether your environment might be impacted. These queries include visual guidance for reference.
@@ -51,6 +60,19 @@ Last updated: 2025-07-17
 [This query](./query-how_to_know_if_your_site_is_not_publicly_accessible.kql), finds any App Service that meets any of those four conditions
 
 https://github.com/user-attachments/assets/13cac993-764f-4fb7-972e-3c54d2f3cb8f
+
+## Your site uses Azure Traffic Manager "nested" or "external" endpoints
+
+> **You’re affected if your App Service uses Azure Traffic Manager with any of these endpoint types:**  
+> - `Nested endpoints`  
+> - `External endpoints`
+
+> [!TIP]
+>  Only **Azure Endpoints** in Traffic Manager are supported for App Service Managed Certificate creation and renewal.  
+> **Action:**  
+> - Transition to using  [Azure Endpoints for your Traffic Manager profile](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-endpoint-types#azure-endpoints)  
+> - If you cannot switch, you must obtain and bind your own [SSL certificate for the custom domain](https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-certificate?tabs=apex%2Crbac%2Cazure-cli)  
+
 
 <!-- START BADGE -->
 <div align="center">
