@@ -16,7 +16,8 @@ Last updated: 2025-07-17
 - [Copilot Studio MCP Catalog](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-microsoft-mcp-servers)
 - [Connect to an existing Model Context Protocol (MCP) server](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent)
 - [Microsoft Copilot Studio - MCP](https://github.com/microsoft/mcsmcp) - GitHub repo
-- [Consume a Fabric Data Agent in Microsoft Copilot Studio (preview)](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-microsoft-copilot-studio)
+- [Consume a Fabric Data Agent in Microsoft Copilot Studio (preview)](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-microsoft-copilot-studio) - Agent
+- [Connect to an existing Model Context Protocol (MCP) server](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent) - MCP
 - [Connecting an Agent in Copilot Studio to an MCP Server](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/connecting-an-agent-in-copilot-studio-to-an-mcp-server/4448362) - blog 
 - [Connect AI Agents to Fabric API for GraphQL with a local Model Context Protocol (MCP) server](https://learn.microsoft.com/en-us/fabric/data-engineering/api-graphql-local-model-context-protocol)
 
