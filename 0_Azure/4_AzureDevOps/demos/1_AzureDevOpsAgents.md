@@ -12,7 +12,8 @@ Last updated: 2025-07-17
 
 > To build your code or deploy your software using Azure Pipelines
 
-## Wiki 
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
 
 - [Azure Pipelines Agents - Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops)
 - [Pipeline runs - Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/runs?view=azure-devops)
@@ -21,6 +22,8 @@ Last updated: 2025-07-17
 - [Self-hosted macOS agents](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/osx-agent?view=azure-devops)
 - [Microsoft-hosted agents](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml)
 - [Self-hosted agent authentication options](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agent-authentication-options?view=azure-devops)
+
+</details>
 
 > `Agents` are the workers that run your build and deployment jobs. 
 
