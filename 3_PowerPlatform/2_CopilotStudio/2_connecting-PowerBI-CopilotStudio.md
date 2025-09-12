@@ -23,6 +23,17 @@ Last updated: 2025-07-17
 
 </details>
 
+> [!NOTE]
+> About the licensing: [Microsoft 365 Copilot Pricing – AI Agents | Copilot Studio](https://www.microsoft.com/en-us/microsoft-365-copilot/pricing/copilot-studio?msockid) <br/>
+> Copilot Credit consumption rates:
+> - Regular (non-generative AI) = 1 Copilot Credit; and
+> - Generative AI (answers over your data) = 2 Copilot Credits.
+> Customers can use a mix of classic and generative AI messages with the capacity. [Learn more](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp//microsoft/bade/documents/products-and-services/en-us/bizapps/Power-Platform-Licensing-Guide-September-2025.pdf)
+> - Copilot Credits are offered via prepaid Copilot Credit pack subscription licenses. One Copilot Credit pack = 25,000 Copilot Credits.
+> - The Copilot Studio pay-as-you-go meter allows you to post-pay based on the actual number of Copilot Credits consumed in a month.
+
+<img width="1309" height="944" alt="image" src="https://github.com/user-attachments/assets/c633ed23-55dd-46a0-855b-df11894bd324" />
+
 ## Step 1: Prepare Your Environment
 
 Before you begin, make sure you have:
