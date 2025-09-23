@@ -65,7 +65,7 @@ https://github.com/user-attachments/assets/2616c7fb-81b5-4365-9346-0332b91cc892
 | **Capture Backlog**    | Volume of data waiting to be written to storage (Blob/Data Lake).                     | If using Capture, a growing backlog signals Event Hubs is falling behind or storage is misconfigured.   |
 
 E.g 
-<img width="1901" height="838" alt="image" src="https://github.com/user-attachments/assets/54bf9b1e-c56c-4509-9716-a47848ce4359" />
+<img width="1898" height="845" alt="image" src="https://github.com/user-attachments/assets/f35c9c72-7491-42a0-8b40-87147ffadc7e" />
 
 ```mermaid
 graph TD
