@@ -26,6 +26,15 @@ Last updated: 2025-07-17
 
 </details>
 
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
+
+- [Prepare your data](#prepare-your-data)
+- [Use Fabric Data Agent Preferred for Semantic Models](#use-fabric-data-agent-preferred-for-semantic-models)
+- [Fabric Data linked to Copilot Studio MCP](#fabric-data-linked-to-copilot-studio-mcp)
+
+</details>
+
 > [!NOTE]
 > About the licensing: [Microsoft 365 Copilot Pricing – AI Agents | Copilot Studio](https://www.microsoft.com/en-us/microsoft-365-copilot/pricing/copilot-studio?msockid) <br/>
 > Copilot Credit consumption rates:
@@ -115,17 +124,29 @@ E.g:
 > [!NOTE]
 > Or use: MCP Server (For Custom Integrations) you create it and connect via Power Platform for example.
 
-## Examples of what to ask 
+<details>
+<summary><b> Examples of what to ask (Click to expand)</summary>
 
 | **Question**                                                                 | **Example of it looks**                                                                                       |
 |------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | **Data Exploration**                                                         |                                                                                                               |
 | - Can you provide an overview of this dataset?  <br/> - Are there any missing values or anomalies in this dataset?                               |            <img width="500" alt="image" src="https://github.com/user-attachments/assets/2a43117e-3b29-46f8-98b7-f097df425429">                                                                                                    |
-|  What are the key variables in this data?                                   |       <img width="500" alt="image" src="https://github.com/user-attachments/assets/621c6237-7c79-4c67-981a-e9d7afccf29f">                    |
+|  What are the key variables in this data?                                   |       <img width="500" alt="image" src="https://github.com/user-attachments/assets/621c6237-7c79-4c67-981a-e9d7afccf29f">|
 | **Data Insights**                                                            |                                                                                                               |
 | What patterns or trends can you identify in this data?                     |<img width="500" alt="image" src="https://github.com/user-attachments/assets/899653c3-fa41-4834-8606-37759a7f1ad6">               |
 | Can you highlight any correlations between variables?                      | <img width="500" alt="image" src="https://github.com/user-attachments/assets/a9442f38-ade1-45ee-9cb6-4adf8bdbf0f7">              |
 | What are the outliers in this dataset?                                     | <img width="500" alt="image" src="https://github.com/user-attachments/assets/1c0d07b2-91fe-4335-9760-886c10e77bb9">                 |
+
+</details>
+
+## Fabric Data linked to Copilot Studio (MCP)
+
+1. Create a Data Agent in Microsoft Fabric and connect it to your semantic model.
+2. Publish the agent and verify that it is running successfully.
+3. In Copilot Studio, go to `Agents → Add an agent`, then `select your Fabric Data Agent from the list.`
+4. Test the integration by running sample queries such as: `What was the revenue last quarter?`
+
+https://github.com/user-attachments/assets/bdb581c2-ccc9-48b1-a4ce-6b3c465f10bc
 
 <!-- START BADGE -->
 <div align="center">
