@@ -1,4 +1,4 @@
-# Demo: configure the Microsoft Fabric (Power BI) MCP connector in Copilot Studio
+<img width="1898" height="993" alt="image" src="https://github.com/user-attachments/assets/502ac259-19a7-4212-8f15-01286a417629" /># Demo: configure the Microsoft Fabric (Power BI) MCP connector in Copilot Studio
 
 Costa Rica
 
@@ -34,6 +34,8 @@ Last updated: 2025-09-29
 - [Fabric Data linked to Copilot Studio MCP](#fabric-data-linked-to-copilot-studio-mcp)
 
 </details>
+
+<img width="1141" height="891" alt="MedallionArch-Fabric_Databricks-databricks+data-agents+copilot-Studio drawio" src="https://github.com/user-attachments/assets/2c4f94c6-de41-4b59-b812-0c122483ff53" />
 
 > [!NOTE]
 > About the licensing: [Microsoft 365 Copilot Pricing – AI Agents | Copilot Studio](https://www.microsoft.com/en-us/microsoft-365-copilot/pricing/copilot-studio?msockid) <br/>
@@ -145,6 +147,8 @@ E.g:
 2. Publish the agent and verify that it is running successfully.
 3. In Copilot Studio, go to `Agents → Add an agent`, then `select your Fabric Data Agent from the list.`
 4. Test the integration by running sample queries such as: `What was the revenue last quarter?`
+
+<img width="1898" height="993" alt="image" src="https://github.com/user-attachments/assets/94620e12-61df-4233-93db-b04af1bdd294" />
 
 https://github.com/user-attachments/assets/bdb581c2-ccc9-48b1-a4ce-6b3c465f10bc
 
