@@ -1,4 +1,4 @@
-<img width="1898" height="993" alt="image" src="https://github.com/user-attachments/assets/502ac259-19a7-4212-8f15-01286a417629" /># Demo: configure the Microsoft Fabric (Power BI) MCP connector in Copilot Studio
+# Demo: configure the Microsoft Fabric (Power BI) MCP connector in Copilot Studio
 
 Costa Rica
 
