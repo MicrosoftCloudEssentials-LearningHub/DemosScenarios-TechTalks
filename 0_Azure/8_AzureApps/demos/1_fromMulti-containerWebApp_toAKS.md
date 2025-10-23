@@ -119,6 +119,93 @@ Last updated: 2025-10-23
 
 </details>
 
+## How to choose?
+
+<img width="900" height="916" alt="image" src="https://github.com/user-attachments/assets/259cba67-0742-4ff8-b9b5-4481772c04f9" />
+
+From [Choose an Azure compute service](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree)
+
+## Pricing example
+
+> AKS `itself is free`; you pay for:
+> - VMs in Node Pools (Standard vs Premium SSD, VM size)
+> - Networking (Azure CNI vs Kubenet)
+> - Storage
+> - Optional features (e.g., Azure Monitor, Virtual Nodes)
+> Your `node VM size and features define cost and performance.`
+
+How determine which **AKS tier** (or node size/configuration) you need, you can follow these steps:
+
+> [!NOTE]
+> Quick Way to Decide:
+- If you want **low cost** → B-series or Spot VMs.
+- If you want **balanced performance** → D-series.
+- If you need **high compute** → F-series or GPU nodes.
+
+1. Estimate Resource Requirements:
+  - **CPU & Memory per container**: Check your app’s baseline usage.
+  - **Number of containers per pod**: Multi-container apps share pod resources.
+  - **Expected traffic**: Peak vs average load.
+2. Use AKS Recommendations: 
+  - Enable **Cluster Autoscaler** and **Horizontal Pod Autoscaler**.
+  - Use **Azure Advisor** → It gives cost and performance recommendations based on telemetry.
+
+> [!TIP]
+> Use [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/?msockid=38ec3806873362243e122ce086486339) and **AKS Sizing Guide**:
+
+From AKS perspective we can choose between tier for the cluster management, click here for more details about [Free, Standard, and Premium pricing tiers for Azure Kubernetes Service (AKS) cluster management](https://learn.microsoft.com/en-us/azure/aks/free-standard-pricing-tiers)
+
+| **Feature**                 | **Free Tier** | **Standard Tier** | **Premium Tier** |
+| --------------------- | -------------------------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **When to Use**             | - Experiment with AKS at no cost<br>- New to AKS/Kubernetes                                 | - Production or mission-critical workloads needing high availability<br>- Financially backed SLA    | - Mission-critical workloads requiring **two years** of Kubernetes version support<br>- Highest reliability |
+| **Supported Cluster Types** | - Dev/test clusters<br>- Clusters < 10 nodes                                                | - Enterprise-grade or production workloads<br>- Up to 5,000 nodes                                   | - Enterprise-grade or production workloads<br>- Up to 5,000 nodes                                           |
+| **Pricing**                 | - Free cluster management<br>- Pay-as-you-go for resources                                  | - Pay-as-you-go for resources<br>- [Standard tier cluster management pricing](https://azure.microsoft.com/en-us/pricing/details/kubernetes-service/)                         | - Pay-as-you-go for resources<br>- [Premium tier cluster management pricing](https://azure.microsoft.com/en-us/pricing/details/kubernetes-service/)|
+| **Feature Comparison**      | - Recommended for clusters < 10 nodes<br>- Supports up to 1,000 nodes<br>- All AKS features | - Uptime SLA enabled<br>- Greater reliability<br>- Supports up to 5,000 nodes<br>- All AKS features | - Includes all Standard tier features<br>- [Microsoft maintenance past community support](https://learn.microsoft.com/en-us/azure/aks/long-term-support)                     |
+
+> [!TIP]
+> Which Tier Should You Choose?
+> - **Free Tier** → Best for **testing or learning**, small clusters (<10 nodes).
+> - **Standard Tier** → Best for **production workloads**, SLA-backed, up to 5,000 nodes.
+> - **Premium Tier** → Best for **mission-critical workloads**, extended Kubernetes version support (2 years), and advanced reliability.
+
+<img width="1198" height="392" alt="image" src="https://github.com/user-attachments/assets/97244861-fd9c-476a-9a40-d90d49c18e0c" />
+
+> [!NOTE]
+> Cost Impact as today (check last updated date):
+> - **Free Tier**: $0 for cluster management, pay for nodes only.
+> - **Standard Tier**: Adds cluster management cost (usually $0.10/hour per cluster).
+> - **Premium Tier**: Higher cluster management cost + advanced support.
+
+E.g as today (check last updated date):
+
+<img width="1410" height="977" alt="image" src="https://github.com/user-attachments/assets/6992a004-c148-44f2-9235-4f00b988f255" />
+
+For VMs in Node Pools (Standard vs Premium SSD, VM size): 
+
+<img width="1217" height="972" alt="image" src="https://github.com/user-attachments/assets/accbab1c-4818-46db-ba5e-22dbc4a7b5ae" />
+
+- You can use `Microsoft Copilot in Azure` to find the `best VM size for you`. Click here to see the [demo on how to use it](https://www.youtube.com/watch?v=HGdhUFHnij4&t=819s).
+  - Copilot uses your `subscription details and resource availability to recommend the most suitable VM size.`
+  - It can also `assist with quota checks and guide you to request more capacity if needed.`
+
+    <img width="1910" height="1003" alt="image" src="https://github.com/user-attachments/assets/6deae8de-410f-478f-9327-a5af8b296fa3" />
+    
+- And, Managed OS Disks in Azure are block-level storage volumes that are automatically managed by Azure for virtual machines. Click here to read more about [Azure managed disk types](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types)
+
+    <img width="1200" height="662" alt="image" src="https://github.com/user-attachments/assets/2d6773ce-45eb-4053-a1d1-791ab106d023" />
+
+From [Disk type comparison](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types#disk-type-comparison)
+
+## Best practices 
+
+- Cluster Size & Node Pools
+  - Use `Virtual Nodes or Burstable VMs (B-series) for cost efficiency.`
+  - `Spot instances for non-critical workloads.`
+- Autoscaling: Enable `Cluster Autoscaler to scale nodes dynamically.`
+- Container Registry: Use Azure Container Registry `(ACR) with geo-replication only if needed.`
+- Networking Costs: Minimize cross-region traffic;` keep AKS and app services in same region.`
+- Reserved Instances: For predictable workloads, `reserve VMs for 1–3 years to save up to ~57%.`
+
 <!-- START BADGE -->
 <div align="center">
   <img src="https://img.shields.io/badge/Total%20views-1443-limegreen" alt="Total views">
