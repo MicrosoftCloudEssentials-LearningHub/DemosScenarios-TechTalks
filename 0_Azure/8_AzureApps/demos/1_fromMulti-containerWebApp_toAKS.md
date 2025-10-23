@@ -22,6 +22,9 @@ Last updated: 2025-10-23
 - [Disk type comparison](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types#disk-type-comparison)
 - [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
 - [Microsoft Copilot in Azure (VM sizing demo video)](https://www.youtube.com/watch?v=HGdhUFHnij4&t=819s)
+- [Cluster components](https://learn.microsoft.com/en-us/azure/aks/core-aks-concepts#cluster-components)
+
+    <img width="1947" height="662" alt="image" src="https://github.com/user-attachments/assets/7398b98f-499b-4707-9c69-163cf520c88d" />
 
 </details>
 
