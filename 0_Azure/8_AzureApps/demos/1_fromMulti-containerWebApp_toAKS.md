@@ -48,9 +48,73 @@ Last updated: 2025-10-23
 >   - Handles orchestration: scaling, load balancing, self-healing.
 >   - Enables automated deployments and rolling updates.
 
+## Container related services
+
+> Typical Flow:
+
+1.  **Build image → Push to ACR**
+2.  **Choose deployment service:**
+    *   AKS (complex orchestration)
+    *   Container Apps (simpler, serverless)
+    *   ACI (quick jobs)
+3.  **Add storage if needed**
+4.  **Configure networking, scaling, monitoring**
 
 
+<details>
+<summary><b> 1. Azure Container Registry (ACR)</b> (Click to expand)</summary>
+  
+> This is where you store your container images (like Docker images). Think of it as your private container image repository.
+> - **When to use:** Almost always if you’re deploying containers in Azure. You build your app locally or in CI/CD, push the image to ACR, and then other services (AKS, Container Apps, etc.) pull from it.
+> - **Setup order:** Usually first, because your deployment services need access to the images.
+  
+</details>
 
+<details>
+<summary><b>2. Azure Kubernetes Service (AKS)</b> (Click to expand)</summary>
+
+> A managed Kubernetes cluster for running containerized workloads at scale.
+> - **When to use:** If you need orchestration, scaling, and advanced networking for multiple containers or microservices.
+> - **Relation to ACR:** AKS pulls images from ACR to run your pods.
+> - **Setup order:** After ACR is ready and your images are pushed.
+
+</details>
+
+<details>
+<summary><b>3. Azure Container Apps</b> (Click to expand)</summary>
+
+> A serverless container platform for microservices and apps without managing Kubernetes directly.
+> - **When to use:** If you want simplicity and autoscaling without the complexity of AKS.
+> - **Relation to ACR:** Same as AKS, pulls images from ACR.
+> - **Setup order:** After ACR.
+
+</details>
+
+<details>
+<summary><b>4. Azure Container Instances (ACI)</b> (Click to expand)</summary>
+
+> Run containers quickly without orchestration, good for short-lived tasks or simple apps.
+> - **When to use:** For lightweight workloads or batch jobs.
+> - **Relation to ACR:** Can also pull images from ACR.
+
+</details>
+
+<details>
+<summary><b>5. Azure Container Storage</b> (Click to expand)</summary>
+
+> Persistent storage for stateful containers.
+> - **When to use:** If your containers need to keep data beyond their lifecycle (e.g., databases).
+> - **Setup order:** Alongside AKS or Container Apps if needed.
+
+</details>
+
+<details>
+<summary><b>6. Azure Kubernetes Service Edge Essentials</b> (Click to expand)</summary>
+
+> On-premises Kubernetes for edge scenarios.
+> - **When to use:** If you need hybrid or edge deployments.
+
+</details>
 
 <!-- START BADGE -->
 <div align="center">
