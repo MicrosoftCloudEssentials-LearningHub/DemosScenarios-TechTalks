@@ -60,8 +60,9 @@ Last updated: 2025-10-23
 3.  **Add storage if needed**
 4.  **Configure networking, scaling, monitoring**
 
-
-<img width="1383" height="988" alt="image" src="https://github.com/user-attachments/assets/59390dad-cf1e-4a81-b3bf-5cbbaef6b84f" />
+<div align="center">
+  <img width="750" height="677" alt="image" src="https://github.com/user-attachments/assets/400f5be2-45c2-4486-9c53-adf739aff4d0" />
+</div>
 
 <details>
 <summary><b> 1. Azure Container Registry (ACR)</b> (Click to expand)</summary>
