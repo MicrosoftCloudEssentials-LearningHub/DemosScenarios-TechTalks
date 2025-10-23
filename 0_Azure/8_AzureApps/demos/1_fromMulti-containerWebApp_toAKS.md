@@ -29,6 +29,10 @@ Last updated: 2025-10-23
 
 - [Best practices for performance and scaling for small to medium workloads in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/best-practices-performance-scale)
 - [Best practices for performance and scaling for large workloads in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/best-practices-performance-scale-large)
+- [Best practices for network policies in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/network-policy-best-practices)
+- [We can use Cilium instead of `kube-proxy`](https://learn.microsoft.com/en-us/azure/aks/network-policy-best-practices#azure-powered-by-cilium)
+
+  <img width="1693" height="738" alt="image" src="https://github.com/user-attachments/assets/22185e92-58ac-4119-9c56-c1c87345c242" />
 
 </details>
 
@@ -39,6 +43,7 @@ Last updated: 2025-10-23
 - [Container related services](#container-related-services)
 - [How to choose?](#how-to-choose)
 - [Pricing example](#pricing-example)
+- [Migration process](#migration-process)
 - [Best practices](#best-practices)
 
 </details>
@@ -223,6 +228,28 @@ For VMs in Node Pools (Standard vs Premium SSD, VM size):
     <img width="1200" height="662" alt="image" src="https://github.com/user-attachments/assets/2d6773ce-45eb-4053-a1d1-791ab106d023" />
 
 From [Disk type comparison](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types#disk-type-comparison)
+
+## Migration process
+
+> Difference Between Stateless and Stateful Applications:
+
+| **Aspect**           | **Stateless Application**                                    | **Stateful Application**                                      |
+| -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------- |
+| **Definition**       | `Does not retain data or session state` between requests.      | `Maintains data or session state across` requests or restarts.  |
+| **Examples**         | Web front-end, REST APIs, microservices without persistence. | Databases, message queues, AI model serving with local cache. |
+| **Scaling**          | Easy to scale horizontally; `no dependency on storage.`        | Requires persistent storage and careful scaling strategies.   |
+| **Storage Needs**    | None or external (e.g., cloud DB).                           | Needs Persistent Volumes (PV/PVC) and StatefulSets in AKS.    |
+| **Migration Effort** | Mostly lift-and-shift (Deployment + Service).                | Requires PV/PVC, StatefulSets, backup/restore planning.       |
+
+> ACA (Azure Container Application) → AKS Migration:
+- **Stateless apps** → Mostly lift-and-shift (Deployment + Service + Ingress).
+- **Stateful apps** → Additional work for storage, StatefulSets, and backup strategies.
+- **Infrastructure changes** → Networking, ingress, scaling, monitoring, and governance must be explicitly configured in AKS.
+
+| **Category**                  | **Details** |
+| ----------------------------- | -------------- |
+| **Infrastructure Components** | - **Container Image**: Reuse from Azure Container Registry (ACR); configure image pull secrets.<br>- **Networking**: Plan VNet, node pool subnet, Service CIDR, Pod CIDR.<br>- **Ingress / Routing**: Deploy Ingress Controller (NGINX or Azure Application Gateway), configure DNS and TLS.<br>- **Scaling**: Set up Horizontal Pod Autoscaler (HPA) or install KEDA manually.<br>- **Monitoring**: Enable Azure Monitor for Containers and Log Analytics.<br>- **Secrets Management**: Create Kubernetes Secrets for sensitive data.<br>- **Persistent Storage**: Define Persistent Volumes (PV), Persistent Volume Claims (PVC), and StatefulSets for stateful workloads.<br>- **Governance**: Apply Azure Policy and RBAC for cluster compliance. |
+| **Application Components**    | - **App Code**: No major changes if already containerized; validate readiness for Kubernetes (health probes, resource limits).<br>- **Environment Variables**: Move to ConfigMaps (non-sensitive) and Secrets (sensitive).<br>- **Ingress Rules**: Create Kubernetes Ingress YAML for routing.<br>- **Autoscaling Policies**: Configure resource requests/limits and HPA/KEDA triggers.<br>- **Advanced Features**: Install Dapr for service invocation or event-driven patterns; configure GPU node pools for AI workloads.<br>- **Stateful Logic**: Update app to use persistent storage paths if needed.<br>- **Observability Hooks**: Ensure app exposes metrics for Prometheus/Azure Monitor integration.                                        |
 
 ## Best practices 
 
