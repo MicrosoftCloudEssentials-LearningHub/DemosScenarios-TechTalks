@@ -54,12 +54,14 @@ Last updated: 2025-10-23
 
 1.  **Build image → Push to ACR**
 2.  **Choose deployment service:**
-    *   AKS (complex orchestration)
+    *   AKS (more flexible orchestration)
     *   Container Apps (simpler, serverless)
     *   ACI (quick jobs)
 3.  **Add storage if needed**
 4.  **Configure networking, scaling, monitoring**
 
+
+<img width="1383" height="988" alt="image" src="https://github.com/user-attachments/assets/59390dad-cf1e-4a81-b3bf-5cbbaef6b84f" />
 
 <details>
 <summary><b> 1. Azure Container Registry (ACR)</b> (Click to expand)</summary>
@@ -84,7 +86,7 @@ Last updated: 2025-10-23
 <summary><b>3. Azure Container Apps</b> (Click to expand)</summary>
 
 > A serverless container platform for microservices and apps without managing Kubernetes directly.
-> - **When to use:** If you want simplicity and autoscaling without the complexity of AKS.
+> - **When to use:** If you want simplicity from management perspective and autoscaling.
 > - **Relation to ACR:** Same as AKS, pulls images from ACR.
 > - **Setup order:** After ACR.
 
