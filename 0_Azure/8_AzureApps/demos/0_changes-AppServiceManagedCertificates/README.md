@@ -1,6 +1,5 @@
 # Important Changes to App Service Managed Certificates: Is Your Certificate Affected? - Overview 
 
-
 Costa Rica
 
 [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com)
