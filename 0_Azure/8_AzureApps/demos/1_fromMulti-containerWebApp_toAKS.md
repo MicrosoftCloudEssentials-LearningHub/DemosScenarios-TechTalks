@@ -13,6 +13,27 @@ Last updated: 2025-10-23
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
+- [Choose an Azure compute service (Decision Tree)](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree)
+- [Free, Standard, and Premium pricing tiers for Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/free-standard-pricing-tiers)
+- [AKS long-term support](https://learn.microsoft.com/en-us/azure/aks/long-term-support)
+- [AKS pricing details](https://azure.microsoft.com/en-us/pricing/details/kubernetes-service/)
+- [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/)
+- [Azure managed disk types](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types)
+- [Disk type comparison](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types#disk-type-comparison)
+- [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
+- [Microsoft Copilot in Azure (VM sizing demo video)](https://www.youtube.com/watch?v=HGdhUFHnij4&t=819s)
+
+</details>
+
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
+
+- [Overview](#overview)
+- [Container related services](#container-related-services)
+- [How to choose?](#how-to-choose)
+- [Pricing example](#pricing-example)
+- [Best practices](#best-practices)
+
 </details>
 
 > [!NOTE]
