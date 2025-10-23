@@ -13,6 +13,7 @@ Last updated: 2025-10-23
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
+- [What is Azure Kubernetes Service (AKS)?](https://learn.microsoft.com/en-us/azure/aks/what-is-aks)
 - [Choose an Azure compute service (Decision Tree)](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree)
 - [Free, Standard, and Premium pricing tiers for Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/free-standard-pricing-tiers)
 - [AKS long-term support](https://learn.microsoft.com/en-us/azure/aks/long-term-support)
@@ -25,6 +26,9 @@ Last updated: 2025-10-23
 - [Cluster components](https://learn.microsoft.com/en-us/azure/aks/core-aks-concepts#cluster-components)
 
     <img width="1947" height="662" alt="image" src="https://github.com/user-attachments/assets/7398b98f-499b-4707-9c69-163cf520c88d" />
+
+- [Best practices for performance and scaling for small to medium workloads in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/best-practices-performance-scale)
+- [Best practices for performance and scaling for large workloads in Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/best-practices-performance-scale-large)
 
 </details>
 
