@@ -52,7 +52,7 @@ Last updated: 2025-07-17
 ## Overview 
 
 - [Free Trial Capacity](https://github.com/brown9804/MicrosoftCloudEssentialsHub/blob/main/0_Azure/2_AzureAnalytics/0_Fabric/demos/7_FreeTrialCapacity.md)
-- [Fabric capabilities based on SKU size](https://github.com/brown9804/MicrosoftCloudEssentialsHub/blob/main/0_Azure/2_AzureAnalytics/0_Fabric/demos/9_Fabric_bySKU.md)
+- [Fabric capabilities based on SKU size](https://github.com/brown9804/MicrosoftCloudEssentialsHub/blob/main/0_Azure/2_AzureAnalytics/0_Fabric/demos/9_Fabric_bySKU)
 - [Fabric Capacity Reservations](https://github.com/brown9804/MicrosoftCloudEssentialsHub/blob/main/0_Azure/2_AzureAnalytics/0_Fabric/demos/12_FabricReservation.md)
 - [Fabric: Overview of Configuration Settings](https://github.com/brown9804/MicrosoftCloudEssentialsHub/blob/main/0_Azure/2_AzureAnalytics/0_Fabric/demos/19_FabricConfigs.md)
 - [Migration from Power BI Premium (P-SKUs) to Fabric (F-SKUs)](https://github.com/brown9804/MicrosoftCloudEssentialsHub/blob/main/0_Azure/2_AzureAnalytics/0_Fabric/demos/8_MigrationPtoFSku.md)
