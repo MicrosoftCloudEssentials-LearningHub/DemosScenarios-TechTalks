@@ -9,16 +9,15 @@ Last updated: 2025-07-17
 
 ------------------------------------------
 
-## Wiki 
-
 <details>
-<summary><b>Table of References </b> (Click to expand)</summary>
+<summary><b>List of References </b> (Click to expand)</summary>
 
 - [Fabric Draw.io icons](https://github.com/marclelijveld/Fabric-Icons/tree/main)
+- [Implement medallion architecture in Real-Time Intelligence](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/architecture-medallion#implement-the-medallion-architecture)
+
+  <img width="2040" height="754" alt="image" src="https://github.com/user-attachments/assets/53acd90e-1b3f-4ffd-ac77-428d6650bcab" />
 
 </details>
-
-## Contents 
 
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
