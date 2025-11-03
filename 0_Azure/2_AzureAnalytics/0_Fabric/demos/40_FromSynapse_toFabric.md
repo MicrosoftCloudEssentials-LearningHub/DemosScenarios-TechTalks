@@ -14,7 +14,12 @@ Last updated: 2025-04-08
 <summary><b>List of References</b> (Click to expand)</summary>
 
 - [Migrating from Azure Synapse Spark to Fabric](https://learn.microsoft.com/en-us/fabric/data-engineering/migrate-synapse-overview)
+
+     <img width="992" height="355" alt="image" src="https://github.com/user-attachments/assets/ccb6ce71-bb2e-4e27-b234-70e312fd64b6" />
+
 - [Migration planning: Azure Synapse Analytics dedicated SQL pools to Fabric Data Warehouse](https://learn.microsoft.com/en-us/fabric/data-warehouse/migration-synapse-dedicated-sql-pool-warehouse#prepare-for-migration)
+
+     <img width="1123" height="395" alt="image" src="https://github.com/user-attachments/assets/1479ea91-3cfa-48bd-ab75-2a190717e2b5" />
 
 </details>
 
