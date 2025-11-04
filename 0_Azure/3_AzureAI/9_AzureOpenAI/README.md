@@ -16,6 +16,7 @@ Last updated: 2025-07-17
 
 - [Azure Open AI resource - Change log](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/openai/Azure.AI.OpenAI/CHANGELOG.md)
 - [How to evaluate generative AI models and applications with Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/evaluate-generative-ai-app)
+- [The next chapter of the Microsoft–OpenAI partnership](https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/)
 
 </details>
 
@@ -33,7 +34,7 @@ Last updated: 2025-07-17
       
 </details>
 
-Key Features: 
+> Key Features: 
 - **Advanced AI Models**: The service provides access to advanced AI models for conversational, content creation, and data grounding use cases.
 - **Fine-tuning**: You can fine-tune the models, apply generative AI, and integrate with other Azure AI services.
 - **Models Available**: The models available through Azure OpenAI Service include GPT-4, GPT-3.5-Turbo, and Embeddings.
