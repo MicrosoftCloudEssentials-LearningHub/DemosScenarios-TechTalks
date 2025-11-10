@@ -37,6 +37,12 @@ Last updated: 2025-07-17
 | Geo-Disaster Recovery        | Offers geo-disaster recovery and geo-replication for data availability and business continuity.   |
 | Schema Registry              | Provides a centralized repository for managing schemas, ensuring data compatibility and consistency. |
 
+> E.g 
+
+<img width="7531" height="3606" alt="image" src="https://github.com/user-attachments/assets/8379a58e-baf0-4b0c-804f-b637455993ab" />
+
+From [Azure Event Hubs: A real-time data streaming platform with native Apache Kafka support](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-about)
+
 | **Category**          | **Details**                                                                                                                                                                                                 |
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **How It Works**      | - **Namespaces**: An Event Hubs namespace is a management container for event hubs. It provides DNS-integrated network endpoints and a range of access control and network integration management features.<br/>- **Partitions**: Event Hubs organizes sequences of events into partitions, which act as commit logs. This helps in managing large volumes of events and ensures that each event has a clear processing owner.<br/>- **Capture**: Event Hubs can automatically capture streaming data and store it in Azure Blob Storage or Azure Data Lake Storage for long-term retention and batch processing. |
