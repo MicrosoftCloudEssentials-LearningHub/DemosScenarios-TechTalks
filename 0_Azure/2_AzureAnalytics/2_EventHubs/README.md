@@ -49,6 +49,12 @@ From [Azure Event Hubs: A real-time data streaming platform with native Apache K
 | **Use Cases**         | - **Real-Time Analytics**: Process data from your event hub using Azure Stream Analytics to generate real-time insights.<br/>- **Data Exploration**: Analyze and explore streaming data with Azure Data Explorer.<br/>- **Event-Driven Applications**: Create cloud-native applications, functions, or microservices that run on streaming data from Event Hubs. |
 | **Benefits**          | - **Low Latency**: Ensures that data is ingested and processed with minimal delay, which is crucial for real-time applications.<br/>- **Cost Efficiency**: As a fully managed service, Event Hubs reduces the operational overhead and costs associated with managing your own event streaming infrastructure.<br/>- **Flexibility**: Supports a wide range of data sources and protocols, making it adaptable to various use cases and environments. |
 
+> Schema Registry in Event Hubs:
+
+<img width="3863" height="1719" alt="image" src="https://github.com/user-attachments/assets/ed2520e7-d51b-41d2-a4e8-59a1d832130d" />
+
+From [Microsoft - Schema Registry in Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-about#schema-registry-in-event-hubs)
+
 ## Frequently Asked Questions (FAQ)
 
 | **FAQ**                                      | **Answer**                                                                                                                                                                                                 | **References**                                                                                       |
