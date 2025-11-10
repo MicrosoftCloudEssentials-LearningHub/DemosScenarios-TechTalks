@@ -10,13 +10,24 @@ Last updated: 2025-10-23
 
 ----------
 
-
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
 - [What is Azure Internet of Things (IoT)?](https://learn.microsoft.com/en-us/azure/iot/iot-introduction)
 
 </details>
+
+> General:
+> - IoT devices sending telemetry to IoT Hub.
+> - IoT Hub forwarding data to Stream Analytics.
+> - Stream Analytics routing data to:
+>     - Event Hub for automation workflows (Functions, Logic Apps)
+>     - DBs for storage and reporting
+>     - Machine Learning/AI for smart-driven insights
+>     - Fabric/Power BI for visualization
+>     - Web Apps for customer interaction
+
+<img width="1413" height="836" alt="image" src="https://github.com/user-attachments/assets/4c3d3dd8-2a8c-4cba-85f7-43700c6d0d47" />
 
 > - We start with our users and clients, these could be people using web browsers, mobile apps, desktop applications, or even IoT devices. All their `requests and data enter our system through the frontend and Edge layer, which is powered by Azure Front Door for global routing, Azure CDN (Content Delivery Network) for fast content delivery, and Azure Static Web Apps for hosting our client interfaces.`
 > - From there, `requests flow into the Application and Compute layer`. Here, we run our `business logic and core workloads` using Azure App Service for web apps, Azure Functions for serverless event-driven tasks, Azure Container Apps for microservices, and AKS (Azure Kubernetes Service) for orchestrating containers at scale.
