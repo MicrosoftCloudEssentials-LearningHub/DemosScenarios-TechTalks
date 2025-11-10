@@ -37,7 +37,7 @@ Last updated: 2025-07-17
 | Geo-Disaster Recovery        | Offers geo-disaster recovery and geo-replication for data availability and business continuity.   |
 | Schema Registry              | Provides a centralized repository for managing schemas, ensuring data compatibility and consistency. |
 
-> E.g 
+> E.g:
 
 <img width="7531" height="3606" alt="image" src="https://github.com/user-attachments/assets/8379a58e-baf0-4b0c-804f-b637455993ab" />
 
