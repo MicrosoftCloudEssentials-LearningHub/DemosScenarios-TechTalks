@@ -13,6 +13,14 @@ Last updated: 2025-07-17
 > This repository showcases demonstrations and scenarios using Microsoft Cloud technologies. Please note that `these demos are intended as a guide and are based on my personal experiences. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly`: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
 
 <details>
+<summary><b>List of References</b> (Click to expand)</summary>
+
+- [Sample Solution Gallery](https://adoption.microsoft.com/en-us/sample-solution-gallery/)
+- [Open source projects and samples from Microsoft](https://github.com/microsoft)
+
+</details>
+
+<details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
 
 1. [Azure](./0_Azure/)  <br/>
