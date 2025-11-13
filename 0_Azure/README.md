@@ -9,6 +9,9 @@ Last updated: 2025-07-17
 
 ------------------------------------------
 
+> [!NOTE]
+> A landing zone is a general `cloud framework that sets up the core structure for all workloads`. Each use case (like an app, data pipeline, or API) then builds on top of this framework, using the `same environments (Dev → Test → UAT → Prod) and CI/CD pipelines to move code safely into production.` It’s general by design, but `applied per use case.`
+
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
