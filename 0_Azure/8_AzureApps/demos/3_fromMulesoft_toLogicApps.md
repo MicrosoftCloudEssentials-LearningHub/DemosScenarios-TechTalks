@@ -9,6 +9,27 @@ Last updated: 2025-10-23
 
 ----------
 
+## What is Manhattan Active platform?
+
+> [Manhattan Active](https://www.manh.com/en-in/our-solutions/manhattan-active-platform) is a cloud native `SaaS platform`, and it is always hosted by Manhattan Associates, `you do not self-host it on your own infrastructure.` Here’s the key detail:
+
+Deployment model:
+> - Manhattan Active runs on Google Cloud Platform (GCP) in a multi-tenant architecture.
+> - It’s delivered as a `managed service by Manhattan Associates, customers do not install or manage servers.`
+
+
+What you control:
+> - You `configure integrations, APIs, and extensions through Manhattan’s provided tools.`
+> - You `cannot move Manhattan Active to Azure or on-prem; instead, you integrate with it via REST APIs and event streams.`
+
+Implication for your project:
+> - Your `integration layer (Azure Logic Apps, APIM, etc.) will connect to Manhattan Active over secure HTTPS endpoints.`
+> - If you need low latency or private networking, you can use `APIM self-hosted gateway near Manhattan’s GCP region or set up private connectivity options Manhattan offers (usually via VPN or private link equivalents).`
+
+<img width="910" height="537" alt="image" src="https://github.com/user-attachments/assets/88056868-4236-491c-bba0-27883b5c4809" />
+
+From [ MANHATTAN ACTIVE® PLATFORM TECHNOLOGY](https://assets-global.website-files.com/609ce44d3dfdab98b5019cf9/61435ff88db5d62c6fd81e6b_MANHATTANACTIVEPLATFORMTECHNOLOGY.pdf)
+
 ## Integration with Manhattan Active platform 
 
 > Azure Logic Apps doesn’t have a native connector for Manhattan Active, but they `integrate very well because Manhattan Active is API first and exposes thousands of RESTful endpoints`
