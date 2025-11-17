@@ -13,6 +13,9 @@ Last updated: 2025-10-23
 
 > [Manhattan Active](https://www.manh.com/en-in/our-solutions/manhattan-active-platform) is a cloud native `SaaS platform`, and it is always hosted by Manhattan Associates, `you do not self-host it on your own infrastructure.` Here’s the key detail:
 
+<details>
+<summary><b> To read more about it  </b> (Click to expand)</summary>
+
 Deployment model:
 > - Manhattan Active runs on Google Cloud Platform (GCP) in a multi-tenant architecture.
 > - It’s delivered as a `managed service by Manhattan Associates, customers do not install or manage servers.`
@@ -25,6 +28,8 @@ What you control:
 Implication for your project:
 > - Your `integration layer (Azure Logic Apps, APIM, etc.) will connect to Manhattan Active over secure HTTPS endpoints.`
 > - If you need low latency or private networking, you can use `APIM self-hosted gateway near Manhattan’s GCP region or set up private connectivity options Manhattan offers (usually via VPN or private link equivalents).`
+
+</details>
 
 <img width="910" height="537" alt="image" src="https://github.com/user-attachments/assets/88056868-4236-491c-bba0-27883b5c4809" />
 
@@ -56,11 +61,17 @@ Event-Driven Patterns:
 
 
 Common Use Cases:
+
+<details>
+<summary><b> To read more about it  </b> (Click to expand)</summary>
+
 > - Order orchestration: Logic Apps `can call Manhattan APIs to create or update orders.`
 > - Shipment updates: Trigger Logic Apps `when Manhattan sends status changes.`
 > - Inventory sync: Periodically `poll Manhattan APIs or react to events for stock updates.`
 > - EDI ( Electronic Data Interchange) flows: Logic Apps can transform data from Manhattan into X12/EDIFACT for trading partners using Integration Account. `Refer to the automated exchange of business documents between
 > organizations using Electronic Data Interchange (EDI) standards. Instead of sending PDFs or emails, companies use structured formats like X12 or EDIFACT to communicate orders, invoices, shipment notices, etc.`
+
+</details>
 
 What is EDI: 
 
