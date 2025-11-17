@@ -9,6 +9,11 @@ Last updated: 2025-10-23
 
 ----------
 
+> - **Cost Flexibility & Cloud-Native Model**: Logic Apps offers `pay-per-use (Consumption) or predictable pricing (Standard).` No heavy upfront licensing, ideal for scaling Manhattan Active integrations and EDI flows.
+> - **Enterprise-Grade EDI/B2B Support**: Built-in `AS2, X12, EDIFACT actions with Integration Account Premium (unlimited artifacts, VNET support).` Plus `lossless B2B tracking via Azure Data Explorer for compliance.`
+> - **Hybrid & Multicloud Ready**: APIM self-hosted gateway can run near `Manhattan on GCP while keeping governance centralized in Azure`, reducing `latency and egress costs.`
+> - **Developer Productivity & Automation**: Visual workflow designer, 400+ connectors, `CI/CD with Azure DevOps/GitHub Actions`, and `Infrastructure-as-Code support.`
+
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
