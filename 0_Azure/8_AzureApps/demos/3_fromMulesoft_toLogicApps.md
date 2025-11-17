@@ -14,6 +14,8 @@ Last updated: 2025-10-23
 > - **Hybrid & Multicloud Ready**: APIM self-hosted gateway can run near `Manhattan on GCP while keeping governance centralized in Azure`, reducing `latency and egress costs.`
 > - **Developer Productivity & Automation**: Visual workflow designer, 400+ connectors, `CI/CD with Azure DevOps/GitHub Actions`, and `Infrastructure-as-Code support.`
 
+https://github.com/user-attachments/assets/14f21262-a153-4a8b-880e-5a53ced605f6
+
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
