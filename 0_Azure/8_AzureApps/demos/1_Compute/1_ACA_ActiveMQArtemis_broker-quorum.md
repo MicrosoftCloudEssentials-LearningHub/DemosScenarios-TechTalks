@@ -24,6 +24,12 @@ Last updated: 2025-10-23
 
 </details>
 
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
+
+
+</details>
+
 `Artemis is infrastructure, not a coding framework. You code against its APIs, but the broker itself runs as a service.`
 
 - You **run Artemis brokers** in Azure Container Apps, and if neeeded you can add other data centers.  
@@ -86,6 +92,8 @@ producer.send(session.createTextMessage("Order #123"));
 > `Split-brain`:
 > - In computing, it describes a `situation where two separate data sets are maintained with overlapping scope, leading to inconsistencies due to network partitions or failure conditions.`
 > - In distributed systems, it `indicates a scenario where nodes in a cluster lose communication, leading to conflicting data handling and potential data inconsistencies`
+
+## Best Practices for ActiveMQ Artemis on Azure Container Apps
 
 
 
