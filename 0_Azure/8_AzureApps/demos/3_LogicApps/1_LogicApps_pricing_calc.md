@@ -14,6 +14,7 @@ Last updated: 2025-10-23
 
 - [Pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?msockid=38ec3806873362243e122ce086486339)
 - [Logic Apps pricing table](https://azure.microsoft.com/en-us/pricing/details/logic-apps/?msockid=38ec3806873362243e122ce086486339)
+- [Limits and configuration reference for Azure Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-limits-and-config?tabs=consumption)
 
 </details>
 
