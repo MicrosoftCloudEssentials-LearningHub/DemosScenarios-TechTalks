@@ -17,7 +17,6 @@ Last updated: 2025-10-23
 
 </details>
 
-
 <details>
 <summary><b>Table of Content</b> (Click to expand)</summary>
 
@@ -28,8 +27,20 @@ Last updated: 2025-10-23
 </details>
 
 > [!TIP]
-> - Enable log retention policies and purge old runs to minimize cost
-> - Use Azure Monitor and Application Insights for telemetry instead of storing full run history indefinitely.
+> What is Data Retention in Logic Apps?
+> - Logic Apps stores run history, inputs, and outputs for troubleshooting and auditing. By default:
+>    - Consumption plan: 90-day retention for run history.
+>    - Standard plan: Configurable retention (can be shorter or longer).
+>    - Charges apply only when you store data beyond the default retention period or in additional storage.
+> - In summary:
+>   - Default retention (90 days) is included at no extra cost.
+>   - If you:
+>      - Extend retention (e.g., 180 days or 1 year).
+>      - Export run history to Azure Storage or Log Analytics.
+>      - Store diagnostic logs in Application Insights → Then storage charges apply.
+> - Recommendations: 
+>    - Enable log retention policies and purge old runs to minimize cost
+>    - Use Azure Monitor and Application Insights for telemetry instead of storing full run history indefinitely.
 
 | Consumption | Standard | 
 | --- | --- |
