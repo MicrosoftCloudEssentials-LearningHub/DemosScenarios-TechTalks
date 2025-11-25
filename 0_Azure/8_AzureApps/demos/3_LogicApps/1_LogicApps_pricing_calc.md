@@ -18,7 +18,7 @@ Last updated: 2025-10-23
 - [Usage metering, billing, and pricing for Azure Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-pricing)
 - [Run duration and history retention limits](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-limits-and-config?tabs=consumption#run-duration-and-history-retention-limits)
 - [Estimate storage costs for Standard logic app workflows in single-tenant Azure Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/estimate-storage-costs)
-- [Storage operations](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-pricing#consumption-multitenant) - Metering applies only to data retention-related storage consumption such as saving inputs and outputs from your workflow's run history.
+- [Storage operations](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-pricing#consumption-multitenant) - `Metering applies only to data retention-related storage consumption` such as saving inputs and outputs from your workflow's run history
 </details>
 
 <details>
