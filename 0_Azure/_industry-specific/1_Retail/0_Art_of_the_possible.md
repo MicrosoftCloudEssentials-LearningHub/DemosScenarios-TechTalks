@@ -32,6 +32,7 @@ Last updated: 2025-10-23
       - Improve data taxonomy and metadata
       - Enhance user experience with personalized content blocks.
 
+        <img width="1656" height="921" alt="retail-ai-samples drawio" src="https://github.com/user-attachments/assets/c7b41c55-fd5e-4e6f-af1c-d206e32e0d51" />
 
    
 
