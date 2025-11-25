@@ -63,7 +63,7 @@ https://github.com/user-attachments/assets/74d91084-d4ba-4de8-91a8-b168de4dec6a
     *   Regions with higher energy or facility costs tend to have slightly higher service prices.
 2.  **Local Taxes & Compliance**
     *   Some regions include additional taxes, VAT, or compliance-related surcharges.
-    *   Regulatory requirements (e.g., GDPR in EU) can increase operational overhead.
+    *   Regulatory requirements (e.g. GDPR in EU) can increase operational overhead.
 3.  **Currency Exchange Rates**
     *   Prices are adjusted based on local currency fluctuations against USD.
     *   Azure updates regional pricing periodically to reflect exchange rate changes.
@@ -90,8 +90,8 @@ E.g Standard: `App Service Premium or Workflow Service Plan pricing varies by re
 1. Identify Key Inputs
 
 *   **Avg Messages per Month** 
-*   **Estimated actions per message** (e.g., 50)
-*   **Estimated standard connector calls per message** (e.g., 30)
+*   **Estimated actions per message** (e.g. 50)
+*   **Estimated standard connector calls per message** (e.g. 30)
 *   Pricing:
     *   Actions: $0.000025 per execution
     *   Standard connector: $0.000125 per call
@@ -129,7 +129,7 @@ E.g Standard: `App Service Premium or Workflow Service Plan pricing varies by re
 > If Standard Plan:
 
 *   No per-action cost.
-*   Use fixed monthly instance cost (e.g., WS2 = $364/month).
+*   Use fixed monthly instance cost (e.g. WS2 = $364/month).
 *   Either:
     *   Put plan price in **Total cost** for all integrations combined.
     *   Or distribute proportionally by message volume.
