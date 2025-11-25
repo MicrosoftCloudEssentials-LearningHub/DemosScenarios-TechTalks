@@ -28,8 +28,12 @@ Last updated: 2025-10-23
 </details>
 
 > [!TIP]
-> - Enable log retention policies and purge old runs to minimize cost.
+> - Enable log retention policies and purge old runs to minimize cost
 > - Use Azure Monitor and Application Insights for telemetry instead of storing full run history indefinitely.
+
+| Consumption | Standard | 
+| --- | --- |
+| <img width="1438" height="898" alt="image" src="https://github.com/user-attachments/assets/b4e4a381-1e15-4322-83e9-6289b0937b74" /> | <img width="1415" height="860" alt="image" src="https://github.com/user-attachments/assets/8f495fed-966c-43f4-9748-d6bf8e95f43f" /> | 
 
 ## Consumption vs Standard
 
