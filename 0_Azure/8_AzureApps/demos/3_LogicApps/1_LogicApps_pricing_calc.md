@@ -15,7 +15,10 @@ Last updated: 2025-10-23
 - [Pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?msockid=38ec3806873362243e122ce086486339)
 - [Logic Apps pricing table](https://azure.microsoft.com/en-us/pricing/details/logic-apps/?msockid=38ec3806873362243e122ce086486339)
 - [Limits and configuration reference for Azure Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-limits-and-config?tabs=consumption)
-
+- [Usage metering, billing, and pricing for Azure Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-pricing)
+- [Run duration and history retention limits](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-limits-and-config?tabs=consumption#run-duration-and-history-retention-limits)
+- [Estimate storage costs for Standard logic app workflows in single-tenant Azure Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/estimate-storage-costs)
+- [Storage operations](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-pricing#consumption-multitenant) - Metering applies only to data retention-related storage consumption such as saving inputs and outputs from your workflow's run history.
 </details>
 
 <details>
@@ -59,7 +62,7 @@ Last updated: 2025-10-23
 | Feature                 | **Consumption Plan**                                                                                                                                          | **Standard Plan**                                                                                                                    |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | **Billing Basis**       | Pay-as-you-go per **trigger**, **action**, and **connector call**                                                                                             | Fixed monthly cost based on **compute resources**                                                                                    |
-| **Cost Predictability** | Variable – scales with usage                                                                                                                                  | Predictable – flat rate per App Service plan                                                                                         |
+| **Cost Predictability** | Variable, scales with usage                                                                                                                                  | Predictable, flat rate per App Service plan                                                                                         |
 | **Integration Account** | Same pricing for Integration Account                                                                                                                    | Same pricing for Integration Account                                                                                                 |
 | **Performance**         | Multi-tenant, scales automatically                                                                                                                            | Dedicated compute, better performance for heavy loads                                                                                |
 | **Best For**            | Low/medium volume or sporadic workflows                                                                                                                       | High-volume, continuous integrations                                                                                                 |
