@@ -26,10 +26,11 @@ Last updated: 2025-10-23
   
   <img width="1141" height="668" alt="MCP-Fabric-Agent2Agent-CopilotStudio-data agent Fabric + AI Foundry drawio" src="https://github.com/user-attachments/assets/5742dc3a-427d-4ab5-862d-ba291a31fc35" />
 
-3. Enable AI-driven suggestions for complementary products
-4. Real-time sentiment analysis and campaign triggers based on trends.
-5. Improve data taxonomy and metadata
-6. Enhance user experience with personalized content blocks.
+3. Customer360 AI Experience:
+      - Enable AI-driven suggestions for complementary products
+      - Real-time sentiment analysis and campaign triggers based on trends.
+      - Improve data taxonomy and metadata
+      - Enhance user experience with personalized content blocks.
 
 
    
