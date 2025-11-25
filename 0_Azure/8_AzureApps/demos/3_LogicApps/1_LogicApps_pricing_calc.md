@@ -21,11 +21,14 @@ Last updated: 2025-10-23
 <details>
 <summary><b>Table of Content</b> (Click to expand)</summary>
 
+- [Data Retention](#data-retention)
 - [Consumption vs Standard](#consumption-vs-standard)
 - [Prices Vary by Region](#prices-vary-by-region)
 - [How to calculate it?](#how-to-calculate-it)
 
 </details>
+
+## Data Retention
 
 > [!TIP]
 > What is Data Retention in Logic Apps?
