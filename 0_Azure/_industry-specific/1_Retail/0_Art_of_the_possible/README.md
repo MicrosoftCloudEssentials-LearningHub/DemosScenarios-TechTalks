@@ -10,6 +10,17 @@ Last updated: 2025-10-23
 
 ----------
 
+
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
+
+- [What is Real-Time Intelligence?](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/overview#how-do-i-use-real-time-intelligence)
+- [Overview of Microsoft Fabric eventstreams](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/overview?tabs=enhancedcapabilities)
+- [Overview of Microsoft Fabric eventstreams](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/overview?tabs=enhancedcapabilities)
+
+</details>
+
+
 ## AI Shopping assistant
 
 > `my own copilot`, `want to chat with my data` [GPT-RAG Solution Accelerator](https://github.com/Azure/GPT-RAG). RAG-based chatbot to interact with manuals, guides, and product data for better search and personalization.
