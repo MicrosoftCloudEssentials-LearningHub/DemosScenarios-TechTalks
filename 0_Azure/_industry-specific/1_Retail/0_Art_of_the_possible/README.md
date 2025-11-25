@@ -20,6 +20,15 @@ Last updated: 2025-10-23
 
 </details>
 
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
+
+- [AI Shopping assistant](#ai-shopping-assistant)
+- [Analyze customer behavior and feedback for trend discovery](#analyze-customer-behavior-and-feedback-for-trend-discovery)
+- [Customer360 AI Experience](#customer360-ai-experience)
+
+
+</details>
 
 ## AI Shopping assistant
 
