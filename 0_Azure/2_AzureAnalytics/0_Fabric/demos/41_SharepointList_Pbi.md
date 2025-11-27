@@ -18,6 +18,15 @@ Last updated: 2025-04-08
 
 </details>
 
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
+
+ - [General process](#general-process)
+ - [How to refresh?](#how-to-refresh)
+     - [Manual approach](#manual-approach)
+
+</details>
+
 ## General process 
 
 1. Select the list of assets; for this scenario, please choose the SharePoint list:
