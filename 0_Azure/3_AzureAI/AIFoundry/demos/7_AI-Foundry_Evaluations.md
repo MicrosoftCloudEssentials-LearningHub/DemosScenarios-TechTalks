@@ -13,12 +13,16 @@ Last updated: 2025-11-27
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
+- [Observability in generative AI](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/observability?view=foundry-classic)
+- [What’s New in Azure AI Foundry Finetuning: July 2025](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/what%E2%80%99s-new-in-azure-ai-foundry-finetuning-july-2025/4438850)
 
 </details>
 
 <details>
 <summary><b>Table of Content</b> (Click to expand)</summary>
 
+- [Overview](#overview)
+- [How it works?](#how-it-works)
 
 </details>
 
