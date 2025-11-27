@@ -21,6 +21,11 @@ Last updated: 2025-10-23
 <summary><b>List of References</b> (Click to expand)</summary>
 
 - [Use a split-brain DNS configuration to host a web app in Azure](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/networking/split-brain-dns)
+- [Choose an Azure compute service](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree)
+- [What is infrastructure as code (IaC)?](https://learn.microsoft.com/en-us/devops/deliver/what-is-infrastructure-as-code)
+- [CI/CD baseline architecture with Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/architectures/devops-pipelines-baseline-architecture?view=azure-devops)
+
+    <img width="1155" height="414" alt="image" src="https://github.com/user-attachments/assets/67cc7bd5-4cee-45b3-aaa3-64fad2de90cf" />
 
 </details>
 
