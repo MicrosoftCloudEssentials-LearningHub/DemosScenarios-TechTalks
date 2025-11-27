@@ -212,12 +212,41 @@ producer.send(session.createTextMessage("Order #123"));
       - **Delivery semantics:** Decide between at-least-once or at-most-once; implement idempotency for duplicates.  
       - **Flow control tuning:** Adjust producer credits and consumer prefetch to balance throughput and latency.  
       - **Graceful shutdowns:** Drain producers/consumers during maintenance to avoid unnecessary redeliveries.
+
+
+<details>
+<summary><b> Expand for detailed explanation</b> (Click to expand)</summary>
+
+- **Multi-endpoint URIs:** Provide clients with multiple broker addresses in connection strings. Use ordered or randomized lists based on locality preferences. Include backoff and jitter to avoid thundering herds during failover. `Clients need more than one door to walk through. Multi-endpoint configs remove DNS as a single point of failure and speed reconnection after broker loss.`
+   - **Prevents:** Extended client downtime when a single broker or DNS endpoint fails.  
+   - **Evidence:** Client reconnects complete within target RTO to alternate brokers; connection attempts distributed evenly, avoiding storms against one endpoint.
+
+- **Reconnect backoff/jitter:** Configure bounded retries, exponential backoff, and circuit breaking. Prefer fast local retries, slower cross-region retries. Detect stale connections aggressively and close them to trigger reconnection logic. Add jitter to prevent synchronized retry storms. `Backoff and jitter prevent thundering herds that crush recovering brokers. Circuit breakers avoid futile retries and resource exhaustion.`
+   - **Prevents:** Cascading failures during broker recovery; resource exhaustion from retry loops.  
+   - **Evidence:** Even distribution of reconnection attempts over time; brokers see stable, gradual connection ramp-up; circuit breakers open predictably under sustained failures.
+
+- **Delivery semantics:** Choose at-least-once or at-most-once delivery based on workload requirements. For at-least-once, implement idempotency keys and deduplication at consumers. For at-most-once, constrain scope carefully and test rigorously. For exactly-once, understand the limitations and test thoroughly. `HA changes delivery guarantees. Idempotency is your safety net for at-least-once; strict controls protect at-most-once from silent drops.`
+   - **Prevents:** Double-processing or silent message loss during failover events.  
+   - **Evidence:** Idempotent consumers handle duplicates safely; duplicate metrics tracked and managed; message loss rate stays within acceptable bounds for at-most-once workloads.
+
+- **Flow control tuning:** Adjust producer credits and consumer prefetch to match network latency and throughput requirements. Keep queue depths stable; avoid oversized prefetch across high-latency regions. Balance in-flight message counts to prevent memory pressure. `Credits and prefetch govern how much data is in-flight. Mis-tuning amplifies latency (too low) or exhausts memory (too high).`
+   - **Prevents:** Queue bloat, consumer starvation, producer stalls, and memory exhaustion from excessive in-flight messages.  
+   - **Evidence:** Balanced throughput across producers/consumers; bounded in-flight message counts; stable queue depths even across regions.
+
+- **Graceful shutdowns:** Drain producers before maintenance windows; close consumers cleanly to reduce redeliveries. Validate transaction boundaries across failovers to prevent partial commits. Planned maintenance should not look like a crash to clients. `Abrupt shutdowns cause unnecessary redeliveries and partial transactions. Draining ensures clean state transitions.`
+   - **Prevents:** Unnecessary duplicate messages and inconsistent transactional state.  
+   - **Evidence:** Maintenance windows show clean producer/consumer drains; zero unexpected redeliveries; transaction logs confirm no partial commits during planned shutdowns.
+
+</details>
+
 6. **Azure Container Apps specifics**
       - **Probes:** Align readiness probes with journal recovery; liveness probes should tolerate GC pauses.  
       - **Autoscaling:** Keep minimum replicas to preserve quorum; never scale voters below majority.  
       - **Revision rollouts:** Use rolling updates with surge capacity; ensure backup readiness before replacing live brokers.  
       - **Resource limits:** Right-size CPU/memory; set hard limits to avoid eviction.  
       - **Observability:** Monitor queue depth, consumer lag, connection churn, and election events with actionable alerts.
+
+      
 7. **Operations and DR drills**
       - **Regular failover tests:** Simulate broker crash, zone outage, and region outage.  
       - **Backup/restore rehearsals:** Test restores to staging; validate journal integrity.  
