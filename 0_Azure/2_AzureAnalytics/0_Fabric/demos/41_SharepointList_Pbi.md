@@ -24,7 +24,7 @@ Last updated: 2025-04-08
  - [General process](#general-process)
  - [How to refresh?](#how-to-refresh)
      - [Manual approach](#manual-approach)
-
+     - [Schedule refresh](#schedule-refresh)
 </details>
 
 ## General process 
@@ -82,6 +82,8 @@ https://github.com/user-attachments/assets/9f28c491-bf2c-407b-83ff-7a2171c5c063
 
 ### Manual approach 
 
+`Refresh now`
+
 > Here is the process for manually refreshing the data.
 
 > [!NOTE]
@@ -99,6 +101,11 @@ https://github.com/user-attachments/assets/e858dc17-176a-4836-bbed-f80e03e670eb
 | --- | --- | 
 | <img width="872" height="271" alt="image" src="https://github.com/user-attachments/assets/b4bdf493-c81f-46bf-8412-86ce27de3864" /> | <img width="368" height="187" alt="image" src="https://github.com/user-attachments/assets/2fa47954-6e64-467f-a63f-be8a0582447b" /> | 
 
+### Schedule refresh  
+
+`Daily, Weekly, time set`
+
+https://github.com/user-attachments/assets/910fce13-df61-4172-a273-24e35c36be8e
 
 <!-- START BADGE -->
 <div align="center">
