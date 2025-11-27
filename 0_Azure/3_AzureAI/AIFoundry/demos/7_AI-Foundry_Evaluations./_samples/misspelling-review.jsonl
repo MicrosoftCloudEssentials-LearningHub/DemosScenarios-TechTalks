@@ -1,0 +1,30 @@
+{"input":"addidas shoes","ground_truth":"misspelling"}
+{"input":"pataginia jacket","ground_truth":"misspelling"}
+{"input":"tumblr login","ground_truth":"brand name"}
+{"input":"nkie discounts","ground_truth":"misspelling"}
+{"input":"pepsi soda","ground_truth":"brand name"}
+{"input":"guccy handbag","ground_truth":"misspelling"}
+{"input":"expedia travel","ground_truth":"brand name"}
+{"input":"versaci belt","ground_truth":"misspelling"}
+{"input":"stbx coffee","ground_truth":"misspelling"}
+{"input":"lululemon leggings","ground_truth":"brand name"}
+{"input":"chanelle perfume","ground_truth":"misspelling"}
+{"input":"dunkin donuts","ground_truth":"brand name"}
+{"input":"starbuks rewards","ground_truth":"misspelling"}
+{"input":"ikea furniture","ground_truth":"brand name"}
+{"input":"holister hoodie","ground_truth":"misspelling"}
+{"input":"swarovski necklace","ground_truth":"brand name"}
+{"input":"playstaiton controller","ground_truth":"misspelling"}
+{"input":"spotify premium","ground_truth":"brand name"}
+{"input":"calvyn klein jeans","ground_truth":"misspelling"}
+{"input":"fedex tracking","ground_truth":"brand name"}
+{"input":"macdonalds menu","ground_truth":"misspelling"}
+{"input":"airbnb rentals","ground_truth":"brand name"}
+{"input":"hewelett packard laptop","ground_truth":"misspelling"}
+{"input":"costco membership","ground_truth":"brand name"}
+{"input":"chrystler parts","ground_truth":"misspelling"}
+{"input":"uber rides","ground_truth":"brand name"}
+{"input":"panera bred soup","ground_truth":"misspelling"}
+{"input":"lyft coupons","ground_truth":"brand name"}
+{"input":"netflicks subscription","ground_truth":"misspelling"}
+{"input":"amazon prime","ground_truth":"brand name"}
