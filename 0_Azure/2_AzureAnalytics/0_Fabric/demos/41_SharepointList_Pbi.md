@@ -18,6 +18,8 @@ Last updated: 2025-04-08
 
 </details>
 
+## General process 
+
 1. Select the list of assets; for this scenario, please choose the SharePoint list:
 
     <img width="1905" height="995" alt="image" src="https://github.com/user-attachments/assets/113ed3d7-1004-4256-9d5f-a752c1d2678c" />
@@ -26,15 +28,15 @@ Last updated: 2025-04-08
 
    <img width="1907" height="998" alt="image" src="https://github.com/user-attachments/assets/7118b05c-5879-41a6-929e-641ee13b1f01" />
 
-> Initial list:
-
-<img width="814" height="234" alt="image" src="https://github.com/user-attachments/assets/c9a58ee2-78d7-4871-85bb-97a8a8a9549e" />
+   > Initial list:
+   
+   <img width="814" height="234" alt="image" src="https://github.com/user-attachments/assets/c9a58ee2-78d7-4871-85bb-97a8a8a9549e" />
 
 3. Select the `name for the data set` that will be created as a copy of your information from SharePoint. It can be refreshed manually or
 automatically depending on the configuration. Choose the `workspace `where it will be published, as viewing and creating content in Fabric/Power BI requires the appropriate licenses. You can find more details about this
 [Power Bi Licensing - Overview](https://github.com/MicrosoftCloudEssentials-LearningHub/DemosScenarios-TechTalks/blob/main/0_Azure/2_AzureAnalytics/0_Fabric/demos/33_PowerBi_Licensing.md). Finally, click `continue`
 
-  <img width="1897" height="843" alt="image" src="https://github.com/user-attachments/assets/668c681d-d85f-4270-9083-3f1d2f4fab85" />
+      <img width="1897" height="843" alt="image" src="https://github.com/user-attachments/assets/668c681d-d85f-4270-9083-3f1d2f4fab85" />
 
 > [!NOTE]
 > If you have previously been connected to this List, this message will appear. Please feel free to select the option that best suits your needs.
@@ -52,22 +54,22 @@ automatically depending on the configuration. Choose the `workspace `where it wi
 https://github.com/user-attachments/assets/9f28c491-bf2c-407b-83ff-7a2171c5c063
 
 4. Please create a Power BI report using the provided dataset. There are several approaches you can take to accomplish this:
-
-> In the semantic model view, please select `Export` and then choose `Create a blank report`.
-
-<img width="1907" height="786" alt="image" src="https://github.com/user-attachments/assets/a1a82d61-b65e-4727-b294-1cacd0efa35a" />
-
-> For instance, when accessing it from the workspace view:
-
-<img width="1891" height="987" alt="image" src="https://github.com/user-attachments/assets/47e78f0b-2b09-4338-b678-a97aa8f99b21" />
-
-For example, this is how it looks:
-
-https://github.com/user-attachments/assets/832d492a-3538-4730-8ada-f811a4f09d1e
+   
+   > In the semantic model view, please select `Export` and then choose `Create a blank report`.
+   
+   <img width="1907" height="786" alt="image" src="https://github.com/user-attachments/assets/a1a82d61-b65e-4727-b294-1cacd0efa35a" />
+   
+   > For instance, when accessing it from the workspace view:
+   
+   <img width="1891" height="987" alt="image" src="https://github.com/user-attachments/assets/47e78f0b-2b09-4338-b678-a97aa8f99b21" />
+   
+   For example, this is how it looks:
+   
+   https://github.com/user-attachments/assets/832d492a-3538-4730-8ada-f811a4f09d1e
 
 ## How to refresh?
 
-> Now, let's consider a scenario where the information from SharePoint needs to be refreshed.
+> Now, let's consider a scenario where the information from SharePoint is refreshed, `how to update the report.`
 
 ### Manual approach 
 
