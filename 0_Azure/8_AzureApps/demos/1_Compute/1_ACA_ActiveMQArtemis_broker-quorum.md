@@ -100,6 +100,150 @@ producer.send(session.createTextMessage("Order #123"));
 
 ## Best Practices for ActiveMQ Artemis on Azure Container Apps
 
+1. **Failure-domain design**
+      - **Odd number of voters:** Always deploy 3, 5, or 7 voters. This ensures a clear majority and avoids ties.  
+      - **Geographic distribution:** Place voters in different Azure regions and on-prem data centers. No single site should hold majority control.  
+      - **Zone awareness:** Brokers should be spread across availability zones to survive zone-level outages.  
+      - **Partition testing:** Simulate network partitions to confirm only one broker becomes live.
+
+<details>
+<summary><b> Expand for detailed explanation</b> (Click to expand)</summary>
+
+- **Odd-number quorum:**  Use 3 or 5 quorum voters, never 2 or 4. Place at least one voter outside each broker’s region so no single site can form a majority alone. Test loss of any single site and confirm quorum still forms. `A majority requires a clear winner. With an odd count, you never get ties, so elections can complete deterministically under partial failures.`
+      - **Prevents:** Stalled elections, split-brain caused by ambiguous quorum.  
+      - **Evidence:** In a 3-voter setup, any single voter loss still yields a majority. In chaos tests, promotions still occur within expected time.
+- **Independent failure domains:** Map each broker and voter to distinct availability zones or regions. Avoid co‑locating a broker with a majority of voters. Document the “who can fail” matrix so one outage cannot elect two lives. `Co-locating voters and brokers in the same zone couples their fate; one outage eliminates both capacity and control. Spreading voters/brokers keeps control available when capacity isn’t.`
+      - **Prevents:** A single-zone outage taking down both messaging and the control plane that decides promotions.  
+      - **Evidence:** Zone failure leaves at least one live broker candidate and a majority of reachable voters.
+- **Network partition planning:**  Assume partial partitions. Define which segments can still communicate (brokers↔voters). Prefer cross-region voter placement with dedicated, monitored links. `Real failures are often partial: one site can reach voters, another can’t. Planning for asymmetric reachability ensures only the segment with majority acts.`
+      - **Prevents:** Two live brokers accepting writes on divergent partitions.  
+      - **Evidence:** Inject partial packet loss; only the segment with voter majority promotes.
+- **Power and maintenance windows:** Stagger maintenance windows across sites. Ensure quorum persists during planned downtime and autoscaling events. `Planned downtime can accidentally erode quorum. Staggering keeps the decision-making plane intact while you service capacity.`
+      - **Prevents:** Self-inflicted quorum loss during routine operations.  
+      - **Evidence:** During patch windows, voters remain ≥ majority; brokers continue serving or cleanly fail over.
+
+</details>
+
+2. **HA and split-brain prevention**
+      - **Clear live/backup roles:** Explicitly configure brokers as live or backup in `broker.xml`.  
+      - **Timeout tuning:** Set election timeouts based on measured cross-region latency (2–3× p95).  
+      - **Fencing:** Ensure failed brokers disable acceptors and stop writing journals to prevent dual writers.  
+      - **Chaos drills:** Test asymmetric failures (e.g., one broker loses voters) to validate quorum logic.
+
+<details>
+<summary><b> Expand for detailed explanation</b> (Click to expand)</summary>
+
+- **Explicit roles:** Configure clear live/backup roles (replication or shared-store) and validate the backup never becomes live without quorum. Keep role state in configuration management to prevent drift. `Ambiguous role state is fertile ground for dual-writes. Declaring live/backup roles and enforcing them via voters creates a single-writer guarantee.`
+      - **Prevents:** Two brokers acting as live due to config drift or race conditions.  
+      - **Evidence:** Startup logs show one live, one backup; backup refuses promotion without quorum.
+- **Timeout tuning:** Set election and failure-detection timeouts above your 95th percentile cross-region latency. Add jitter to retries to avoid synchronized flaps. Start conservative, then reduce based on measurements. `Latency spikes can look like failures. Timeouts aligned to cross-region latency ensure you don’t promote during transient slowness. Jitter avoids herd effects.`
+      - **Prevents:** Flapping promotions and rapid role oscillations under short-lived network jitter.  
+      - **Evidence:** Promotions occur only after sustained unreachability; no oscillations in election logs.
+- **Fencing actions:** Define and test fencing: disable acceptors, pause journal writes, or cordon the isolated node. The failed or partitioned broker must not accept client connections until quorum restores. `When a node is suspected failed, you must guarantee it cannot continue accepting traffic or writing storage. Fencing makes failure “safe.”`
+      - **Prevents:** Data corruption from “zombie” brokers writing after a backup is promoted.  
+      - **Evidence:** Isolated broker disables acceptors and journal writes until quorum restores.
+- **Single source of truth:**  Ensure only one broker is allowed to write the journal at any time. If using shared storage, enable lock/fencing mechanisms; if replication, verify backup promotion cancels the old live. `Storage consistency depends on exactly one writer. Replication or shared-store must enforce a hard lock or promotion cancelation.`
+      - **Prevents:** Divergent journals, irreconcilable message state.  
+      - **Evidence:** After failover, old live cannot rejoin as live without explicit demotion; storage lock is exclusive.
+- **Chaos tests:**  Induce packet loss and asymmetric partitions to verify the backup stays passive without quorum and the live recovers cleanly. `Assumptions fail in production. Chaos reveals hidden coupling and timing bugs before users do.`
+      - **Prevents:** Unknown failure modes surfacing under real incidents.  
+      - **Evidence:** Documented test runs for packet loss, asymmetric partitions, and broker crashes with predictable outcomes.
+
+</details>
+
+3. **Persistence and durability**
+      - **Journal configuration:** Size journal files for peak throughput; choose sync vs async writes based on RPO.  
+      - **Paging thresholds:** Configure queue limits and paging to prevent memory exhaustion during consumer lag.  
+      - **Replication vs shared-store:** Document your choice. Replication is simpler but heavier on bandwidth; shared-store requires strict fencing.  
+      - **Recovery validation:** Measure broker startup and journal recovery time; align readiness probes accordingly.
+
+<details>
+<summary><b> Expand for detailed explanation</b> (Click to expand)</summary>
+
+- **Journal configuration:** Choose sync writes for strict durability guarantees; async for higher throughput with small risk windows during crashes. Use AIO/NIO tuned to disk characteristics; allocate direct I/O if supported. Size journal files and compaction thresholds for 2–3× peak throughput to handle bursts. `Sync writes guarantee every message hits disk before acknowledgment, eliminating RPO at the cost of latency. Async trades small loss windows for speed. Right-sizing prevents I/O saturation during spikes.`
+   - **Prevents:** Message loss during crashes (sync) or I/O bottlenecks during peak load.  
+   - **Evidence:** Zero unacknowledged message loss with sync; consistent sub-millisecond fsync latencies; no I/O wait spikes in metrics.
+
+- **Paging thresholds:** Set address/queue size limits and paging thresholds to prevent memory exhaustion. Monitor page-in/out rates and back-pressure producers when consumers lag. Configure max-size-bytes and page-size-bytes based on available heap and expected message volume. `Unbounded queues exhaust memory when consumers slow down. Paging spills to disk gracefully; flow control stops producers before OOM kills the broker.`
+   - **Prevents:** Out-of-memory crashes during consumer lag or traffic surges.  
+   - **Evidence:** Stable heap usage under load; paging triggered predictably; producers receive flow-control signals before memory exhaustion.
+
+- **Replication vs shared-store:** Replication offers lower RPO, simpler fencing, and more network bandwidth usage. Shared-store requires robust storage locks and fencing to prevent dual writers. Document your choice, expected RPO/RTO, and validate with failover drills. `Replication keeps journals independent and promotes faster; shared-store centralizes state but needs perfect lock discipline. Each fits different latency/consistency tradeoffs.`
+   - **Prevents:** Mismatched expectations for recovery time and data loss; storage corruption from dual writes.  
+   - **Evidence:** Documented architecture decision; measured RTO/RPO; successful failover tests showing clean promotions and no journal conflicts.
+
+- **Recovery validation:** Measure startup and journal recovery time under realistic data volumes. Align readiness probes to avoid routing traffic before the broker is truly ready. Verify message integrity and ordering after crash/restart and post-failover. `A broker that reports "ready" while still replaying journals will drop or duplicate messages. Probes must wait for full initialization.`
+   - **Prevents:** Premature traffic routing causing failed deliveries or duplicate processing.  
+   - **Evidence:** Readiness probe delays match measured recovery time; no message loss or duplication detected in post-recovery audits.
+
+</details>
+
+
+4. **Networking and security**
+      - **Mutual TLS:** Require mTLS between brokers, voters, and clients. Rotate certs regularly.  
+      - **Private networking:** Use VNET integration and private DNS; avoid exposing broker control traffic publicly.  
+      - **Least privilege:** Apply role-based access per queue/topic; restrict admin endpoints.  
+      - **Health endpoint hygiene:** Protect liveness/readiness probes; avoid leaking broker state externally.
+
+<details>
+<summary><b> Expand for detailed explanation</b> (Click to expand)</summary>
+
+- **Mutual TLS:** Enable mTLS between brokers, voters, and clients to authenticate both ends and block rogue connections. Rotate certificates automatically (e.g., every 90 days), pin CA certificates, and disable legacy ciphers. Enforce TLS 1.2+ and perfect forward secrecy. `Authentication at both ends blocks rogue brokers/clients and man-in-the-middle attacks. Certificate rotation ensures long-term hygiene and limits exposure from compromised keys.`
+   - **Prevents:** Unauthorized access, traffic interception, impersonation, and credential replay.  
+   - **Evidence:** Certificate pinning logs; CA rotations tracked; rejected connection attempts from unknown identities; no weak cipher usage in TLS handshakes.
+
+- **Private networking:** Use VNET integration and private DNS for broker-to-broker and voter traffic. Block public ingress for control channels and restrict egress to necessary destinations only. Control traffic should never traverse the public internet to reduce attack surface and network jitter. `Exposing election and replication channels to hostile networks invites DoS and eavesdropping. Private paths are faster and safer.`
+   - **Prevents:** Exposure of election and replication channels to external attacks; latency variability from internet routing.  
+   - **Evidence:** No public endpoints for broker-to-broker/voter links; network security groups enforce minimal egress; DNS resolution stays internal.
+
+- **Least privilege:** Scope network security groups and firewall rules tightly. Segment broker admin endpoints from data paths. Use role-based authentication and per-queue/topic permissions. Apply role-based access control with per-queue scopes; restrict who can access admin interfaces. `Over-broad permissions turn minor misconfigurations into major breaches. Tight scopes limit blast radius.`
+   - **Prevents:** Lateral movement, accidental access to admin interfaces, queue misuse, and privilege escalation.  
+   - **Evidence:** Role-based policies enforce per-queue scopes; audit logs show denied attempts to access unauthorized queues or admin endpoints.
+
+- **Health endpoint hygiene:** Protect liveness/readiness endpoints to prevent external manipulation or information disclosure. Avoid exposing broker management interfaces publicly. Monitor endpoints but don't let unauthenticated probes leak internal state. Gate and authenticate health checks where possible; rate-limit them. `Health probes can leak state (queue depths, connection counts) and be abused to trigger false failovers or gather reconnaissance data.`
+   - **Prevents:** External manipulation of failover signals, information disclosure, and DoS via probe abuse.  
+   - **Evidence:** Authentication required for detailed health checks; rate-limiting enforced; health endpoints accessible only from internal monitoring infrastructure.
+
+</details>
+
+5. **Client failover behavior**
+      - **Multi-endpoint URIs:** Configure clients with multiple broker addresses for automatic failover.  
+      - **Reconnect backoff/jitter:** Prevent thundering herds when brokers recover.  
+      - **Delivery semantics:** Decide between at-least-once or at-most-once; implement idempotency for duplicates.  
+      - **Flow control tuning:** Adjust producer credits and consumer prefetch to balance throughput and latency.  
+      - **Graceful shutdowns:** Drain producers/consumers during maintenance to avoid unnecessary redeliveries.
+6. **Azure Container Apps specifics**
+      - **Probes:** Align readiness probes with journal recovery; liveness probes should tolerate GC pauses.  
+      - **Autoscaling:** Keep minimum replicas to preserve quorum; never scale voters below majority.  
+      - **Revision rollouts:** Use rolling updates with surge capacity; ensure backup readiness before replacing live brokers.  
+      - **Resource limits:** Right-size CPU/memory; set hard limits to avoid eviction.  
+      - **Observability:** Monitor queue depth, consumer lag, connection churn, and election events with actionable alerts.
+7. **Operations and DR drills**
+      - **Regular failover tests:** Simulate broker crash, zone outage, and region outage.  
+      - **Backup/restore rehearsals:** Test restores to staging; validate journal integrity.  
+      - **Config drift detection:** Keep configs in Git; alert on unauthorized changes.  
+      - **Runbooks:** Document voter replacement, broker promotion/demotion, and planned maintenance.  
+      - **Post-incident reviews:** Tune timeouts and probes based on real incident data.
+
+## Q&A sample
+
+> `Discovery questions`, is about the **number and distribution of quorum voters**. Because quorum logic depends on majority, the design must use an **odd number** (3, 5, 7…) and spread them across independent sites.
+
+- **Ask about voter count**: Must be odd (3, 5, 7).  
+- **Ask about distribution**: Spread across DC1, DC2, and Azure so no single site dominates.  
+- **Check quorum resilience**: Ensure quorum survives if Azure voter fails.  
+- **Validate latency/security**: Azure voter must communicate reliably and securely with brokers.  
+- **Monitor and expand**: Voter health monitoring and multi‑region expansion strengthen HA.  
+
+| **Question** | **Why You’re Asking** | **Possible Answers (Signals)** |
+|--------------|-----------------------|--------------------------------|
+| How many quorum voters are deployed in total, and is the count odd (e.g., 3, 5)? | Odd number ensures clear majority; even numbers risk ties and stalled elections. | - 3 voters → safe baseline.<br>- 4 voters → risk of tie.<br>- 5 voters → stronger resilience. |
+| How are voters distributed across sites (on‑prem DC1, DC2, Azure)? | Distribution prevents one site from controlling quorum; Azure adds geo‑redundancy. | - Majority in one DC → risk if that DC fails.<br>- Spread across DC1, DC2, Azure → resilient. |
+| If Azure voter goes offline, does quorum still hold? | Ensures Azure is additive, not a single point of failure. | - Quorum remains with on‑prem voters → safe.<br>- Quorum lost without Azure → risky. |
+| Are brokers configured as live/backup pairs or clustered across DCs? | Clarifies failover model; affects how voters arbitrate. | - Live/backup pairs → simpler elections.<br>- Clustered brokers → more complex, need careful tuning. |
+| What’s the latency between Azure voter and on‑prem brokers? | High latency can delay elections or cause false failovers. | - <100ms → acceptable.<br>- >300ms → may need timeout tuning. |
+| How are voter processes monitored in Azure? | Silent voter failures can break quorum unexpectedly. | - Integrated with Azure Monitor → good.<br>- No monitoring → hidden risk. |
+| Do you plan to expand voters into multiple Azure regions? | Multi‑region voters avoid dependency on one Azure region. | - Yes → stronger geo‑redundancy.<br>- No → risk if Azure region fails. |
 
 
 <!-- START BADGE -->
