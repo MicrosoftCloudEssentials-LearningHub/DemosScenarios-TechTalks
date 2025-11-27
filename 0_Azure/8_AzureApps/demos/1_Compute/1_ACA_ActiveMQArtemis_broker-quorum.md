@@ -31,7 +31,11 @@ Last updated: 2025-10-23
 
 <details>
 <summary><b>Table of Content</b> (Click to expand)</summary>
-
+    
+- [Overview](#overview)
+- [How Artemis work?](#how-artemis-work)
+- [Best Practices for ActiveMQ Artemis on Azure Container Apps](#best-practices-for-activemq-artemis-on-azure-container-apps)
+- [Q&A sample](#qa-sample)
 
 </details>
 
@@ -42,6 +46,9 @@ Last updated: 2025-10-23
 - **Quorum voters** (also running in Azure or other sites) decide which broker should be live during failures.  
 - Your app doesn’t need to know which broker is live, the client libraries handle failover automatically if configured correctly.
 
+<img width="1600" height="917" alt="image" src="https://github.com/user-attachments/assets/d8fb6d24-429c-4199-a18a-2c737f330d9c" />
+
+From [Azure Container Apps overview](https://learn.microsoft.com/en-us/azure/container-apps/overview)
 
 ## Overview
 
@@ -246,6 +253,30 @@ producer.send(session.createTextMessage("Order #123"));
       - **Resource limits:** Right-size CPU/memory; set hard limits to avoid eviction.  
       - **Observability:** Monitor queue depth, consumer lag, connection churn, and election events with actionable alerts.
 
+<details>
+<summary><b> Expand for detailed explanation</b> (Click to expand)</summary>
+
+- **Probes:** Set liveness and readiness probes to accommodate journal recovery time and cluster handshakes. Container restarts are fast, but broker initialization isn't. Use readiness gates so traffic flows only after the broker is truly operational. Set readiness initial delay equal to measured journal recovery time; liveness timeout slightly longer than typical GC pauses. `Kubernetes reports containers ready when the process starts, not when the broker finishes recovery. Misaligned probes route traffic prematurely, causing errors.`
+   - **Prevents:** Premature traffic routing, failed connection handshakes, and false positive health-check cycles.  
+   - **Evidence:** Readiness probe passes only after journal replay and cluster initialization complete; liveness probe tolerates normal GC pauses without restart; no client connection failures during broker startup.
+
+- **Autoscaling:** Keep minimum replica counts that preserve quorum during maintenance and scale-down events. Avoid scaling voters down below majority threshold. Use metrics like active connections or queue depth for scale decisions, not just CPU/memory. Never reduce voters below the count needed for majority (e.g., keep ≥3 for a 3-voter setup). `Autoscalers don't understand quorum. Scaling down voters can unintentionally remove your majority, halting elections and promotions.`
+   - **Prevents:** Accidental quorum loss from autoscaler decisions; inability to elect a new live broker during scale-down.  
+   - **Evidence:** Autoscaling policies enforce minimum replica floors that maintain quorum; scale events logged and reviewed; quorum remains intact during all scale actions.
+
+- **Revision rollouts:** Use rolling updates with surge capacity so a new replica is ready before the old one terminates. Partition upgrades to ensure a live broker isn't replaced before its backup is confirmed ready. Validate new revisions against health endpoints before shifting traffic. `Rolling updates must preserve at least one live messaging path. Surge capacity and partitioned rollouts prevent update-induced outages.`
+   - **Prevents:** Update-induced outages or mid-traffic role swaps causing message loss or connection drops.  
+   - **Evidence:** Zero-downtime deployments; backup brokers report ready before live brokers terminate; traffic continues seamlessly during revision rollouts.
+
+- **Resource limits:** Right-size CPU and memory allocations based on measured peak usage. Set hard limits to prevent node eviction from resource contention. Pin replicas to availability zones when possible; avoid noisy-neighbor impacts by reserving baseline resources. `Under-provisioning causes throttling and OOM kills. Over-provisioning wastes cost. Noisy neighbors and memory spikes can evict critical brokers.`
+   - **Prevents:** Container preemption, out-of-memory crashes, CPU throttling under load, and noisy-neighbor interference.  
+   - **Evidence:** Stable resource usage patterns; no CPU throttling or memory pressure events; no evictions in container logs; consistent latency under load.
+
+- **Observability:** Centralize logs and metrics covering connections, queue depth, page usage, and election outcomes. Implement actionable alerts tied to SLOs. Sign or encrypt logs and keep retention aligned to audit and compliance needs. `You can't fix what you can't see. Fine-grained metrics and tamper-proof logs let you act before SLOs break and provide forensic trails.`
+   - **Prevents:** Blind spots leading to silent message buildup, election failures, or security incidents going undetected.  
+   - **Evidence:** Dashboards show queue depth, consumer lag, connection churn, and election events; alerts fire before SLO breaches; log integrity verified via signatures.
+
+</details>
       
 7. **Operations and DR drills**
       - **Regular failover tests:** Simulate broker crash, zone outage, and region outage.  
@@ -253,6 +284,31 @@ producer.send(session.createTextMessage("Order #123"));
       - **Config drift detection:** Keep configs in Git; alert on unauthorized changes.  
       - **Runbooks:** Document voter replacement, broker promotion/demotion, and planned maintenance.  
       - **Post-incident reviews:** Tune timeouts and probes based on real incident data.
+
+<details>
+<summary><b> Expand for detailed explanation</b> (Click to expand)</summary>
+
+- **Regular failover tests:** Simulate broker crashes, zone outages, and full region loss scenarios. Verify voter quorum behavior, promotion timing, and client continuity during each test. Record actual RTO/RPO and compare against targets. `High availability isn't real until it's rehearsed. Testing validates timing, correctness, and actual client experience under realistic failure conditions.`
+   - **Prevents:** Discovering HA gaps, misconfigured timeouts, or broken failover logic during actual incidents.  
+   - **Evidence:** Documented RTO/RPO from drill runs; clean promotions within target windows; no data anomalies or message loss; client reconnections succeed automatically.
+
+- **Backup/restore rehearsals:** Test full and point-in-time restores to staging environments regularly. Validate journal integrity, certificates/keys, and configuration after recovery. Automate backups with documented retention policies. `Backups you've never restored are hope, not strategy. Rehearsals reveal corruption, missing dependencies, and restore-time gaps.`
+   - **Prevents:** Discovering broken or incomplete backups during a crisis; prolonged downtime from restore failures.  
+   - **Evidence:** Successful restores to staging within RTO targets; journal integrity checks pass; all certificates, keys, and configs usable post-restore.
+
+- **Config drift detection:** Keep broker and voter configurations under version control (Git). Continuously compare running state to desired state in source control. Alert on unauthorized or manual changes. `Small manual edits accumulate into dangerous divergence. Drift creates inconsistent HA behavior and surprises during failover.`
+   - **Prevents:** Inconsistent HA behavior across nodes; unknown configuration changes breaking failover logic.  
+   - **Evidence:** Git-backed configurations; periodic automated diff checks; alerts fire on unauthorized changes; all config changes traceable to commits and approvals.
+
+- **Runbooks:** Create time-boxed, step-by-step runbooks with clear rollback triggers for common operations: voter replacement, broker promotion/demotion, and planned maintenance. Test runbooks during drills to validate accuracy and timing. `Clear steps reduce decision-making overhead and human error when stress is high. Time-boxing ensures teams don't get stuck.`
+   - **Prevents:** Human error, slow response during incidents, and incomplete or incorrect operational changes.  
+   - **Evidence:** Teams execute voter replacement or broker demotion quickly and consistently; runbook steps completed within documented time windows; rollback procedures validated.
+
+- **Post-incident reviews:** Capture metrics, timelines, decisions, and communication during incidents. Tune timeouts, resource limits, and probe thresholds based on actual failure data. Update chaos tests and runbooks to cover newly discovered failure modes. `Learning turns pain into resilience. Real incidents reveal assumptions and gaps that no amount of planning catches.`
+   - **Prevents:** Repeated failures from the same root cause; gradual erosion of HA guarantees from undocumented changes.  
+   - **Evidence:** Timeouts and probes adjusted based on real latency data; capacity planning updated with actual usage patterns; new chaos tests added for observed failure modes; incident learnings documented and shared.
+
+</details>
 
 ## Q&A sample
 
