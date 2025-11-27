@@ -102,12 +102,28 @@ If none apply, choose the closest match. Do not provide explanations, return onl
 <img width="1587" height="837" alt="image" src="https://github.com/user-attachments/assets/ba86935a-b4a8-459f-bd91-c7170b39ebb4" />
 
 > Example of values used:
-> F1 = 0.8 
-> Precision = 0.85 
-> Recall = 0.85
+> - F1 = 0.8 
+> - Precision = 0.85 
+> - Recall = 0.85
 
 <img width="1583" height="826" alt="image" src="https://github.com/user-attachments/assets/d649259c-23d9-4452-a719-5431724f757c" />
 
+> We can add more test criteria:
+
+<img width="1562" height="837" alt="image" src="https://github.com/user-attachments/assets/db34639f-702c-44e7-a15f-9d9aa793fa3e" />
+
+> Overall:
+
+<img width="1561" height="831" alt="image" src="https://github.com/user-attachments/assets/b4bae8d7-9010-4b3b-8326-f8b81746111b" />
+
+> E.g Achieved a pass rate of 11/12 responses. Similar to ML, LLMs overall performance depends on both the model architecture and the configuration parameters selected: 
+
+<img width="1030" height="827" alt="image" src="https://github.com/user-attachments/assets/6d4060f8-d330-41da-b66f-5474432febbb" />
+
+<img width="1907" height="1002" alt="image" src="https://github.com/user-attachments/assets/97ad9a41-2321-4872-bf75-7575bcd6c251" />
+
+> [!TIP]
+> The key is to review the prompt you are using and experiment with few values to determine which settings best meet your requirements.
 
 <!-- START BADGE -->
 <div align="center">
