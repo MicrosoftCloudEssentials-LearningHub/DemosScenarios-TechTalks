@@ -51,7 +51,14 @@ For example: In my Azure OpenAI instance, I'm not able to find the `ContentLoggi
 }
 ```
 
-
+> [!TIP]
+> In essence, `data storage for abuse monitoring is off` means the same thing as `Zero Data Retention (ZDR) with abuse monitoring disabled`, but the terminology depends on the platform:
+> - On the OpenAI platform, ZDR guarantees that prompts and completions are not saved or used for training purposes. But, abuse monitoring may require temporary data storage to identify harmful activity. If you have ZDR approval and have opted out of abuse monitoring, then your data will not be stored for this purpose.
+>     - [Enterprise privacy at OpenAI](https://openai.com/enterprise-privacy/)
+>     - [Business data privacy, security, and compliance](https://openai.com/business-data/)
+>  - From the Azure OpenAI standpoint, `Azure does not use the term ZDR, and by default, prompts and completions are not stored for training purposes.` Regarding `abuse monitoring`, it is `enabled by default and may require temporary data storage`. But, we can request to disable this storage, which also turns off abuse monitoring data storage.
+>      - [Abuse Monitoring](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/abuse-monitoring?view=foundry-classic)
+>      - [How can a customer verify if data storage for abuse monitoring is off?](https://learn.microsoft.com/en-us/azure/ai-foundry/responsible-ai/openai/data-privacy?view=foundry-classic&tabs=azure-portal#how-can-a-customer-verify-if-data-storage-for-abuse-monitoring-is-off)
 
 <!-- START BADGE -->
 <div align="center">
