@@ -14,9 +14,15 @@ Last updated: 2025-12-10
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
+- [Foundry IQ: boost response relevance by 36% with agentic retrieval](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/foundry-iq-boost-response-relevance-by-36-with-agentic-retrieval/4470720)
+- [Foundry IQ: Unlocking ubiquitous knowledge for agents](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/foundry-iq-unlocking-ubiquitous-knowledge-for-agents/4470812)
+- [Monitor Azure AI Search](https://learn.microsoft.com/en-us/azure/search/monitor-azure-cognitive-search)
 - [Chunk large documents for agentic retrieval and vector search in Azure AI Search](https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-chunk-documents)
 - [Chunk and vectorize by document layout or structure](https://learn.microsoft.com/en-us/azure/search/search-how-to-semantic-chunking)
+- [Azure MSFT Foundry Updates](https://azure.microsoft.com/en-us/updates/?searchterms=foundry) - related to Roadmap
 - [Design patterns for multitenant SaaS applications and Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-modeling-multitenant-saas-applications)
+- [Configure BM25 relevance scoring](https://learn.microsoft.com/en-us/azure/search/index-ranking-similarity)
+- [Configure semantic ranker and return captions in search results](https://learn.microsoft.com/en-us/azure/search/semantic-how-to-configure?tabs=portal)
 - [Design a secure multitenant RAG inferencing solution](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/secure-multitenant-rag)
 - [Architectural approaches for AI and machine learning in multitenant solutions](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/approaches/ai-machine-learning)
 - [What is Azure OpenAI in Azure AI Foundry Models?](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/overview)
