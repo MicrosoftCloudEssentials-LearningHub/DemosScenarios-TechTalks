@@ -1,11 +1,11 @@
-# Truncation Handling for Complex Documents - Overview 
+# Truncation & Chunking <br/> Handling for Complex Documents - Overview 
 
 Costa Rica
 
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-07-17
+Last updated: 2025-12-10
 
 ------------------------------------------
 
@@ -14,7 +14,11 @@ Last updated: 2025-07-17
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
-- [Chunk large documents for vector search solutions in Azure AI Search](https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-chunk-documents)
+- [Chunk large documents for agentic retrieval and vector search in Azure AI Search](https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-chunk-documents)
+- [Chunk and vectorize by document layout or structure](https://learn.microsoft.com/en-us/azure/search/search-how-to-semantic-chunking)
+- [Design patterns for multitenant SaaS applications and Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-modeling-multitenant-saas-applications)
+- [Design a secure multitenant RAG inferencing solution](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/secure-multitenant-rag)
+- [Architectural approaches for AI and machine learning in multitenant solutions](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/approaches/ai-machine-learning)
 - [What is Azure OpenAI in Azure AI Foundry Models?](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/overview)
 - [Troubleshooting and best practices for Azure OpenAI On Your Data](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/on-your-data-best-practices)
  
