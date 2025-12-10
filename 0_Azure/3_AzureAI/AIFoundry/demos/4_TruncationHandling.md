@@ -30,7 +30,10 @@ Last updated: 2025-12-10
 - [CallMiner partners with Microsoft to convert conversations into action with Azure AI Services](https://www.microsoft.com/en/customers/story/1657472830189903034-callminer_professionalservices_azure) - ISV CX story
 - [Auquan helps financial institutions save 50,000+ hours with Microsoft Azure OpenAI](https://www.microsoft.com/en/customers/story/23303-auquan-azure) - ISV CX Story
 - [Montgomery County revolutionizes constituent experiences with an AI chatbot powered by Microsoft Azure OpenAI Service](https://www.microsoft.com/en/customers/story/23066-montgomery-county-azure-open-ai-service) - ISV CX story
-- [Zenya embraces Azure OpenAI Service to revolutionize healthcare with smart quality management software](https://www.microsoft.com/en/customers/story/23419-zenya-azure-open-ai-service) - ISV CX story 
+- [Zenya embraces Azure OpenAI Service to revolutionize healthcare with smart quality management software](https://www.microsoft.com/en/customers/story/23419-zenya-azure-open-ai-service) - ISV CX story
+- [Relevance scoring in hybrid search using Reciprocal Rank Fusion (RRF)](https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking)
+- [Hybrid search using vectors and full text in Azure AI Search](https://learn.microsoft.com/en-us/azure/search/hybrid-search-overview)
+- [Azure AI Search: Outperforming vector search with hybrid retrieval and reranking](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/azure-ai-search-outperforming-vector-search-with-hybrid-retrieval-and-reranking/3929167)
  
 </details>
 
