@@ -27,6 +27,10 @@ Last updated: 2025-12-10
 - [Architectural approaches for AI and machine learning in multitenant solutions](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/approaches/ai-machine-learning)
 - [What is Azure OpenAI in Azure AI Foundry Models?](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/overview)
 - [Troubleshooting and best practices for Azure OpenAI On Your Data](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/on-your-data-best-practices)
+- [CallMiner partners with Microsoft to convert conversations into action with Azure AI Services](https://www.microsoft.com/en/customers/story/1657472830189903034-callminer_professionalservices_azure) - ISV CX story
+- [Auquan helps financial institutions save 50,000+ hours with Microsoft Azure OpenAI](https://www.microsoft.com/en/customers/story/23303-auquan-azure) - ISV CX Story
+- [Montgomery County revolutionizes constituent experiences with an AI chatbot powered by Microsoft Azure OpenAI Service](https://www.microsoft.com/en/customers/story/23066-montgomery-county-azure-open-ai-service) - ISV CX story
+- [Zenya embraces Azure OpenAI Service to revolutionize healthcare with smart quality management software](https://www.microsoft.com/en/customers/story/23419-zenya-azure-open-ai-service) - ISV CX story 
  
 </details>
 
