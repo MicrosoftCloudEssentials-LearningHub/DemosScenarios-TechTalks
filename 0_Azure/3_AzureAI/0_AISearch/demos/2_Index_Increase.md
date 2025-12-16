@@ -59,7 +59,7 @@ Last updated: 2025-07-17
 > - Indexing: You define indexes `(like a database schema) that organize documents for fast retrieval.`
 > - Search queries: `Full‑text search, filters, facets, and ranking` across structured and unstructured data.
 > - AI enrichment: You can `attach skills (like OCR, entity recognition, or language detection) to enrich raw content during indexing.`
-> - Scalability by tiers: Different pricing tiers (Free, Basic, Standard S1–S3, S3 HD) `set hard limits on how many indexes, documents, and storage you can use.`
+> - Scalability by tiers: Different pricing tiers (Free, Basic, Standard S1–S3, S3 HD) `set hard limits on how many indexes, documents, and storage you can use.` For example: 
 
 ## How LLMs fit in?
 
@@ -77,7 +77,11 @@ Last updated: 2025-07-17
     |-------------|----------------|--------------------------------|
     | **Azure AI Search** | **Index limits (e.g., 1,000 in S3 HD)** | Each index is a heavy structural object tied to partitions and replicas. Allowing more would destabilize the cluster. Microsoft enforces hard caps to guarantee performance and reliability. |
     | **Azure OpenAI (LLMs)** | **Quota limits (tokens per minute, requests per minute)** | These are throughput controls. Microsoft can allocate more GPU capacity to your tenant if approved. Quotas are “soft” limits that can be raised without changing the architecture. |
+
+    > E.g: 
     
+    <img width="1903" height="468" alt="image" src="https://github.com/user-attachments/assets/39908577-2f8d-4b14-a2f5-68c5e29af527" />
+
 ## Scaling approaches
 
 > [!NOTE]
