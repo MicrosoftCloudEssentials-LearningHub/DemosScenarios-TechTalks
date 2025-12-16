@@ -6,7 +6,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-07-17
+Last updated: 2025-12-16
 
 ----------
 
@@ -149,7 +149,7 @@ graph LR
 
 - Add `Overview`, click on `Import Data`:
   
-     <img width="550" alt="image" src="https://github.com/user-attachments/assets/0b5b9fb8-65ea-435a-b836-368bb9480537">
+  <img width="1565" height="622" alt="image" src="https://github.com/user-attachments/assets/3d40a3b4-d8ff-4536-9051-9c619e8985cd" />
 
 - In this example, let's choose `Azure Blob Storage`, and fill the required information:
 
