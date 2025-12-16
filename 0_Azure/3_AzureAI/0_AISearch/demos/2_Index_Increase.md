@@ -10,15 +10,14 @@ Last updated: 2025-07-17
 
 ----------
 
-<img width="1562" height="628" alt="image" src="https://github.com/user-attachments/assets/2573610e-f63c-47a6-9621-2856ee218447" />
-
-
 > [!TIP]
 > Imagine a huge library filled with millions of books (your raw data in storage).
 > - Without a catalog, a human would have to `walk through every hall and open every book to find what they need, it's slow and exhausting.`
 > - The catalog card is the index: `it summarizes the book’s title, author, subject, and keywords.`
 > - With that index, `you can jump straight to the right shelf and book in seconds.`
 > - Azure AI Search works like that catalog system: `it builds indexes for your files, so queries don’t have to scan every document.`
+
+<img width="1562" height="628" alt="image" src="https://github.com/user-attachments/assets/2573610e-f63c-47a6-9621-2856ee218447" />
 
 <details>
 <summary><b> List of References </b> (Click to expand)</summary>
