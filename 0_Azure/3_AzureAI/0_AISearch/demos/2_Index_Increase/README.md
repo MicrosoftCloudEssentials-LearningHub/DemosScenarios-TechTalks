@@ -60,6 +60,7 @@ Last updated: 2025-07-17
 - [Scaling approaches](#scaling-approaches)
 - [Examples](#examples)
 - [How to integrate vector embedding](#how-to-integrate-vector-embedding)
+- [Chunking Techniques](#chunking-techniques)
 
 </details>
 
@@ -191,6 +192,28 @@ flowchart LR
 
 From [Integrated vector embedding in Azure AI Search](https://learn.microsoft.com/en-us/azure/search/vector-search-integrated-vectorization#component-diagram)
 
+
+## Chunking Techniques
+>  Document chunking should balance token limits, semantic coherence, and retrieval accuracy. `The goal is to split large documents into manageable pieces that are small enough for embeddings and LLMs, but still meaningful enough to preserve context.`
+
+> [!TIP]
+> - **Chunk size**: Recommended ~512 tokens (~2,000 characters).
+> - **Overlap**: ~25% (~128 tokens) to preserve context.
+> - **Choice depends on document type**: Narrative vs structured vs conversational.  
+
+>  Why It Matters? 
+- Prevents exceeding embedding/LLM limits.  
+- Improves **retrieval precision** (finding the right chunk).  
+- Enhances **answer grounding** with citations.  
+- Enables **agentic retrieval** pipelines to work effectively with multi-query decomposition.  
+
+| **Technique** | **How it Works** | **Pros** | **Cons** | **Best Use Cases** |
+|---------------|------------------|----------|----------|--------------------|
+| **Fixed-size chunks** | Splits text into blocks of a set length (e.g., 512 tokens or 2,000 characters). Often includes overlap (10–25%). | Simple, predictable, easy to implement. | May break sentences or context mid-way. | Large narrative documents, technical manuals. |
+| **Variable-sized chunks** | Breaks text based on natural boundaries like sentences, paragraphs, or headings. | Preserves readability and logical flow. | Chunk sizes can vary widely, affecting retrieval consistency. | Articles, structured documents, Markdown/HTML files. |
+| **Semantic chunks** | Uses NLP or AI to split text into meaningful units that preserve semantic relationships. | High-quality context preservation, better search relevance. | More complex, requires AI processing. | Conversational text, FAQs, knowledge bases. |
+| **Custom combinations** | Mixes fixed and variable approaches, e.g., adding titles or metadata to chunks. | Flexible, balances context and efficiency. | Requires tuning and experimentation. | Enterprise apps needing both precision and recall. |
+| **Document parsing** | Indexers parse large files (Markdown, JSON, PDFs) into smaller search documents. | Automated, efficient for structured files. | Less control over chunk boundaries. | Technical documents, structured datasets. |
 
 <!-- START BADGE -->
 <div align="center">
