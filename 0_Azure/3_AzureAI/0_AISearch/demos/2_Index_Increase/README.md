@@ -17,17 +17,6 @@ Last updated: 2025-07-17
 > - With that index, `you can jump straight to the right shelf and book in seconds.`
 > - Azure AI Search works like that catalog system: `it builds indexes for your files, so queries don’t have to scan every document.`
 
-<img width="1562" height="628" alt="image" src="https://github.com/user-attachments/assets/2573610e-f63c-47a6-9621-2856ee218447" />
-
-> [!NOTE]
-> - **BM25** = the baseline keyword relevance algorithm. It scores documents based on term frequency and inverse document frequency. `BM25 is the foundation of traditional search in Azure AI Search.`
-> - **Semantic ranker** = a component that improves relevance by applying transformer-based semantic understanding on top of BM25 results. `Semantic ranker is a tool for better search, enhancing keyword matches with contextual meaning.`
-> - **Agentic retrieval** = a pipeline that integrates BM25, semantic ranker, and LLM reasoning to handle complex, multi-part queries and produce grounded answers. `Agentic retrieval is a system that uses those tools, orchestrated by LLMs, to make search conversational and intelligent.`
-
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/d1225f14-bc34-4f5c-b0f2-b8702bd77aca" />
-
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/8d9f4d6f-e067-440d-97b9-d4a529fbbdcb" />
-
 <details>
 <summary><b> List of References </b> (Click to expand)</summary>
 
@@ -67,6 +56,17 @@ Last updated: 2025-07-17
 - [Chunking Techniques](#chunking-techniques)
 
 </details>
+
+<img width="1562" height="628" alt="image" src="https://github.com/user-attachments/assets/2573610e-f63c-47a6-9621-2856ee218447" />
+
+> [!NOTE]
+> - **BM25** = the baseline keyword relevance algorithm. It scores documents based on term frequency and inverse document frequency. `BM25 is the foundation of traditional search in Azure AI Search.`
+> - **Semantic ranker** = a component that improves relevance by applying transformer-based semantic understanding on top of BM25 results. `Semantic ranker is a tool for better search, enhancing keyword matches with contextual meaning.`
+> - **Agentic retrieval** = a pipeline that integrates BM25, semantic ranker, and LLM reasoning to handle complex, multi-part queries and produce grounded answers. `Agentic retrieval is a system that uses those tools, orchestrated by LLMs, to make search conversational and intelligent.`
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/d1225f14-bc34-4f5c-b0f2-b8702bd77aca" />
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/8d9f4d6f-e067-440d-97b9-d4a529fbbdcb" />
 
 > Azure AI Search is a cloud search service that `lets you add powerful search capabilities to applications. Instead of just storing data`, it provides:
 > - Indexing: You define indexes `(like a database schema) that organize documents for fast retrieval.`
