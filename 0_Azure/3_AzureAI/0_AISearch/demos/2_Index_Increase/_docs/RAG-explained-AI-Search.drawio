@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
   <diagram name="Page-1" id="Gx1CyZMsG2fPfvc0WOeU">
-    <mxGraphModel dx="1079" dy="543" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1281" dy="756" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -54,62 +54,65 @@
         <mxCell id="lbl2" value="Similarity and Hybrid Searches" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;" parent="1" vertex="1">
           <mxGeometry x="374" y="111" width="200" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="DUA2djU7G_pBpnzG43uz-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.745;exitY=0.233;exitDx=0;exitDy=0;entryX=0.008;entryY=0.187;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="DUA2djU7G_pBpnzG43uz-8" target="rag">
+        <mxCell id="DUA2djU7G_pBpnzG43uz-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.745;exitY=0.233;exitDx=0;exitDy=0;entryX=0.008;entryY=0.187;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="DUA2djU7G_pBpnzG43uz-8" target="rag" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="169.49747468305804" y="301.50252531694184" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DUA2djU7G_pBpnzG43uz-5" value="Prompt" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="DUA2djU7G_pBpnzG43uz-4">
+        <mxCell id="DUA2djU7G_pBpnzG43uz-5" value="Prompt" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="DUA2djU7G_pBpnzG43uz-4" vertex="1" connectable="0">
           <mxGeometry x="-0.2471" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DUA2djU7G_pBpnzG43uz-9" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="DUA2djU7G_pBpnzG43uz-9" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry y="271" width="200" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="DUA2djU7G_pBpnzG43uz-7" value="" style="html=1;dashed=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;align=center;shape=mxgraph.gmdl.chat;strokeColor=none;fillColor=#737373;shadow=0;sketch=0;" vertex="1" parent="DUA2djU7G_pBpnzG43uz-9">
+        <mxCell id="DUA2djU7G_pBpnzG43uz-7" value="" style="html=1;dashed=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;align=center;shape=mxgraph.gmdl.chat;strokeColor=none;fillColor=#737373;shadow=0;sketch=0;" parent="DUA2djU7G_pBpnzG43uz-9" vertex="1">
           <mxGeometry width="50" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="DUA2djU7G_pBpnzG43uz-8" value="Natural Language Chat" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.oval_callout" vertex="1" parent="DUA2djU7G_pBpnzG43uz-9">
+        <mxCell id="DUA2djU7G_pBpnzG43uz-8" value="Natural Language Chat" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.oval_callout" parent="DUA2djU7G_pBpnzG43uz-9" vertex="1">
           <mxGeometry y="30" width="200" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="DUA2djU7G_pBpnzG43uz-10" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/app_services/Search_Services.svg;" vertex="1" parent="1">
+        <mxCell id="DUA2djU7G_pBpnzG43uz-10" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/app_services/Search_Services.svg;" parent="1" vertex="1">
           <mxGeometry x="350" y="131" width="68" height="49.120000000000005" as="geometry" />
         </mxCell>
         <UserObject label="&lt;img src=&quot;https://learn.microsoft.com/en-us/azure/search/media/vector-search-integrated-vectorization/integrated-vectorization-architecture.png&quot; alt=&quot;Diagram of components in an integrated vectorization workflow.&quot;&gt;" link="&lt;img src=&quot;https://learn.microsoft.com/en-us/azure/search/media/vector-search-integrated-vectorization/integrated-vectorization-architecture.png&quot; alt=&quot;Diagram of components in an integrated vectorization workflow.&quot;&gt;" id="DUA2djU7G_pBpnzG43uz-19">
-          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxCell style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
             <mxGeometry x="10" y="461" width="100" height="40" as="geometry" />
           </mxCell>
         </UserObject>
-        <mxCell id="DUA2djU7G_pBpnzG43uz-21" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/ai_machine_learning/Cognitive_Services.svg;" vertex="1" parent="1">
+        <mxCell id="DUA2djU7G_pBpnzG43uz-21" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/ai_machine_learning/Cognitive_Services.svg;" parent="1" vertex="1">
           <mxGeometry x="790" y="92" width="68" height="48" as="geometry" />
         </mxCell>
-        <mxCell id="DUA2djU7G_pBpnzG43uz-28" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="DUA2djU7G_pBpnzG43uz-28" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="610" y="92" width="160" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="DUA2djU7G_pBpnzG43uz-26" value="Databases and indexes&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="DUA2djU7G_pBpnzG43uz-28">
+        <mxCell id="DUA2djU7G_pBpnzG43uz-26" value="Databases and indexes&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="DUA2djU7G_pBpnzG43uz-28" vertex="1">
           <mxGeometry width="160" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="DUA2djU7G_pBpnzG43uz-15" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/SQL_Database.svg;" vertex="1" parent="DUA2djU7G_pBpnzG43uz-28">
+        <mxCell id="DUA2djU7G_pBpnzG43uz-15" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/SQL_Database.svg;" parent="DUA2djU7G_pBpnzG43uz-28" vertex="1">
           <mxGeometry x="10" y="32.538167938931295" width="40.30534351145038" height="53.74045801526717" as="geometry" />
         </mxCell>
-        <mxCell id="DUA2djU7G_pBpnzG43uz-17" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Cosmos_DB.svg;" vertex="1" parent="DUA2djU7G_pBpnzG43uz-28">
+        <mxCell id="DUA2djU7G_pBpnzG43uz-17" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Cosmos_DB.svg;" parent="DUA2djU7G_pBpnzG43uz-28" vertex="1">
           <mxGeometry x="78" y="32.538167938931295" width="53.74045801526717" height="53.74045801526717" as="geometry" />
         </mxCell>
-        <mxCell id="DUA2djU7G_pBpnzG43uz-30" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="DUA2djU7G_pBpnzG43uz-30" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="940" y="121" width="160" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="DUA2djU7G_pBpnzG43uz-29" value="Embedding Model&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="DUA2djU7G_pBpnzG43uz-30">
+        <mxCell id="DUA2djU7G_pBpnzG43uz-29" value="Embedding Model&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="DUA2djU7G_pBpnzG43uz-30" vertex="1">
           <mxGeometry width="160" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="DUA2djU7G_pBpnzG43uz-22" value="MSFT Foundry&amp;nbsp;&lt;div&gt;LLM&lt;/div&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/ai_machine_learning/AI_Studio.svg;" vertex="1" parent="DUA2djU7G_pBpnzG43uz-30">
+        <mxCell id="DUA2djU7G_pBpnzG43uz-22" value="MSFT Foundry&amp;nbsp;&lt;div&gt;LLM&lt;/div&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/ai_machine_learning/AI_Studio.svg;" parent="DUA2djU7G_pBpnzG43uz-30" vertex="1">
           <mxGeometry x="26" y="24.900000000000006" width="44" height="46.75" as="geometry" />
         </mxCell>
-        <mxCell id="DUA2djU7G_pBpnzG43uz-23" value="Custom" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Function_Apps.svg;" vertex="1" parent="DUA2djU7G_pBpnzG43uz-30">
+        <mxCell id="DUA2djU7G_pBpnzG43uz-23" value="Custom" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Function_Apps.svg;" parent="DUA2djU7G_pBpnzG43uz-30" vertex="1">
           <mxGeometry x="88" y="24.900000000000006" width="58" height="51.18" as="geometry" />
         </mxCell>
-        <mxCell id="DUA2djU7G_pBpnzG43uz-31" value="MSFT Foundry&amp;nbsp;&lt;div&gt;Language Model&lt;br&gt;&lt;/div&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/ai_machine_learning/AI_Studio.svg;" vertex="1" parent="1">
+        <mxCell id="DUA2djU7G_pBpnzG43uz-31" value="MSFT Foundry&amp;nbsp;&lt;div&gt;Language Model&lt;br&gt;&lt;/div&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/ai_machine_learning/AI_Studio.svg;" parent="1" vertex="1">
           <mxGeometry x="920" y="331" width="44" height="46.75" as="geometry" />
+        </mxCell>
+        <mxCell id="Bc4vSxAG2lycM4bbYETf-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.014;entryY=0.689;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="DUA2djU7G_pBpnzG43uz-26" target="DUA2djU7G_pBpnzG43uz-29">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
