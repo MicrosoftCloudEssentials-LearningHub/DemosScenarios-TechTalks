@@ -10,12 +10,34 @@ Last updated: 2025-10-23
 
 ----------
 
+`Red Hat OpenShift is built on open source technologies, but the commercial Red Hat OpenShift product itself is not fully open source. Instead, its upstream community project called OKD (Origin Kubernetes Distribution) is the open source version that powers Red Hat OpenShift`
+
 > Red Hat OpenShift is a Kubernetes-based container platform, and Azure Red Hat OpenShift (ARO) is the same OpenShift technology but offered as a fully managed service running on Azure infrastructure, jointly operated and supported by Microsoft and Red Hat.
 
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
 - [Azure Red Hat OpenShift](https://learn.microsoft.com/en-us/azure/openshift/intro-openshift)
+- [What is Azure Kubernetes Service (AKS)?](https://learn.microsoft.com/en-us/azure/aks/what-is-aks)
+- [Microsoft Azure Red Hat OpenShift explained](https://cloud.redhat.com/learn/microsoft-azure-red-hat-openshift-explained)
+- [Azure Red Hat OpenShift documentation](https://learn.microsoft.com/en-us/azure/openshift/)
+- [Core concepts for Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/core-aks-concepts)
+- [Red Hat OpenShift vs. Kubernetes](https://www.redhat.com/en/technologies/cloud-computing/openshift/red-hat-openshift-kubernetes)
+- [Azure Red Hat OpenShift pricing](https://azure.microsoft.com/en-us/pricing/details/openshift/)
+- [Azure Kubernetes Service (AKS) pricing](https://azure.microsoft.com/en-us/pricing/details/kubernetes-service/)
+- [Four benefits from Red Hat and Microsoft for Azure Red Hat OpenShift customers](https://www.redhat.com/en/blog/four-benefits-red-hat-and-microsoft-azure-red-hat-openshift-customers)
+- [OpenShift](https://github.com/openshift) - GH org
+- [Red Hat OpenShift Ecosystem](https://github.com/redhat-openshift-ecosystem)  - GH org
+
+</details>
+
+
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
+
+- [What is Red Hat OpenShift?](#what-is-red-hat-openshift)
+- [Core Advantages of ARO](#core-advantages-of-aro)
+- [Key Differences Between ARO and AKS](#key-differences-between-aro-and-aks)
 
 </details>
 
@@ -46,7 +68,20 @@ Last updated: 2025-10-23
 
 ## Key Differences Between ARO and AKS
 
-> - **AKS** is cheaper and simpler if you want raw Kubernetes with Azure integrations.  
+> - **AKS** is cheaper and simpler if you want raw Kubernetes with Azure integrations. 
+
+  <img width="750" alt="image" src="https://github.com/user-attachments/assets/3da60e89-3ce3-4752-9b29-ac5802d8461c" />
+  
+  > Cluster:
+  
+  <img width="1947" height="662" alt="image" src="https://github.com/user-attachments/assets/6fd33c2b-47d1-4bb3-b021-2fa86e868383" />
+
+  > Nodes: 
+  <img width="1561" height="578" alt="image" src="https://github.com/user-attachments/assets/d9c22fb5-d8e7-4270-8bce-f7ef3b4b23b0" />
+
+  > Namespaces:
+  <img width="500" height="380" alt="image" src="https://github.com/user-attachments/assets/5e22e14e-3af3-475b-8f0d-abecee0d50b7" />
+  
 >- **ARO** is more expensive but delivers **enterprise‑grade features, compliance, and reduced operational overhead**, ideal for regulated industries and large enterprises.  
 
 | **Aspect** | **Azure Red Hat OpenShift (ARO)** | **Azure Kubernetes Service (AKS)** |
