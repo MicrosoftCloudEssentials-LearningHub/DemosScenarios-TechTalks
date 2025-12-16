@@ -10,6 +10,9 @@ Last updated: 2025-07-17
 
 ----------
 
+<img width="1562" height="628" alt="image" src="https://github.com/user-attachments/assets/2573610e-f63c-47a6-9621-2856ee218447" />
+
+
 > [!TIP]
 > Imagine a huge library filled with millions of books (your raw data in storage).
 > - Without a catalog, a human would have to `walk through every hall and open every book to find what they need, it's slow and exhausting.`
