@@ -42,6 +42,7 @@ Last updated: 2025-07-17
 - [Auquan helps financial institutions save 50,000+ hours with Microsoft Azure OpenAI](https://www.microsoft.com/en/customers/story/23303-auquan-azure) - CX story
 - [Montgomery County revolutionizes constituent experiences with an AI chatbot powered by Microsoft Azure OpenAI Service](https://www.microsoft.com/en/customers/story/23066-montgomery-county-azure-open-ai-service) - CX story
 - [Zenya embraces Azure OpenAI Service to revolutionize healthcare with smart quality management software](https://www.microsoft.com/en/customers/story/23419-zenya-azure-open-ai-service) - CX story
+- [Agentic retrieval in Azure AI Search](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-overview?tabs=quickstarts)
 
 </details>
 
