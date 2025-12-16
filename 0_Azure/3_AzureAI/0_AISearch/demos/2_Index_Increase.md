@@ -52,6 +52,7 @@ Last updated: 2025-07-17
 - [Why quotas differ?](#why-quotas-differ)
 - [Scaling approaches](#scaling-approaches)
 - [Examples](#examples)
+- [How to integrate vector embedding](#how-to-integrate-vector-embedding)
 
 </details>
 
@@ -176,6 +177,13 @@ flowchart LR
 flowchart LR
     A[Add planId + numeric metadata] --> B[Index numeric values as structured fields] --> C[BM25 filter on planId/numeric values] --> D[Semantic rerank for context] --> E[Optional SME agent enforcement]
 ```
+
+## How to integrate vector embedding 
+
+<img width="1084" height="651" alt="image" src="https://github.com/user-attachments/assets/9d3f4479-3bc3-4f02-a7c2-1aba628d475c" />
+
+From [Integrated vector embedding in Azure AI Search](https://learn.microsoft.com/en-us/azure/search/vector-search-integrated-vectorization#component-diagram)
+
 
 <!-- START BADGE -->
 <div align="center">
