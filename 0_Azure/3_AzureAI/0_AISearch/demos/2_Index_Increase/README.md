@@ -58,7 +58,8 @@ Last updated: 2025-07-17
 
 </details>
 
-<img width="1562" height="628" alt="image" src="https://github.com/user-attachments/assets/2573610e-f63c-47a6-9621-2856ee218447" />
+<img width="1400" height="539" alt="image" src="https://github.com/user-attachments/assets/5a15fdea-7057-468b-bf08-602b84afa9c9" />
+
 
 > [!NOTE]
 > - **BM25** = the baseline keyword relevance algorithm. It scores documents based on term frequency and inverse document frequency. `BM25 is the foundation of traditional search in Azure AI Search.`
