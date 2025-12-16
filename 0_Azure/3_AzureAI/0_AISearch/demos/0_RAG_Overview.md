@@ -11,7 +11,7 @@ Last updated: 2025-07-17
 ----------
 
 <details>
-<summary><b>References </b> (Click to expand)</summary>
+<summary><b> List of References </b> (Click to expand)</summary>
    
 - [What's Azure AI Search?](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search)
 - [Indexer overview - Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-indexer-overview)
@@ -37,8 +37,10 @@ Last updated: 2025-07-17
   
 </details>
 
-## Content 
 
+<details>
+<summary><b> Table of Content </b> (Click to expand)</summary>
+   
 - [Overview](#overview)
 - [Search Service](#search-service)
 - [Indexer](#indexer)
@@ -51,6 +53,8 @@ Last updated: 2025-07-17
 - [Schedulers](#schedulers)
 - [Cost examples](#cost-examples)
 - [Zero Trust](#zero-trust)
+
+</details>
 
 ## Overview 
 
