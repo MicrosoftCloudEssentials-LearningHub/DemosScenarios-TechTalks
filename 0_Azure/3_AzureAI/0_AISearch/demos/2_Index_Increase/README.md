@@ -56,6 +56,7 @@ Last updated: 2025-07-17
 - [Examples](#examples)
 - [How to integrate vector embedding](#how-to-integrate-vector-embedding)
 - [Chunking Techniques](#chunking-techniques)
+- [Document Format Conversion HTML vs. Markdown](#document-format-conversion-html-vs-markdown)
 
 </details>
 
@@ -227,6 +228,17 @@ From [Integrated vector embedding in Azure AI Search](https://learn.microsoft.co
 | **Semantic chunks** | Uses NLP or AI to split text into meaningful units that preserve semantic relationships. | High-quality context preservation, better search relevance. | More complex, requires AI processing. | Conversational text, FAQs, knowledge bases. |
 | **Custom combinations** | Mixes fixed and variable approaches, e.g., adding titles or metadata to chunks. | Flexible, balances context and efficiency. | Requires tuning and experimentation. | Enterprise apps needing both precision and recall. |
 | **Document parsing** | Indexers parse large files (Markdown, JSON, PDFs) into smaller search documents. | Automated, efficient for structured files. | Less control over chunk boundaries. | Technical documents, structured datasets. |
+
+## Document Format Conversion HTML vs. Markdown
+
+`Efficacy of converting documents to markdown format for LLM processing`
+
+> When the conversion preserves the original meaning and structure, Markdown is usually the preferred format.
+> - Markdown is generally the better choice for LLM processing as long as the conversion quality is good. Markdown keeps the structure clean and lightweight, which helps models interpret headings, lists, tables, and emphasis without the noise of HTML tags. It also reduces the risk of formatting artifacts that can confuse the model.
+> - HTML can still work, but it often introduces extra markup, inline styles, or boilerplate that doesn’t add semantic value. That extra clutter can make the input harder for an LLM to parse and may even distort the document’s logical structure.
+
+E.g [Chunk and vectorize by document layout or structure](https://learn.microsoft.com/en-us/azure/search/search-how-to-semantic-chunking)
+
 
 <!-- START BADGE -->
 <div align="center">
