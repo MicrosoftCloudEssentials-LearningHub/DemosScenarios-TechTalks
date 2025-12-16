@@ -20,8 +20,9 @@ Last updated: 2025-07-17
 <img width="1562" height="628" alt="image" src="https://github.com/user-attachments/assets/2573610e-f63c-47a6-9621-2856ee218447" />
 
 > [!NOTE]
-> - Semantic ranker = a component that improves relevance. `Semantic ranker is a tool for better search.`
-> - Agentic retrieval = a pipeline that integrates the semantic ranker plus LLM reasoning to handle complex, multi-part queries and produce grounded answers. `Agentic retrieval is a system that uses that tool, but also orchestrates LLMs to make search conversational and intelligent.`
+> - **BM25** = the baseline keyword relevance algorithm. It scores documents based on term frequency and inverse document frequency. `BM25 is the foundation of traditional search in Azure AI Search.`
+> - **Semantic ranker** = a component that improves relevance by applying transformer-based semantic understanding on top of BM25 results. `Semantic ranker is a tool for better search, enhancing keyword matches with contextual meaning.`
+> - **Agentic retrieval** = a pipeline that integrates BM25, semantic ranker, and LLM reasoning to handle complex, multi-part queries and produce grounded answers. `Agentic retrieval is a system that uses those tools, orchestrated by LLMs, to make search conversational and intelligent.`
 
 <details>
 <summary><b> List of References </b> (Click to expand)</summary>
