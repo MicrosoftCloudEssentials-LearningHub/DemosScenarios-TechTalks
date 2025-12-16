@@ -24,6 +24,10 @@ Last updated: 2025-07-17
 > - **Semantic ranker** = a component that improves relevance by applying transformer-based semantic understanding on top of BM25 results. `Semantic ranker is a tool for better search, enhancing keyword matches with contextual meaning.`
 > - **Agentic retrieval** = a pipeline that integrates BM25, semantic ranker, and LLM reasoning to handle complex, multi-part queries and produce grounded answers. `Agentic retrieval is a system that uses those tools, orchestrated by LLMs, to make search conversational and intelligent.`
 
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/d1225f14-bc34-4f5c-b0f2-b8702bd77aca" />
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/8d9f4d6f-e067-440d-97b9-d4a529fbbdcb" />
+
 <details>
 <summary><b> List of References </b> (Click to expand)</summary>
 
