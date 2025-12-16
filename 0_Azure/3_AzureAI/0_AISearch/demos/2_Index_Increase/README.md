@@ -20,6 +20,7 @@ Last updated: 2025-07-17
 <details>
 <summary><b> List of References </b> (Click to expand)</summary>
 
+- [Azure AI Search pricing](https://azure.microsoft.com/en-us/pricing/details/search/?msockid=38ec3806873362243e122ce086486339#pricing)
 - [Service limits in Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-limits-quotas-capacity)
 - [Design patterns for multitenant SaaS applications and Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-modeling-multitenant-saas-applications)
 - [Create a hybrid query in Azure AI Search](https://docs.azure.cn/en-us/search/hybrid-search-how-to-query?tabs=portal)
