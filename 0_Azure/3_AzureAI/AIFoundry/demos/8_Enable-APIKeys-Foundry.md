@@ -13,7 +13,7 @@ Last updated: 2025-12-17
 > [!IMPORTANT]
 > If you’ve tried the update with the correct resource ID and API version, and the property still reads "disableLocalAuth": true, that means the setting is enforced by default in your subscription or tenant.
 > `This behavior is a platform level security enhancement by Microsoft. Local authentication (API keys) is disabled by default in many tenants, and you cannot override it with CLI or REST API. Even subscription owners and tenant admins will continue to see "disableLocalAuth": true unless the organization explicitly opts out, which is rare.`
->  The only `supported path forward is to use Microsoft Entra ID authentication for your Foundry projects.` [Microsoft Entra Agent ID](https://learn.microsoft.com/en-us/entra/agent-id/identity-professional/security-for-ai#microsoft-entra-agent-id)
+> It's recommended to use either Managed Identity or Service Principal to authenticate. `Supported path forward, use Microsoft Entra ID authentication for your Foundry projects.` [Microsoft Entra Agent ID](https://learn.microsoft.com/en-us/entra/agent-id/identity-professional/security-for-ai#microsoft-entra-agent-id)
 
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
