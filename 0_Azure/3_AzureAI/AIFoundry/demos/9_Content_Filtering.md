@@ -22,6 +22,8 @@ Last updated: 2025-12-26
 - [GPT‑5.1 in Foundry: A Workhorse for Reasoning, Coding, and Chat](https://techcommunity.microsoft.com/blog/partnernews/gpt%E2%80%915-1-in-foundry-a-workhorse-for-reasoning-coding-and-chat/4469803)
 - [Getting started with Azure OpenAI Assistants (Preview)](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/assistant?view=foundry-classic)
 - [Microsoft Privacy Statement](https://www.microsoft.com/en-us/privacy/privacystatement)
+- [Key concepts - Copilot Studio security and governance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance)
+- [Key concepts - Publish and deploy your agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-fundamentals-publish-channels?tabs=web)
 
 </details>
 
