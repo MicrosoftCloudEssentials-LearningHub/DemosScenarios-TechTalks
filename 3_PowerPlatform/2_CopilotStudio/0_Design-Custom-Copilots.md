@@ -18,7 +18,9 @@ Last updated: 2025-07-17
 - [Use entities and slot filling in copilots](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-entities-slot-filling)
 - [Create and edit topics with Copilot](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-authoring#whats-supported?wt.mc_id=power-virtual-agents_inproduct)
 - [Microsoft Power Automate documentation](https://learn.microsoft.com/en-us/power-automate/)
-  
+- [Key concepts - Copilot Studio security and governance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance)
+- [Key concepts - Publish and deploy your agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-fundamentals-publish-channels?tabs=web)
+
 </details>
 
 <details>
