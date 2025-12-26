@@ -42,8 +42,23 @@ Last updated: 2025-12-26
 > - Each category has severity levels: safe, low, medium, high.
 > - By default, medium and high severity content is blocked, while safe and low are allowed.
 
+> What Default guardrails means:
 
+> New UI:
 
+https://github.com/user-attachments/assets/16015025-aea8-4ffe-8b66-85c945a98b75
+
+| Default | Default v2 | 
+| --- | --- | 
+| <img width="1903" height="970" alt="image" src="https://github.com/user-attachments/assets/cde07660-349b-45ff-9051-f7208dcfb436" /> | <img width="1908" height="988" alt="image" src="https://github.com/user-attachments/assets/b7288176-aa8c-4bb3-99d6-2362890e17b0" /> |
+
+> Old view:
+
+https://github.com/user-attachments/assets/94e7e745-4123-4d63-909b-c126b6a2462f
+
+| Default | Default v2 | 
+| --- | --- | 
+| <img width="648" height="452" alt="image" src="https://github.com/user-attachments/assets/291628e7-1c4d-4fc4-acb4-2ea79516856e" /> | <img width="751" height="700" alt="image" src="https://github.com/user-attachments/assets/5b6c66b6-a72c-4310-ac7d-8ff133172a5a" /> | 
 
 ## Custom Filters
 
