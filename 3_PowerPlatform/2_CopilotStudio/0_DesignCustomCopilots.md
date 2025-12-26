@@ -41,6 +41,9 @@ Last updated: 2025-07-17
 
 </details>
 
+> [!IMPORTANT]
+> By default, data that flows through those agents is not shared publicly and is not used to train other models. Clikc here to read more about [Microsoft Privacy Statement](https://www.microsoft.com/en-us/privacy/privacystatement)
+
 ## Overview 
 
 > Copilot Studio on the Microsoft Power Platform introduces a user-friendly way to build and customize AI copilots using low-code/no-code tools, making AI solution development accessible for everyone. It simplifies task automation, enhances customer interactions, and improves workflow efficiency. 
