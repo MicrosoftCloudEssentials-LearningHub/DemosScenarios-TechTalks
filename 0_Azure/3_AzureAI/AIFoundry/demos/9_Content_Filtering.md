@@ -16,14 +16,14 @@ Last updated: 2025-12-26
 
 - [Content filtering overview](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/content-filter?view=foundry-classic)
 - [Configure content filters](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/content-filters?view=foundry-classic#understand-content-filter-configurability)
-- [Content filtering in Microsoft Foundry portal](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/content-filtering?view=foundry-classic)
 - [Azure OpenAI in Microsoft Foundry model deprecations and retirements](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/model-retirements?view=foundry-classic&tabs=text#current-models)
 - [Emissions Impact Dashboard for Azure](https://marketplace.microsoft.com/en-us/product/power-bi/coi-sustainability.emissions_impact_dashboard)
 - [GPT‑5.1 in Foundry: A Workhorse for Reasoning, Coding, and Chat](https://techcommunity.microsoft.com/blog/partnernews/gpt%E2%80%915-1-in-foundry-a-workhorse-for-reasoning-coding-and-chat/4469803)
 - [Getting started with Azure OpenAI Assistants (Preview)](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/assistant?view=foundry-classic)
 - [Microsoft Privacy Statement](https://www.microsoft.com/en-us/privacy/privacystatement)
-- [Key concepts - Copilot Studio security and governance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance)
-- [Key concepts - Publish and deploy your agent](https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-fundamentals-publish-channels?tabs=web)
+- [Content filtering in Microsoft Foundry portal](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/content-filtering?view=foundry-classic)
+- [Protected material detection](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/protected-material?view=foundry&tabs=text)
+- [Default Guardrails and controls policies for Microsoft Foundry Models](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/concepts/default-safety-policies?view=foundry-classic)
 
 </details>
 
@@ -41,6 +41,9 @@ Last updated: 2025-12-26
 >   - Self-harm
 > - Each category has severity levels: safe, low, medium, high.
 > - By default, medium and high severity content is blocked, while safe and low are allowed.
+
+
+
 
 ## Custom Filters
 
