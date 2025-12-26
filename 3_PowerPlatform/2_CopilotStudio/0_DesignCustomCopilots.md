@@ -10,6 +10,8 @@ Last updated: 2025-07-17
 
 ----------
 
+> Agents you build in Copilot Studio stay within your own Microsoft tenant/subscription by default. They are not publicly accessible unless you explicitly configure them to be shared or published (for example, deploying them to Teams, a website, or another channel).
+
 <details>
 <summary><b>List of References</b> (Click to expand)</summary>
 
