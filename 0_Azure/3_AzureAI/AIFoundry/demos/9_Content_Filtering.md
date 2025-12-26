@@ -21,7 +21,8 @@ Last updated: 2025-12-26
 - [Emissions Impact Dashboard for Azure](https://marketplace.microsoft.com/en-us/product/power-bi/coi-sustainability.emissions_impact_dashboard)
 - [GPT‑5.1 in Foundry: A Workhorse for Reasoning, Coding, and Chat](https://techcommunity.microsoft.com/blog/partnernews/gpt%E2%80%915-1-in-foundry-a-workhorse-for-reasoning-coding-and-chat/4469803)
 - [Getting started with Azure OpenAI Assistants (Preview)](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/assistant?view=foundry-classic)
-  
+- [Microsoft Privacy Statement](https://www.microsoft.com/en-us/privacy/privacystatement)
+
 </details>
 
 > [!NOTE]
@@ -50,7 +51,7 @@ Last updated: 2025-12-26
 >   - Bicep templates
 
 > [!IMPORTANT]
-> By default, user's, any organizational data that flows through those agents is not shared publicly and is not used to train other models.
+> By default, data that flows through those agents is not shared publicly and is not used to train other models. Clikc here to read more about [Microsoft Privacy Statement](https://www.microsoft.com/en-us/privacy/privacystatement)
 
 <!-- START BADGE -->
 <div align="center">
