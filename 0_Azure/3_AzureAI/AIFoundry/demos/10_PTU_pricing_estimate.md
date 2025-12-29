@@ -57,8 +57,7 @@ For example: [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricin
 
 > If the specific model (LLM) is not available yet in the dropdown [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/), we can leverage rough estimate.
 
-| `gpt-5-mini` |  | 
-| `gpt-5` | |
+`gpt-5-mini` \& `gpt-5` 
 
 ## Provisioned Capacity Calculator
 
