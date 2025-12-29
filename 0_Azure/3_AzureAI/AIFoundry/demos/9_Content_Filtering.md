@@ -27,6 +27,14 @@ Last updated: 2025-12-26
 
 </details>
 
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
+
+- [What Default guardrails means?](#what-default-guardrails-means)
+- [Custom Filters](#custom-filters)
+
+</details>
+
 > [!NOTE]
 > These filters are powered by Azure AI Content Safety and operate at two stages:
 > - Input filtering: Checks user prompts before sending them to the model.
