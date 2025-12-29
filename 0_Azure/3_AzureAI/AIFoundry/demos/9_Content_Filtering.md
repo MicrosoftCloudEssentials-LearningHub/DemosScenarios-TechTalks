@@ -42,7 +42,8 @@ Last updated: 2025-12-26
 > - Each category has severity levels: safe, low, medium, high.
 > - By default, medium and high severity content is blocked, while safe and low are allowed.
 
-> What Default guardrails means:
+
+## What Default guardrails means?
 
 > New UI:
 
