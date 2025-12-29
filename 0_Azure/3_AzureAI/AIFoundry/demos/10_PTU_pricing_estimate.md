@@ -51,12 +51,13 @@ For example: [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricin
 | ----- | ----- | ----- | ----- | 
 | `gpt-4.1-nano` | <img width="1087" height="886" alt="image" src="https://github.com/user-attachments/assets/5e31d568-a13b-4e01-9e9f-fcdd2bbccc5f" /> | <img width="1090" height="878" alt="image" src="https://github.com/user-attachments/assets/b5cbf1b6-27ce-48e8-9922-ce1fadce7e39" /> | <img width="1068" height="866" alt="image" src="https://github.com/user-attachments/assets/274b25fb-9283-48f3-a11f-4f0f8e69379d" /> | 
 | `gpt-4.1-mini` | <img width="1050" height="887" alt="image" src="https://github.com/user-attachments/assets/3e1b3258-56ee-4ebf-a79a-b0f41dc9a251" /> | <img width="1073" height="896" alt="image" src="https://github.com/user-attachments/assets/aca889b0-ca50-4162-a7af-6543a09e8ca7" /> | <img width="1063" height="902" alt="image" src="https://github.com/user-attachments/assets/ccadb3e8-0684-4958-ac63-7d427ec1fb9e" /> | 
+| `gpt-4.1`| <img width="1062" height="887" alt="image" src="https://github.com/user-attachments/assets/0429879c-39cf-412e-856b-6431718fd3fa" /> | <img width="1072" height="892" alt="image" src="https://github.com/user-attachments/assets/ecd9e938-f300-4c78-af1f-80a1d1dd292b" /> | <img width="1068" height="908" alt="image" src="https://github.com/user-attachments/assets/6e41f763-9c59-4a62-b77c-63b4c52b5c51" /> | 
 
+## Rough estimate?
 
-
+> If the specific model (LLM) is not available yet in the dropdown [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/), we can leverage rough estimate.
 
 | `gpt-5-mini` |  | 
-| `gpt-4.1`|  |
 | `gpt-5` | |
 
 ## Provisioned Capacity Calculator
