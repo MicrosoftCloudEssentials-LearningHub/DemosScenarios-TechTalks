@@ -25,9 +25,35 @@ Last updated: 2025-12-29
 
 <img width="1125" height="511" alt="image" src="https://github.com/user-attachments/assets/d418bd70-073b-4d26-906b-3c135d51a8ac" />
 
-
 From [Understanding costs associated with provisioned throughput units (PTU)](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/provisioned-throughput-onboarding?view=foundry-classic)
 
+## How to estimate?
+
+> [!IMPORTANT]
+> The most straightforward approach is to use the [Azure Provisioned Capacity Calculator](#provisioned-capacity-calculator) and the [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/) to generate a more relevant estimate. If the specific model (LLM) is not yet available in the dropdown, we can leverage rough estimate.
+
+For example: [Azure Provisioned Capacity Calculator](#provisioned-capacity-calculator)
+
+| Model | PTUs | 
+| ----- | ----- | 
+| `gpt-4.1-nano` | <img width="1858" height="640" alt="image" src="https://github.com/user-attachments/assets/404b83be-228a-4058-9918-a1066e654d34" /> | 
+| `gpt-4.1-mini` | <img width="1897" height="685" alt="image" src="https://github.com/user-attachments/assets/16443832-5f5c-4e68-9337-45607b765b71" /> | 
+| `gpt-5-mini` | <img width="1886" height="621" alt="image" src="https://github.com/user-attachments/assets/a3a35179-89e7-497b-a982-6896922d428b" /> | 
+| `gpt-4.1`| <img width="1881" height="645" alt="image" src="https://github.com/user-attachments/assets/07aba116-bd89-413d-a00f-beec21c4d06d" /> |
+| `gpt-5` | <img width="1889" height="644" alt="image" src="https://github.com/user-attachments/assets/b0463b28-c87d-4fd1-a206-759dba6b2bde" /> |
+
+For example: [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/)
+
+> [!TIP]
+> Reservations: `Reduce costs on select Azure services by forecasting your resource needs and paying for them in advance.`
+
+| Model | Price estimate | 1 month reserved | 1 year reserved |
+| ----- | ----- | 
+| `gpt-4.1-nano` | | 
+| `gpt-4.1-mini` | | 
+| `gpt-5-mini` |  | 
+| `gpt-4.1`|  |
+| `gpt-5` | |
 
 ## Provisioned Capacity Calculator
 
