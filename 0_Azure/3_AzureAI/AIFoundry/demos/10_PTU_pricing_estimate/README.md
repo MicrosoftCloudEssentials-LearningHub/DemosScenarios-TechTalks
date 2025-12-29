@@ -59,22 +59,61 @@ For example: [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricin
 
 > If the specific model (LLM) is not available yet in the dropdown [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/), we can leverage rough estimate.
 
-> [!NOTE]
-> Please review this chart as it provides a more accurate representation of the `Input TPM per PTU`:
+We need to calculate `Tokens per minute (TPM)`:
 
-> For example: `gpt-5-mini` \& `gpt-5`
+  <img width="1897" height="721" alt="image" src="https://github.com/user-attachments/assets/996fe8b8-259d-494c-ab03-c24d156652b8" />
+
+- **TPM (Tokens per Minute)**: Total tokens processed per minute.
+- **PTU (Provisioned Throughput Unit)**: A unit of capacity that governs how much TPM your deployment can handle.
+- **Token Weighting**: Output tokens are weighted more heavily than input tokens, based on model-specific ratios.
+
+> [!IMPORTANT]
+> Model Specific Weighting Ratios, click here to read more about it: [How much throughput per PTU you get for each model](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/provisioned-throughput-onboarding?view=foundry-classic#how-much-throughput-per-ptu-you-get-for-each-model)
+
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/e875d9fd-170c-4082-988f-362f067c6663" />
+
+| Model | Output Token Weight | Meaning |
+|-----------|---------------------|-----------------------------------------|
+| GPT-5 | 1 output = 8 input | Output tokens count 8× more than input | 
+| GPT-4.1 | 1 output = 4 input | Output tokens count 4× more than input | 
+| Older GPT | Varies | Legacy ratios may differ |
+
+> For example:
+
+- `Calls per minute = 10,000`
+- `Prompt tokens = 600`
+- `Response tokens = 100`
+- `Weight = 8` - `GPT-5`
+
+> PTU Utilization Formula (`Input TPM per PTU`):
+ 
+- **Step 1 – Input TPM**: `Input TPM = 10,000 × 600 = 6,000,000`
+- **Step 2 – Output TPM**: `Output TPM = 10,000 × 100 × 8 = 8,000,000`
+- **Step 3 – Effective TPM**: `Effective TPM = 6,000,000 + 8,000,000 = 14,000,000`
+
+> [!NOTE]
+> Please review [this chart](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/provisioned-throughput-onboarding?view=foundry-classic#latest-azure-openai-models) as it provides a more accurate representation of the `Input TPM per PTU`:
 
 <div align="center">
   <img width="600" alt="image" src="https://github.com/user-attachments/assets/d771343c-2821-4834-a9ec-82c262cfbbdd" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
 
+- **Step 4 – Divide by Model Rate (tokens/min per PTU)**
+    - Model rate for GPT‑5 = `23,750 tokens/min per PTU`
+    - Calculation: `Input TPM per PTU = 14,000,000 ÷ 23,750 ≈ 589.47`
+- **Step 5 – Round to nearest whole PTU**: `Required PTUs ≈ 590`
+- **Step 6 – Apply Model Minimum Requirement**
+    - Check the deployments require a minimum of `X PTUs`, since workloads are provisioned in whole PTUs, and rounding up is standard practice.
+
+        <img width="600" alt="image" src="https://github.com/user-attachments/assets/2efef880-4089-48b8-96eb-8e861ee09c61" />
+
+    - For example, final provisioning: `600 PTUs` (rounded up from 589.47 to meet minimum and capacity buffer)
 
 ## Provisioned Capacity Calculator
 
 > Improve accuracy of your estimate by adding multiple workloads to your PTU calculation. Each workload will be calculated and displayed as well as the aggregate total if both are running at the same time to your deployment.
 
 https://github.com/user-attachments/assets/31b5e2db-79dd-432f-a250-46227d551fcc
-
 
 <!-- START BADGE -->
 <div align="center">
