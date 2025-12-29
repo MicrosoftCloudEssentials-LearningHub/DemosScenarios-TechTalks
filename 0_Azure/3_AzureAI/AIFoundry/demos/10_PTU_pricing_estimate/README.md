@@ -21,6 +21,18 @@ Last updated: 2025-12-29
 - [Deployment types for Microsoft Foundry Models](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/concepts/deployment-types?view=foundry-classic#global-provisioned)
 - [Understanding costs associated with provisioned throughput units (PTU)](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/provisioned-throughput-onboarding?view=foundry-classic)
 - [Azure OpenAI provisioned Managed offering updates](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/provisioned-migration?view=foundry-classic)
+- [Prompt caching](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/prompt-caching?view=foundry-classic)
+- [Azure OpenAI in Microsoft Foundry Models quotas and limits](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/quotas-limits?view=foundry-classic&context=%2Fazure%2Fai-foundry%2Fcontext%2Fcontext&tabs=REST)
+- [Foundry Models sold directly by Azure](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure?view=foundry-classic&tabs=global-standard-aoai%2Cstandard-chat-completions%2Cglobal-standard&pivots=azure-openai#model-summary-table-and-region-availability)
+
+</details>
+
+<details>
+<summary><b>Table of Content </b> (Click to expand)</summary>
+  
+- [How to estimate?](#how-to-estimate)
+- [Rough estimate?](#rough-estimate)
+- [Provisioned Capacity Calculator](#provisioned-capacity-calculator)
 
 </details>
 
