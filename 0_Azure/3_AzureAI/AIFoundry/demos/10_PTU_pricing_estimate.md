@@ -48,8 +48,10 @@ For example: [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricin
 > Reservations: `Reduce costs on select Azure services by forecasting your resource needs and paying for them in advance.`
 
 | Model | Price estimate | 1 month reserved | 1 year reserved |
-| ----- | ----- | 
-| `gpt-4.1-nano` | | 
+| ----- | ----- | ----- | ----- | 
+| `gpt-4.1-nano` | <img width="1087" height="886" alt="image" src="https://github.com/user-attachments/assets/5e31d568-a13b-4e01-9e9f-fcdd2bbccc5f" /> | <img width="1090" height="878" alt="image" src="https://github.com/user-attachments/assets/b5cbf1b6-27ce-48e8-9922-ce1fadce7e39" /> | <img width="1068" height="866" alt="image" src="https://github.com/user-attachments/assets/274b25fb-9283-48f3-a11f-4f0f8e69379d" /> | 
+
+
 | `gpt-4.1-mini` | | 
 | `gpt-5-mini` |  | 
 | `gpt-4.1`|  |
