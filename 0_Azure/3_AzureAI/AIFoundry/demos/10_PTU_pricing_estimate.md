@@ -23,7 +23,9 @@ Last updated: 2025-12-29
 
 </details>
 
-<img width="1125" height="511" alt="image" src="https://github.com/user-attachments/assets/d418bd70-073b-4d26-906b-3c135d51a8ac" />
+<div align="center">
+  <img width="700" alt="image" src="https://github.com/user-attachments/assets/d418bd70-073b-4d26-906b-3c135d51a8ac" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
 
 From [Understanding costs associated with provisioned throughput units (PTU)](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/provisioned-throughput-onboarding?view=foundry-classic)
 
@@ -57,7 +59,15 @@ For example: [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricin
 
 > If the specific model (LLM) is not available yet in the dropdown [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/), we can leverage rough estimate.
 
-`gpt-5-mini` \& `gpt-5` 
+> [!NOTE]
+> Please review this chart as it provides a more accurate representation of the `Input TPM per PTU`:
+
+> For example: `gpt-5-mini` \& `gpt-5`
+
+<div align="center">
+  <img width="600" alt="image" src="https://github.com/user-attachments/assets/d771343c-2821-4834-a9ec-82c262cfbbdd" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
+
 
 ## Provisioned Capacity Calculator
 
