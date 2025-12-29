@@ -107,7 +107,7 @@ We need to calculate `Tokens per minute (TPM)`:
 
         <img width="600" alt="image" src="https://github.com/user-attachments/assets/2efef880-4089-48b8-96eb-8e861ee09c61" />
 
-    - For example, final provisioning: `590` or `600 PTUs` (rounded up from 589.47 to meet minimum and capacity buffer) 
+    - For example, final provisioning: `590 PTUs` or `600 PTUs` (rounded up from 589.47 to meet minimum and capacity buffer) 
 
 ## Provisioned Capacity Calculator
 
