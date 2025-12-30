@@ -12,6 +12,18 @@ Last updated: 2025-12-30
 
 > Here you can search for more [Microsoft Customer Success Stories](https://www.microsoft.com/en-us/customers/search)
 
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
+
+- [Microsoft Customer Success Stories](https://www.microsoft.com/en-us/customers/search)
+- [The University of Hong Kong leverages Microsoft 365 Copilot and Microsoft Copilot Studio to build a more dynamic learning environment](https://www.microsoft.com/en/customers/story/21598-the-university-of-hong-kong-microsoft-365-copilot)
+- [Haptik leverages Microsoft Azure Machine translation models supporting more than 100 languages; increases local queries by 2.5X and reduces human interventions by 80%](https://www.microsoft.com/en/customers/story/1544285355968909391-haptik-professional-services-azure-en-india)
+- [Avanade puts people first, accelerates sales productivity with Microsoft Copilot for Sales](https://www.microsoft.com/en/customers/story/1706310669000452858-avanade-dynamics365-sales-partner-professional-services-usa)
+- [AI-powered success—with more than 1,000 stories of customer transformation and innovation](https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/07/24/ai-powered-success-with-1000-stories-of-customer-transformation-and-innovation/?msockid=38ec3806873362243e122ce086486339)
+
+</details>
+
+
 > [!NOTE]
 > **Cross-cutting Pattern: Multi-Agent RAG**
 > - Many of these solutions `rely on multiple specialized agents retrieving enterprise data and augmenting generation with factual grounding.`
