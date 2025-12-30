@@ -20,9 +20,10 @@ Last updated: 2025-12-30
 - [Haptik leverages Microsoft Azure Machine translation models supporting more than 100 languages; increases local queries by 2.5X and reduces human interventions by 80%](https://www.microsoft.com/en/customers/story/1544285355968909391-haptik-professional-services-azure-en-india)
 - [Avanade puts people first, accelerates sales productivity with Microsoft Copilot for Sales](https://www.microsoft.com/en/customers/story/1706310669000452858-avanade-dynamics365-sales-partner-professional-services-usa)
 - [AI-powered success with more than 1,000 stories of customer transformation and innovation](https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/07/24/ai-powered-success-with-1000-stories-of-customer-transformation-and-innovation/?msockid=38ec3806873362243e122ce086486339)
+- [Use Power Platform connectors as tools](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-connectors?utm_source=chatgpt.com)
+- [Plan and prepare for Microsoft Copilot Studio in 2025 release wave 2](https://learn.microsoft.com/en-us/power-platform/release-plan/2025wave2/microsoft-copilot-studio/?utm_source=chatgpt.com)
 
 </details>
-
 
 > [!NOTE]
 > **Cross-cutting Pattern: Multi-Agent RAG**
