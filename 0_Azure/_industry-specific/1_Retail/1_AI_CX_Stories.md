@@ -10,6 +10,8 @@ Last updated: 2025-12-30
 
 ----------
 
+> Here you can search for more [Microsoft Customer Success Stories](https://www.microsoft.com/en-us/customers/search)
+
 > [!NOTE]
 > **Cross-cutting Pattern: Multi-Agent RAG**
 > - Many of these solutions `rely on multiple specialized agents retrieving enterprise data and augmenting generation with factual grounding.`
