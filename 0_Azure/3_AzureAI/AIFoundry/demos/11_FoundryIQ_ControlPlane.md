@@ -14,6 +14,7 @@ Last updated: 2026-01-05
 
 - [What is the Microsoft Foundry Control Plane?](https://learn.microsoft.com/en-us/azure/ai-foundry/control-plane/overview?view=foundry)
 - [MSFT Docs - What is the Microsoft Foundry Control Plane?](https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/ai-foundry/default/control-plane/overview.md) - GitHub repo
+- [Foundry IQ for Multi-Source AI Knowledge Bases](https://techcommunity.microsoft.com/blog/microsoftmechanicsblog/foundry-iq-for-multi-source-ai-knowledge-bases/4474921)
 
 </details>
 
