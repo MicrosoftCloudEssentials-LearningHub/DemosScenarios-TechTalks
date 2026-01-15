@@ -70,6 +70,71 @@ Last updated: 2026-01-05
 
 From [Bring your own AI gateway to Azure AI Agent Service (preview)](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/ai-gateway?view=foundry)
 
+> **Core Idea**: In all three cases, your **Agent service** (inside AI Foundry) sends API calls to an **AI Gateway**, which then forwards those calls to the actual AI model resource. The difference is **where the gateway lives** and **which models it connects to**.
+
+**Common Pattern**: 
+- **Agent service → Gateway → AI Resource**
+- Gateway abstracts the complexity of multiple AI backends.
+- Endpoints are consistent (`GET /models`, `POST /chat/completions`), so your agent doesn’t change when you switch backends.
+  
+  <details>
+  <summary> Scenario 1: APIM → Azure OpenAI </summary>
+  
+  **Flow:**
+  
+  1.  **Agent service** calls:
+      *   `GET /models` → to list available models.
+      *   `POST /chat/completions` → to send prompts.
+  2.  These requests go through **Azure API Management (APIM)**, which acts as the gateway.
+  3.  APIM routes the requests to **Azure OpenAI Resource**.
+  4.  Azure OpenAI responds with:
+      *   Available models: `gpt-4o`, `gpt-4.1-mini`.
+      *   Chat completion results.
+  
+  **How it works:**
+  
+  *   APIM is configured with an API that proxies to Azure OpenAI endpoints.
+  *   You set up policies for authentication and rate limiting.
+  *   Your Agent service only talks to APIM, not directly to OpenAI.
+  
+  </details>
+  
+  <details>
+  <summary> Scenario 2: APIM → AI Foundry </summary>
+  
+  **Flow:**
+  
+  1.  **Agent service** sends the same API calls (`GET /models`, `POST /chat/completions`) to APIM.
+  2.  APIM routes these requests to **AI Foundry Resource** (instead of Azure OpenAI).
+  3.  AI Foundry responds with:
+      *   Models like `gpt-4o`, `mistral-small-2503`.
+  
+  **How it works:**
+  
+  *   Same APIM setup, but backend points to AI Foundry’s API.
+  *   Useful if you want a single gateway for multiple AI sources.
+  
+  </details>
+  
+  <details>
+  <summary> Scenario 3: Self-hosted Gateway → AI Foundry</summary>
+  
+  **Flow:**
+  
+  1.  **Agent service** sends requests to your **self-hosted gateway**.
+  2.  Gateway routes to AI Foundry Resource.
+  3.  AI Foundry responds with:
+      *   Models like `Deepseek`, `grok-3`, `gpt-5`.
+  
+  > **How it works:**
+  
+  - You build and host your own gateway (e.g., using NGINX, FastAPI, or Kong).
+  - You control routing, security, and scaling.
+  - Ideal if you need full customization or want to avoid APIM costs.
+  
+  </details>
+
+
 > Foundry Control Plane Core Functionalities:
 
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/31dcc997-0eb0-424c-b843-dc58e3b89f7d" />
