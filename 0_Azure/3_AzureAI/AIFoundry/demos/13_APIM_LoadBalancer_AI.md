@@ -25,7 +25,6 @@ Last updated: 2026-01-22
 - [Hub-spoke network topology in Azure](https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/hub-spoke)
 
 </details>
-
   
 > To enhance resiliency and scalability, the solution can be split into frontend and backend layers: `This design ensures high availability, performance optimization, and simplified management, while preparing teams for new model rollouts that may initially be limited to specific regions.`
 
@@ -50,7 +49,7 @@ Last updated: 2026-01-22
 
 From [What is Azure Web Application Firewall?](https://docs.azure.cn/en-us/web-application-firewall/overview)
 
-> [!TIPs]
+> [!TIP]
 > If you have a solid foundation by using APIM as the orchestrator across multiple MSFT Foundry deployments. The design is purpose‑built, resilient, and developer‑friendly. The next evolution would be layering in Front Door for external traffic, refining routing models, and strengthening observability and failover automation.
 > - Frontend Layer: If external users or customers will consume AI services, consider adding Azure Front Door for global entry, latency‑based routing, and DDoS protection.
 > - Routing Models:
