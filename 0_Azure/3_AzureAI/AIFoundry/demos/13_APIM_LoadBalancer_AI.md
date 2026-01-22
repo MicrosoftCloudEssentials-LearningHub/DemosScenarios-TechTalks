@@ -22,6 +22,7 @@ Last updated: 2026-01-22
 - [What is Azure Front Door?](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview)
 - [Comparison between Azure Front Door and Azure CDN services](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-cdn-comparison)
 - [GPT-RAG Solution Accelerator](https://github.com/Azure/GPT-RAG) - AI Factory
+- [Hub-spoke network topology in Azure](https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/hub-spoke)
 
 </details>
 
@@ -121,7 +122,13 @@ From [Comparison between Azure Front Door and Azure CDN services](https://learn.
         | **DevOps Impact** | Single CI/CD pipeline for hub APIM policies. Spokes are simpler (mostly Foundry + load balancers). | Multiple CI/CD pipelines for each hub APIM. Requires automation to ensure consistency. |
         | **Cost Considerations** | Lower operational cost: fewer APIM instances, centralized infrastructure. | Higher cost: multiple hubs with APIM, monitoring, and networking overhead. |
         | **Best Use Case** | Organizations prioritizing **simplicity and centralized control**. Suitable for small/medium deployments. | Organizations prioritizing **resiliency, autonomy, and low latency**. Suitable for large, distributed deployments. |
-    
+
+        > Hub-spoke network topology in Azure:
+        
+        <img width="1083" height="681" alt="image" src="https://github.com/user-attachments/assets/6833341f-2ae0-4aa9-9159-193e3e35f713" />
+        
+        From [Hub-spoke network topology in Azure](https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/hub-spoke)
+
 <!-- START BADGE -->
 <div align="center">
   <img src="https://img.shields.io/badge/Total%20views-1497-limegreen" alt="Total views">
