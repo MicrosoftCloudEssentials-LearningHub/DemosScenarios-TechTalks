@@ -1,0 +1,130 @@
+# Multi-Region Load Balancing Architecture for MSFT Foundry - Overview
+
+Costa Rica
+
+[![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com)
+[![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
+[brown9804](https://github.com/brown9804)
+
+Last updated: 2026-01-22
+
+----------
+
+> [!TIP]
+> Leverages Azure API Management (APIM) as a unified gateway to orchestrate requests across multiple US regions where MSFT Foundry workloads are deployed.
+> By distributing traffic through APIM, customers can mitigate TPM (tokens per minute) limitations and protect against isolated regional outages,
+> while maintaining a consistent API surface for developers.
+
+<details>
+<summary><b>List of References</b> (Click to expand)</summary>
+  
+- [What is Azure API Management?](https://learn.microsoft.com/en-us/azure/api-management/api-management-key-concepts)
+- [What is Azure Front Door?](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview)
+- [Comparison between Azure Front Door and Azure CDN services](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-cdn-comparison)
+- [GPT-RAG Solution Accelerator](https://github.com/Azure/GPT-RAG) - AI Factory
+
+</details>
+
+  
+> To enhance resiliency and scalability, the solution can be split into frontend and backend layers: `This design ensures high availability, performance optimization, and simplified management, while preparing teams for new model rollouts that may initially be limited to specific regions.`
+
+1. Frontend Layer:
+   - `Azure Front Door` provides global entry points, latency-based routing, and DDoS protection.
+   - `Microsoft Entra ID` secures authentication and authorization for user access.
+2. Backend Layer:
+   - `Regional APIM instances and load balancers` distribute workloads across MSFT Foundry deployments.
+   - Architectures can follow either a `hub-and-spoke model` (centralized control with spokes in each region) or a `hub-to-hub model` (interconnected hubs for regional autonomy).
+
+        | Approach | Structure | Strengths | Trade-offs |
+        |----------|-----------|-----------|------------|
+        | **Hub-to-Hub** | Multiple hubs interconnected | High resiliency, regional autonomy | More complex networking, higher cost |
+        | **Hub-and-Spoke** | One central hub, multiple spokes | Easier to manage, centralized policies | Hub becomes a critical dependency |
+
+## Unified Gateway with APIM
+
+`Applications only call APIM endpoints, not individual Foundry instances. This simplifies SDKs and client logic.`
+
+- Role of APIM: APIM sits at the edge of each region, exposing a consistent API surface to developers. It abstracts away the complexity of multiple Foundry deployments.
+- Policies: Developers can configure APIM policies for:
+    - Rate limiting: Prevent exceeding TPM quotas per region.
+    - Conditional routing: Direct traffic based on headers, tokens, or quota status.
+    - Transformation: Normalize requests/responses across regions.
+
+<img width="1620" height="1098" alt="image" src="https://github.com/user-attachments/assets/58f8f967-0334-4174-8ea4-1b6e6b5b6cf8" />
+
+From [What is Azure API Management?](https://learn.microsoft.com/en-us/azure/api-management/api-management-key-concepts)
+
+> API Management components:
+
+<img width="783" height="400" alt="image" src="https://github.com/user-attachments/assets/e11b03c9-e36c-4502-bc34-272b2b549026" />
+
+From [What is Azure API Management?](https://learn.microsoft.com/en-us/azure/api-management/api-management-key-concepts)
+
+> E.g from [GPT-RAG Solution Accelerator](https://github.com/Azure/GPT-RAG)
+
+<img width="1407" height="860" alt="image" src="https://github.com/user-attachments/assets/0ba7a045-b7e1-4297-b690-d3e87d74532d" />
+
+## Frontend Layer
+
+`Frontend ensures that user traffic is secure and optimized before hitting backend workloads. You don’t need to hardcode region logic in the client, Front Door handles it`
+
+- Azure Front Door:
+    - Provides global entry points with latency‑based routing.
+    - Uses health probes to detect regional failures and reroute traffic.
+    - Supports caching for static responses, reducing load on Foundry.
+- Microsoft Entra ID:
+    - Handles OAuth2/OpenID Connect flows for secure access.
+    - Issues tokens that APIM validates before forwarding requests.
+    - Developers integrate Entra ID into client apps (web/mobile) for seamless authentication.
+
+<img width="500" height="530" alt="image" src="https://github.com/user-attachments/assets/33e45a0e-ea29-4f16-b53e-d93586c61007" />
+
+From [What is Azure Front Door?](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview)
+
+<img width="1200" height="581" alt="image" src="https://github.com/user-attachments/assets/bcf03970-950f-4a6a-b945-f7c6d99d3820" />
+
+From [Comparison between Azure Front Door and Azure CDN services](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-cdn-comparison)
+
+> E.g Front Door + PE:
+
+<img width="1518" height="698" alt="image" src="https://github.com/user-attachments/assets/a4c822b1-8bc1-4346-beb8-613141fb8f84" />
+
+## Backend Layer
+
+> [!TIP]
+> `Azure Monitor + Application Insights provide real‑time metrics on TPM consumption, latency, and error rates.`
+> - APIM policies track TPM usage.
+> - When nearing limits, traffic is rerouted to another region.
+> - Developers implement retry logic with exponential backoff to handle throttling gracefully.
+
+- Regional APIM Instances: Each region has its own APIM connected to local Foundry deployments. Developers can configure per‑region policies (e.g., TPM quotas, logging).
+- Load Balancers:
+    - Azure Load Balancer or Application Gateway distribute traffic across multiple Foundry instances in a region.
+    - Health probes detect unhealthy instances and remove them from rotation.
+- Routing Models:
+    - Hub‑and‑Spoke: Central hub routes traffic to spokes (regional APIM + Foundry). Easier to manage, but hub is a dependency.
+    - Hub‑to‑Hub: Each hub can route to others, providing regional autonomy. More resilient but complex networking.
+        
+        | Dimension | **Hub‑and‑Spoke** | **Hub‑to‑Hub** |
+        |-----------|-------------------|----------------|
+        | **Topology** | One **central hub VNet** peered with multiple **spoke VNets**. All traffic flows through the hub before reaching regional APIM + Foundry. | Multiple **regional hubs**, each with its own APIM + Foundry. Hubs are interconnected via VNet peering or Azure Virtual WAN, allowing direct routing between hubs. |
+        | **Traffic Flow** | User → Front Door → Hub APIM → Spoke APIM/Foundry → Response. Centralized routing logic. | User → Front Door → Nearest Hub APIM → Local Foundry OR rerouted to another hub if local capacity is exceeded/outage. |
+        | **Control Plane** | Centralized: policies, quotas, and routing rules defined at the hub APIM. Developers manage one control point. | Distributed: each hub maintains its own APIM policies, quotas, and routing rules. Developers must coordinate across hubs. |
+        | **Resiliency** | Hub is a **single point of dependency**. If hub fails, spokes are unreachable unless fallback is designed. | No single dependency. Each hub can operate independently. Outages in one hub don’t affect others. |
+        | **Complexity** | Easier to design and manage. Clear separation of responsibilities. | Higher complexity: requires consistent policy replication, routing synchronization, and monitoring across hubs. |
+        | **Latency** | Potentially higher latency: traffic always traverses hub before reaching spoke. | Lower latency: traffic can terminate at nearest hub without detouring through a central hub. |
+        | **Networking Requirements** | Hub VNet must be sized for aggregate traffic. Requires hub‑spoke peering and routing tables. | Requires **full mesh peering** or Virtual WAN. More complex routing tables and potential overlapping IP address challenges. |
+        | **Security** | Centralized firewall and NSGs at hub enforce security. Easier to audit and control. | Security distributed across hubs. Each hub must replicate firewall rules and NSGs consistently. |
+        | **Quota Management (TPM)** | Hub monitors TPM usage across spokes. Easier to implement quota‑aware routing logic. | Each hub monitors its own TPM usage. Requires cross‑hub coordination to balance workloads. |
+        | **Failover Strategy** | Failover logic must be implemented at hub level. If hub is down, fallback requires secondary hub or alternate entry point. | Failover is local to each hub. Front Door can reroute traffic to another hub automatically. |
+        | **Observability** | Centralized logging and monitoring at hub. Easier to correlate traffic flows. | Distributed logging. Requires aggregation across hubs for full visibility. |
+        | **DevOps Impact** | Single CI/CD pipeline for hub APIM policies. Spokes are simpler (mostly Foundry + load balancers). | Multiple CI/CD pipelines for each hub APIM. Requires automation to ensure consistency. |
+        | **Cost Considerations** | Lower operational cost: fewer APIM instances, centralized infrastructure. | Higher cost: multiple hubs with APIM, monitoring, and networking overhead. |
+        | **Best Use Case** | Organizations prioritizing **simplicity and centralized control**. Suitable for small/medium deployments. | Organizations prioritizing **resiliency, autonomy, and low latency**. Suitable for large, distributed deployments. |
+    
+<!-- START BADGE -->
+<div align="center">
+  <img src="https://img.shields.io/badge/Total%20views-1497-limegreen" alt="Total views">
+  <p>Refresh Date: 2026-01-05</p>
+</div>
+<!-- END BADGE -->
