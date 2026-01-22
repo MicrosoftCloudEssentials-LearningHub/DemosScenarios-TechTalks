@@ -42,7 +42,7 @@ Last updated: 2026-01-22
         | **Hub-and-Spoke** | One central hub, multiple spokes | Easier to manage, centralized policies | Hub becomes a critical dependency |
 
 > [!NOTE]
-> For **MSFT Foundry APIs**, you can use **Application Gateway** because it’s HTTP/S‑aware, integrates with APIM, and provides advanced routing + WAF security. Azure Load Balancer is useful for **internal, low‑level traffic distribution**, but not sufficient on its own for developer‑facing Foundry workloads.  
+> For **MSFT Foundry APIs**, you can use **Application Gateway** because it’s HTTP/S‑aware, integrates with APIM, and provides advanced routing + [WAF](https://docs.azure.cn/en-us/web-application-firewall/overview) security. Azure Load Balancer is useful for **internal, low‑level traffic distribution**, but not sufficient on its own for developer‑facing Foundry workloads.  
 
 ## Unified Gateway with APIM
 
@@ -112,8 +112,8 @@ From [Comparison between Azure Front Door and Azure CDN services](https://learn.
         |-----------|--------------------------|-------------------------------|
         | **Core Functionality** | Operates at **Layer 4 (TCP/UDP)**. Distributes raw network traffic across backend pools (VMs, containers, or services). No awareness of HTTP/S protocols. Best for simple, high‑throughput scenarios. | Operates at **Layer 7 (HTTP/S)**. Fully protocol‑aware, designed for web/API workloads. Supports SSL termination, URL/path‑based routing, and advanced traffic rules. |
         | **Health & Routing** | Uses **TCP/UDP probes** to check if instances are reachable. Routing is basic (round‑robin, hash‑based). No ability to inspect API responses. | Uses **HTTP/S probes** that can validate Foundry endpoints directly. Supports routing by path, hostname, headers, and cookies. Enables intelligent failover and sticky sessions. |
-        | **Security & Features** | Provides basic distribution only. Security handled externally (NSGs, firewalls). No SSL offload, no WAF. | Includes **Web Application Firewall (WAF)**, SSL/TLS termination, request inspection, and session affinity. Directly protects Foundry APIs from malicious traffic. |
-        | **Developer Impact** | Lightweight, fast, but requires APIM or another Layer 7 service for API‑aware routing, logging, and quota enforcement. Developers see it as “plumbing.” | Rich features directly usable by developers: routing rules, SSL offload, WAF, cookie affinity. Integrates naturally with APIM for policy enforcement and observability. |
+        | **Security & Features** | Provides basic distribution only. Security handled externally (NSGs, firewalls). No SSL offload, no [WAF](https://docs.azure.cn/en-us/web-application-firewall/overview). | Includes **Web Application Firewall ([WAF](https://docs.azure.cn/en-us/web-application-firewall/overview))**, SSL/TLS termination, request inspection, and session affinity. Directly protects Foundry APIs from malicious traffic. |
+        | **Developer Impact** | Lightweight, fast, but requires APIM or another Layer 7 service for API‑aware routing, logging, and quota enforcement. Developers see it as “plumbing.” | Rich features directly usable by developers: routing rules, SSL offload, [WAF](https://docs.azure.cn/en-us/web-application-firewall/overview), cookie affinity. Integrates naturally with APIM for policy enforcement and observability. |
         | **Best Fit for Foundry** | Internal traffic distribution where simplicity and raw throughput matter (e.g., VM/container clusters hosting Foundry). | External/API traffic distribution where **security, routing intelligence, and observability** are critical — the recommended choice for MSFT Foundry workloads. |
 - Routing Models:
     - Hub‑and‑Spoke: Central hub routes traffic to spokes (regional APIM + Foundry). Easier to manage, but hub is a dependency.
