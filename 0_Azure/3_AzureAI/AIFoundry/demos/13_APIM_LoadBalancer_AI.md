@@ -42,11 +42,15 @@ Last updated: 2026-01-22
         | **Hub-and-Spoke** | One central hub, multiple spokes | Easier to manage, centralized policies | Hub becomes a critical dependency |
 
 > [!NOTE]
-> For **MSFT Foundry APIs**, you can use **Application Gateway** because it’s HTTP/S‑aware, integrates with APIM, and provides advanced routing + [WAF](https://docs.azure.cn/en-us/web-application-firewall/overview) security. Azure Load Balancer is useful for **internal, low‑level traffic distribution**, but not sufficient on its own for developer‑facing Foundry workloads.  
+> For **MSFT Foundry APIs**, you can use **Application Gateway** because it’s HTTP/S‑aware, integrates with APIM, and provides advanced routing + [WAF](https://docs.azure.cn/en-us/web-application-firewall/overview) security. Azure Load Balancer is useful for **internal, low‑level traffic distribution**, but not sufficient on its own for developer‑facing Foundry workloads.
+> - If your Foundry deployments are directly consumed as APIs (which they usually are), Application Gateway is the right fit because it understands HTTP/S and integrates naturally with APIM.
+> - If your Foundry workloads are wrapped inside VM/container clusters and you just need raw traffic distribution, Load Balancer is simpler and faster. But you’d still need APIM or Gateway in front for API‑level features.
 
 <img width="567" height="383" alt="image" src="https://github.com/user-attachments/assets/bb67fc6c-5407-49b2-8a1f-52963689d37d" />
 
 From [What is Azure Web Application Firewall?](https://docs.azure.cn/en-us/web-application-firewall/overview)
+
+
 
 ## Unified Gateway with APIM
 
