@@ -41,6 +41,9 @@ Last updated: 2026-01-22
         | **Hub-to-Hub** | Multiple hubs interconnected | High resiliency, regional autonomy | More complex networking, higher cost |
         | **Hub-and-Spoke** | One central hub, multiple spokes | Easier to manage, centralized policies | Hub becomes a critical dependency |
 
+> [!NOTE]
+> For **MSFT Foundry APIs**, you can use **Application Gateway** because it’s HTTP/S‑aware, integrates with APIM, and provides advanced routing + WAF security. Azure Load Balancer is useful for **internal, low‑level traffic distribution**, but not sufficient on its own for developer‑facing Foundry workloads.  
+
 ## Unified Gateway with APIM
 
 `Applications only call APIM endpoints, not individual Foundry instances. This simplifies SDKs and client logic.`
@@ -61,9 +64,11 @@ From [What is Azure API Management?](https://learn.microsoft.com/en-us/azure/api
 
 From [What is Azure API Management?](https://learn.microsoft.com/en-us/azure/api-management/api-management-key-concepts)
 
-> E.g from [GPT-RAG Solution Accelerator](https://github.com/Azure/GPT-RAG)
+> E.g 
 
 <img width="1407" height="860" alt="image" src="https://github.com/user-attachments/assets/0ba7a045-b7e1-4297-b690-d3e87d74532d" />
+
+From [GPT-RAG Solution Accelerator](https://github.com/Azure/GPT-RAG)
 
 ## Frontend Layer
 
@@ -102,6 +107,14 @@ From [Comparison between Azure Front Door and Azure CDN services](https://learn.
 - Load Balancers:
     - Azure Load Balancer or Application Gateway distribute traffic across multiple Foundry instances in a region.
     - Health probes detect unhealthy instances and remove them from rotation.
+        
+        | Dimension | **Azure Load Balancer** | **Azure Application Gateway** |
+        |-----------|--------------------------|-------------------------------|
+        | **Core Functionality** | Operates at **Layer 4 (TCP/UDP)**. Distributes raw network traffic across backend pools (VMs, containers, or services). No awareness of HTTP/S protocols. Best for simple, high‑throughput scenarios. | Operates at **Layer 7 (HTTP/S)**. Fully protocol‑aware, designed for web/API workloads. Supports SSL termination, URL/path‑based routing, and advanced traffic rules. |
+        | **Health & Routing** | Uses **TCP/UDP probes** to check if instances are reachable. Routing is basic (round‑robin, hash‑based). No ability to inspect API responses. | Uses **HTTP/S probes** that can validate Foundry endpoints directly. Supports routing by path, hostname, headers, and cookies. Enables intelligent failover and sticky sessions. |
+        | **Security & Features** | Provides basic distribution only. Security handled externally (NSGs, firewalls). No SSL offload, no WAF. | Includes **Web Application Firewall (WAF)**, SSL/TLS termination, request inspection, and session affinity. Directly protects Foundry APIs from malicious traffic. |
+        | **Developer Impact** | Lightweight, fast, but requires APIM or another Layer 7 service for API‑aware routing, logging, and quota enforcement. Developers see it as “plumbing.” | Rich features directly usable by developers: routing rules, SSL offload, WAF, cookie affinity. Integrates naturally with APIM for policy enforcement and observability. |
+        | **Best Fit for Foundry** | Internal traffic distribution where simplicity and raw throughput matter (e.g., VM/container clusters hosting Foundry). | External/API traffic distribution where **security, routing intelligence, and observability** are critical — the recommended choice for MSFT Foundry workloads. |
 - Routing Models:
     - Hub‑and‑Spoke: Central hub routes traffic to spokes (regional APIM + Foundry). Easier to manage, but hub is a dependency.
     - Hub‑to‑Hub: Each hub can route to others, providing regional autonomy. More resilient but complex networking.
