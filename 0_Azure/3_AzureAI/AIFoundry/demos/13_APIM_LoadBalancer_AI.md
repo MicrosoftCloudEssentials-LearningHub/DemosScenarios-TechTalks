@@ -50,7 +50,15 @@ Last updated: 2026-01-22
 
 From [What is Azure Web Application Firewall?](https://docs.azure.cn/en-us/web-application-firewall/overview)
 
-
+> [!TIPs]
+> If you have a solid foundation by using APIM as the orchestrator across multiple MSFT Foundry deployments. The design is purpose‑built, resilient, and developer‑friendly. The next evolution would be layering in Front Door for external traffic, refining routing models, and strengthening observability and failover automation.
+> - Frontend Layer: If external users or customers will consume AI services, consider adding Azure Front Door for global entry, latency‑based routing, and DDoS protection.
+> - Routing Models:
+>   - Hub‑and‑Spoke: Central APIM hub routes to regional spokes. Easier to manage.
+>   - Hub‑to‑Hub: Each hub can route to others, improving resiliency but adding complexity.
+> - Observability: Centralize logs and metrics in Azure Monitor + Application Insights for full visibility.
+> - Failover Automation: Implement health probes and rerouting logic to handle outages seamlessly.
+> - Future‑Proofing: Pre‑provision capacity in regions where new models are released first.
 
 ## Unified Gateway with APIM
 
