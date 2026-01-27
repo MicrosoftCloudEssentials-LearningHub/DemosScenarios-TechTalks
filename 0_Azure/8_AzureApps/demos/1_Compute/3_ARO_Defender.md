@@ -100,10 +100,21 @@ To enable it: `This way, you get both runtime threat detection and image vulnera
     - **Kubernetes admission controllers / Gatekeeper** → enforce policies at deployment time, often aligned with Defender’s recommendations.
 3. **Examples of Automation**: 
    - **ARO / AKS cluster hardening:** Automatically block deployments that violate Defender recommendations (via Azure Policy + Gatekeeper).
-   - **Container image scanning:** If Defender finds a vulnerable image in ACR, trigger a Logic App to block its deployment or notify DevOps.
+   - **Container image scanning:** If Defender finds a vulnerable image in ACR, trigger a Logic App/Function App to block its deployment or notify DevOps.
    - **Runtime alerts:** If Defender detects suspicious activity in a container, trigger automation to isolate the pod, scale down the deployment, or alert security teams.
 
+> Defender acts as the “brains”, while Policy/Logic Apps/FA act as the “hands” to enforce or remediate.
 
+| **Resource Type** | **Defender Role** | **Typical Recommendations** | **Automation / Enforcement Options** |
+|-------------------|-------------------|-----------------------------|--------------------------------------|
+| **Virtual Machines (VMs)** | Monitors OS vulnerabilities, malware, insecure configurations | Apply missing patches, enable endpoint protection, restrict open ports | Azure Policy for secure baseline; Logic Apps/FA to trigger patching scripts; Azure Update Management |
+| **Databases (SQL, Cosmos DB, etc.)** | Detects weak authentication, insecure connections, excessive permissions | Enforce TLS, enable auditing, restrict firewall rules | Azure Policy to enforce TLS; Logic Apps/FA to rotate keys or alert DB admins |
+| **Storage Accounts** | Identifies public access, missing encryption, insecure shared keys | Require private endpoints, enable encryption, disable anonymous access | Azure Policy to block public access; Logic Apps/FA to disable insecure settings |
+| **AKS / ARO / Containers** | Scans images, detects runtime threats, checks pod security | Disallow privileged containers, enforce read-only root filesystem, scan images for CVEs | Azure Policy + Gatekeeper for enforcement; Logic Apps/FA to block deployments or notify DevOps |
+| **App Services (Web Apps, Functions)** | Monitors SSL/TLS, outdated frameworks, insecure configurations | Require HTTPS-only, update runtime versions, restrict CORS | Azure Policy to enforce HTTPS; Logic Apps/FA to notify developers |
+| **Key Vault** | Detects excessive access permissions, missing logging | Enforce RBAC, enable logging, rotate secrets | Azure Policy to enforce RBAC; Logic Apps/FA to trigger secret rotation |
+| **Networking (NSGs, Firewalls)** | Detects overly permissive rules, insecure endpoints | Restrict inbound rules, enforce segmentation, enable DDoS protection | Azure Policy to block insecure NSG rules; Logic Apps/FA to auto-close risky ports |
+| **Azure Container Registry (ACR)** | Scans images for vulnerabilities | Block vulnerable images, enforce signed images | Policy to enforce image scanning; Logic Apps/FA to prevent deployment of non-compliant images |
 
 <!-- START BADGE -->
 <div align="center">
