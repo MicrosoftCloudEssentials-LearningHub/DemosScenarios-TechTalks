@@ -78,12 +78,14 @@ To enable it: `This way, you get both runtime threat detection and image vulnera
 
 > Microsoft Defender for Cloud (and Defender for Containers) is primarily a monitoring, detection, and recommendation engine. `It does not directly “reach into” your ARO (Azure Red Hat OpenShift) or AKS/containers and change configurations by itself. Instead, it surfaces recommendations and alerts, and you can automate actions around them.`
 
-
 > [!TIP]
 > - **Defender does not directly “do actions” inside ARO/containers.**  
 > - It provides **recommendations and alerts**, and you can **wire automation** (Azure Policy, Logic Apps, Kubernetes admission controllers) to enforce or remediate those recommendations.  
 > - In practice, Defender acts as the **brains** (detect + recommend), while **Policy/Logic Apps/Function Apps/Kubernetes controllers** act as the **hands** (enforce + remediate).  
 
+> [!NOTE]
+> The pattern is the same across all Azure resources: Defender monitors + recommends, while Azure Policy and automation tools enforce/remediate.
+> The specific enforcement mechanisms differ depending on the resource type (VMs, databases, containers, etc.).
 
 > What You *Can* Do in ARO or Containers: 
 
