@@ -325,6 +325,25 @@ From [Baseline architecture for an Azure Kubernetes Service (AKS) cluster](https
 - Networking Costs: Minimize cross-region traffic;` keep AKS and app services in same region.`
 - Reserved Instances: For predictable workloads, `reserve VMs for 1–3 years to save up to ~57%.`
 
+| Area | Technical Best Practice (Azure‑focused) | Question to Ask | Example Response Back |
+|------|------------------------------------------|-----------------|-----------------------|
+| **Deployment Strategy** | Use Kubernetes `Deployment` with `RollingUpdate` strategy. Configure `maxSurge` and `maxUnavailable`. Integrate with **Azure DevOps Pipelines** or **GitHub Actions** for controlled rollout. | How are your rolling update parameters set, and which CI/CD tool applies them? | “We use Azure DevOps Pipelines with `maxSurge=1` and `maxUnavailable=0` so new pods come online before old ones terminate.” |
+| **CI/CD Integration** | Use **Azure DevOps Release Pipelines** or **GitHub Actions** with AKS deployment tasks. Leverage staged rollouts and approvals. | How do you prevent breaking changes from being applied instantly? | “Our pipeline uses staged environments with approvals; manifests are applied progressively to AKS.” |
+| **Ingress / Gateway API** | Use **Azure Application Gateway Ingress Controller (AGIC)** or Gateway API. Ensures traffic only routes to pods marked `Ready`. Supports path/host routing and TLS termination. | How do you guarantee traffic is only routed to healthy pods? | “AGIC integrates with Kubernetes Services; pods must pass readiness probes before being added to traffic.” |
+| **Readiness Probes** | Implement readiness probes that check actual dependencies (DB, cache, external APIs). Example: HTTP GET `/health/ready`. | What does your readiness probe validate? | “Our probe checks DB connectivity and cache warm‑up, not just process start.” |
+| **Liveness Probes** | Lightweight probes to restart stuck pods. Example: HTTP GET `/health/live`. | How do you detect pods that are alive but stuck? | “We use a liveness probe hitting `/health/live`; if it fails, Kubernetes restarts the pod.” |
+| **Replica Counts** | Maintain ≥3 replicas for production workloads. Use **Azure Kubernetes Autoscaler (Cluster Autoscaler)** and **Horizontal Pod Autoscaler (HPA)** for scaling. | How many replicas do you run during rollouts? | “We run 3–5 replicas per service and use HPA to scale based on CPU/memory.” |
+| **Graceful Shutdown** | Implement SIGTERM handlers in apps. Configure `terminationGracePeriodSeconds` (20–60s typical). Use **Azure Load Balancer connection draining** to avoid dropped requests. | How do you drain in‑flight requests when pods terminate? | “We use graceful shutdown hooks and set `terminationGracePeriodSeconds=30`; Azure LB drains connections.” |
+| **Automatic Rollback** | Kubernetes halts rollout if new pods fail readiness. Use `progressDeadlineSeconds`. Monitor with **Azure Monitor for Containers** and **Application Insights**. | What happens if new pods fail readiness checks during rollout? | “The rollout halts automatically; existing replicas keep serving traffic until we fix the issue.” |
+| **Observability** | Use **Azure Monitor**, **Log Analytics**, and **Application Insights** for rollout health, probe failures, and traffic routing. | How do you track rollout health across APIM, Ingress, and pods? | “We use Azure Monitor for cluster metrics and App Insights for app telemetry, tied together with dashboards.” |
+| **Resiliency** | Ensure multi‑region failover with **Azure Front Door** + APIM health probes. | How do you handle failover if one AKS cluster goes down mid‑deployment? | “Front Door detects unhealthy regions and reroutes traffic; APIM policies ensure fallback routing.” |
+
+> [!TIP]
+> - **Azure DevOps Pipelines or GitHub Actions** for declarative, progressive deployments, combined with AGIC for ingress and Azure Monitor for observability.
+> - **AGIC (Application Gateway Ingress Controller)** or Gateway API ensures traffic routing is Azure‑native.
+> - **Azure Monitor + App Insights** provide observability across rollout stages.
+> - **Front Door + APIM** give global resiliency and health‑based routing.  
+
 ## FAQ 
 
 1. Do I need to rewrite my application? `R/ Usually **no**. If your app already runs in containers, the main changes are:`
