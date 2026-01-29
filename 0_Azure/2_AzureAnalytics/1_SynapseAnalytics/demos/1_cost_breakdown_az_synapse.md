@@ -54,7 +54,7 @@ In `Cost Management + Billing`, you can set budgets and alerts to monitor your s
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-1497-limegreen" alt="Total views">
-  <p>Refresh Date: 2026-01-05</p>
+  <img src="https://img.shields.io/badge/Total%20views-1535-limegreen" alt="Total views">
+  <p>Refresh Date: 2026-01-29</p>
 </div>
 <!-- END BADGE -->
