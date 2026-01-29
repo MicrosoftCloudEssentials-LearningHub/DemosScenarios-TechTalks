@@ -341,7 +341,7 @@ From [Disk type comparison](https://learn.microsoft.com/en-us/azure/virtual-mach
     - Observability  
     - Security and networking  
     
-11. Can I run both environments during migration? `R/ Yes — and you should. Common patterns:`
+11. Can I run both environments during migration? `R/ Yes, and you should. Common patterns:`
     - **Side‑by‑side testing**  
     - **Blue/green cutover**  
     - **Gradual traffic shifting** via Ingress or Front Door  
