@@ -336,10 +336,10 @@ From [Disk type comparison](https://learn.microsoft.com/en-us/azure/virtual-mach
     - **Large distributed system** → 3–6 months  
 
 > Most of the time is spent on:
-    - Infrastructure setup  
-    - CI/CD redesign  
-    - Observability  
-    - Security and networking  
+> - Infrastructure setup
+> - CI/CD redesign
+> - Observability
+> - Security and networking  
     
 11. Can I run both environments during migration? `R/ Yes, and you should. Common patterns:`
     - **Side‑by‑side testing**  
