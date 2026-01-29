@@ -34,6 +34,10 @@ Last updated: 2026-01-29
 
     <img width="1063" height="833" alt="image" src="https://github.com/user-attachments/assets/cde38e46-9f20-450d-a022-40eff4cd4c07" />
 
+- [Using Azure API Management Circuit Breaker and Load balancing with Azure OpenAI Service](https://techcommunity.microsoft.com/blog/fasttrackforazureblog/using-azure-api-management-circuit-breaker-and-load-balancing-with-azure-openai-/4041003)
+- [Expose an agent as an MCP tool](https://learn.microsoft.com/en-us/agent-framework/tutorials/agents/agent-as-mcp-tool?pivots=programming-language-python)
+- [How to configure a private link for Microsoft Foundry (Foundry projects)](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/configure-private-link?view=foundry-classic&utm_source=copilot.com)
+
 </details>
   
 > To enhance resiliency and scalability, the solution can be split into frontend and backend layers: `This design ensures high availability, performance optimization, and simplified management, while preparing teams for new model rollouts that may initially be limited to specific regions.`
