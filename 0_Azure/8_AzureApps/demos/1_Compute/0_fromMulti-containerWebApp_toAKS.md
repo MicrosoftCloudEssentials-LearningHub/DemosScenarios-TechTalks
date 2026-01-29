@@ -313,7 +313,7 @@ From [Disk type comparison](https://learn.microsoft.com/en-us/azure/virtual-mach
 
 > AKS supports more sophisticated deployment strategies than App Service.
 
-8. What are the cost considerations? `R/ AKS can be cheaper *or* more expensive depending on:`
+8. What are the cost considerations? `R/ AKS can be cheaper or more expensive depending on:`
     - Node size and count  
     - Whether you use spot nodes  
     - Whether you use managed add‑ons  
