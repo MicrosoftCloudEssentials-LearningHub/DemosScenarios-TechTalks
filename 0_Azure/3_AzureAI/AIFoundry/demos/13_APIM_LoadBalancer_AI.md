@@ -23,6 +23,16 @@ Last updated: 2026-01-22
 - [Comparison between Azure Front Door and Azure CDN services](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-cdn-comparison)
 - [GPT-RAG Solution Accelerator](https://github.com/Azure/GPT-RAG) - AI Factory
 - [Hub-spoke network topology in Azure](https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/hub-spoke)
+- [Circuit Breaker pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker?utm_source=copilot.com)
+
+    <img width="651" height="539" alt="image" src="https://github.com/user-attachments/assets/121c47f8-4297-454a-bcb2-62fddd58cdee" />
+
+    <img width="1196" height="632" alt="image" src="https://github.com/user-attachments/assets/0a8a73f0-18bf-424d-8add-6eea9b04e004" />
+
+- [Azure Load Balancer Best Practices](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-best-practices?utm_source=copilot.com)
+- [Baseline architecture for an Azure Kubernetes Service (AKS) cluster](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/baseline-aks)
+
+    <img width="1063" height="833" alt="image" src="https://github.com/user-attachments/assets/cde38e46-9f20-450d-a022-40eff4cd4c07" />
 
 </details>
   
