@@ -261,6 +261,118 @@ From [Disk type comparison](https://learn.microsoft.com/en-us/azure/virtual-mach
 - Networking Costs: Minimize cross-region traffic;` keep AKS and app services in same region.`
 - Reserved Instances: For predictable workloads, `reserve VMs for 1–3 years to save up to ~57%.`
 
+## FAQ 
+
+1. Do I need to rewrite my application? `R/ Usually **no**. If your app already runs in containers, the main changes are:`
+    - Converting **docker-compose.yml** into **Kubernetes manifests** or **Helm charts**.
+    - Externalizing configuration into ConfigMaps/Secrets.
+    - Ensuring containers are stateless.
+
+> The application code rarely needs modification unless it relies on App Service‑specific features.
+
+
+2. How do I migrate my docker-compose setup to Kubernetes? `R/ Typical mapping:`
+    - `services:` → Kubernetes Deployments + Services  
+    - `volumes:` → PersistentVolumeClaims  
+    - `environment:` → ConfigMaps + Secrets  
+    - `ports:` → Container ports + Ingress  
+> Tools that help:
+    - **kompose** (automatic conversion)
+    - **Helm** (recommended for production)
+    - **Draft** or **Bridge to Kubernetes** for dev workflows
+
+3. What about environment variables and secrets? `R/ In App Service, env vars are injected automatically. In AKS:`
+    - Use **ConfigMaps** for non‑sensitive settings.
+    - Use **Secrets** for sensitive values.
+    - Use **Azure Key Vault** + CSI driver for secure secret injection.
+      
+4. How do I expose my application publicly? `R/ In App Service, exposure is automatic. In AKS, you choose:`
+    - **Ingress Controller** (NGINX, AGIC, Traefik) — most common  
+    - **LoadBalancer Service** — simple but less flexible  
+    - **Service Mesh** (Istio, Linkerd) — advanced traffic control  
+    
+5. How do I handle logging and monitoring? 
+`R/`
+> - App Service → Application Insights
+> - AKS → You can still use App Insights, but most teams add:
+    - **Prometheus** for metrics  
+    - **Grafana** for dashboards  
+    - **Azure Monitor for Containers** for cluster health  
+    - **OpenTelemetry** for tracing  
+    
+6. What about scaling? `R/ AKS gives you more options:`
+    - **Horizontal Pod Autoscaler (HPA)**  
+    - **KEDA** for event‑driven autoscaling  
+    - **Cluster Autoscaler** for node scaling  
+    - **Virtual Nodes** for burst workloads  
+
+> This is a major upgrade from App Service’s simpler autoscaling rules.
+
+7. How do I deploy to AKS? `R/ Common approaches:`
+    - **Azure DevOps Pipelines** or **GitHub Actions**
+
+> AKS supports more sophisticated deployment strategies than App Service.
+
+8. What are the cost considerations? `R/ AKS can be cheaper *or* more expensive depending on:`
+    - Node size and count  
+    - Whether you use spot nodes  
+    - Whether you use managed add‑ons  
+    - How well you autoscale  
+
+> - App Service is predictable but less flexible.
+> - AKS rewards optimization.
+
+9. What are the common migration pitfalls? `R/ Teams often run into:`
+    - Missing health probes → pods restart endlessly  
+    - Incorrect Ingress configuration → app unreachable  
+    - Not externalizing config → containers fail on startup  
+    - Over‑provisioning nodes → unnecessary cost  
+    - Forgetting persistent storage → data loss  
+    - Not setting resource limits → noisy neighbor issues  
+    
+10. How long does a typical migration take? `R/ Depends on complexity:`
+    - **Simple 2–3 container app** → 1–2 weeks  
+    - **Medium microservice app** → 4–8 weeks  
+    - **Large distributed system** → 3–6 months  
+
+> Most of the time is spent on:
+    - Infrastructure setup  
+    - CI/CD redesign  
+    - Observability  
+    - Security and networking  
+    
+11. Can I run both environments during migration? `R/ Yes — and you should. Common patterns:`
+    - **Side‑by‑side testing**  
+    - **Blue/green cutover**  
+    - **Gradual traffic shifting** via Ingress or Front Door  
+
+> This reduces risk dramatically.
+
+12. What’s the recommended folder structure for AKS deployments? `R/ A clean structure might look like:`
+
+```
+/deploy
+  /helm
+    /app
+      values.yaml
+      templates/
+  /manifests
+    deployment.yaml
+    service.yaml
+    ingress.yaml
+/src
+  (your application code)
+```
+
+13. What Azure services pair well with AKS?
+    - **Azure Container Registry (ACR)**  
+    - **Azure Key Vault**  
+    - **Azure Monitor**  
+    - **Azure Front Door**  
+    - **Azure Load Testing**  
+    - **Azure Files / Azure Disks**  
+    - **Azure Service Bus / Event Grid / Event Hubs**  
+
 <!-- START BADGE -->
 <div align="center">
   <img src="https://img.shields.io/badge/Total%20views-1497-limegreen" alt="Total views">
