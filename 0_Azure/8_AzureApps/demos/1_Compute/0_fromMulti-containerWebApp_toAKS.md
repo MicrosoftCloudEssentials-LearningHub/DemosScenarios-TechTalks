@@ -34,6 +34,10 @@ Last updated: 2025-10-23
 
   <img width="1693" height="738" alt="image" src="https://github.com/user-attachments/assets/22185e92-58ac-4119-9c56-c1c87345c242" />
 
+- [Using Azure API Management Circuit Breaker and Load balancing with Azure OpenAI Service](https://techcommunity.microsoft.com/blog/fasttrackforazureblog/using-azure-api-management-circuit-breaker-and-load-balancing-with-azure-openai-/4041003)
+- [Expose an agent as an MCP tool](https://learn.microsoft.com/en-us/agent-framework/tutorials/agents/agent-as-mcp-tool?pivots=programming-language-python)
+- [How to configure a private link for Microsoft Foundry (Foundry projects)](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/configure-private-link?view=foundry-classic&utm_source=copilot.com)
+
 </details>
 
 <details>
