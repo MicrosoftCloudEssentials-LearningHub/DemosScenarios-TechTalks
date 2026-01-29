@@ -297,9 +297,13 @@ Your architecture evolves like this:
 
 </details>
 
-  <img width="600" alt="image" src="https://github.com/user-attachments/assets/d8d24dd6-e744-436d-9bae-1c51d9597d55" />
-  
-  From [Defender for Containers architecture](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-architecture?tabs=defender-for-container-arch-aks)
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/d8d24dd6-e744-436d-9bae-1c51d9597d55" />
+
+From [Defender for Containers architecture](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-architecture?tabs=defender-for-container-arch-aks)
+
+<img width="1063" height="833" alt="image" src="https://github.com/user-attachments/assets/6a944706-ec3f-4a14-ba56-20ca5baf7c6e" />
+
+From [Baseline architecture for an Azure Kubernetes Service (AKS) cluster](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/baseline-aks)
 
 | Architecture Area | Detailed Explanation | Why It Still Applies with AKS | How It Integrates with AKS | Key Benefits | Risks If Ignored |
 |-------------------|----------------------|-------------------------------|-----------------------------|--------------|------------------|
