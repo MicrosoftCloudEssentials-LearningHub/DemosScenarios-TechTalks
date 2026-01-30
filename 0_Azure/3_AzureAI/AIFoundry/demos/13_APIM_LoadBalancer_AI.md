@@ -6,7 +6,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2026-01-22
+Last updated: 2026-01-29
 
 ----------
 
@@ -33,6 +33,10 @@ Last updated: 2026-01-22
 - [Baseline architecture for an Azure Kubernetes Service (AKS) cluster](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/baseline-aks)
 
     <img width="1063" height="833" alt="image" src="https://github.com/user-attachments/assets/cde38e46-9f20-450d-a022-40eff4cd4c07" />
+
+- [Using Azure API Management Circuit Breaker and Load balancing with Azure OpenAI Service](https://techcommunity.microsoft.com/blog/fasttrackforazureblog/using-azure-api-management-circuit-breaker-and-load-balancing-with-azure-openai-/4041003)
+- [Expose an agent as an MCP tool](https://learn.microsoft.com/en-us/agent-framework/tutorials/agents/agent-as-mcp-tool?pivots=programming-language-python)
+- [How to configure a private link for Microsoft Foundry (Foundry projects)](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/configure-private-link?view=foundry-classic&utm_source=copilot.com)
 
 </details>
   
@@ -169,7 +173,7 @@ From [Comparison between Azure Front Door and Azure CDN services](https://learn.
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-1497-limegreen" alt="Total views">
-  <p>Refresh Date: 2026-01-05</p>
+  <img src="https://img.shields.io/badge/Total%20views-1535-limegreen" alt="Total views">
+  <p>Refresh Date: 2026-01-29</p>
 </div>
 <!-- END BADGE -->
