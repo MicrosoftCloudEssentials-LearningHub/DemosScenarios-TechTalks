@@ -10,6 +10,15 @@ Last updated: 2026-01-29
 
 ----------
 
+> [!NOTE]
+> `Beyond technical expertise, integration knowledge across enterprise systems and the ability to align APIs with business processes are essential, along with communication skills to collaborate across engineering, finance, HR, and operations teams.`
+> To work effectively with Azure API Management (APIM), a person needs strong skills:
+> - In API design and development (REST, SOAP, GraphQL, OpenAPI)
+> - Security and identity management (OAuth, JWT, Azure AD)
+> - Policy configuration for governance (rate limiting, caching, transformations).
+> - They should understand Azure cloud services and networking (VNETs, load balancers, firewalls)
+> - Be able to monitor and analyze API usage with tools like Application Insights, and manage API lifecycle with versioning and documentation. 
+
 > [!TIP]
 > Leverages Azure API Management (APIM) as a unified gateway to orchestrate requests across multiple US regions where MSFT Foundry workloads are deployed.
 > By distributing traffic through APIM, customers can mitigate TPM (tokens per minute) limitations and protect against isolated regional outages,
